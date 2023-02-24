@@ -1,0 +1,964 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  TicketComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-ticket</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./ticket.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./ticket.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#botonBorrar" >botonBorrar</a>
+                            </li>
+                            <li>
+                                <a href="#ticketTemplate" >ticketTemplate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#validaciones" >validaciones</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#deleteConfig" >deleteConfig</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onChange" >onChange</a>
+                            </li>
+                            <li>
+                                <a href="#toggle" >toggle</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#isEditable" >isEditable</a>
+                            </li>
+                            <li>
+                                <a href="#ticket" >ticket</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Salidas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ticketChanged" >ticketChanged</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, ticketsService: <a href="../injectables/TicketsService.html" target="_self">TicketsService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ticketsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TicketsService.html" target="_self" >TicketsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isEditable"></a>
+                        <b>isEditable</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:25</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ticket"></a>
+                        <b>ticket</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/TicketsImpresora.html" target="_self" >TicketsImpresora</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:24</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Salidas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ticketChanged"></a>
+                        <b>ticketChanged</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteConfig"></a>
+                    <span class="name">
+                        <span ><b>deleteConfig</b></span>
+                        <a href="#deleteConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteConfig(ticket: <a href="../interfaces/TicketsImpresora.html" target="_self">TicketsImpresora</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="46"
+                            class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ticket</td>
+                                    <td>
+                                                <code><a href="../interfaces/TicketsImpresora.html" target="_self" >TicketsImpresora</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="35"
+                            class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onChange"></a>
+                    <span class="name">
+                        <span ><b>onChange</b></span>
+                        <a href="#onChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onChange()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="52"
+                            class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggle"></a>
+                    <span class="name">
+                        <span ><b>toggle</b></span>
+                        <a href="#toggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggle(event: MouseEvent)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="39"
+                            class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>MouseEvent</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="botonBorrar"></a>
+                    <span class="name">
+                        <span ><b>botonBorrar</b></span>
+                        <a href="#botonBorrar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>ElementRef&lt;HTMLButtonElement&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;botonBorrar&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ticketTemplate"></a>
+                    <span class="name">
+                        <span ><b>ticketTemplate</b></span>
+                        <a href="#ticketTemplate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>ElementRef&lt;HTMLDivElement&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;ticketTemplate&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validaciones"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>validaciones</b></span>
+                        <a href="#validaciones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new validaciones()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/impresoras/movimientos/pages/components/ticket/ticket.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Renderer2, ElementRef, ViewChild, Input, Output, EventEmitter } from &#x27;@angular/core&#x27;;
+import { CommonModule } from &#x27;@angular/common&#x27;;
+import { FormsModule } from &#x27;@angular/forms&#x27;;
+import { validaciones } from &#x27;src/app/core/formsControl/validaciones&#x27;;
+import { PrimengModule } from &#x27;src/app/core/modules/primeng/primeng.module&#x27;;
+import { TicketsImpresora } from &#x27;../../../constants/tickets-list&#x27;;
+import { TicketsService } from &#x27;../../../services/tickets/tickets.service&#x27;;
+
+@Component({
+  selector: &#x27;app-ticket&#x27;,
+  templateUrl: &#x27;./ticket.component.html&#x27;,
+  styleUrls: [&#x27;./ticket.component.scss&#x27;],
+  standalone: true,
+  imports: [PrimengModule, FormsModule, CommonModule]
+})
+export class TicketComponent implements OnInit {
+
+  @ViewChild(&#x27;ticketTemplate&#x27;) ticketTemplate!: ElementRef&lt;HTMLDivElement&gt;;
+  @ViewChild(&#x27;botonBorrar&#x27;) botonBorrar!: ElementRef&lt;HTMLButtonElement&gt;;
+
+
+
+  @Output(&#x27;ticketChanged&#x27;) ticketChanged &#x3D; new EventEmitter&lt;boolean&gt;();
+  @Input(&#x27;ticket&#x27;) ticket!: TicketsImpresora;
+  @Input(&#x27;isEditable&#x27;) isEditable: boolean &#x3D; true;
+
+  readonly validaciones &#x3D; new validaciones();
+
+
+  constructor(
+    private readonly renderer: Renderer2,
+    private readonly ticketsService: TicketsService
+  ) { }
+
+  ngOnInit(): void {
+
+  }
+
+  toggle(event: MouseEvent) {
+    event.stopPropagation();
+    this.ticketTemplate?.nativeElement.classList.toggle(&#x27;d-none&#x27;);
+    this.botonBorrar?.nativeElement.classList.toggle(&#x27;d-none&#x27;);
+    
+  }
+
+  deleteConfig(ticket: TicketsImpresora) {
+    console.log(ticket);
+    
+    this.ticketsService.removeTicket(ticket);
+  }
+
+  onChange() {
+    this.ticketChanged.emit(true)
+    console.log(&#x27;changed&#x27;);
+    
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div 
+    class&#x3D;&quot;ticket m-3 d-flex flex-column justify-content-center align-items-center&quot;
+    (click)&#x3D;&quot;toggle($event)&quot;
+&gt;
+    &lt;div class&#x3D;&quot;d-flex&quot;&gt;
+        &lt;span class&#x3D;&quot;titulo my-2&quot;&gt;RECEPCIÓN&lt;/span&gt;
+        &lt;i 
+            class&#x3D;&quot;fa-regular fa-circle-xmark txt-wine&quot;
+            [style]&#x3D;&quot;{&#x27;position&#x27;: &#x27;relative&#x27;, &#x27;left&#x27;: &#x27;99px&#x27;,&#x27;top&#x27;: &#x27;5px&#x27;}&quot;
+            #botonBorrar
+            (click)&#x3D;&quot;$event.stopPropagation(); deleteConfig(ticket)&quot;
+            *ngIf&#x3D;&quot;isEditable&quot;
+        &gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div 
+        class&#x3D;&quot;d-flex ticket-values justify-content-around&quot;
+        #ticketTemplate
+        (click)&#x3D;&quot;$event.stopPropagation()&quot;
+    &gt;
+        &lt;div class&#x3D;&quot;ticket-input w-50 justify-content-around&quot;&gt;
+            &lt;span class&#x3D;&quot;mt-4 subtitulo&quot;&gt;
+                MINITICKET
+            &lt;/span&gt;
+            &lt;div class&#x3D;&quot;w-50&quot;&gt;
+                &lt;p-inputNumber 
+                    [showButtons]&#x3D;&quot;true&quot;
+                    [min]&#x3D;&quot;0&quot;
+                    [max]&#x3D;&quot;99&quot;
+                    [(ngModel)]&#x3D;&quot;ticket.tickets.miniticket&quot;
+                    buttonLayout&#x3D;&quot;horizontal&quot;
+                    spinnerMode&#x3D;&quot;horizontal&quot;
+                    decrementButtonClass&#x3D;&quot;p-button-danger&quot;
+                    incrementButtonClass&#x3D;&quot;p-button-success&quot;
+                    incrementButtonIcon&#x3D;&quot;pi pi-plus&quot; 
+                    decrementButtonIcon&#x3D;&quot;pi pi-minus&quot;
+                    (ngModelChange)&#x3D;&quot;onChange()&quot;
+                    [disabled]&#x3D;&quot;!isEditable&quot;
+                    &gt;
+                &lt;/p-inputNumber&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;ticket-input w-50 justify-content-around&quot;&gt;
+            &lt;span class&#x3D;&quot;mt-4 subtitulo&quot;&gt;
+                TICKET
+            &lt;/span&gt;
+            &lt;div class&#x3D;&quot;w-50&quot;&gt;
+                &lt;p-inputNumber 
+                    [showButtons]&#x3D;&quot;true&quot;
+                    [min]&#x3D;&quot;0&quot;
+                    [max]&#x3D;&quot;99&quot;
+                    [(ngModel)]&#x3D;&quot;ticket.tickets.ticket&quot;
+                    (ngModelChange)&#x3D;&quot;onChange()&quot;
+                    buttonLayout&#x3D;&quot;horizontal&quot;
+                    spinnerMode&#x3D;&quot;horizontal&quot;
+                    decrementButtonClass&#x3D;&quot;p-button-danger&quot;
+                    incrementButtonClass&#x3D;&quot;p-button-success&quot;
+                    incrementButtonIcon&#x3D;&quot;pi pi-plus&quot; 
+                    decrementButtonIcon&#x3D;&quot;pi pi-minus&quot;
+                    [useGrouping]&#x3D;&quot;false&quot;
+                    [minFractionDigits]&#x3D;&quot;0&quot; [maxFractionDigits]&#x3D;&quot;0&quot;
+                    [disabled]&#x3D;&quot;!isEditable&quot;
+                    &gt;
+                &lt;/p-inputNumber&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./ticket.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../../../library.scss&#x27;;
+
+.titulo{
+    font-size: 18px;
+    color: $wine;
+    font-weight: 700;
+    font-family: $font-secundaria;
+}
+
+.subtitulo {
+    color: $grey-item;
+    font-weight: 600;
+    font-family: $font-secundaria;
+}
+
+.ticket {
+    top: 318px;
+    left: 223px;
+    width: 336px;
+    // height: 150px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 9px #0000004D;
+    border: 2px solid $wine;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+.ticket-values {
+    width: 305px;
+    height: 81px;
+    margin: 12px 0;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 9px #00000073;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.ticket-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 51px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div     class="ticket m-3 d-flex flex-column justify-content-center align-items-center"    (click)="toggle($event)">    <div class="d-flex">        <span class="titulo my-2">RECEPCIÓN</span>        <i             class="fa-regular fa-circle-xmark txt-wine"            [style]="{\'position\': \'relative\', \'left\': \'99px\',\'top\': \'5px\'}"            #botonBorrar            (click)="$event.stopPropagation(); deleteConfig(ticket)"            *ngIf="isEditable"        ></i>    </div>    <div         class="d-flex ticket-values justify-content-around"        #ticketTemplate        (click)="$event.stopPropagation()"    >        <div class="ticket-input w-50 justify-content-around">            <span class="mt-4 subtitulo">                MINITICKET            </span>            <div class="w-50">                <p-inputNumber                     [showButtons]="true"                    [min]="0"                    [max]="99"                    [(ngModel)]="ticket.tickets.miniticket"                    buttonLayout="horizontal"                    spinnerMode="horizontal"                    decrementButtonClass="p-button-danger"                    incrementButtonClass="p-button-success"                    incrementButtonIcon="pi pi-plus"                     decrementButtonIcon="pi pi-minus"                    (ngModelChange)="onChange()"                    [disabled]="!isEditable"                    >                </p-inputNumber>            </div>        </div>        <div class="ticket-input w-50 justify-content-around">            <span class="mt-4 subtitulo">                TICKET            </span>            <div class="w-50">                <p-inputNumber                     [showButtons]="true"                    [min]="0"                    [max]="99"                    [(ngModel)]="ticket.tickets.ticket"                    (ngModelChange)="onChange()"                    buttonLayout="horizontal"                    spinnerMode="horizontal"                    decrementButtonClass="p-button-danger"                    incrementButtonClass="p-button-success"                    incrementButtonIcon="pi pi-plus"                     decrementButtonIcon="pi pi-minus"                    [useGrouping]="false"                    [minFractionDigits]="0" [maxFractionDigits]="0"                    [disabled]="!isEditable"                    >                </p-inputNumber>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'TicketComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TicketComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

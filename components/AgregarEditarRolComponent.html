@@ -1,0 +1,1635 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  AgregarEditarRolComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-agregar-editar-rol</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>agregar-editar-rol.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>agregar-editar-rol.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#form" >form</a>
+                            </li>
+                            <li>
+                                <a href="#formulario" >formulario</a>
+                            </li>
+                            <li>
+                                <a href="#formularioBotones" >formularioBotones</a>
+                            </li>
+                            <li>
+                                <a href="#loading" >loading</a>
+                            </li>
+                            <li>
+                                <a href="#menu" >menu</a>
+                            </li>
+                            <li>
+                                <a href="#separador" >separador</a>
+                            </li>
+                            <li>
+                                <a href="#separadorTotal" >separadorTotal</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aceptar" >aceptar</a>
+                            </li>
+                            <li>
+                                <a href="#contador" >contador</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#salir" >salir</a>
+                            </li>
+                            <li>
+                                <a href="#selectMenu" >selectMenu</a>
+                            </li>
+                            <li>
+                                <a href="#selectPermiso" >selectPermiso</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, location: <a href="https://angular.io/api/common/Location" target="_blank">Location</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="182" class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:182</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/Location" target="_blank" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aceptar"></a>
+                    <span class="name">
+                        <span ><b>aceptar</b></span>
+                        <a href="#aceptar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>aceptar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="293"
+                            class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:293</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contador"></a>
+                    <span class="name">
+                        <span ><b>contador</b></span>
+                        <a href="#contador"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>contador()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="195"
+                            class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="192"
+                            class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:192</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="salir"></a>
+                    <span class="name">
+                        <span ><b>salir</b></span>
+                        <a href="#salir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>salir()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="290"
+                            class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectMenu"></a>
+                    <span class="name">
+                        <span ><b>selectMenu</b></span>
+                        <a href="#selectMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectMenu(numero: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="273"
+                            class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:273</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>numero</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectPermiso"></a>
+                    <span class="name">
+                        <span ><b>selectPermiso</b></span>
+                        <a href="#selectPermiso"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectPermiso(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="277"
+                            class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:277</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="form"></a>
+                    <span class="name">
+                        <span ><b>form</b></span>
+                        <a href="#form"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="21" class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formulario"></a>
+                    <span class="name">
+                        <span ><b>formulario</b></span>
+                        <a href="#formulario"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    id: 1,
+    nombre: &#x27;&#x27;,
+    rolId: 1,
+    nombreRol: 1,
+    permisos: [
+      {
+        id: 1,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-apple&#x27;,
+        color: &#x27;#72AC37&#x27;,
+        nombre: &#x27;editar&#x27;,
+        menuId: 1,
+        accesoId: 1,
+        valor: false
+      },
+      {
+        id: 2,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-app-store&#x27;,
+        color: &#x27;#ADEAC2&#x27;,
+        nombre: &#x27;modificar&#x27;,
+        menuId: 1,
+        accesoId: 1,
+        valor: false
+      }
+      ,
+      {
+        id: 3,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-cc-apple-pay&#x27;,
+        color: &#x27;#581AC0&#x27;,
+        nombre: &#x27;eliminar&#x27;,
+        menuId: 1,
+        accesoId: 1,
+        valor: false
+      },
+      {
+        id: 4,
+        nombrePermiso: &#x27;ocupada&#x27;,
+        icon: &#x27;fab fa-centos&#x27;,
+        color: &#x27;#BD2BB9&#x27;,
+        nombre: &#x27;modificar&#x27;,
+        menuId: 1,
+        accesoId: 2,
+        valor: false
+      },
+      {
+        id: 5,
+        nombrePermiso: &#x27;ocupada&#x27;,
+        icon: &#x27;fab fa-creative-commons-by&#x27;,
+        color: &#x27;#BD2BB9&#x27;,
+        nombre: &#x27;nombre&#x27;,
+        menuId: 1,
+        accesoId: 2,
+        valor: false
+      },
+      {
+        id: 6,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-chrome&#x27;,
+        color: &#x27;#BD2BB9&#x27;,
+        nombre: &#x27;papa&#x27;,
+        menuId: 1,
+        accesoId: 3,
+        valor: false
+      },
+      {
+        id: 7,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-codiepie&#x27;,
+        color: &#x27;#44EC95&#x27;,
+        nombre: &#x27;lele&#x27;,
+        menuId: 1,
+        accesoId: 3,
+        valor: false
+      },
+      {
+        id: 8,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-cloudsmith&#x27;,
+        color: &#x27;#F1BE98&#x27;,
+        nombre: &#x27;carro&#x27;,
+        menuId: 1,
+        accesoId: 4,
+        valor: false
+      },
+      {
+        id: 9,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-css3-alt&#x27;,
+        color: &#x27;#738D7D&#x27;,
+        nombre: &#x27;xl4- 4&#x27;,
+        menuId: 1,
+        accesoId: 5,
+        valor: false
+      },
+      {
+        id: 10,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-css3-alt&#x27;,
+        color: &#x27;#C28FF5&#x27;,
+        nombre: &#x27;modificar&#x27;,
+        menuId: 1,
+        accesoId: 5,
+        valor: false
+      },
+      {
+        id: 11,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-css3-alt&#x27;,
+        color: &#x27;#C28FF5&#x27;,
+        nombre: &#x27;no modificar&#x27;,
+        menuId: 1,
+        accesoId: 5,
+        valor: false
+      },
+      {
+        id: 12,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-creative-commons-pd-alt&#x27;,
+        color: &#x27;#44EC95&#x27;,
+        nombre: &#x27;modificar&#x27;,
+        menuId: 1,
+        accesoId: 6,
+        valor: false
+      },
+      {
+        id: 13,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-creative-commons-sampling&#x27;,
+        color: &#x27;#44EC95&#x27;,
+        nombre: &#x27;cobrar&#x27;,
+        menuId: 2,
+        accesoId: 2,
+        valor: false
+      },
+      {
+        id: 14,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-bitcoin&#x27;,
+        color: &#x27;#2D23C0&#x27;,
+        nombre: &#x27;icono&#x27;,
+        menuId: 2,
+        accesoId: 2,
+        valor: false
+      },
+      {
+        id: 15,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-black-tie&#x27;,
+        color: &#x27;#44EC95&#x27;,
+        nombre: &#x27;tangamandapio&#x27;,
+        menuId: 2,
+        accesoId: 2,
+        valor: false
+      }
+    ]
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formularioBotones"></a>
+                    <span class="name">
+                        <span ><b>formularioBotones</b></span>
+                        <a href="#formularioBotones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loading"></a>
+                    <span class="name">
+                        <span ><b>loading</b></span>
+                        <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="menu"></a>
+                    <span class="name">
+                        <span ><b>menu</b></span>
+                        <a href="#menu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="separador"></a>
+                    <span class="name">
+                        <span ><b>separador</b></span>
+                        <a href="#separador"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="separadorTotal"></a>
+                    <span class="name">
+                        <span ><b>separadorTotal</b></span>
+                        <a href="#separadorTotal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/home/modals/roles-y-permisos/vistas/agregar-editar-rol/agregar-editar-rol.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormControl, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import {Location} from &#x27;@angular/common&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+@Component({
+  selector: &#x27;app-agregar-editar-rol&#x27;,
+  templateUrl: &#x27;agregar-editar-rol.component.html&#x27;,
+  styleUrls: [&#x27;agregar-editar-rol.component.scss&#x27;]
+})
+
+
+export class AgregarEditarRolComponent implements OnInit {
+
+  menu: number &#x3D; 1;
+  separador: any[] &#x3D; []
+  separadorTotal: any[] &#x3D; []
+  loading &#x3D; false
+  display &#x3D; true
+
+  form: any;
+  formularioBotones: any;
+
+  formulario&#x3D;{
+    id: 1,
+    nombre: &#x27;&#x27;,
+    rolId: 1,
+    nombreRol: 1,
+    permisos: [
+      {
+        id: 1,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-apple&#x27;,
+        color: &#x27;#72AC37&#x27;,
+        nombre: &#x27;editar&#x27;,
+        menuId: 1,
+        accesoId: 1,
+        valor: false
+      },
+      {
+        id: 2,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-app-store&#x27;,
+        color: &#x27;#ADEAC2&#x27;,
+        nombre: &#x27;modificar&#x27;,
+        menuId: 1,
+        accesoId: 1,
+        valor: false
+      }
+      ,
+      {
+        id: 3,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-cc-apple-pay&#x27;,
+        color: &#x27;#581AC0&#x27;,
+        nombre: &#x27;eliminar&#x27;,
+        menuId: 1,
+        accesoId: 1,
+        valor: false
+      },
+      {
+        id: 4,
+        nombrePermiso: &#x27;ocupada&#x27;,
+        icon: &#x27;fab fa-centos&#x27;,
+        color: &#x27;#BD2BB9&#x27;,
+        nombre: &#x27;modificar&#x27;,
+        menuId: 1,
+        accesoId: 2,
+        valor: false
+      },
+      {
+        id: 5,
+        nombrePermiso: &#x27;ocupada&#x27;,
+        icon: &#x27;fab fa-creative-commons-by&#x27;,
+        color: &#x27;#BD2BB9&#x27;,
+        nombre: &#x27;nombre&#x27;,
+        menuId: 1,
+        accesoId: 2,
+        valor: false
+      },
+      {
+        id: 6,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-chrome&#x27;,
+        color: &#x27;#BD2BB9&#x27;,
+        nombre: &#x27;papa&#x27;,
+        menuId: 1,
+        accesoId: 3,
+        valor: false
+      },
+      {
+        id: 7,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-codiepie&#x27;,
+        color: &#x27;#44EC95&#x27;,
+        nombre: &#x27;lele&#x27;,
+        menuId: 1,
+        accesoId: 3,
+        valor: false
+      },
+      {
+        id: 8,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-cloudsmith&#x27;,
+        color: &#x27;#F1BE98&#x27;,
+        nombre: &#x27;carro&#x27;,
+        menuId: 1,
+        accesoId: 4,
+        valor: false
+      },
+      {
+        id: 9,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-css3-alt&#x27;,
+        color: &#x27;#738D7D&#x27;,
+        nombre: &#x27;xl4- 4&#x27;,
+        menuId: 1,
+        accesoId: 5,
+        valor: false
+      },
+      {
+        id: 10,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-css3-alt&#x27;,
+        color: &#x27;#C28FF5&#x27;,
+        nombre: &#x27;modificar&#x27;,
+        menuId: 1,
+        accesoId: 5,
+        valor: false
+      },
+      {
+        id: 11,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-css3-alt&#x27;,
+        color: &#x27;#C28FF5&#x27;,
+        nombre: &#x27;no modificar&#x27;,
+        menuId: 1,
+        accesoId: 5,
+        valor: false
+      },
+      {
+        id: 12,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-creative-commons-pd-alt&#x27;,
+        color: &#x27;#44EC95&#x27;,
+        nombre: &#x27;modificar&#x27;,
+        menuId: 1,
+        accesoId: 6,
+        valor: false
+      },
+      {
+        id: 13,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-creative-commons-sampling&#x27;,
+        color: &#x27;#44EC95&#x27;,
+        nombre: &#x27;cobrar&#x27;,
+        menuId: 2,
+        accesoId: 2,
+        valor: false
+      },
+      {
+        id: 14,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-bitcoin&#x27;,
+        color: &#x27;#2D23C0&#x27;,
+        nombre: &#x27;icono&#x27;,
+        menuId: 2,
+        accesoId: 2,
+        valor: false
+      },
+      {
+        id: 15,
+        nombrePermiso: &#x27;libre&#x27;,
+        icon: &#x27;fab fa-black-tie&#x27;,
+        color: &#x27;#44EC95&#x27;,
+        nombre: &#x27;tangamandapio&#x27;,
+        menuId: 2,
+        accesoId: 2,
+        valor: false
+      }
+    ]
+  }
+
+  constructor(
+    private fb: FormBuilder,
+    private location:Location,
+    private router: Router
+  ) {
+    this.contador();
+  }
+
+  ngOnInit(): void {
+  }
+
+  contador() {
+    let form: any &#x3D; {}
+
+    let menus &#x3D; this.formulario.permisos.map((permiso) &#x3D;&gt; {
+      return permiso.menuId
+    })
+
+    let menusId &#x3D; menus.filter((item: any, index: any) &#x3D;&gt; {
+      return menus.indexOf(item) &#x3D;&#x3D;&#x3D; index;
+    })
+
+    menusId.forEach((dato: any) &#x3D;&gt; {
+      let separacion &#x3D; dato
+      let repeticion:any &#x3D; {}
+      let permisos: any[] &#x3D; []
+
+      this.formulario.permisos.forEach((dato2) &#x3D;&gt; {
+        if (separacion &#x3D;&#x3D; dato2.menuId) {
+          repeticion[dato2.accesoId] &#x3D; (repeticion[dato2.accesoId] || 0) + 1;
+          permisos.push(dato2)
+        }
+      })
+
+      this.separador.push({
+        menuId: separacion,
+        permisos: permisos,
+        repeticion:repeticion
+      })
+    })
+
+    this.separador.forEach(dato &#x3D;&gt;{
+      let separacion &#x3D; dato.menuId
+      let componente &#x3D; dato.repeticion
+      let grupal: any[] &#x3D; []
+      let unico: any[] &#x3D; []
+
+      Object.keys(componente).forEach( d &#x3D;&gt;{
+        let id &#x3D; d;
+        let valor &#x3D; componente[d]
+        let agrupado : any[] &#x3D; []
+
+        if(valor &gt; 1){
+          agrupado &#x3D; dato.permisos.filter((filtro:any) &#x3D;&gt; filtro.accesoId &#x3D;&#x3D; id)
+          grupal.push({
+            accesoId: id,
+            icon: agrupado[0].icon,
+            nombre: agrupado[0].nombrePermiso,
+            color: agrupado[0].color,
+            permisos: agrupado
+          })
+        }
+
+        if(valor &#x3D;&#x3D; 1){
+          let solo &#x3D; dato.permisos.filter((filtro:any) &#x3D;&gt; filtro.accesoId &#x3D;&#x3D; id)
+          unico.push(...solo)
+        }
+      })
+
+      this.separadorTotal.push({
+        idAcceso: separacion,
+        modal:grupal,
+        button: unico
+      })
+    })
+
+    this.formulario.permisos.map( (d) &#x3D;&gt; {
+      form[d.id] &#x3D; new FormControl(d.valor)
+    })
+
+    this.formularioBotones &#x3D; new FormGroup(form)
+
+    this.form &#x3D; this.fb.group({
+      nombre: [this.formulario.nombre, Validators.required],
+      permisos: this.formularioBotones
+    })
+    this.loading&#x3D;true
+  }
+
+  selectMenu(numero: number) {
+    this.menu &#x3D; numero
+  }
+
+  selectPermiso(id:number){
+
+    // let cod &#x3D; String(id)
+
+    // let valor &#x3D;  this.form.getFormGroup()
+
+    // console.log(valor)
+
+    // this.form.controls[&#x27;permisos&#x27;].patchValue({
+    //   id: !valor
+    // })
+  }
+
+  salir(){
+    this.location.back()
+  }
+  aceptar(){
+    this.router.navigate([&#x60;/hotel&#x60;]);
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog header&#x3D;&quot;Roles y permisos&quot; [(visible)]&#x3D;&quot;display&quot; [closable]&#x3D;&quot;false&quot;
+[modal]&#x3D;&quot;true&quot; [draggable]&#x3D;&quot;false&quot; [showHeader]&#x3D;&quot;true&quot;&gt;
+
+&lt;app-loader-big-component *ngIf&#x3D;&quot;!loading ; else formComponent&quot;&gt;&lt;/app-loader-big-component&gt;
+
+  &lt;!-- &lt;div class&#x3D;&quot;header-modal&quot;&gt;Roles y permisos&lt;/div&gt; --&gt;
+  &lt;ng-template #formComponent&gt;
+    &lt;form [formGroup]&#x3D;&quot;form&quot; id&#x3D;&quot;agregarPermisoModal&quot;&gt;
+      &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+        &lt;!-- INPUT PARA PODER GUARDAR EL NOMBRE --&gt;
+        &lt;div class&#x3D;&quot;input-rol&quot;&gt;
+          &lt;label&gt;NOMBRE DE ROL&lt;/label&gt;
+          &lt;span class&#x3D;&quot;p-input-icon-right&quot;&gt;
+            &lt;i *ngIf&#x3D;&quot;form.controls.nombre.touched &#x3D;&#x3D; false &amp;&amp; form.controls.nombre.value &#x3D;&#x3D; &#x27;&#x27;&quot; style&#x3D;&quot;color: #495057;&quot;
+                  class&#x3D;&quot;fa-regular fa-user&quot;&gt;&lt;/i&gt;
+                &lt;i *ngIf&#x3D;&quot;form.controls.nombre.status &#x3D;&#x3D; &#x27;INVALID&#x27; &amp;&amp; form.controls.nombre.touched &#x3D;&#x3D; true&quot;
+                  class&#x3D;&quot;fa-regular fa-user&quot; style&#x3D;&quot;color: red;&quot;&gt;&lt;/i&gt;
+                &lt;i *ngIf&#x3D;&quot;form.controls.nombre.status &#x3D;&#x3D; &#x27;VALID&#x27;&quot; class&#x3D;&quot;fa-regular fa-user&quot; style&#x3D;&quot;color: #0AC917;&quot;&gt;&lt;/i&gt;
+            &lt;input formControlName&#x3D;&quot;nombre&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;NOMBRE DE ROL&quot;&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;permisos&quot;&gt;
+          &lt;!-- MENU DE BOTONES  --&gt;
+          &lt;div class&#x3D;&quot;permisos-select_menu&quot;&gt;
+            &lt;i class&#x3D;&quot;fa-sharp fa-solid fa-house&quot; (click)&#x3D;&quot;selectMenu(1)&quot; [class.activate]&#x3D;&quot;menu &#x3D;&#x3D; 1&quot;&gt;&lt;/i&gt;
+            &lt;i class&#x3D;&quot;fa-regular fa-user&quot; (click)&#x3D;&quot;selectMenu(2)&quot; [class.activate]&#x3D;&quot;menu &#x3D;&#x3D; 2&quot;&gt;&lt;/i&gt;
+            &lt;i class&#x3D;&quot;fa-solid fa-bars&quot;  [class.activate]&#x3D;&quot;menu &#x3D;&#x3D; 3&quot;&gt;&lt;/i&gt;
+            &lt;i class&#x3D;&quot;fa-solid fa-hand-holding-dollar&quot;  [class.activate]&#x3D;&quot;menu &#x3D;&#x3D; 4&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;!-- CAJA DONDE SE CREAN TODOS LOS BOTONES --&gt;
+          &lt;!-- &lt;div *ngIf&#x3D;&quot;separadorTotal[menu - 1].modal.length &#x3D;&#x3D; 0 &amp;&amp;
+            separadorTotal[menu - 1].button.length &#x3D;&#x3D; 0&quot; class&#x3D;&quot;container-nothing&quot;&gt; --&gt;
+
+          &lt;!-- &lt;/div&gt; --&gt;
+          &lt;div formGroupName&#x3D;&quot;permisos&quot; class&#x3D;&quot;body-permisos&quot;&gt;
+            &lt;div class&#x3D;&quot;permisos-select_buttons&quot; *ngFor&#x3D;&quot;let boton of separadorTotal[menu - 1].modal&quot;&gt;
+              &lt;!-- BOTON DEL MODAL --&gt;
+              &lt;button  class&#x3D;&quot;botton-desplegable&quot; [ngStyle]&#x3D;&quot;{ color: boton.color }&quot; pButton label&#x3D;&quot;Basic&quot;
+                (click)&#x3D;&quot;op.toggle($event)&quot;&gt;
+                &lt;div class&#x3D;&quot;icon-arrow&quot;&gt;
+                  &lt;i class&#x3D;&quot;fa-solid fa-chevron-down&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;i [class]&#x3D;&quot;boton.icon&quot;&gt;&lt;/i&gt;
+                {{ boton.nombre }}
+              &lt;/button&gt;
+              &lt;!-- MODAL --&gt;
+              &lt;p-overlayPanel #op [showCloseIcon]&#x3D;&quot;false&quot;&gt;
+                &lt;ng-template pTemplate class&#x3D;&quot;container-button_opcions&quot;&gt;
+                  &lt;div class&#x3D;&quot;content-buttton_toggle&quot;&gt;
+                    &lt;button *ngFor&#x3D;&quot;let permiso of boton.permisos&quot; (click)&#x3D;&quot;selectPermiso(permiso.id)&quot;
+                      class&#x3D;&quot;button--inside_desplegable&quot;
+                      [class.activate]&#x3D;&quot;permiso.valor&quot;&gt;
+                      {{ permiso.nombre }}
+                    &lt;/button&gt;
+                    &lt;br /&gt;
+                    &lt;button class&#x3D;&quot;button--inside_desplegable&quot;&gt;
+                      Seleccionar todo
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/ng-template&gt;
+              &lt;/p-overlayPanel&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;permisos-select_buttons&quot; *ngFor&#x3D;&quot;let boton of separadorTotal[menu - 1].button&quot;&gt;
+              &lt;!-- BOTON SENCILLO  --&gt;
+              &lt;button class&#x3D;&quot;botton-desplegable&quot; [ngStyle]&#x3D;&quot;{ color: boton.color }&quot; [class.activate]&#x3D;&quot;boton.valor&quot;
+                &gt;
+                &lt;i [class]&#x3D;&quot;boton.icon&quot;&gt;&lt;/i&gt;
+                {{ boton.nombre }}
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;button class&#x3D;&quot;button-select-all&quot;&gt;TODOS LOS ESTADOS&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/ng-template&gt;
+  &lt;ng-template pTemplate&#x3D;&quot;footer&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-footer-content&quot;&gt;
+      &lt;button class&#x3D;&quot;button-modal button-salir&quot; (click)&#x3D;&quot;salir()&quot;&gt;
+        &lt;div class&#x3D;&quot;icon&quot;&gt;
+          &lt;i class&#x3D;&quot;fas icon-icon-metro-exit&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text&quot;&gt;Salir&lt;/div&gt;
+      &lt;/button&gt;
+      &lt;button class&#x3D;&quot;button-modal button-aceptar&quot; (click)&#x3D;&quot;aceptar()&quot;&gt;
+        &lt;div class&#x3D;&quot;icon&quot;&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-check&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text&quot;&gt;Aceptar&lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/ng-template&gt;
+&lt;/p-dialog&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>agregar-editar-rol.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;../../../../../../library.scss&quot;;
+
+.input-rol {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 26vw;
+  height: 12vh;
+  margin: 15px auto;
+  padding: 0 20px;
+  justify-content: center;
+  border-radius: $border-radius-tittle;
+  box-shadow: $shadow-modal-tittle;
+  font-family: $font-principal;
+}
+
+.permisos {
+  border-radius: $border-radius-tittle;
+  box-shadow: $shadow-modal-tittle;
+  margin: 10px;
+  padding: 5px 25px;
+  width: 60vw;
+
+  &amp; .permisos-select_menu {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &amp; i {
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      font-size: 30px;
+      color: $wine;
+      text-align: center;
+      border-bottom: 2px solid;
+    }
+  }
+
+
+  .body-permisos {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: $border-button;
+    box-shadow: $shadow-modal-tittle;
+  }
+
+  .permisos-select_buttons {
+    margin: 2px;
+    padding: 4px;
+
+    &amp; .botton-desplegable {
+      border-radius: $border-button;
+      box-shadow: $shadow-modal-tittle;
+      display: flex;
+      background-color: #fff;
+      border: none;
+      width: 100px;
+      font-weight: 500;
+      height: 45px;
+      font-size: 15px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    &amp; .activate {
+      background-color: $wine;
+      color: #fff;
+    }
+
+    &amp; i {
+      font-size: 20px;
+    }
+  }
+}
+
+.button--inside_desplegable {
+  width: 180px;
+  background-color: #fff;
+  border: none;
+  color: $grey-item;
+  border-radius: $border-button;
+  box-shadow: $shadow-modal-tittle;
+  margin: 2px 8px;
+
+  &amp;:hover{
+    background-color: $wine-hover;
+    color: #fff;
+  }
+
+  &amp; .activate {
+    width: 180px;
+    background-color: $wine;
+    border: none;
+    color: #fff;
+    border-radius: $border-button;
+    box-shadow: $shadow-modal-tittle;
+    margin: 2px 8px;
+  }
+}
+
+.activate {
+  border-radius: $border-button;
+  box-shadow: $shadow-modal-tittle;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 6px;
+  transition: all 0.4s;
+  border-bottom: none !important;
+
+}
+
+.container-button_opcions {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-buttton_toggle {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-select-all {
+  border-radius: $border-button;
+  box-shadow: $shadow-modal-tittle;
+  color: $grey-item;
+  width: 80%;
+  background-color: #fff;
+  border: none;
+  font-size: 25px;
+  margin: 5px 20px;
+  padding: 0 10px;
+  font-weight: 500;
+  &amp; .activate {
+    color: #fff;
+    background-color: $wine;
+  }
+}
+
+.icon-arrow{
+  color: $wine;
+  position: relative;
+  top: 33px;
+  left: 40px;
+  &amp; i{
+    font-size: 15px !important;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog header="Roles y permisos" [(visible)]="display" [closable]="false"[modal]="true" [draggable]="false" [showHeader]="true"><app-loader-big-component *ngIf="!loading ; else formComponent"></app-loader-big-component>  <!-- <div class="header-modal">Roles y permisos</div> -->  <ng-template #formComponent>    <form [formGroup]="form" id="agregarPermisoModal">      <div class="modal-body">        <!-- INPUT PARA PODER GUARDAR EL NOMBRE -->        <div class="input-rol">          <label>NOMBRE DE ROL</label>          <span class="p-input-icon-right">            <i *ngIf="form.controls.nombre.touched == false && form.controls.nombre.value == \'\'" style="color: #495057;"                  class="fa-regular fa-user"></i>                <i *ngIf="form.controls.nombre.status == \'INVALID\' && form.controls.nombre.touched == true"                  class="fa-regular fa-user" style="color: red;"></i>                <i *ngIf="form.controls.nombre.status == \'VALID\'" class="fa-regular fa-user" style="color: #0AC917;"></i>            <input formControlName="nombre" type="text" pInputText placeholder="NOMBRE DE ROL">          </span>        </div>        <div class="permisos">          <!-- MENU DE BOTONES  -->          <div class="permisos-select_menu">            <i class="fa-sharp fa-solid fa-house" (click)="selectMenu(1)" [class.activate]="menu == 1"></i>            <i class="fa-regular fa-user" (click)="selectMenu(2)" [class.activate]="menu == 2"></i>            <i class="fa-solid fa-bars"  [class.activate]="menu == 3"></i>            <i class="fa-solid fa-hand-holding-dollar"  [class.activate]="menu == 4"></i>          </div>          <!-- CAJA DONDE SE CREAN TODOS LOS BOTONES -->          <!-- <div *ngIf="separadorTotal[menu - 1].modal.length == 0 &&            separadorTotal[menu - 1].button.length == 0" class="container-nothing"> -->          <!-- </div> -->          <div formGroupName="permisos" class="body-permisos">            <div class="permisos-select_buttons" *ngFor="let boton of separadorTotal[menu - 1].modal">              <!-- BOTON DEL MODAL -->              <button  class="botton-desplegable" [ngStyle]="{ color: boton.color }" pButton label="Basic"                (click)="op.toggle($event)">                <div class="icon-arrow">                  <i class="fa-solid fa-chevron-down"></i>                </div>                <i [class]="boton.icon"></i>                {{ boton.nombre }}              </button>              <!-- MODAL -->              <p-overlayPanel #op [showCloseIcon]="false">                <ng-template pTemplate class="container-button_opcions">                  <div class="content-buttton_toggle">                    <button *ngFor="let permiso of boton.permisos" (click)="selectPermiso(permiso.id)"                      class="button--inside_desplegable"                      [class.activate]="permiso.valor">                      {{ permiso.nombre }}                    </button>                    <br />                    <button class="button--inside_desplegable">                      Seleccionar todo                    </button>                  </div>                </ng-template>              </p-overlayPanel>            </div>            <div class="permisos-select_buttons" *ngFor="let boton of separadorTotal[menu - 1].button">              <!-- BOTON SENCILLO  -->              <button class="botton-desplegable" [ngStyle]="{ color: boton.color }" [class.activate]="boton.valor"                >                <i [class]="boton.icon"></i>                {{ boton.nombre }}              </button>            </div>            <button class="button-select-all">TODOS LOS ESTADOS</button>          </div>        </div>      </div>    </form>  </ng-template>  <ng-template pTemplate="footer">    <div class="modal-footer-content">      <button class="button-modal button-salir" (click)="salir()">        <div class="icon">          <i class="fas icon-icon-metro-exit"></i>        </div>        <div class="text">Salir</div>      </button>      <button class="button-modal button-aceptar" (click)="aceptar()">        <div class="icon">          <i class="fa-solid fa-check"></i>        </div>        <div class="text">Aceptar</div>      </button>    </div>  </ng-template></p-dialog></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'AgregarEditarRolComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AgregarEditarRolComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

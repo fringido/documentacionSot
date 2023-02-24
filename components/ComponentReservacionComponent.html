@@ -1,0 +1,919 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  ComponentReservacionComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/component-reservacion/component-reservacion.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-component-reservacion</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./component-reservacion.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./component-reservacion.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fechaEntrada" >fechaEntrada</a>
+                            </li>
+                            <li>
+                                <a href="#fechaSalida" >fechaSalida</a>
+                            </li>
+                            <li>
+                                <a href="#idCliente" >idCliente</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#liberarVariables" >liberarVariables</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#reservacion" >reservacion</a>
+                            </li>
+                            <li>
+                                <a href="#selectId" >selectId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/component-reservacion/component-reservacion.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="reservacion"></a>
+                        <b>reservacion</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="11" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/component-reservacion/component-reservacion.component.ts:11</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectId"></a>
+                        <b>selectId</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="12" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/component-reservacion/component-reservacion.component.ts:12</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="liberarVariables"></a>
+                    <span class="name">
+                        <span ><b>liberarVariables</b></span>
+                        <a href="#liberarVariables"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>liberarVariables()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="24"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/component-reservacion/component-reservacion.component.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="20"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/component-reservacion/component-reservacion.component.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fechaEntrada"></a>
+                    <span class="name">
+                        <span ><b>fechaEntrada</b></span>
+                        <a href="#fechaEntrada"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="14" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/component-reservacion/component-reservacion.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fechaSalida"></a>
+                    <span class="name">
+                        <span ><b>fechaSalida</b></span>
+                        <a href="#fechaSalida"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/component-reservacion/component-reservacion.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idCliente"></a>
+                    <span class="name">
+                        <span ><b>idCliente</b></span>
+                        <a href="#idCliente"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/component-reservacion/component-reservacion.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
+import moment from &#x27;moment&#x27;;
+
+@Component({
+  selector: &#x27;app-component-reservacion&#x27;,
+  templateUrl: &#x27;./component-reservacion.component.html&#x27;,
+  styleUrls: [&#x27;./component-reservacion.component.scss&#x27;]
+})
+export class ComponentReservacionComponent implements OnInit {
+
+  @Input() reservacion: any;
+  @Input() selectId: any;
+
+  fechaEntrada!: string;
+  fechaSalida!: string;
+  idCliente!: string;
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.liberarVariables()
+  }
+
+  liberarVariables() {
+    //crea una fecha con la fecha de entrada y la fecha de salida
+    let fechaInicioF &#x3D; moment(this.reservacion.fechaEntrada).format(&quot;YYYY/MM/DD&quot;);
+    let fechaFinF &#x3D; moment(this.reservacion.fechaSalida).format(&quot;YYYY/MM/DD&quot;);
+    let fechaInicio &#x3D; new Date(fechaInicioF);
+    let fechaFin &#x3D; new Date(fechaFinF);
+
+    const months &#x3D; [
+      &quot;Enero&quot;,
+      &quot;Febrero&quot;,
+      &quot;Marzo&quot;,
+      &quot;Abril&quot;,
+      &quot;Mayo&quot;,
+      &quot;Junio&quot;,
+      &quot;Julio&quot;,
+      &quot;Agosto&quot;,
+      &quot;Septiembre&quot;,
+      &quot;Octubre&quot;,
+      &quot;Noviembre&quot;,
+      &quot;Diciembre&quot;,
+    ];
+    const monthsNumber &#x3D; [
+      &quot;01&quot;,
+      &quot;02&quot;,
+      &quot;03&quot;,
+      &quot;04&quot;,
+      &quot;05&quot;,
+      &quot;06&quot;,
+      &quot;07&quot;,
+      &quot;08&quot;,
+      &quot;09&quot;,
+      &quot;10&quot;,
+      &quot;11&quot;,
+      &quot;12&quot;,
+    ];
+    this.fechaEntrada &#x3D;
+      months[fechaInicio.getMonth()] +
+      &quot; &quot; +
+      fechaInicio.getDate() +
+      &quot;/&quot; +
+      monthsNumber[fechaInicio.getMonth()] +
+      &quot;/&quot; +
+      fechaInicio.getFullYear();
+    this.fechaSalida &#x3D;
+      months[fechaFin.getMonth()] +
+      &quot; &quot; +
+      fechaFin.getDate() +
+      &quot;/&quot; +
+      monthsNumber[fechaFin.getMonth()] +
+      &quot;/&quot; +
+      fechaFin.getFullYear();
+    if (this.reservacion.idCliente &#x3D;&#x3D; &quot;&quot;) {
+      this.idCliente &#x3D; &quot;---&quot;;
+    } else {
+      this.idCliente &#x3D; this.reservacion.idCliente;
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div  class&#x3D;&quot;car__reservacion&quot; [class.selected]&#x3D;&quot;reservacion.idReservacion &#x3D;&#x3D; selectId&quot;&gt;
+  &lt;div class&#x3D;&quot;car__reservacion-tittle&quot;&gt;
+      RESERVACIÓN &lt;br&gt;&lt;b class&#x3D;&quot;red&quot;&gt;{{reservacion.codigoReserva.toUpperCase() }}&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;hr class&#x3D;&quot;color&quot;&gt;
+  &lt;div class&#x3D;&quot;container-cards container&quot;&gt;
+      &lt;!-- Primera tabla de la izquierda --&gt;
+      &lt;div class&#x3D;&quot;left1 estilo_car text_format&quot;&gt;
+          &lt;div class&#x3D;&quot;row w-100 datos&quot;&gt;
+              &lt;div class&#x3D;&quot;col-8 aling--L&quot;&gt;
+                  &lt;b&gt;{{ reservacion.nombre }}&lt;/b&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-4 aling--L&quot;&gt;
+                  &lt;p title&#x3D;&quot;Id Cliente&quot;&gt;
+                      &lt;i class&#x3D;&quot;fas fa-users aling--L&quot;&gt;&lt;/i&gt; {{ idCliente }}
+                  &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-8 aling--L&quot;&gt;
+
+                  &lt;i class&#x3D;&quot;fas fa-at&quot; style&#x3D;&quot;display: contents;&quot;&gt;&lt;/i&gt;{{ reservacion.email }}
+
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-4 aling--L&quot;&gt;
+                  &lt;i class&#x3D;&quot;fas fa-phone&quot;&gt;&lt;/i&gt; {{ reservacion.telefono }}
+              &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- Tabla de la derecha --&gt;
+      &lt;div class&#x3D;&quot;rigth estilo_carR&quot;&gt;
+          &lt;div class&#x3D;&quot;row w-100 tabla&quot;&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--L&quot;&gt;Fecha de entrada&lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--R&quot;&gt;
+                  {{ fechaEntrada }}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--L&quot;&gt;Fecha de salida&lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--R&quot;&gt;
+                  {{ fechaSalida }}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--L&quot;&gt;Personas extra&lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--R&quot;&gt;
+                  {{ reservacion.personasExtra }}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--L&quot;&gt;Paquete&lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--R&quot;&gt;
+                  {{ reservacion.paquetes }}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--L&quot;&gt;Descuento&lt;/div&gt;
+              &lt;br /&gt;
+              &lt;br /&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--R&quot;&gt;
+                  {{ reservacion.descuento | currency: &quot;&quot;:&quot;$&quot; }}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--L&quot;&gt;Total (MXN)&lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-6 aling--R&quot;&gt;
+                  {{ reservacion.valorConIVA | currency: &quot;&quot;:&quot;$&quot; }}
+              &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;hr /&gt;
+      &lt;/div&gt;
+      &lt;!-- Tabla de la izquierda abajo --&gt;
+      &lt;div class&#x3D;&quot;left2 estilo_car&quot;&gt;
+          &lt;div&gt;
+              &lt;b&gt;Observaciones&lt;/b&gt;
+          &lt;/div&gt;
+          &lt;p&gt;{{reservacion.observaciones }}&lt;/p&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./component-reservacion.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;/src/library.scss&#x27;;
+
+
+.car__reservacion {
+  font-family     : &#x27;Rubik&#x27;, sans-serif;
+  box-shadow      : 0pt 0pt 9pt #00000045;
+  border-radius   : 10px;
+  border-width    : 3pt;
+  display         : table-cell;
+  background-color: #FFFFFF;
+  align-self      : center;
+  padding         : 0%;
+  overflow-x      : hidden;
+  cursor          : pointer;
+  width           : 100%;
+  padding-bottom  : 10px;
+  text-align      : center;
+  transition: all 0.3s;
+
+  &amp; hr {
+    width        : 60%;
+    color        : $color-title-grey;
+    margin       : 0 auto !important;
+    // margin-top: -6px;
+    // border-top: 3px solid rgba(0, 0, 0, .1);
+  }
+
+  &amp; .estilo_car {
+    background-color: #D4D4D4;
+    box-shadow      : 0pt 0pt 3pt #00000045;
+    border-radius   : 10px;
+    color           : #707070;
+    margin          : 9px !important;
+    padding         : 9px !important;
+  }
+
+  &amp; .estilo_carR {
+    display         : flex;
+    background-color: #D4D4D4;
+    box-shadow      : 0 0 3pt #00000045;
+    border-radius   : 10px;
+    color           : #707070;
+    margin          : 9px !important;
+    padding         : 5px !important;
+    flex-wrap       : wrap;
+    align-content   : center;
+    justify-content : center;
+  }
+
+  .rigth hr {
+    color : $color-title-grey;
+    width        : 98%;
+    margin-top   : 0;
+    margin-bottom: 5px;
+  }
+}
+
+.car__reservacion.selected {
+  font-family     : &#x27;Rubik&#x27;, sans-serif;
+  box-shadow      : 0pt 0pt 9pt #00000045;
+  border-radius   : 10px;
+  border-width    : 3pt;
+  display         : table-cell;
+  background-color: $wine;
+  align-self      : center;
+  padding         : 0%;
+  margin-right    : 2rem !important;
+  margin-left     : 2rem !important;
+  margin          : 0.8rem;
+  overflow-x      : hidden;
+  cursor          : pointer;
+  width           : 100%;
+  padding-bottom  : 10px;
+  text-align      : center;
+  transition: all 0.3s;
+
+
+  &amp; hr {
+    width : 60%;
+    color : #FFFFFF;
+    margin: 0 auto !important;
+
+  }
+
+  &amp; .estilo_carR {
+    background-color: #fff;
+    box-shadow      : 0pt 0pt 3pt #00000045;
+    border-radius   : 10px;
+    color           : #707070;
+    margin          : 9px !important;
+    padding         : 5px !important;
+  }
+
+  &amp; .estilo_car {
+    background-color: #fff;
+    box-shadow      : 0pt 0pt 3pt #00000045;
+    border-radius   : 10px;
+    color           : #707070;
+    margin          : 9px !important;
+    padding         : 9px !important;
+  }
+
+  &amp; .color {
+    background-color: #fff;
+  }
+
+  &amp; .red {
+    color: #fff;
+  }
+  .rigth .aling--R {
+    color      : $wine;
+    font-weight: 600;
+  }
+
+  .rigth hr {
+    color : $wine;
+    width        : 98%;
+    margin-top   : 0;
+    margin-bottom: 5px;
+  }
+
+  &amp; .car__reservacion-tittle {
+    align-items: center;
+    margin-top : 5px;
+    color      : #fff;
+    font-weight: 500;
+  }
+
+}
+
+
+/*grids para dar forma a los cuadros
+*/
+
+.container-cards {
+  display              : grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-rows   : 1fr 1fr;
+  gap                  : 5px;
+  grid-template-areas  : &quot;left1 rigth&quot;&quot;left2 rigth&quot;;
+}
+
+
+.rigth {
+  grid-area    : rigth;
+  padding-right: -5px;
+}
+
+.left1 {
+  grid-area  : left1;
+  padding-top: 5px;
+}
+
+.left2 {
+  grid-area: left2;
+}
+
+/*da estilos a los cuadros
+*/
+
+.datos {
+  padding: 0px;
+  margin : 0;
+}
+
+.tabla {
+  padding: 0 18px 4px;
+  margin : 0;
+}
+
+.estilo_car p {
+  font-size: 14px;
+}
+
+
+
+
+
+.text_format {
+  font-family: &#x27;Rubik&#x27;, sans-serif;
+  font-size  : 10pt;
+}
+
+.car__reservacion-tittle {
+  align-items  : center;
+  margin-top   : 5px;
+  color        : #707070;
+  margin-bottom: 5px;
+
+}
+
+.red {
+  font-size: 22px;
+  color    : $wine;
+  font-weight: 800;
+}
+
+
+.car__reservacion-carRight {
+  background-color: #D4D4D4;
+  border-radius   : 10px;
+  color           : #707070;
+  margin          : 9px !important;
+  height          : 100%;
+}
+
+.aling--L {
+  text-align   : initial;
+  padding      : 0;
+  padding-right: 2px;
+}
+
+.aling--R {
+  text-align: end;
+  padding   : 0;
+}
+
+.aling--C {
+  text-align: webkit-center;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div  class="car__reservacion" [class.selected]="reservacion.idReservacion == selectId">  <div class="car__reservacion-tittle">      RESERVACIÓN <br><b class="red">{{reservacion.codigoReserva.toUpperCase() }}</b>  </div>  <hr class="color">  <div class="container-cards container">      <!-- Primera tabla de la izquierda -->      <div class="left1 estilo_car text_format">          <div class="row w-100 datos">              <div class="col-8 aling--L">                  <b>{{ reservacion.nombre }}</b>              </div>              <div class="col-4 aling--L">                  <p title="Id Cliente">                      <i class="fas fa-users aling--L"></i> {{ idCliente }}                  </p>              </div>              <div class="col-8 aling--L">                  <i class="fas fa-at" style="display: contents;"></i>{{ reservacion.email }}              </div>              <div class="col-4 aling--L">                  <i class="fas fa-phone"></i> {{ reservacion.telefono }}              </div>          </div>      </div>      <!-- Tabla de la derecha -->      <div class="rigth estilo_carR">          <div class="row w-100 tabla">              <div class="col-6 aling--L">Fecha de entrada</div>              <div class="col-6 aling--R">                  {{ fechaEntrada }}              </div>              <div class="col-6 aling--L">Fecha de salida</div>              <div class="col-6 aling--R">                  {{ fechaSalida }}              </div>              <div class="col-6 aling--L">Personas extra</div>              <div class="col-6 aling--R">                  {{ reservacion.personasExtra }}              </div>              <div class="col-6 aling--L">Paquete</div>              <div class="col-6 aling--R">                  {{ reservacion.paquetes }}              </div>              <div class="col-6 aling--L">Descuento</div>              <br />              <br />              <div class="col-6 aling--R">                  {{ reservacion.descuento | currency: "":"$" }}              </div>              <div class="col-6 aling--L">Total (MXN)</div>              <div class="col-6 aling--R">                  {{ reservacion.valorConIVA | currency: "":"$" }}              </div>          </div>          <hr />      </div>      <!-- Tabla de la izquierda abajo -->      <div class="left2 estilo_car">          <div>              <b>Observaciones</b>          </div>          <p>{{reservacion.observaciones }}</p>      </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'ComponentReservacionComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ComponentReservacionComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

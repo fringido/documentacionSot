@@ -1,0 +1,2408 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  RoomTypesComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/room-types/room-types.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-room-types</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./room-types.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./room-types.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#destroy$" >destroy$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialogService" >dialogService</a>
+                            </li>
+                            <li>
+                                <a href="#habitaciones" >habitaciones</a>
+                            </li>
+                            <li>
+                                <a href="#isIpadMini" >isIpadMini</a>
+                            </li>
+                            <li>
+                                <a href="#isShowingSidenav" >isShowingSidenav</a>
+                            </li>
+                            <li>
+                                <a href="#loader" >loader</a>
+                            </li>
+                            <li>
+                                <a href="#modoAppRoom" >modoAppRoom</a>
+                            </li>
+                            <li>
+                                <a href="#roomsByType" >roomsByType</a>
+                            </li>
+                            <li>
+                                <a href="#roomsRef" >roomsRef</a>
+                            </li>
+                            <li>
+                                <a href="#roomsTypeRef" >roomsTypeRef</a>
+                            </li>
+                            <li>
+                                <a href="#selectedRoom" >selectedRoom</a>
+                            </li>
+                            <li>
+                                <a href="#statusRoom" >statusRoom</a>
+                            </li>
+                            <li>
+                                <a href="#tipos" >tipos</a>
+                            </li>
+                            <li>
+                                <a href="#updatedRoom" >updatedRoom</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cambiarHabitacion" >cambiarHabitacion</a>
+                            </li>
+                            <li>
+                                <a href="#filtrarRoomsLibresPorTipo" >filtrarRoomsLibresPorTipo</a>
+                            </li>
+                            <li>
+                                <a href="#getInfoAsinc" >getInfoAsinc</a>
+                            </li>
+                            <li>
+                                <a href="#inicioDeVartiables" >inicioDeVartiables</a>
+                            </li>
+                            <li>
+                                <a href="#loaderS" >loaderS</a>
+                            </li>
+                            <li>
+                                <a href="#marginXSkySuite" >marginXSkySuite</a>
+                            </li>
+                            <li>
+                                <a href="#marginYSkySuite" >marginYSkySuite</a>
+                            </li>
+                            <li>
+                                <a href="#mostrarMensajeConfirmarCambioHabitacion" >mostrarMensajeConfirmarCambioHabitacion</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onResize" >onResize</a>
+                            </li>
+                            <li>
+                                <a href="#onStatusFilter" >onStatusFilter</a>
+                            </li>
+                            <li>
+                                <a href="#onUpdateRoom" >onUpdateRoom</a>
+                            </li>
+                            <li>
+                                <a href="#ordenHabitaciones" >ordenHabitaciones</a>
+                            </li>
+                            <li>
+                                <a href="#selectRoom" >selectRoom</a>
+                            </li>
+                            <li>
+                                <a href="#unselectLibresPorTipo" >unselectLibresPorTipo</a>
+                            </li>
+                            <li>
+                                <a href="#unselectRooms" >unselectRooms</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Escuchadores de Host</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#window:resize" >window:resize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, homeService: <a href="../injectables/HomeService.html" target="_self">HomeService</a>, roomService: <a href="../injectables/RoomService.html" target="_self">RoomService</a>, dialogService: DialogService, sidebarService: <a href="../injectables/SidebarService.html" target="_self">SidebarService</a>, roomTypesService: <a href="../injectables/RoomTypesService.html" target="_self">RoomTypesService</a>, cambioHabitacionService: <a href="../injectables/CambioHabitacionService.html" target="_self">CambioHabitacionService</a>, subHabitacion: <a href="../injectables/SuscripcionEstadoHabitacionService.html" target="_self">SuscripcionEstadoHabitacionService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="81" class="link-to-prism">src/app/room-types/room-types.component.ts:81</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>homeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/HomeService.html" target="_self" >HomeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>roomService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RoomService.html" target="_self" >RoomService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sidebarService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SidebarService.html" target="_self" >SidebarService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>roomTypesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RoomTypesService.html" target="_self" >RoomTypesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cambioHabitacionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CambioHabitacionService.html" target="_self" >CambioHabitacionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>subHabitacion</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SuscripcionEstadoHabitacionService.html" target="_self" >SuscripcionEstadoHabitacionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:resize"></a>
+                    <span class="name">
+                        <span ><b>window:resize</b></span>
+                        <a href="#window:resize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Argumentos : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:resize(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="72"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cambiarHabitacion"></a>
+                    <span class="name">
+                        <span ><b>cambiarHabitacion</b></span>
+                        <a href="#cambiarHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cambiarHabitacion(room: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="326"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:326</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>room</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filtrarRoomsLibresPorTipo"></a>
+                    <span class="name">
+                        <span ><b>filtrarRoomsLibresPorTipo</b></span>
+                        <a href="#filtrarRoomsLibresPorTipo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filtrarRoomsLibresPorTipo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="285"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:285</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInfoAsinc"></a>
+                    <span class="name">
+                        <span ><b>getInfoAsinc</b></span>
+                        <a href="#getInfoAsinc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInfoAsinc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="106"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inicioDeVartiables"></a>
+                    <span class="name">
+                        <span ><b>inicioDeVartiables</b></span>
+                        <a href="#inicioDeVartiables"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>inicioDeVartiables()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="165"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loaderS"></a>
+                    <span class="name">
+                        <span ><b>loaderS</b></span>
+                        <a href="#loaderS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loaderS()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="116"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:116</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="marginXSkySuite"></a>
+                    <span class="name">
+                        <span ><b>marginXSkySuite</b></span>
+                        <a href="#marginXSkySuite"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>marginXSkySuite(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="211"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:211</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>    <code>&quot;0vw&quot; | &quot;0vh&quot;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="marginYSkySuite"></a>
+                    <span class="name">
+                        <span ><b>marginYSkySuite</b></span>
+                        <a href="#marginYSkySuite"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>marginYSkySuite(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="225"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mostrarMensajeConfirmarCambioHabitacion"></a>
+                    <span class="name">
+                        <span ><b>mostrarMensajeConfirmarCambioHabitacion</b></span>
+                        <a href="#mostrarMensajeConfirmarCambioHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>mostrarMensajeConfirmarCambioHabitacion(room: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="346"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:346</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>room</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="206"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="98"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onResize"></a>
+                    <span class="name">
+                        <span ><b>onResize</b></span>
+                        <a href="#onResize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onResize(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decoradores : </b>
+                    <br />
+                    <code>@HostListener(&#x27;window:resize&#x27;, [&#x27;$event&#x27;])<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="72"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onStatusFilter"></a>
+                    <span class="name">
+                        <span ><b>onStatusFilter</b></span>
+                        <a href="#onStatusFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onStatusFilter(status: <a href="../classes/Room.html" target="_self">RoomStatusEnum | null | &quot;expirada&quot;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="366"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:366</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                                <code><a href="../classes/Room.html" target="_self" >RoomStatusEnum | null | &quot;expirada&quot;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onUpdateRoom"></a>
+                    <span class="name">
+                        <span ><b>onUpdateRoom</b></span>
+                        <a href="#onUpdateRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onUpdateRoom(room: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="233"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:233</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>room</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ordenHabitaciones"></a>
+                    <span class="name">
+                        <span ><b>ordenHabitaciones</b></span>
+                        <a href="#ordenHabitaciones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ordenHabitaciones()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="128"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectRoom"></a>
+                    <span class="name">
+                        <span ><b>selectRoom</b></span>
+                        <a href="#selectRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectRoom(room: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="241"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:241</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>room</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unselectLibresPorTipo"></a>
+                    <span class="name">
+                        <span ><b>unselectLibresPorTipo</b></span>
+                        <a href="#unselectLibresPorTipo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>unselectLibresPorTipo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="306"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:306</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unselectRooms"></a>
+                    <span class="name">
+                        <span ><b>unselectRooms</b></span>
+                        <a href="#unselectRooms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>unselectRooms()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="277"
+                            class="link-to-prism">src/app/room-types/room-types.component.ts:277</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="destroy$"></a>
+                    <span class="name">
+                        <span ><b>destroy$</b></span>
+                        <a href="#destroy$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Subject&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new Subject&lt;boolean&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="54" class="link-to-prism">src/app/room-types/room-types.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialogService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialogService</b></span>
+                        <a href="#dialogService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>DialogService</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="87" class="link-to-prism">src/app/room-types/room-types.component.ts:87</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitaciones"></a>
+                    <span class="name">
+                        <span ><b>habitaciones</b></span>
+                        <a href="#habitaciones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="79" class="link-to-prism">src/app/room-types/room-types.component.ts:79</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isIpadMini"></a>
+                    <span class="name">
+                        <span ><b>isIpadMini</b></span>
+                        <a href="#isIpadMini"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="65" class="link-to-prism">src/app/room-types/room-types.component.ts:65</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isShowingSidenav"></a>
+                    <span class="name">
+                        <span ><b>isShowingSidenav</b></span>
+                        <a href="#isShowingSidenav"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="57" class="link-to-prism">src/app/room-types/room-types.component.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loader"></a>
+                    <span class="name">
+                        <span ><b>loader</b></span>
+                        <a href="#loader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="58" class="link-to-prism">src/app/room-types/room-types.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="modoAppRoom"></a>
+                    <span class="name">
+                        <span ><b>modoAppRoom</b></span>
+                        <a href="#modoAppRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/ModoAppRoomState.html" target="_self" >ModoAppRoomState</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="67" class="link-to-prism">src/app/room-types/room-types.component.ts:67</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="roomsByType"></a>
+                    <span class="name">
+                        <span ><b>roomsByType</b></span>
+                        <a href="#roomsByType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../classes/Room.html" target="_self" >RoomsByType[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="81" class="link-to-prism">src/app/room-types/room-types.component.ts:81</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="roomsRef"></a>
+                    <span class="name">
+                        <span ><b>roomsRef</b></span>
+                        <a href="#roomsRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryList&lt;ElementRef&lt;HTMLDivElement&gt;&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(&#x27;roomsRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="62" class="link-to-prism">src/app/room-types/room-types.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="roomsTypeRef"></a>
+                    <span class="name">
+                        <span ><b>roomsTypeRef</b></span>
+                        <a href="#roomsTypeRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryList&lt;ElementRef&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(&#x27;roomsTypeRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="63" class="link-to-prism">src/app/room-types/room-types.component.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedRoom"></a>
+                    <span class="name">
+                        <span ><b>selectedRoom</b></span>
+                        <a href="#selectedRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="60" class="link-to-prism">src/app/room-types/room-types.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="statusRoom"></a>
+                    <span class="name">
+                        <span ><b>statusRoom</b></span>
+                        <a href="#statusRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>RoomStatusEnum</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="56" class="link-to-prism">src/app/room-types/room-types.component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tipos"></a>
+                    <span class="name">
+                        <span ><b>tipos</b></span>
+                        <a href="#tipos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>literal type[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="78" class="link-to-prism">src/app/room-types/room-types.component.ts:78</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updatedRoom"></a>
+                    <span class="name">
+                        <span ><b>updatedRoom</b></span>
+                        <a href="#updatedRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="69" class="link-to-prism">src/app/room-types/room-types.component.ts:69</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  HostListener,
+  OnInit,
+  OnDestroy,
+  ViewChildren,
+  QueryList,
+  ElementRef,
+  Renderer2,
+  AfterViewInit,
+} from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { Subject, take } from &#x27;rxjs&#x27;;
+import { takeUntil } from &#x27;rxjs/operators&#x27;;
+import { ConfimModalMessageComponent } from &#x27;../core/components/confim-modal-message/confim-modal-message.component&#x27;;
+import { CambioHabitacionService } from &#x27;../home/inicio-habitaciones/entrada-habitacion/services/cambio-habitacion/cambio-habitacion.service&#x27;;
+import { HomeService } from &#x27;../home/services/home/home.service&#x27;;
+import { SidebarService } from &#x27;../sidebar/services/sidebar/sidebar.service&#x27;;
+import { RoomStatusEnum } from &#x27;./enums/room-status.enum&#x27;;
+import { RoomTypesService } from &#x27;./services/room-types/room-types.service&#x27;;
+import { RoomService } from &#x27;./services/room/room.service&#x27;;
+import { ModoAppRoomState } from &#x27;./state/modo-app-room.state&#x27;;
+import { SuscripcionEstadoHabitacionService } from &#x27;../core/services/habitaciones/suscripcion-estado-habitacion.service&#x27;;
+
+import { GetAllRoomsQuery } from &#x27;../core/graphQL/serviciosGraph&#x27;;
+
+interface RoomsByType {
+  name: string;
+  rooms: Room[];
+}
+
+interface Room {
+  id:string;
+  status: RoomStatusEnum | string;
+  tipo: string;
+  statusTimer: number;
+  roomNumber: number;
+  matricula: string;
+  tarifa: string;
+  camaristaOCamaristas: number;
+  supervisor?: any;
+  observaciones?:string;
+  tipoMantenimiento?:string;
+  duracionTarifa: number;
+}
+@Component({
+  selector: &#x27;app-room-types&#x27;,
+  templateUrl: &#x27;./room-types.component.html&#x27;,
+  styleUrls: [&#x27;./room-types.component.scss&#x27;]
+})
+export class RoomTypesComponent implements OnInit, OnDestroy {
+
+  destroy$: Subject&lt;boolean&gt; &#x3D; new Subject&lt;boolean&gt;();
+
+  statusRoom &#x3D; RoomStatusEnum;
+  isShowingSidenav!: boolean;
+  loader &#x3D; true
+
+  selectedRoom!: any; //TODO: tipar la habitacion
+
+  @ViewChildren(&#x27;roomsRef&#x27;) roomsRef!: QueryList&lt;ElementRef&lt;HTMLDivElement&gt;&gt;;
+  @ViewChildren(&#x27;roomsTypeRef&#x27;) roomsTypeRef!: QueryList&lt;ElementRef&gt;;
+
+  isIpadMini!: boolean;
+
+  modoAppRoom!: ModoAppRoomState;
+
+  updatedRoom!: any;
+
+  @HostListener(&#x27;window:resize&#x27;, [&#x27;$event&#x27;])
+  onResize(event: any) {
+    this.isIpadMini &#x3D; window.innerWidth &lt;&#x3D; 1025;
+  }
+
+  // roomsByType &#x3D; [...roomsByType];
+
+  tipos!: { __typename?: &quot;TipoHabitacion&quot; | undefined; nombre: string; }[]
+  habitaciones!: GetAllRoomsQuery[&quot;habitaciones&quot;]
+
+  roomsByType!: RoomsByType[]
+  constructor(
+    private readonly renderer: Renderer2,
+    private readonly router: Router,
+    private readonly homeService: HomeService,
+    private readonly roomService: RoomService,
+    public dialogService: DialogService,
+    private readonly sidebarService: SidebarService,
+    private readonly roomTypesService: RoomTypesService,
+    private readonly cambioHabitacionService: CambioHabitacionService,
+    private subHabitacion: SuscripcionEstadoHabitacionService
+  ) {
+    this.subHabitacion.getHabitaciones();
+    this.subHabitacion.getHabitacionesSuscri()
+    this.subHabitacion.getTipos();
+  }
+
+  ngOnInit(): void {
+    this.getInfoAsinc()
+    setTimeout(() &#x3D;&gt; {
+      this.loaderS()
+    },1000)
+
+  }
+
+  getInfoAsinc(){
+    this.subHabitacion.tipos$.pipe(takeUntil(this.destroy$)).subscribe(tipos &#x3D;&gt;{
+      this.tipos &#x3D; tipos;
+    })
+    this.subHabitacion.habitaciones$.pipe(takeUntil(this.destroy$)).subscribe(habitaciones &#x3D;&gt; {
+      this.habitaciones &#x3D; habitaciones;
+      this.ordenHabitaciones()
+    })
+  }
+
+  loaderS(){
+    if(this.loader){
+      this.ordenHabitaciones()
+    }else{
+      setTimeout(() &#x3D;&gt; {
+        this.loaderS()
+      },1000)
+    }
+  }
+
+
+
+  ordenHabitaciones(){
+    this.roomsByType &#x3D; []
+    this.tipos?.forEach(tipo &#x3D;&gt; {
+      const element &#x3D; tipo.nombre;
+      let habitacionesFiltro &#x3D; this.habitaciones.filter(habitacion &#x3D;&gt; String(habitacion.tipoHabitacion.nombre) &#x3D;&#x3D; element)
+      let orden: Room[] &#x3D; []
+      habitacionesFiltro.forEach(habitacion &#x3D;&gt; {
+        orden.push(
+          {
+          id: habitacion.id,
+          status: habitacion.estado,
+          tipo:element,
+          statusTimer: 3400,
+          roomNumber: habitacion.numeroHabitacion,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000,
+          observaciones: &#x27;s&#x27;,
+          tipoMantenimiento: &#x27;as&#x27;
+        })
+      })
+      orden.sort((a,b) &#x3D;&gt; Number(a.roomNumber) - Number(b.roomNumber))
+      this.roomsByType.push({
+        name: element,
+        rooms: orden
+      })
+      this.roomsByType.sort((b,a) &#x3D;&gt; Number(a.rooms.length) - Number(b.rooms.length))
+    })
+    console.log(this.roomsByType,&#x27;nuevas&#x27;)
+    if(this.roomsByType){
+      this.loader &#x3D; false
+    }
+    this.inicioDeVartiables()
+  }
+
+  inicioDeVartiables(){
+    this.roomTypesService.updateRoomStateCount(this.roomsByType);
+    this.isIpadMini &#x3D; window.innerWidth &lt;&#x3D; 1025;
+    this.homeService.showSidenav$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe(
+      (isShowing) &#x3D;&gt; this.isShowingSidenav &#x3D; isShowing
+    )
+    this.sidebarService.sidebarState$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((state) &#x3D;&gt; {
+      if (state !&#x3D;&#x3D; &#x27;roomSelected&#x27; &amp;&amp; this.selectedRoom) {
+        this.unselectRooms();
+      }
+    });
+    this.roomService.modoAppHabitacion$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((state) &#x3D;&gt; {
+      this.modoAppRoom &#x3D; state;
+      if (state.cambio) {
+        return this.filtrarRoomsLibresPorTipo()
+      }
+      if (!state.cambio) {
+        this.unselectLibresPorTipo();
+      }
+      if (state.seleccionada) {
+        return this.unselectRooms();
+      }
+    });
+    this.roomService.updatedRoom$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((room) &#x3D;&gt; {
+      this.onUpdateRoom(room);
+    });
+    this.roomService.filtradoHabitacion$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((status) &#x3D;&gt; {
+      this.onStatusFilter(status);
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next(true);
+    this.destroy$.unsubscribe();
+  }
+
+  marginXSkySuite(index: number) {
+    // Si es sky suite reacomodar para poner como tercer fila y segunda columna a solicitud de UX
+    if(index &lt; this.roomsByType.length -1) {
+      return;
+    }
+    if (this.isIpadMini) {
+      return &#x27;0vw&#x27;;
+    }
+    if (this.isShowingSidenav) {
+      return &#x27;0vh&#x27;;
+    }
+    return &#x27;0vh&#x27;;
+  }
+
+  marginYSkySuite(index: number) {
+    // Si es sky suite reacomodar para poner como tercer fila y segunda columna a solicitud de UX
+    if(index &lt; this.roomsByType.length -1 || this.isIpadMini) {
+      return;
+    }
+    return &#x27;0vh&#x27;;
+  }
+
+  onUpdateRoom(room: any) {
+    let selectedRoomType &#x3D; this.roomsByType.find((roomType) &#x3D;&gt; roomType.name &#x3D;&#x3D;&#x3D; room.tipo)!;
+    const roomToUpdateIndex &#x3D; selectedRoomType?.rooms.findIndex((roomFromType) &#x3D;&gt; roomFromType.roomNumber &#x3D;&#x3D;&#x3D; this.selectedRoom.roomNumber)!
+    selectedRoomType.rooms[roomToUpdateIndex] &#x3D; room;
+    this.roomTypesService.updateRoomStateCount(this.roomsByType)
+    this.unselectRooms();
+  }
+
+  selectRoom(room: any) { //TODO: tipar la habitacion
+    // No permitir la seleccion de habitaciones de otro tipo cuando se está en modo cambio de habitacion.
+    if(this.selectedRoom &amp;&amp; this.modoAppRoom.cambio &amp;&amp; (this.selectedRoom?.tipo !&#x3D;&#x3D; room.tipo)) {
+      return;
+    }
+    if(this.modoAppRoom.cambio &amp;&amp; !(room.status &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE)) {
+      return;
+    }
+    if(this.modoAppRoom.cambio &amp;&amp; room.status &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE) {
+      this.mostrarMensajeConfirmarCambioHabitacion(room);
+      return;
+    }
+    this.roomService.updateModoAppHabitacion({cambio: false});
+    if(this.selectedRoom?.roomNumber &#x3D;&#x3D;&#x3D; room.roomNumber) {
+      // regresar al sidebar en home desde un click de nuevo en la habitacion seleccionada
+      return this.unselectRooms();
+    }
+    // Quitar sombreado a elemento que ha sido seleccionado
+    const selectedRoomEl &#x3D;
+    this.roomsRef
+    ?.toArray()
+    .find(roomEl &#x3D;&gt; roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + room.roomNumber))?.nativeElement;
+    this.renderer.removeClass(selectedRoomEl, &#x27;no-filtro&#x27;);
+
+    // Agregar sombra a los elementos que no fueron seleccionados
+    this.roomsRef
+      ?.toArray()
+      .filter((roomEl) &#x3D;&gt; !roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + room.roomNumber))
+      .forEach((roomEl) &#x3D;&gt; this.renderer.addClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+    // Mostrar sidenav para ver los detalles del cuarto seleccionado
+    this.homeService.toggleSidenav(true);
+    // mostrar los detalles en el sidebar
+    this.sidebarService.setSidebarState(&#x27;roomSelected&#x27;, room);
+    this.selectedRoom &#x3D; room;
+  }
+
+  unselectRooms() {
+    this.selectedRoom &#x3D; null;
+    this.sidebarService.setSidebarState(&#x27;home&#x27;);
+    this.roomsRef
+    ?.toArray()
+    .forEach((roomEl) &#x3D;&gt; this.renderer.removeClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+  }
+
+  filtrarRoomsLibresPorTipo() {
+    const selectedRoomType &#x3D; this.roomsByType
+      .find(type &#x3D;&gt; type.rooms
+      .find((room &#x3D;&gt; room.roomNumber &#x3D;&#x3D;&#x3D; this.selectedRoom.roomNumber)));
+    this.roomsRef?.toArray()
+      .filter(room &#x3D;&gt; room.nativeElement.id.startsWith(&#x60;type_${selectedRoomType?.name}&#x60;))
+      .filter(room &#x3D;&gt; {
+        return room.nativeElement.children[0].attributes.getNamedItem(&#x27;custom-status&#x27;)?.nodeValue &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE
+      })
+      .forEach((room) &#x3D;&gt; {
+        this.renderer.removeClass(room.nativeElement, &#x27;no-filtro&#x27;)
+    });
+
+    const selectedRoomEl &#x3D;
+    this.roomsRef
+    ?.toArray()
+    .find(roomEl &#x3D;&gt; roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + this.selectedRoom.roomNumber))?.nativeElement;
+    this.renderer.addClass(selectedRoomEl, &#x27;no-filtro&#x27;);
+
+  }
+
+  unselectLibresPorTipo() {
+    if(this.modoAppRoom.cambio) {
+      this.roomService.updateModoAppHabitacion({cambio: false, seleccionada: true})
+    }
+    if(!this.selectedRoom) {
+      return;
+    }
+    this.roomsRef
+    ?.toArray()
+    .filter(roomEl &#x3D;&gt; !roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + this.selectedRoom.roomNumber))
+    .forEach((roomEl) &#x3D;&gt; this.renderer.addClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+
+    const selectedRoomEl &#x3D;
+    this.roomsRef
+    ?.toArray()
+    .find(roomEl &#x3D;&gt; roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + this.selectedRoom.roomNumber))?.nativeElement;
+
+    this.renderer.removeClass(selectedRoomEl, &#x27;no-filtro&#x27;);
+  }
+
+  cambiarHabitacion(room: any) {//TODO: tipar habitacion
+    let selectedRoomType &#x3D; this.roomsByType.find((roomType) &#x3D;&gt; roomType.name &#x3D;&#x3D;&#x3D; room.tipo)!;
+    const roomFromIndex &#x3D; selectedRoomType?.rooms.findIndex((roomFromType) &#x3D;&gt; roomFromType &#x3D;&#x3D;&#x3D; this.selectedRoom)!
+    const roomToIndex &#x3D; selectedRoomType?.rooms.findIndex((roomFromType) &#x3D;&gt; roomFromType &#x3D;&#x3D;&#x3D; room)!
+
+    const fromRoomNumberTemp &#x3D; this.selectedRoom.roomNumber;
+    const toRoomNumberTemp &#x3D; room.roomNumber;
+
+    selectedRoomType.rooms[roomFromIndex] &#x3D; room;
+    selectedRoomType.rooms[roomToIndex] &#x3D; this.selectedRoom;
+
+    selectedRoomType.rooms[roomFromIndex].roomNumber &#x3D; fromRoomNumberTemp;
+    selectedRoomType.rooms[roomToIndex].roomNumber &#x3D; toRoomNumberTemp;
+
+    this.roomsByType &#x3D; JSON.parse(JSON.stringify(this.roomsByType));
+
+    this.roomService.updateModoAppHabitacion({cambio: false});
+    this.unselectRooms();
+  }
+
+  mostrarMensajeConfirmarCambioHabitacion(room: any) {
+    const ref &#x3D; this.dialogService.open(ConfimModalMessageComponent, {
+      data: {
+        message: &#x60;ESTÁS POR CAMBIAR DE LA ${this.selectedRoom.tipo} ${this.selectedRoom.roomNumber} A LA ${room.roomNumber}&#x60;
+      },
+    });
+
+    ref.onClose.subscribe(({confirmed}) &#x3D;&gt; {
+      if (!confirmed) {
+        return;
+      }
+      this.router.navigate([&#x27;hotel/rentaHabitacion/cambio/&#x27; + room.roomNumber]);
+      this.cambioHabitacionService.cambioHabitacionConfirmado$.pipe(take(1)).subscribe((confirmed) &#x3D;&gt; {
+        if(confirmed) {
+          this.cambiarHabitacion(room);
+        }
+      });
+    });
+  }
+
+  onStatusFilter(status: RoomStatusEnum | null | &#x27;expirada&#x27;) {
+    if(!status) {
+      return this.unselectRooms();
+    }
+    this.unselectRooms();
+    if(status &#x3D;&#x3D;&#x3D; &#x27;expirada&#x27;) {
+      this.roomsRef
+      ?.toArray()
+      .filter(roomEl &#x3D;&gt; {
+        return roomEl.nativeElement
+        .children[0]
+        .attributes
+        .getNamedItem(&#x27;custom-expirada&#x27;)
+        ?.nodeValue &#x3D;&#x3D;&#x3D; &#x27;no-expirada&#x27;}
+      ).forEach((roomEl) &#x3D;&gt; this.renderer.addClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+      return;
+    }
+    this.roomsRef
+    ?.toArray()
+    .filter(roomEl &#x3D;&gt; {
+      const el &#x3D; roomEl
+        .nativeElement
+        .children[0]
+        .attributes
+        .getNamedItem(&#x27;custom-status&#x27;)
+        ?.nodeValue
+      if(status &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE &amp;&amp; el &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE_CON_DETALLES) {
+        return false
+      }
+      return el !&#x3D;&#x3D; status
+    }).forEach((roomEl) &#x3D;&gt; this.renderer.addClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;spiner&quot; *ngIf&#x3D;&quot;loader&quot;&gt;
+  &lt;p-progressSpinner&gt;&lt;/p-progressSpinner&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;rooms-container&quot; *ngIf&#x3D;&quot;!loader&quot;&gt;
+    &lt;div
+        class&#x3D;&quot;row col-1 rooms-group&quot;
+        *ngFor&#x3D;&quot;let roomType of roomsByType; let i &#x3D; index;&quot;
+        [ngStyle]&#x3D;&quot;{&#x27;margin-top&#x27;: marginYSkySuite(i), &#x27;margin-left&#x27;: marginXSkySuite(i)}&quot;
+        id&#x3D;&quot;roomtype_{{roomType.name}}&quot;
+        #roomsTypeRef
+    &gt;
+        &lt;div class&#x3D;&quot;ml-2&quot;&gt;
+            &lt;h6 class&#x3D;&quot;mt-4 mb-1 roomtype-title&quot;&gt;{{roomType.name}}&lt;/h6&gt;
+            &lt;div class&#x3D;&quot;d-flex justify-content-start flex-wrap&quot;&gt;
+                &lt;div #roomsRef *ngFor&#x3D;&quot;let room of roomType.rooms&quot; id&#x3D;&quot;type_{{roomType.name}}__room_{{room.roomNumber}}&quot;&gt;
+                    &lt;app-room
+                    [attr.custom-status]&#x3D;&quot;room.status&quot;
+                    [attr.custom-expirada]&#x3D;&quot;room.statusTimer &gt; 3600 ? &#x27;expirada&#x27; : &#x27;no-expirada&#x27;&quot;
+                    [status]&#x3D;&quot;room.status&quot;
+                    [statusTimer]&#x3D;&quot;room.statusTimer&quot;
+                    [roomNumber]&#x3D;&quot;room.roomNumber&quot;
+                    [matricula]&#x3D;&quot;room.matricula&quot;
+                    [observaciones]&#x3D;&quot;room.observaciones&quot;
+                    [camaristaOCamaristas]&#x3D;&quot;room.camaristaOCamaristas&quot;
+                    [supervisor]&#x3D;&quot;room.supervisor&quot;
+                    [tarifa]&#x3D;&quot;room.tarifa&quot;
+                    [tipoMantenimiento]&#x3D;&quot;room.tipoMantenimiento&quot;
+
+                    (click)&#x3D;&quot;selectRoom(room)&quot;
+                    &gt;&lt;/app-room&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./room-types.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../library.scss&#x27;;
+
+
+h6 {
+  font-weight: 600;
+}
+
+/* Render items as columns */
+.rooms-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-around;
+  /* Your container needs a fixed height, and it
+  * needs to be taller than your tallest column. */
+  height: 99vh;
+}
+
+.roomtype-title {
+  color: $grey-item;
+}
+
+.rooms-group {
+  width: 33%;
+}
+
+/* Force new columns */
+.rooms-container::before,
+.rooms-container::after {
+  content: &quot;&quot;;
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+/* Re-order items into rows */
+.rooms-group:nth-child(3n+1) {
+  order: 1;
+}
+
+.rooms-group:nth-child(3n+2) {
+  order: 2;
+}
+
+.rooms-group:nth-child(3n) {
+  order: 3;
+}
+
+// Ipad mini
+@media (max-width: 1025px) and (orientation: landscape) {
+  .rooms-container {
+    flex-flow: row wrap;
+    justify-content: end;
+    height: 100%;
+  }
+
+  .rooms-group {
+    width: 50%;
+  }
+
+  /* Re-order items into rows */
+  .rooms-group:nth-child(1) {
+    order: 1;
+  }
+
+  .rooms-group:nth-child(2) {
+    order: 2;
+  }
+
+  .rooms-group:nth-child(3) {
+    order: 1;
+  }
+  .rooms-group:nth-child(4) {
+    order: 3;
+  }
+  .rooms-group:nth-child(5) {
+    order: 2;
+  }
+  .rooms-group:nth-child(6) {
+    order: 3;
+  }
+
+}
+
+
+.no-filtro {
+  filter: contrast(0.9) opacity(0.15) !important;
+}
+@keyframes p-progress-spinner-color {
+  100%,
+  0% {
+      stroke: $wine;
+  }
+  40% {
+      stroke: $blue-item;
+  }
+  66% {
+      stroke: $green-item;
+  }
+  80%,
+  90% {
+      stroke: $yellow-warn;
+  }
+}
+
+.spiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 82vh;
+  position: absolute;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="spiner" *ngIf="loader">  <p-progressSpinner></p-progressSpinner></div><div class="rooms-container" *ngIf="!loader">    <div        class="row col-1 rooms-group"        *ngFor="let roomType of roomsByType; let i = index;"        [ngStyle]="{\'margin-top\': marginYSkySuite(i), \'margin-left\': marginXSkySuite(i)}"        id="roomtype_{{roomType.name}}"        #roomsTypeRef    >        <div class="ml-2">            <h6 class="mt-4 mb-1 roomtype-title">{{roomType.name}}</h6>            <div class="d-flex justify-content-start flex-wrap">                <div #roomsRef *ngFor="let room of roomType.rooms" id="type_{{roomType.name}}__room_{{room.roomNumber}}">                    <app-room                    [attr.custom-status]="room.status"                    [attr.custom-expirada]="room.statusTimer > 3600 ? \'expirada\' : \'no-expirada\'"                    [status]="room.status"                    [statusTimer]="room.statusTimer"                    [roomNumber]="room.roomNumber"                    [matricula]="room.matricula"                    [observaciones]="room.observaciones"                    [camaristaOCamaristas]="room.camaristaOCamaristas"                    [supervisor]="room.supervisor"                    [tarifa]="room.tarifa"                    [tipoMantenimiento]="room.tipoMantenimiento"                    (click)="selectRoom(room)"                    ></app-room>                </div>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'RoomTypesComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RoomTypesComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,583 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Inyectables</li>
+  <li >GetAllInfoComandaService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#infoComanda" >infoComanda</a>
+                            </li>
+                            <li>
+                                <a href="#infoComanda$" >infoComanda$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#infoComandaSubjext" >infoComandaSubjext</a>
+                            </li>
+                            <li>
+                                <a href="#queryRef" >queryRef</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getArticculos" >getArticculos</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(apollo: Apollo)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="94" class="link-to-prism">src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts:94</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>apollo</td>
+                                                  
+                                                        <td>
+                                                                    <code>Apollo</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getArticculos"></a>
+                    <span class="name">
+                        <span ><b>getArticculos</b></span>
+                        <a href="#getArticculos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getArticculos()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="110"
+                            class="link-to-prism">src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="105"
+                            class="link-to-prism">src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts:105</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="infoComanda"></a>
+                    <span class="name">
+                        <span ><b>infoComanda</b></span>
+                        <a href="#infoComanda"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="90" class="link-to-prism">src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts:90</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="infoComanda$"></a>
+                    <span class="name">
+                        <span ><b>infoComanda$</b></span>
+                        <a href="#infoComanda$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>this.infoComandaSubjext.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="94" class="link-to-prism">src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts:94</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="infoComandaSubjext"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>infoComandaSubjext</b></span>
+                        <a href="#infoComandaSubjext"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new BehaviorSubject&lt;
+    GetAllComandasInfoQuery[&#x27;comandas&#x27;]
+  &gt;(this.infoComanda)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="91" class="link-to-prism">src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts:91</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryRef"></a>
+                    <span class="name">
+                        <span ><b>queryRef</b></span>
+                        <a href="#queryRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryRef&lt;any&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="88" class="link-to-prism">src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts:88</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { Apollo, gql, QueryRef } from &#x27;apollo-angular&#x27;;
+import { BehaviorSubject, take, tap } from &#x27;rxjs&#x27;;
+import { GetAllComandasInfoQuery, GetAllInfoComandasSuscripcionSubscription } from &#x27;src/app/core/graphQL/serviciosGraph&#x27;;
+
+const fakeQuery &#x3D; gql&#x60;query{fake}&#x60;;
+
+
+const GET_ALL_INFO_COMANDA &#x3D; gql&#x60;
+  query GetAllInfoComandas {
+    comandas {
+      id
+      fechaSolicitud
+      fechaCancelacion
+      fechaEntrega
+      fechaPago
+      renta {
+        habitacion {
+          numeroHabitacion
+        }
+      }
+      alimentosComanda {
+        cantidad
+        comentario
+        fechaPorEntregar
+        cortesia
+        alimento {
+          nombre
+          precio
+        }
+      }
+      tragosComanda {
+        cantidad
+        comentario
+        fechaPorEntregar
+        cortesia
+        trago {
+          nombre
+          precio
+        }
+      }
+    }
+  }
+&#x60;;
+
+const GET_ALL_INFO_COMANDA_SUSCRIPCION &#x3D; gql&#x60;
+
+subscription GetAllInfoComandasSuscripcion {
+  checkComandas {
+      id
+      fechaSolicitud
+      fechaCancelacion
+      fechaEntrega
+      fechaPago
+      renta {
+        habitacion {
+          numeroHabitacion
+        }
+      }
+      alimentosComanda {
+        cantidad
+        comentario
+        fechaPorEntregar
+        cortesia
+        alimento {
+          nombre
+          precio
+        }
+      }
+      tragosComanda {
+        cantidad
+        comentario
+        fechaPorEntregar
+        cortesia
+        trago {
+          nombre
+          precio
+        }
+      }
+    }
+  }
+&#x60;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class GetAllInfoComandaService {
+  queryRef!: QueryRef&lt;any&gt;;
+
+  infoComanda!: GetAllComandasInfoQuery[&#x27;comandas&#x27;];
+  private infoComandaSubjext &#x3D; new BehaviorSubject&lt;
+    GetAllComandasInfoQuery[&#x27;comandas&#x27;]
+  &gt;(this.infoComanda);
+  infoComanda$ &#x3D; this.infoComandaSubjext.asObservable();
+
+  constructor(
+    private apollo: Apollo,
+
+    ) {
+      this.queryRef &#x3D; this.apollo.watchQuery&lt;any&gt;({
+        query: fakeQuery
+      })
+    }
+
+    ngOnInit(){
+      this.getArticculos()
+      // this.getArticculosSuscri()
+    }
+
+  getArticculos() {
+    return this.apollo
+      .watchQuery&lt;GetAllComandasInfoQuery&gt;({
+        query: GET_ALL_INFO_COMANDA,
+      })
+      .valueChanges.pipe(
+        take(1),
+        tap(({ data }) &#x3D;&gt; {
+          const { comandas } &#x3D; data;
+          this.infoComandaSubjext.next(comandas);
+          console.log(comandas,&#x27;Cqr&#x27;)
+
+          return comandas
+        })
+      )
+  }
+
+  // getArticculosSuscri(){
+  //   this.queryRef.subscribeToMore&lt;GetAllInfoComandasSuscripcionSubscription&gt;({
+  //     document: GET_ALL_INFO_COMANDA_SUSCRIPCION,
+  //     updateQuery:(prev,{subscriptionData}) &#x3D;&gt; {
+  //       const { checkComandas } &#x3D; subscriptionData.data
+  //       this.infoComandaSubjext.next(checkComandas)
+  //       console.log(checkComandas,&#x27;Cws&#x27;)
+
+  //       return
+  //     },
+  //   })
+
+  // }
+
+  // getArticculos2() {
+  //   return this.apiService.query({query: GET_ALL_INFO_COMANDA})
+  // }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'GetAllInfoComandaService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,648 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li
+  >
+  RoomsByType</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/room-types/room-types.component.ts</code>
+        </p>
+
+
+
+
+        <section>
+            <h3 id="index">Índice</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Propiedades</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#name" 
+>
+                                            name
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#rooms" 
+>
+                                            rooms
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Propiedades</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="name"></a>
+                                        <span class="name "><b>name</b>
+                                            <a href="#name">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>name:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="rooms"></a>
+                                        <span class="name "><b>rooms</b>
+                                            <a href="#rooms">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>rooms:         <code><a href="../classes/Room.html" target="_self" >Room[]</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Tipo : </i>        <code><a href="../classes/Room.html" target="_self" >Room[]</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  HostListener,
+  OnInit,
+  OnDestroy,
+  ViewChildren,
+  QueryList,
+  ElementRef,
+  Renderer2,
+  AfterViewInit,
+} from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { Subject, take } from &#x27;rxjs&#x27;;
+import { takeUntil } from &#x27;rxjs/operators&#x27;;
+import { ConfimModalMessageComponent } from &#x27;../core/components/confim-modal-message/confim-modal-message.component&#x27;;
+import { CambioHabitacionService } from &#x27;../home/inicio-habitaciones/entrada-habitacion/services/cambio-habitacion/cambio-habitacion.service&#x27;;
+import { HomeService } from &#x27;../home/services/home/home.service&#x27;;
+import { SidebarService } from &#x27;../sidebar/services/sidebar/sidebar.service&#x27;;
+import { RoomStatusEnum } from &#x27;./enums/room-status.enum&#x27;;
+import { RoomTypesService } from &#x27;./services/room-types/room-types.service&#x27;;
+import { RoomService } from &#x27;./services/room/room.service&#x27;;
+import { ModoAppRoomState } from &#x27;./state/modo-app-room.state&#x27;;
+import { SuscripcionEstadoHabitacionService } from &#x27;../core/services/habitaciones/suscripcion-estado-habitacion.service&#x27;;
+
+import { GetAllRoomsQuery } from &#x27;../core/graphQL/serviciosGraph&#x27;;
+
+interface RoomsByType {
+  name: string;
+  rooms: Room[];
+}
+
+interface Room {
+  id:string;
+  status: RoomStatusEnum | string;
+  tipo: string;
+  statusTimer: number;
+  roomNumber: number;
+  matricula: string;
+  tarifa: string;
+  camaristaOCamaristas: number;
+  supervisor?: any;
+  observaciones?:string;
+  tipoMantenimiento?:string;
+  duracionTarifa: number;
+}
+@Component({
+  selector: &#x27;app-room-types&#x27;,
+  templateUrl: &#x27;./room-types.component.html&#x27;,
+  styleUrls: [&#x27;./room-types.component.scss&#x27;]
+})
+export class RoomTypesComponent implements OnInit, OnDestroy {
+
+  destroy$: Subject&lt;boolean&gt; &#x3D; new Subject&lt;boolean&gt;();
+
+  statusRoom &#x3D; RoomStatusEnum;
+  isShowingSidenav!: boolean;
+  loader &#x3D; true
+
+  selectedRoom!: any; //TODO: tipar la habitacion
+
+  @ViewChildren(&#x27;roomsRef&#x27;) roomsRef!: QueryList&lt;ElementRef&lt;HTMLDivElement&gt;&gt;;
+  @ViewChildren(&#x27;roomsTypeRef&#x27;) roomsTypeRef!: QueryList&lt;ElementRef&gt;;
+
+  isIpadMini!: boolean;
+
+  modoAppRoom!: ModoAppRoomState;
+
+  updatedRoom!: any;
+
+  @HostListener(&#x27;window:resize&#x27;, [&#x27;$event&#x27;])
+  onResize(event: any) {
+    this.isIpadMini &#x3D; window.innerWidth &lt;&#x3D; 1025;
+  }
+
+  // roomsByType &#x3D; [...roomsByType];
+
+  tipos!: { __typename?: &quot;TipoHabitacion&quot; | undefined; nombre: string; }[]
+  habitaciones!: GetAllRoomsQuery[&quot;habitaciones&quot;]
+
+  roomsByType!: RoomsByType[]
+  constructor(
+    private readonly renderer: Renderer2,
+    private readonly router: Router,
+    private readonly homeService: HomeService,
+    private readonly roomService: RoomService,
+    public dialogService: DialogService,
+    private readonly sidebarService: SidebarService,
+    private readonly roomTypesService: RoomTypesService,
+    private readonly cambioHabitacionService: CambioHabitacionService,
+    private subHabitacion: SuscripcionEstadoHabitacionService
+  ) {
+    this.subHabitacion.getHabitaciones();
+    this.subHabitacion.getHabitacionesSuscri()
+    this.subHabitacion.getTipos();
+  }
+
+  ngOnInit(): void {
+    this.getInfoAsinc()
+    setTimeout(() &#x3D;&gt; {
+      this.loaderS()
+    },1000)
+
+  }
+
+  getInfoAsinc(){
+    this.subHabitacion.tipos$.pipe(takeUntil(this.destroy$)).subscribe(tipos &#x3D;&gt;{
+      this.tipos &#x3D; tipos;
+    })
+    this.subHabitacion.habitaciones$.pipe(takeUntil(this.destroy$)).subscribe(habitaciones &#x3D;&gt; {
+      this.habitaciones &#x3D; habitaciones;
+      this.ordenHabitaciones()
+    })
+  }
+
+  loaderS(){
+    if(this.loader){
+      this.ordenHabitaciones()
+    }else{
+      setTimeout(() &#x3D;&gt; {
+        this.loaderS()
+      },1000)
+    }
+  }
+
+
+
+  ordenHabitaciones(){
+    this.roomsByType &#x3D; []
+    this.tipos?.forEach(tipo &#x3D;&gt; {
+      const element &#x3D; tipo.nombre;
+      let habitacionesFiltro &#x3D; this.habitaciones.filter(habitacion &#x3D;&gt; String(habitacion.tipoHabitacion.nombre) &#x3D;&#x3D; element)
+      let orden: Room[] &#x3D; []
+      habitacionesFiltro.forEach(habitacion &#x3D;&gt; {
+        orden.push(
+          {
+          id: habitacion.id,
+          status: habitacion.estado,
+          tipo:element,
+          statusTimer: 3400,
+          roomNumber: habitacion.numeroHabitacion,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000,
+          observaciones: &#x27;s&#x27;,
+          tipoMantenimiento: &#x27;as&#x27;
+        })
+      })
+      orden.sort((a,b) &#x3D;&gt; Number(a.roomNumber) - Number(b.roomNumber))
+      this.roomsByType.push({
+        name: element,
+        rooms: orden
+      })
+      this.roomsByType.sort((b,a) &#x3D;&gt; Number(a.rooms.length) - Number(b.rooms.length))
+    })
+    console.log(this.roomsByType,&#x27;nuevas&#x27;)
+    if(this.roomsByType){
+      this.loader &#x3D; false
+    }
+    this.inicioDeVartiables()
+  }
+
+  inicioDeVartiables(){
+    this.roomTypesService.updateRoomStateCount(this.roomsByType);
+    this.isIpadMini &#x3D; window.innerWidth &lt;&#x3D; 1025;
+    this.homeService.showSidenav$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe(
+      (isShowing) &#x3D;&gt; this.isShowingSidenav &#x3D; isShowing
+    )
+    this.sidebarService.sidebarState$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((state) &#x3D;&gt; {
+      if (state !&#x3D;&#x3D; &#x27;roomSelected&#x27; &amp;&amp; this.selectedRoom) {
+        this.unselectRooms();
+      }
+    });
+    this.roomService.modoAppHabitacion$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((state) &#x3D;&gt; {
+      this.modoAppRoom &#x3D; state;
+      if (state.cambio) {
+        return this.filtrarRoomsLibresPorTipo()
+      }
+      if (!state.cambio) {
+        this.unselectLibresPorTipo();
+      }
+      if (state.seleccionada) {
+        return this.unselectRooms();
+      }
+    });
+    this.roomService.updatedRoom$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((room) &#x3D;&gt; {
+      this.onUpdateRoom(room);
+    });
+    this.roomService.filtradoHabitacion$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((status) &#x3D;&gt; {
+      this.onStatusFilter(status);
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next(true);
+    this.destroy$.unsubscribe();
+  }
+
+  marginXSkySuite(index: number) {
+    // Si es sky suite reacomodar para poner como tercer fila y segunda columna a solicitud de UX
+    if(index &lt; this.roomsByType.length -1) {
+      return;
+    }
+    if (this.isIpadMini) {
+      return &#x27;0vw&#x27;;
+    }
+    if (this.isShowingSidenav) {
+      return &#x27;0vh&#x27;;
+    }
+    return &#x27;0vh&#x27;;
+  }
+
+  marginYSkySuite(index: number) {
+    // Si es sky suite reacomodar para poner como tercer fila y segunda columna a solicitud de UX
+    if(index &lt; this.roomsByType.length -1 || this.isIpadMini) {
+      return;
+    }
+    return &#x27;0vh&#x27;;
+  }
+
+  onUpdateRoom(room: any) {
+    let selectedRoomType &#x3D; this.roomsByType.find((roomType) &#x3D;&gt; roomType.name &#x3D;&#x3D;&#x3D; room.tipo)!;
+    const roomToUpdateIndex &#x3D; selectedRoomType?.rooms.findIndex((roomFromType) &#x3D;&gt; roomFromType.roomNumber &#x3D;&#x3D;&#x3D; this.selectedRoom.roomNumber)!
+    selectedRoomType.rooms[roomToUpdateIndex] &#x3D; room;
+    this.roomTypesService.updateRoomStateCount(this.roomsByType)
+    this.unselectRooms();
+  }
+
+  selectRoom(room: any) { //TODO: tipar la habitacion
+    // No permitir la seleccion de habitaciones de otro tipo cuando se está en modo cambio de habitacion.
+    if(this.selectedRoom &amp;&amp; this.modoAppRoom.cambio &amp;&amp; (this.selectedRoom?.tipo !&#x3D;&#x3D; room.tipo)) {
+      return;
+    }
+    if(this.modoAppRoom.cambio &amp;&amp; !(room.status &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE)) {
+      return;
+    }
+    if(this.modoAppRoom.cambio &amp;&amp; room.status &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE) {
+      this.mostrarMensajeConfirmarCambioHabitacion(room);
+      return;
+    }
+    this.roomService.updateModoAppHabitacion({cambio: false});
+    if(this.selectedRoom?.roomNumber &#x3D;&#x3D;&#x3D; room.roomNumber) {
+      // regresar al sidebar en home desde un click de nuevo en la habitacion seleccionada
+      return this.unselectRooms();
+    }
+    // Quitar sombreado a elemento que ha sido seleccionado
+    const selectedRoomEl &#x3D;
+    this.roomsRef
+    ?.toArray()
+    .find(roomEl &#x3D;&gt; roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + room.roomNumber))?.nativeElement;
+    this.renderer.removeClass(selectedRoomEl, &#x27;no-filtro&#x27;);
+
+    // Agregar sombra a los elementos que no fueron seleccionados
+    this.roomsRef
+      ?.toArray()
+      .filter((roomEl) &#x3D;&gt; !roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + room.roomNumber))
+      .forEach((roomEl) &#x3D;&gt; this.renderer.addClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+    // Mostrar sidenav para ver los detalles del cuarto seleccionado
+    this.homeService.toggleSidenav(true);
+    // mostrar los detalles en el sidebar
+    this.sidebarService.setSidebarState(&#x27;roomSelected&#x27;, room);
+    this.selectedRoom &#x3D; room;
+  }
+
+  unselectRooms() {
+    this.selectedRoom &#x3D; null;
+    this.sidebarService.setSidebarState(&#x27;home&#x27;);
+    this.roomsRef
+    ?.toArray()
+    .forEach((roomEl) &#x3D;&gt; this.renderer.removeClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+  }
+
+  filtrarRoomsLibresPorTipo() {
+    const selectedRoomType &#x3D; this.roomsByType
+      .find(type &#x3D;&gt; type.rooms
+      .find((room &#x3D;&gt; room.roomNumber &#x3D;&#x3D;&#x3D; this.selectedRoom.roomNumber)));
+    this.roomsRef?.toArray()
+      .filter(room &#x3D;&gt; room.nativeElement.id.startsWith(&#x60;type_${selectedRoomType?.name}&#x60;))
+      .filter(room &#x3D;&gt; {
+        return room.nativeElement.children[0].attributes.getNamedItem(&#x27;custom-status&#x27;)?.nodeValue &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE
+      })
+      .forEach((room) &#x3D;&gt; {
+        this.renderer.removeClass(room.nativeElement, &#x27;no-filtro&#x27;)
+    });
+
+    const selectedRoomEl &#x3D;
+    this.roomsRef
+    ?.toArray()
+    .find(roomEl &#x3D;&gt; roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + this.selectedRoom.roomNumber))?.nativeElement;
+    this.renderer.addClass(selectedRoomEl, &#x27;no-filtro&#x27;);
+
+  }
+
+  unselectLibresPorTipo() {
+    if(this.modoAppRoom.cambio) {
+      this.roomService.updateModoAppHabitacion({cambio: false, seleccionada: true})
+    }
+    if(!this.selectedRoom) {
+      return;
+    }
+    this.roomsRef
+    ?.toArray()
+    .filter(roomEl &#x3D;&gt; !roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + this.selectedRoom.roomNumber))
+    .forEach((roomEl) &#x3D;&gt; this.renderer.addClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+
+    const selectedRoomEl &#x3D;
+    this.roomsRef
+    ?.toArray()
+    .find(roomEl &#x3D;&gt; roomEl.nativeElement.id.endsWith(&#x27;room_&#x27; + this.selectedRoom.roomNumber))?.nativeElement;
+
+    this.renderer.removeClass(selectedRoomEl, &#x27;no-filtro&#x27;);
+  }
+
+  cambiarHabitacion(room: any) {//TODO: tipar habitacion
+    let selectedRoomType &#x3D; this.roomsByType.find((roomType) &#x3D;&gt; roomType.name &#x3D;&#x3D;&#x3D; room.tipo)!;
+    const roomFromIndex &#x3D; selectedRoomType?.rooms.findIndex((roomFromType) &#x3D;&gt; roomFromType &#x3D;&#x3D;&#x3D; this.selectedRoom)!
+    const roomToIndex &#x3D; selectedRoomType?.rooms.findIndex((roomFromType) &#x3D;&gt; roomFromType &#x3D;&#x3D;&#x3D; room)!
+
+    const fromRoomNumberTemp &#x3D; this.selectedRoom.roomNumber;
+    const toRoomNumberTemp &#x3D; room.roomNumber;
+
+    selectedRoomType.rooms[roomFromIndex] &#x3D; room;
+    selectedRoomType.rooms[roomToIndex] &#x3D; this.selectedRoom;
+
+    selectedRoomType.rooms[roomFromIndex].roomNumber &#x3D; fromRoomNumberTemp;
+    selectedRoomType.rooms[roomToIndex].roomNumber &#x3D; toRoomNumberTemp;
+
+    this.roomsByType &#x3D; JSON.parse(JSON.stringify(this.roomsByType));
+
+    this.roomService.updateModoAppHabitacion({cambio: false});
+    this.unselectRooms();
+  }
+
+  mostrarMensajeConfirmarCambioHabitacion(room: any) {
+    const ref &#x3D; this.dialogService.open(ConfimModalMessageComponent, {
+      data: {
+        message: &#x60;ESTÁS POR CAMBIAR DE LA ${this.selectedRoom.tipo} ${this.selectedRoom.roomNumber} A LA ${room.roomNumber}&#x60;
+      },
+    });
+
+    ref.onClose.subscribe(({confirmed}) &#x3D;&gt; {
+      if (!confirmed) {
+        return;
+      }
+      this.router.navigate([&#x27;hotel/rentaHabitacion/cambio/&#x27; + room.roomNumber]);
+      this.cambioHabitacionService.cambioHabitacionConfirmado$.pipe(take(1)).subscribe((confirmed) &#x3D;&gt; {
+        if(confirmed) {
+          this.cambiarHabitacion(room);
+        }
+      });
+    });
+  }
+
+  onStatusFilter(status: RoomStatusEnum | null | &#x27;expirada&#x27;) {
+    if(!status) {
+      return this.unselectRooms();
+    }
+    this.unselectRooms();
+    if(status &#x3D;&#x3D;&#x3D; &#x27;expirada&#x27;) {
+      this.roomsRef
+      ?.toArray()
+      .filter(roomEl &#x3D;&gt; {
+        return roomEl.nativeElement
+        .children[0]
+        .attributes
+        .getNamedItem(&#x27;custom-expirada&#x27;)
+        ?.nodeValue &#x3D;&#x3D;&#x3D; &#x27;no-expirada&#x27;}
+      ).forEach((roomEl) &#x3D;&gt; this.renderer.addClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+      return;
+    }
+    this.roomsRef
+    ?.toArray()
+    .filter(roomEl &#x3D;&gt; {
+      const el &#x3D; roomEl
+        .nativeElement
+        .children[0]
+        .attributes
+        .getNamedItem(&#x27;custom-status&#x27;)
+        ?.nodeValue
+      if(status &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE &amp;&amp; el &#x3D;&#x3D;&#x3D; RoomStatusEnum.LIBRE_CON_DETALLES) {
+        return false
+      }
+      return el !&#x3D;&#x3D; status
+    }).forEach((roomEl) &#x3D;&gt; this.renderer.addClass(roomEl.nativeElement, &#x27;no-filtro&#x27;));
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'RoomsByType.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

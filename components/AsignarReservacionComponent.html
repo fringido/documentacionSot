@@ -1,0 +1,1206 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  AsignarReservacionComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./asignar-reservacion.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./asignar-reservacion.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#habitacion" >habitacion</a>
+                            </li>
+                            <li>
+                                <a href="#habitacion$" >habitacion$</a>
+                            </li>
+                            <li>
+                                <a href="#numHabitacion" >numHabitacion</a>
+                            </li>
+                            <li>
+                                <a href="#reservaciones" >reservaciones</a>
+                            </li>
+                            <li>
+                                <a href="#selectedRoom" >selectedRoom</a>
+                            </li>
+                            <li>
+                                <a href="#selectedRoomSubs" >selectedRoomSubs</a>
+                            </li>
+                            <li>
+                                <a href="#selectId" >selectId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aceptar" >aceptar</a>
+                            </li>
+                            <li>
+                                <a href="#getInfo" >getInfo</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#salir" >salir</a>
+                            </li>
+                            <li>
+                                <a href="#selectRes" >selectRes</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, dialogService: DialogService, roomService: <a href="../injectables/RoomService.html" target="_self">RoomService</a>, habitacionService: <a href="../injectables/ObtenerHabitacionesService.html" target="_self">ObtenerHabitacionesService</a>, mutarEstado: <a href="../injectables/MutarEstadoHabitacionService.html" target="_self">MutarEstadoHabitacionService</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="125" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:125</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>roomService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RoomService.html" target="_self" >RoomService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>habitacionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ObtenerHabitacionesService.html" target="_self" >ObtenerHabitacionesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>mutarEstado</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MutarEstadoHabitacionService.html" target="_self" >MutarEstadoHabitacionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aceptar"></a>
+                    <span class="name">
+                        <span ><b>aceptar</b></span>
+                        <a href="#aceptar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>aceptar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="156"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:156</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInfo"></a>
+                    <span class="name">
+                        <span ><b>getInfo</b></span>
+                        <a href="#getInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInfo(numHabitacion: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="145"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>numHabitacion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="139"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:139</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="salir"></a>
+                    <span class="name">
+                        <span ><b>salir</b></span>
+                        <a href="#salir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>salir()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="168"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectRes"></a>
+                    <span class="name">
+                        <span ><b>selectRes</b></span>
+                        <a href="#selectRes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectRes(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="152"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacion"></a>
+                    <span class="name">
+                        <span ><b>habitacion</b></span>
+                        <a href="#habitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="123" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:123</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacion$"></a>
+                    <span class="name">
+                        <span ><b>habitacion$</b></span>
+                        <a href="#habitacion$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>this.habitacionService.habitacion$</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="124" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:124</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numHabitacion"></a>
+                    <span class="name">
+                        <span ><b>numHabitacion</b></span>
+                        <a href="#numHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="125" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:125</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reservaciones"></a>
+                    <span class="name">
+                        <span ><b>reservaciones</b></span>
+                        <a href="#reservaciones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+      nombre: &#x27;Rosa lorem itsu &#x27;,
+      telefono: &#x27;714144wer646&#x27;,
+      email: &#x27;maxwer@camacho.com&#x27;,
+      idCliente: &#x27;0&#x27;,
+      idEstado: 1,
+      activo: 1,
+      idUsuarioCreo: 0,
+      idReservacion: 8728,
+      codigoReserva: &#x27;346&#x27;,
+      fechaEntrada: &#x27;2022-12-29&#x27;,
+      fechaSalida: &#x27;2022-12-30&#x27;,
+      noches: 1,
+      personasExtra: 1,
+      idTarifaAplicable: 8,
+      idConfiguracionNegocio: 1,
+      idConfiguracionTipoHabitacion: 37,
+      idTipoHabitacion: 19,
+      idHabitacion: null,
+      idDatosFiscales: null,
+      descuento: 0,
+      leyendaDescuento: &#x27;&#x27;,
+      observaciones: &#x27;&#x27;,
+      totalHabitacion: 862.0689,
+      totalPersonasExtra: 215.5172,
+      totalHospedajeExtra: 0,
+      valorSinIVA: 1077.5861,
+      valorConIVA: 1249.9999,
+      valorIVA: 200,
+      paquetes: 0,
+      informacionPago: null,
+    },
+    {
+      nombre: &#x27;Alma marcela Juarez&#x27;,
+      telefono: &#x27;7143450646&#x27;,
+      email: &#x27;max234_2W3R@global.com&#x27;,
+      idCliente: &#x27;0&#x27;,
+      idEstado: 1,
+      activo: 1,
+      idUsuarioCreo: 0,
+      idReservacion: 8745,
+      codigoReserva: &#x27;346&#x27;,
+      fechaEntrada: &#x27;2022-12-28&#x27;,
+      fechaSalida: &#x27;2022-12-30&#x27;,
+      noches: 1,
+      personasExtra: 1,
+      idTarifaAplicable: 8,
+      idConfiguracionNegocio: 1,
+      idConfiguracionTipoHabitacion: 37,
+      idTipoHabitacion: 19,
+      idHabitacion: null,
+      idDatosFiscales: null,
+      descuento: 0,
+      leyendaDescuento: &#x27;&#x27;,
+      observaciones: &#x27;&#x27;,
+      totalHabitacion: 862.0689,
+      totalPersonasExtra: 215.5172,
+      totalHospedajeExtra: 0,
+      valorSinIVA: 1077.5861,
+      valorConIVA: 1249.9999,
+      valorIVA: 200,
+      paquetes: 0,
+      informacionPago: null,
+    },
+    {
+      nombre: &#x27;Rosa lorem itsu &#x27;,
+      telefono: &#x27;714144wer646&#x27;,
+      email: &#x27;maxwer@camacho.com&#x27;,
+      idCliente: &#x27;0&#x27;,
+      idEstado: 1,
+      activo: 1,
+      idUsuarioCreo: 0,
+      idReservacion: 87204,
+      codigoReserva: &#x27;346&#x27;,
+      fechaEntrada: &#x27;2022-12-29&#x27;,
+      fechaSalida: &#x27;2022-12-30&#x27;,
+      noches: 1,
+      personasExtra: 1,
+      idTarifaAplicable: 8,
+      idConfiguracionNegocio: 1,
+      idConfiguracionTipoHabitacion: 37,
+      idTipoHabitacion: 19,
+      idHabitacion: null,
+      idDatosFiscales: null,
+      descuento: 0,
+      leyendaDescuento: &#x27;&#x27;,
+      observaciones: &#x27;&#x27;,
+      totalHabitacion: 862.0689,
+      totalPersonasExtra: 215.5172,
+      totalHospedajeExtra: 0,
+      valorSinIVA: 1077.5861,
+      valorConIVA: 1249.9999,
+      valorIVA: 200,
+      paquetes: 0,
+      informacionPago: null,
+    },
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="21" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedRoom"></a>
+                    <span class="name">
+                        <span ><b>selectedRoom</b></span>
+                        <a href="#selectedRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="120" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:120</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedRoomSubs"></a>
+                    <span class="name">
+                        <span ><b>selectedRoomSubs</b></span>
+                        <a href="#selectedRoomSubs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Subscription" target="_self" >Subscription</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="121" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:121</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectId"></a>
+                    <span class="name">
+                        <span ><b>selectId</b></span>
+                        <a href="#selectId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/home/inicio-habitaciones/reservacion/vistas/asignar-reservacion/asignar-reservacion.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { MessageModalAutoclosableComponent } from &#x27;src/app/core/components/message-modal-autoclosable/message-modal-autoclosable.component&#x27;;
+import { HabitacionQuery } from &#x27;src/app/core/graphQL/serviciosGraph&#x27;;
+import { MutarEstadoHabitacionService } from &#x27;src/app/core/services/habitaciones/mutar-estado-habitacion.service&#x27;;
+import { ObtenerHabitacionesService } from &#x27;src/app/core/services/habitaciones/obtener-habitaciones.service&#x27;;
+import { RoomStatusEnum } from &#x27;src/app/room-types/enums/room-status.enum&#x27;;
+import { RoomService } from &#x27;src/app/room-types/services/room/room.service&#x27;;
+
+@Component({
+  templateUrl: &#x27;./asignar-reservacion.component.html&#x27;,
+  styleUrls: [&#x27;./asignar-reservacion.component.scss&#x27;],
+})
+export class AsignarReservacionComponent implements OnInit {
+  display: boolean &#x3D; true;
+
+  selectId: number &#x3D; 0;
+
+  reservaciones &#x3D; [
+    {
+      nombre: &#x27;Rosa lorem itsu &#x27;,
+      telefono: &#x27;714144wer646&#x27;,
+      email: &#x27;maxwer@camacho.com&#x27;,
+      idCliente: &#x27;0&#x27;,
+      idEstado: 1,
+      activo: 1,
+      idUsuarioCreo: 0,
+      idReservacion: 8728,
+      codigoReserva: &#x27;346&#x27;,
+      fechaEntrada: &#x27;2022-12-29&#x27;,
+      fechaSalida: &#x27;2022-12-30&#x27;,
+      noches: 1,
+      personasExtra: 1,
+      idTarifaAplicable: 8,
+      idConfiguracionNegocio: 1,
+      idConfiguracionTipoHabitacion: 37,
+      idTipoHabitacion: 19,
+      idHabitacion: null,
+      idDatosFiscales: null,
+      descuento: 0,
+      leyendaDescuento: &#x27;&#x27;,
+      observaciones: &#x27;&#x27;,
+      totalHabitacion: 862.0689,
+      totalPersonasExtra: 215.5172,
+      totalHospedajeExtra: 0,
+      valorSinIVA: 1077.5861,
+      valorConIVA: 1249.9999,
+      valorIVA: 200,
+      paquetes: 0,
+      informacionPago: null,
+    },
+    {
+      nombre: &#x27;Alma marcela Juarez&#x27;,
+      telefono: &#x27;7143450646&#x27;,
+      email: &#x27;max234_2W3R@global.com&#x27;,
+      idCliente: &#x27;0&#x27;,
+      idEstado: 1,
+      activo: 1,
+      idUsuarioCreo: 0,
+      idReservacion: 8745,
+      codigoReserva: &#x27;346&#x27;,
+      fechaEntrada: &#x27;2022-12-28&#x27;,
+      fechaSalida: &#x27;2022-12-30&#x27;,
+      noches: 1,
+      personasExtra: 1,
+      idTarifaAplicable: 8,
+      idConfiguracionNegocio: 1,
+      idConfiguracionTipoHabitacion: 37,
+      idTipoHabitacion: 19,
+      idHabitacion: null,
+      idDatosFiscales: null,
+      descuento: 0,
+      leyendaDescuento: &#x27;&#x27;,
+      observaciones: &#x27;&#x27;,
+      totalHabitacion: 862.0689,
+      totalPersonasExtra: 215.5172,
+      totalHospedajeExtra: 0,
+      valorSinIVA: 1077.5861,
+      valorConIVA: 1249.9999,
+      valorIVA: 200,
+      paquetes: 0,
+      informacionPago: null,
+    },
+    {
+      nombre: &#x27;Rosa lorem itsu &#x27;,
+      telefono: &#x27;714144wer646&#x27;,
+      email: &#x27;maxwer@camacho.com&#x27;,
+      idCliente: &#x27;0&#x27;,
+      idEstado: 1,
+      activo: 1,
+      idUsuarioCreo: 0,
+      idReservacion: 87204,
+      codigoReserva: &#x27;346&#x27;,
+      fechaEntrada: &#x27;2022-12-29&#x27;,
+      fechaSalida: &#x27;2022-12-30&#x27;,
+      noches: 1,
+      personasExtra: 1,
+      idTarifaAplicable: 8,
+      idConfiguracionNegocio: 1,
+      idConfiguracionTipoHabitacion: 37,
+      idTipoHabitacion: 19,
+      idHabitacion: null,
+      idDatosFiscales: null,
+      descuento: 0,
+      leyendaDescuento: &#x27;&#x27;,
+      observaciones: &#x27;&#x27;,
+      totalHabitacion: 862.0689,
+      totalPersonasExtra: 215.5172,
+      totalHospedajeExtra: 0,
+      valorSinIVA: 1077.5861,
+      valorConIVA: 1249.9999,
+      valorIVA: 200,
+      paquetes: 0,
+      informacionPago: null,
+    },
+  ];
+
+  selectedRoom!: any;
+  selectedRoomSubs!: Subscription;
+
+  habitacion!: HabitacionQuery[&#x27;habitacion&#x27;];
+  habitacion$ &#x3D; this.habitacionService.habitacion$;
+  numHabitacion: string;
+
+  constructor(
+    private router: Router,
+    private dialogService: DialogService,
+    private readonly roomService: RoomService,
+    private habitacionService: ObtenerHabitacionesService,
+    private mutarEstado: MutarEstadoHabitacionService,
+    private route: ActivatedRoute
+  ) {
+    this.numHabitacion &#x3D; String(this.route.snapshot.paramMap.get(&#x27;roomNumber&#x27;));
+    this.getInfo(this.numHabitacion);
+  }
+
+  ngOnInit(): void {
+    this.selectedRoomSubs &#x3D; this.roomService.selectedRoom$.subscribe((room) &#x3D;&gt; {
+      this.selectedRoom &#x3D; room;
+    });
+  }
+
+  getInfo(numHabitacion: string) {
+    this.habitacionService.getHabitacio(numHabitacion);
+    this.habitacion$.subscribe((data) &#x3D;&gt; {
+      this.habitacion &#x3D; data;
+    });
+  }
+
+  selectRes(id: number) {
+    this.selectId &#x3D; id;
+  }
+
+  aceptar() {
+    const genDialogMessage &#x3D; (message: string) &#x3D;&gt; {
+      return this.dialogService.open(MessageModalAutoclosableComponent, {
+        data: { message },
+      });
+    };
+    const estado &#x3D; RoomStatusEnum.RESERVADA;
+    this.mutarEstado.cambiarEstado(this.habitacion.id, estado);
+    genDialogMessage(&#x60;RESERVACIÓN ASIGNADA CON ÉXITO&#x60;);
+    this.router.navigate([&#x60;/hotel&#x60;]);
+  }
+
+  salir() {
+    this.router.navigate([&#x60;/hotel&#x60;]);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog header&#x3D;&quot;Asignar Junior Villa&quot; [(visible)]&#x3D;&quot;display&quot; [closable]&#x3D;&quot;false&quot;
+[modal]&#x3D;&quot;true&quot; [draggable]&#x3D;&quot;false&quot; [showHeader]&#x3D;&quot;true&quot;&gt;
+  &lt;div class&#x3D;&quot;container_reservaciones&quot; *ngFor&#x3D;&quot;let reservacion of reservaciones&quot; (click)&#x3D;&quot;selectRes(reservacion.idReservacion)&quot;&gt;
+    &lt;app-component-reservacion [reservacion]&#x3D;&quot;reservacion&quot; [selectId]&#x3D;&quot;selectId&quot;&gt;&lt;/app-component-reservacion&gt;
+  &lt;/div&gt;
+  &lt;ng-template pTemplate&#x3D;&quot;footer&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-footer-content&quot;&gt;
+      &lt;button class&#x3D;&quot;button-modal button-descartar&quot; (click)&#x3D;&quot;salir()&quot;&gt;
+        &lt;div class&#x3D;&quot;icon&quot;&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-x&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text&quot;&gt;Cancelar&lt;/div&gt;
+      &lt;/button&gt;
+      &lt;button (click)&#x3D;&quot;aceptar()&quot; class&#x3D;&quot;button-modal button-aceptar&quot; [disabled]&#x3D;&quot;selectId &#x3D;&#x3D; 0&quot;&gt;
+        &lt;div class&#x3D;&quot;icon&quot;&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-check&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text&quot;&gt;Aceptar&lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/ng-template&gt;
+&lt;/p-dialog&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./asignar-reservacion.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.container_reservaciones {
+  max-width: 935px;
+  margin: 15px 0;
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog header="Asignar Junior Villa" [(visible)]="display" [closable]="false"[modal]="true" [draggable]="false" [showHeader]="true">  <div class="container_reservaciones" *ngFor="let reservacion of reservaciones" (click)="selectRes(reservacion.idReservacion)">    <app-component-reservacion [reservacion]="reservacion" [selectId]="selectId"></app-component-reservacion>  </div>  <ng-template pTemplate="footer">    <div class="modal-footer-content">      <button class="button-modal button-descartar" (click)="salir()">        <div class="icon">          <i class="fa-solid fa-x"></i>        </div>        <div class="text">Cancelar</div>      </button>      <button (click)="aceptar()" class="button-modal button-aceptar" [disabled]="selectId == 0">        <div class="icon">          <i class="fa-solid fa-check"></i>        </div>        <div class="text">Aceptar</div>      </button>    </div>  </ng-template></p-dialog></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'AsignarReservacionComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AsignarReservacionComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

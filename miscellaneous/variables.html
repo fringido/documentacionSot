@@ -1,0 +1,4601 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Miscelánea</li>
+  <li>Variables</li>
+</ol>
+
+<section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#adminMenuList" title="src/app/sidebar/constants/admin-menu-list.ts" ><b>adminMenuList</b>&nbsp;&nbsp;&nbsp;(src/.../admin-menu-list.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#areas" title="src/app/impresoras/lista/constants/impresora-detalles.ts" ><b>areas</b>&nbsp;&nbsp;&nbsp;(src/.../impresora-detalles.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#CambiarEstadoDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>CambiarEstadoDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#CambiarEstadoDocument" title="src/app/core/services/habitaciones/mutar-estado-habitacion.service.ts" ><b>CambiarEstadoDocument</b>&nbsp;&nbsp;&nbsp;(src/.../mutar-estado-habitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#CANCELAR_COMANDA" title="src/app/core/services/comandas/cancelarComanda.service.ts" ><b>CANCELAR_COMANDA</b>&nbsp;&nbsp;&nbsp;(src/.../cancelarComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#CancelarComandaDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>CancelarComandaDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#CREAR_COMANDA" title="src/app/cocinabar/services/comanda/SendComanda.service.ts" ><b>CREAR_COMANDA</b>&nbsp;&nbsp;&nbsp;(src/.../SendComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#CrearExtrasDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>CrearExtrasDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#CrearRentaDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>CrearRentaDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#EntradaHabitacion" title="src/app/core/services/rentaHabitaicones/entradaDeHabitacion.service.ts" ><b>EntradaHabitacion</b>&nbsp;&nbsp;&nbsp;(src/.../entradaDeHabitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#ENTREGAR_COMANDA" title="src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts" ><b>ENTREGAR_COMANDA</b>&nbsp;&nbsp;&nbsp;(src/.../comandaPagoEnvio.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#EntregarComandaDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>EntregarComandaDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#environment" title="src/environments/environment.prod.ts" ><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.prod.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#environment" title="src/environments/environment.ts" ><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#EXTRA_HABITACION" title="src/app/core/services/rentaHabitaicones/extrasDeHabitacion.service.ts" ><b>EXTRA_HABITACION</b>&nbsp;&nbsp;&nbsp;(src/.../extrasDeHabitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#fakeQuery" title="src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts" ><b>fakeQuery</b>&nbsp;&nbsp;&nbsp;(src/.../getAllInfoComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#fakeQuery" title="src/app/cocinabar/services/comanda/getComanda.service.ts" ><b>fakeQuery</b>&nbsp;&nbsp;&nbsp;(src/.../getComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#fakeQuery" title="src/app/core/services/habitaciones/suscripcion-estado-habitacion.service.ts" ><b>fakeQuery</b>&nbsp;&nbsp;&nbsp;(src/.../suscripcion-estado-habitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_ALL_INFO_COMANDA" title="src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts" ><b>GET_ALL_INFO_COMANDA</b>&nbsp;&nbsp;&nbsp;(src/.../getAllInfoComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_ALL_INFO_COMANDA_SUSCRIPCION" title="src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts" ><b>GET_ALL_INFO_COMANDA_SUSCRIPCION</b>&nbsp;&nbsp;&nbsp;(src/.../getAllInfoComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_ARTICULOS_COMANDA" title="src/app/cocinabar/services/comanda/productos-rs.service.ts" ><b>GET_ARTICULOS_COMANDA</b>&nbsp;&nbsp;&nbsp;(src/.../productos-rs.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_COMANDAS" title="src/app/cocinabar/services/comanda/getComanda.service.ts" ><b>GET_COMANDAS</b>&nbsp;&nbsp;&nbsp;(src/.../getComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_COMANDAS_BAR" title="src/app/cocinabar/services/cocinabar/cocinabar.service.ts" ><b>GET_COMANDAS_BAR</b>&nbsp;&nbsp;&nbsp;(src/.../cocinabar.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_COMANDAS_BAR_SUSCRIBE" title="src/app/cocinabar/services/comanda/getComanda.service.ts" ><b>GET_COMANDAS_BAR_SUSCRIBE</b>&nbsp;&nbsp;&nbsp;(src/.../getComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_COMANDAS_COCINA" title="src/app/cocinabar/services/cocinabar/cocinabar.service.ts" ><b>GET_COMANDAS_COCINA</b>&nbsp;&nbsp;&nbsp;(src/.../cocinabar.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_COMANDAS_COCINA_SUSCRIBE" title="src/app/cocinabar/services/comanda/getComanda.service.ts" ><b>GET_COMANDAS_COCINA_SUSCRIBE</b>&nbsp;&nbsp;&nbsp;(src/.../getComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_COMANDAS_SUSCRIBE" title="src/app/cocinabar/services/comanda/getComanda.service.ts" ><b>GET_COMANDAS_SUSCRIBE</b>&nbsp;&nbsp;&nbsp;(src/.../getComanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_EXTRAS" title="src/app/core/services/rentaHabitaicones/extrasDeHabitacion.service.ts" ><b>GET_EXTRAS</b>&nbsp;&nbsp;&nbsp;(src/.../extrasDeHabitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_HABITACION" title="src/app/room-types/services/id-habitacion.service.ts" ><b>GET_HABITACION</b>&nbsp;&nbsp;&nbsp;(src/.../id-habitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_HABITACION" title="src/app/core/services/habitaciones/obtener-habitaciones.service.ts" ><b>GET_HABITACION</b>&nbsp;&nbsp;&nbsp;(src/.../obtener-habitaciones.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_HABITACION_detallada" title="src/app/core/services/habitaciones/obtener-habitaciones.service.ts" ><b>GET_HABITACION_detallada</b>&nbsp;&nbsp;&nbsp;(src/.../obtener-habitaciones.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_HABITACION_ID" title="src/app/core/services/habitaciones/obtener-habitaciones.service.ts" ><b>GET_HABITACION_ID</b>&nbsp;&nbsp;&nbsp;(src/.../obtener-habitaciones.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_HABITAICONES" title="src/app/core/services/habitaciones/suscripcion-estado-habitacion.service.ts" ><b>GET_HABITAICONES</b>&nbsp;&nbsp;&nbsp;(src/.../suscripcion-estado-habitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_HABITAICONES_SUSCRIBE" title="src/app/core/services/habitaciones/suscripcion-estado-habitacion.service.ts" ><b>GET_HABITAICONES_SUSCRIBE</b>&nbsp;&nbsp;&nbsp;(src/.../suscripcion-estado-habitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_RENTA" title="src/app/core/services/rentaHabitaicones/getRenta.service.ts" ><b>GET_RENTA</b>&nbsp;&nbsp;&nbsp;(src/.../getRenta.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_TARIFA" title="src/app/core/services/rentaHabitaicones/tarifas.service.ts" ><b>GET_TARIFA</b>&nbsp;&nbsp;&nbsp;(src/.../tarifas.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_TARIFAS" title="src/app/core/services/rentaHabitaicones/tarifas.service.ts" ><b>GET_TARIFAS</b>&nbsp;&nbsp;&nbsp;(src/.../tarifas.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GET_TIPOS_HABITACION" title="src/app/core/services/habitaciones/suscripcion-estado-habitacion.service.ts" ><b>GET_TIPOS_HABITACION</b>&nbsp;&nbsp;&nbsp;(src/.../suscripcion-estado-habitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GetAllComandasInfoDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>GetAllComandasInfoDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GetAllInfoComandasSuscripcionDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>GetAllInfoComandasSuscripcionDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GetAllRoomsDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>GetAllRoomsDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GetArticulosTodoComandaDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>GetArticulosTodoComandaDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GetComandasBarYCocinaDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>GetComandasBarYCocinaDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GetExtrasDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>GetExtrasDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#GetHabitacionIdDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>GetHabitacionIdDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#HabitacionDetalladaDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>HabitacionDetalladaDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#HabitacionDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>HabitacionDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#HamburguesaMenuList" title="src/app/sidebar/constants/hamburguesa-menu-list.ts" ><b>HamburguesaMenuList</b>&nbsp;&nbsp;&nbsp;(src/.../hamburguesa-menu-list.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#impresoraDetalles" title="src/app/impresoras/lista/constants/impresora-detalles.ts" ><b>impresoraDetalles</b>&nbsp;&nbsp;&nbsp;(src/.../impresora-detalles.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#impresoras" title="src/app/impresoras/lista/constants/impresora-detalles.ts" ><b>impresoras</b>&nbsp;&nbsp;&nbsp;(src/.../impresora-detalles.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#impresorasList" title="src/app/impresoras/lista/constants/impresoras.ts" ><b>impresorasList</b>&nbsp;&nbsp;&nbsp;(src/.../impresoras.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#impresorasList" title="src/app/impresoras/movimientos/constants/impresoras-list.ts" ><b>impresorasList</b>&nbsp;&nbsp;&nbsp;(src/.../impresoras-list.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#LIBERAR_BARRA" title="src/app/cocinabar/services/comanda/liberarCoanda.service.ts" ><b>LIBERAR_BARRA</b>&nbsp;&nbsp;&nbsp;(src/.../liberarCoanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#LIBERAR_COCINA" title="src/app/cocinabar/services/comanda/liberarCoanda.service.ts" ><b>LIBERAR_COCINA</b>&nbsp;&nbsp;&nbsp;(src/.../liberarCoanda.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#LiberarBarrraDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>LiberarBarrraDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#LiberarCocinaDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>LiberarCocinaDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#listaMovimientos" title="src/app/impresoras/movimientos/constants/movimientos-list.ts" ><b>listaMovimientos</b>&nbsp;&nbsp;&nbsp;(src/.../movimientos-list.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#listaReportes" title="src/app/reportar/matricula/components/lista/constants/lista-reportes.ts" ><b>listaReportes</b>&nbsp;&nbsp;&nbsp;(src/.../lista-reportes.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#listTicketsImpresora" title="src/app/impresoras/movimientos/constants/tickets-list.ts" ><b>listTicketsImpresora</b>&nbsp;&nbsp;&nbsp;(src/.../tickets-list.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#ModoAppRoomInitialState" title="src/app/room-types/state/modo-app-room.state.ts" ><b>ModoAppRoomInitialState</b>&nbsp;&nbsp;&nbsp;(src/.../modo-app-room.state.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PAGAR_COMANDA" title="src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts" ><b>PAGAR_COMANDA</b>&nbsp;&nbsp;&nbsp;(src/.../comandaPagoEnvio.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PAGAR_EXTRA" title="src/app/core/services/rentaHabitaicones/extrasDeHabitacion.service.ts" ><b>PAGAR_EXTRA</b>&nbsp;&nbsp;&nbsp;(src/.../extrasDeHabitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PagarComandaDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>PagarComandaDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PagarExtraDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>PagarExtraDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PaquetesList" title="src/app/paquetes/constants/paquetes-list.ts" ><b>PaquetesList</b>&nbsp;&nbsp;&nbsp;(src/.../paquetes-list.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#printStyle" title="src/app/ticket-renta/constants/print-style.ts" ><b>printStyle</b>&nbsp;&nbsp;&nbsp;(src/.../print-style.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#RentaDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>RentaDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#roomsByType" title="src/app/room-types/constants/rooms-by-type.ts" ><b>roomsByType</b>&nbsp;&nbsp;&nbsp;(src/.../rooms-by-type.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#RoomStateCountInitialState" title="src/app/room-types/state/room-types-count-state.ts" ><b>RoomStateCountInitialState</b>&nbsp;&nbsp;&nbsp;(src/.../room-types-count-state.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SALIDA_HABITACION" title="src/app/core/services/rentaHabitaicones/extrasDeHabitacion.service.ts" ><b>SALIDA_HABITACION</b>&nbsp;&nbsp;&nbsp;(src/.../extrasDeHabitacion.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SalidaHabitacionDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>SalidaHabitacionDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#socket" title="src/app/graphql.module.ts" ><b>socket</b>&nbsp;&nbsp;&nbsp;(src/.../graphql.module.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#statusOptionsfn" title="src/app/room-types/constants/status-options.constant.ts" ><b>statusOptionsfn</b>&nbsp;&nbsp;&nbsp;(src/.../status-options.constant.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SubscriptionBarComandasDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>SubscriptionBarComandasDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SubscriptionCocinaComandasDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>SubscriptionCocinaComandasDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SubscriptionComandasDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>SubscriptionComandasDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SubscriptionHabitacionesDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>SubscriptionHabitacionesDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#TarifasDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>TarifasDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#TarifasList" title="src/app/tarifas/constants/tarifas-list.ts" ><b>TarifasList</b>&nbsp;&nbsp;&nbsp;(src/.../tarifas-list.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#TiposHabitacionsesDocument" title="src/app/core/graphQL/serviciosGraph.ts" ><b>TiposHabitacionsesDocument</b>&nbsp;&nbsp;&nbsp;(src/.../serviciosGraph.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#uri" title="src/app/graphql.module.ts" ><b>uri</b>&nbsp;&nbsp;&nbsp;(src/.../graphql.module.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>src/app/sidebar/constants/admin-menu-list.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="adminMenuList"></a>
+                    <span class="name">
+                        <span ><b>adminMenuList</b></span>
+                        <a href="#adminMenuList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/MenuItem.html" target="_self" >MenuItem[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+  {
+    titulo: &#x27;BAR&#x27;,
+    ruta: &#x27;cocina-bar/bar&#x27;,
+  },
+  {
+    titulo: &#x27;COCINA&#x27;,
+    ruta: &#x27;cocina-bar/cocina&#x27;,
+  },
+  {
+    titulo: &#x27;+CONFIGURACIÓNES&#x27;,
+    submenu: [
+      {
+        titulo: &#x27;PROPINAS&#x27;,
+        ruta: &#x27;hotel/configuraciones/propinas&#x27;,
+      },
+      {
+        titulo: &#x27;FAJILLAS&#x27;,
+        ruta: &#x27;hotel/fajillas/configurar&#x27;,
+      },
+      {
+        titulo: &#x27;SALIR&#x27;,
+        ruta: &#x27;exit&#x27;,
+      },
+    ],
+  },
+  {
+    titulo: &#x27;+CATÁLOGOS&#x27;,
+    submenu: [
+      {
+        titulo: &#x27;CONCEPTOS DE MANTENIMIENTO&#x27;,
+        ruta: &#x27;hotel/catalogos/conceptosMantenimiento&#x27;,
+      },
+      {
+        titulo: &#x27;DATOS FISCALES&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;PUESTOS&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;ROLES&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;USUARIOS&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;SALIR&#x27;,
+        ruta: &#x27;exit&#x27;,
+      },
+    ],
+  },
+  {
+    titulo: &#x27;CONCEPTOS&#x27;,
+    ruta: &#x27;hotel/conceptos&#x27;,
+  },
+  {
+    titulo: &#x27;+CORTES&#x27;,
+    submenu: [
+      {
+        titulo: &#x27;CORTE DE TURNO&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;REVISIÓN DE CORTES&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;SALIR&#x27;,
+        ruta: &#x27;exit&#x27;,
+      },
+    ],
+  },
+  {
+    titulo: &#x27;+FAJILLAS&#x27;,
+    submenu: [
+      {
+        titulo: &#x27;CONSULTAR&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;SALIR&#x27;,
+        ruta: &#x27;exit&#x27;,
+      },
+    ],
+  },
+  {
+    titulo: &#x27;+GASTOS&#x27;,
+    submenu: [
+      {
+        titulo: &#x27;CONTROL DE GASTOS&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;FAMILIA DE GASTOS&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;GASTOS GENERALES&#x27;,
+        ruta: &#x27;hotel/gastos/gastosGenerales&#x27;,
+      },
+      {
+        titulo: &#x27;PAGO DE GASTO&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;SALIR&#x27;,
+        ruta: &#x27;exit&#x27;,
+      },
+    ],
+  },
+  {
+    titulo: &#x27;+HABITACIONES&#x27;,
+    submenu: [
+      {
+        titulo: &#x27;HORARIOS LIMPIEZA&#x27;,
+        ruta: &#x27;hotel/&#x27;,
+      },
+      {
+        titulo: &#x27;LIMPIEZA&#x27;,
+        ruta: &#x27;hotel/habitaciones/limpieza&#x27;,
+      },
+      {
+        titulo: &#x27;PAQUETES&#x27;,
+        ruta: &#x27;hotel/paquetes&#x27;,
+      },
+      {
+        titulo: &#x27;TARIFAS&#x27;,
+        ruta: &#x27;hotel/tarifas&#x27;,
+      },
+      {
+        titulo: &#x27;SALIR&#x27;,
+        ruta: &#x27;exit&#x27;,
+      },
+    ],
+  },
+  {
+    titulo: &#x27;NOTIFICACIONES&#x27;,
+    ruta: &#x27;hotel/&#x27;,
+  },
+  {
+    titulo: &#x27;REPORTAR MATRÍCULA&#x27;,
+    ruta: &#x27;hotel/reportar/matricula&#x27;,
+  },
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/impresoras/lista/constants/impresora-detalles.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="areas"></a>
+                    <span class="name">
+                        <span ><b>areas</b></span>
+                        <a href="#areas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        nombre: &#x27;Gerencia&#x27;,
+        id: &#x27;321ABC&#x27;
+    },
+    {
+        nombre: &#x27;Recepción / Vendedores&#x27;,
+        id: &#x27;321ABD&#x27;
+    },
+    {
+        nombre: &#x27;Ama de llaves&#x27;,
+        id: &#x27;321ABE&#x27;
+    },
+    {
+        nombre: &#x27;Mantenimiento&#x27;,
+        id: &#x27;321ABF&#x27;
+    },
+    {
+        nombre: &#x27;Alimentos y Bebidas&#x27;,
+        id: &#x27;321ABG&#x27;
+    },
+    {
+        nombre: &#x27;RRHH&#x27;,
+        id: &#x27;321ABH&#x27;
+    },
+    {
+        nombre: &#x27;Compras&#x27;,
+        id: &#x27;321ABI&#x27;
+    },
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="impresoraDetalles"></a>
+                    <span class="name">
+                        <span ><b>impresoraDetalles</b></span>
+                        <a href="#impresoraDetalles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="impresoras"></a>
+                    <span class="name">
+                        <span ><b>impresoras</b></span>
+                        <a href="#impresoras"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        nombre_en_red: &#x27;deskjet&#x27;,
+        id: &#x27;123ABC&#x27;
+    },
+    {
+        nombre_en_red: &#x27;EpsonL1210&#x27;,
+        id: &#x27;123ABD&#x27;
+    },
+    {
+        nombre_en_red: &#x27;PIXMA&#x27;,
+        id: &#x27;123ABE&#x27;
+    }
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/core/graphQL/serviciosGraph.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CambiarEstadoDocument"></a>
+                    <span class="name">
+                        <span ><b>CambiarEstadoDocument</b></span>
+                        <a href="#CambiarEstadoDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation CambiarEstado($id: ID!, $estado: ValidEstadosHabitaciones!) {
+  cambiar_estado(id: $id, estado: $estado)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CancelarComandaDocument"></a>
+                    <span class="name">
+                        <span ><b>CancelarComandaDocument</b></span>
+                        <a href="#CancelarComandaDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation CancelarComanda($id: ID!, $motivo: String!) {
+  cancelar_comanda(id: $id, motivo: $motivo)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CrearExtrasDocument"></a>
+                    <span class="name">
+                        <span ><b>CrearExtrasDocument</b></span>
+                        <a href="#CrearExtrasDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation CrearExtras($extra: CreateExtraInput!) {
+  crear_extra(createExtraInput: $extra)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CrearRentaDocument"></a>
+                    <span class="name">
+                        <span ><b>CrearRentaDocument</b></span>
+                        <a href="#CrearRentaDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation CrearRenta($renta: CreateRentaInput!) {
+  crear_renta(createRentaInput: $renta)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="EntregarComandaDocument"></a>
+                    <span class="name">
+                        <span ><b>EntregarComandaDocument</b></span>
+                        <a href="#EntregarComandaDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation EntregarComanda($id: ID!) {
+  entregar_comanda(comandaId: $id)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetAllComandasInfoDocument"></a>
+                    <span class="name">
+                        <span ><b>GetAllComandasInfoDocument</b></span>
+                        <a href="#GetAllComandasInfoDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query GetAllComandasInfo {
+  comandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    articulosComanda {
+      cantidad
+      cortesia
+      almacen {
+        menu
+      }
+      articuloRs {
+        nombre
+        precio
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetAllInfoComandasSuscripcionDocument"></a>
+                    <span class="name">
+                        <span ><b>GetAllInfoComandasSuscripcionDocument</b></span>
+                        <a href="#GetAllInfoComandasSuscripcionDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    subscription GetAllInfoComandasSuscripcion {
+  checkComandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetAllRoomsDocument"></a>
+                    <span class="name">
+                        <span ><b>GetAllRoomsDocument</b></span>
+                        <a href="#GetAllRoomsDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query getAllRooms {
+  habitaciones {
+    id
+    numeroHabitacion
+    tipoHabitacion {
+      nombre
+    }
+    estado
+    rentas(concluida: false) {
+      id
+      fechaRegistro
+      fechaSalida
+      fechaInicio
+      fechaFin
+      horasExtra
+      hospedajesExtra
+      personasExtra
+      extras {
+        fechaPago
+        id
+      }
+      tarifa {
+        nombre
+        costoHabitacion
+        horasExtraMax
+        hospedajesExtraMax
+        personasExtraMax
+        costoPersonaExtra
+        costoHospedajeExtra
+        costoHoraExtra
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetArticulosTodoComandaDocument"></a>
+                    <span class="name">
+                        <span ><b>GetArticulosTodoComandaDocument</b></span>
+                        <a href="#GetArticulosTodoComandaDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query GetArticulosTodoComanda {
+  alimentos {
+    id
+    nombre
+    precio
+  }
+  tragos {
+    id
+    nombre
+    precio
+  }
+  almacenes {
+    id
+    menu
+    articulosAlmacen {
+      articuloRs {
+        nombre
+        id
+        precio
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetComandasBarYCocinaDocument"></a>
+                    <span class="name">
+                        <span ><b>GetComandasBarYCocinaDocument</b></span>
+                        <a href="#GetComandasBarYCocinaDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query GetComandasBarYCocina {
+  comandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    articulosComanda {
+      cantidad
+      cortesia
+      almacen {
+        menu
+      }
+      articuloRs {
+        nombre
+        precio
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetExtrasDocument"></a>
+                    <span class="name">
+                        <span ><b>GetExtrasDocument</b></span>
+                        <a href="#GetExtrasDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query GetExtras {
+  extras {
+    id
+    renta {
+      id
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    horas
+    hospedajes
+    personas
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetHabitacionIdDocument"></a>
+                    <span class="name">
+                        <span ><b>GetHabitacionIdDocument</b></span>
+                        <a href="#GetHabitacionIdDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query GetHabitacionId($num: String!) {
+  habitacion(id_o_numero: $num) {
+    id
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="HabitacionDetalladaDocument"></a>
+                    <span class="name">
+                        <span ><b>HabitacionDetalladaDocument</b></span>
+                        <a href="#HabitacionDetalladaDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query HabitacionDetallada($num: String!) {
+  habitacion(id_o_numero: $num) {
+    numeroHabitacion
+    tipoHabitacion {
+      nombre
+    }
+    estado
+    rentas {
+      id
+      fechaRegistro
+      fechaSalida
+      fechaInicio
+      fechaFin
+      horasExtra
+      hospedajesExtra
+      personasExtra
+      extras {
+        fechaPago
+        id
+      }
+      tarifa {
+        nombre
+        costoHabitacion
+        horasExtraMax
+        hospedajesExtraMax
+        personasExtraMax
+        costoPersonaExtra
+        costoHospedajeExtra
+        costoHoraExtra
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="HabitacionDocument"></a>
+                    <span class="name">
+                        <span ><b>HabitacionDocument</b></span>
+                        <a href="#HabitacionDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query Habitacion($num: String!) {
+  habitacion(id_o_numero: $num) {
+    id
+    numeroHabitacion
+    tipoHabitacion {
+      id
+      nombre
+    }
+    estado
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LiberarBarrraDocument"></a>
+                    <span class="name">
+                        <span ><b>LiberarBarrraDocument</b></span>
+                        <a href="#LiberarBarrraDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation LiberarBarrra($id: ID!) {
+  liberar_barra(comandaId: $id)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LiberarCocinaDocument"></a>
+                    <span class="name">
+                        <span ><b>LiberarCocinaDocument</b></span>
+                        <a href="#LiberarCocinaDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation LiberarCocina($id: ID!) {
+  liberar_cocina(comandaId: $id)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="PagarComandaDocument"></a>
+                    <span class="name">
+                        <span ><b>PagarComandaDocument</b></span>
+                        <a href="#PagarComandaDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation PagarComanda($id: ID!) {
+  pagar_comanda(comandaId: $id)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="PagarExtraDocument"></a>
+                    <span class="name">
+                        <span ><b>PagarExtraDocument</b></span>
+                        <a href="#PagarExtraDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation PagarExtra($id: ID!) {
+  pagar_extra(id: $id)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="RentaDocument"></a>
+                    <span class="name">
+                        <span ><b>RentaDocument</b></span>
+                        <a href="#RentaDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query Renta {
+  rentas {
+    habitacion {
+      numeroHabitacion
+      tipoHabitacion {
+        nombre
+      }
+    }
+    tarifa {
+      nombre
+      horasExtraMax
+      hospedajesExtraMax
+      personasExtraMax
+      costoPersonaExtra
+      costoHospedajeExtra
+      costoHoraExtra
+    }
+    id
+    horasExtra
+    hospedajesExtra
+    personasExtra
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SalidaHabitacionDocument"></a>
+                    <span class="name">
+                        <span ><b>SalidaHabitacionDocument</b></span>
+                        <a href="#SalidaHabitacionDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation SalidaHabitacion($id: ID!) {
+  liberar_habitacion(id: $id)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SubscriptionBarComandasDocument"></a>
+                    <span class="name">
+                        <span ><b>SubscriptionBarComandasDocument</b></span>
+                        <a href="#SubscriptionBarComandasDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    subscription SubscriptionBarComandas {
+  checkComandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SubscriptionCocinaComandasDocument"></a>
+                    <span class="name">
+                        <span ><b>SubscriptionCocinaComandasDocument</b></span>
+                        <a href="#SubscriptionCocinaComandasDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    subscription SubscriptionCocinaComandas {
+  checkComandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SubscriptionComandasDocument"></a>
+                    <span class="name">
+                        <span ><b>SubscriptionComandasDocument</b></span>
+                        <a href="#SubscriptionComandasDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    subscription SubscriptionComandas {
+  checkComandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    articulosComanda {
+      cantidad
+      cortesia
+      almacen {
+        menu
+      }
+      articuloRs {
+        nombre
+        precio
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SubscriptionHabitacionesDocument"></a>
+                    <span class="name">
+                        <span ><b>SubscriptionHabitacionesDocument</b></span>
+                        <a href="#SubscriptionHabitacionesDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    subscription SubscriptionHabitaciones {
+  checkHabitaciones {
+    id
+    numeroHabitacion
+    tipoHabitacion {
+      nombre
+    }
+    estado
+    rentas {
+      id
+      fechaRegistro
+      fechaSalida
+      fechaInicio
+      fechaFin
+      horasExtra
+      hospedajesExtra
+      personasExtra
+      extras {
+        fechaPago
+        id
+      }
+      tarifa {
+        nombre
+        costoHabitacion
+        horasExtraMax
+        hospedajesExtraMax
+        personasExtraMax
+        costoPersonaExtra
+        costoHospedajeExtra
+        costoHoraExtra
+      }
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="TarifasDocument"></a>
+                    <span class="name">
+                        <span ><b>TarifasDocument</b></span>
+                        <a href="#TarifasDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query Tarifas {
+  tarifas {
+    nombre
+    id
+    costoHabitacion
+    costoHoraExtra
+    costoHospedajeExtra
+    costoPersonaExtra
+    horasExtraMax
+    hospedajesExtraMax
+    personasExtraMax
+    tipoHabitacion {
+      nombre
+    }
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="TiposHabitacionsesDocument"></a>
+                    <span class="name">
+                        <span ><b>TiposHabitacionsesDocument</b></span>
+                        <a href="#TiposHabitacionsesDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    query TiposHabitacionses {
+  tipos_habitaciones {
+    nombre
+  }
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/core/services/habitaciones/mutar-estado-habitacion.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CambiarEstadoDocument"></a>
+                    <span class="name">
+                        <span ><b>CambiarEstadoDocument</b></span>
+                        <a href="#CambiarEstadoDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation CambiarEstado($id: ID!, $estado: ValidEstadosHabitaciones!) {
+  cambiar_estado(id: $id, estado: $estado)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/core/services/comandas/cancelarComanda.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CANCELAR_COMANDA"></a>
+                    <span class="name">
+                        <span ><b>CANCELAR_COMANDA</b></span>
+                        <a href="#CANCELAR_COMANDA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+ mutation CancelarComanda($id: ID!, $motivo: String!) {
+  cancelar_comanda(id: $id, motivo: $motivo)
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/cocinabar/services/comanda/SendComanda.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CREAR_COMANDA"></a>
+                    <span class="name">
+                        <span ><b>CREAR_COMANDA</b></span>
+                        <a href="#CREAR_COMANDA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation CrearComanda($comanda: CreateComandaInput!) {
+  crear_comanda(createComandaInput: $comanda)
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/core/services/rentaHabitaicones/entradaDeHabitacion.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="EntradaHabitacion"></a>
+                    <span class="name">
+                        <span ><b>EntradaHabitacion</b></span>
+                        <a href="#EntradaHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation crear_renta( $renta: CreateRentaInput!) {
+  crear_renta(createRentaInput:$renta)
+}
+    &#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ENTREGAR_COMANDA"></a>
+                    <span class="name">
+                        <span ><b>ENTREGAR_COMANDA</b></span>
+                        <a href="#ENTREGAR_COMANDA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation EntregarComanda($id: ID!) {
+    entregar_comanda(comandaId: $id)
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="PAGAR_COMANDA"></a>
+                    <span class="name">
+                        <span ><b>PAGAR_COMANDA</b></span>
+                        <a href="#PAGAR_COMANDA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+    mutation PagarComanda($id: ID!) {
+      pagar_comanda(comandaId: $id)
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/environments/environment.prod.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="environment"></a>
+                    <span class="name">
+                        <span ><b>environment</b></span>
+                        <a href="#environment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+  production: true,
+  url : &#x27;http://10.0.60.9:3000/api/v1&#x27;,
+  urlGraph: &#x27;http://10.0.60.9:3002/graphql&#x27;,
+  ws: &#x27;ws://10.0.60.9:3002/graphql&#x27;
+
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/environments/environment.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="environment"></a>
+                    <span class="name">
+                        <span ><b>environment</b></span>
+                        <a href="#environment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+  production: false,
+  url : &#x27;http://10.0.60.9:3000/api/v1&#x27;,
+  urlGraph: &#x27;http://10.0.60.9:3002/graphql&#x27;,
+  ws: &#x27;ws://10.0.60.9:3002/graphql&#x27;
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/core/services/rentaHabitaicones/extrasDeHabitacion.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="EXTRA_HABITACION"></a>
+                    <span class="name">
+                        <span ><b>EXTRA_HABITACION</b></span>
+                        <a href="#EXTRA_HABITACION"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  mutation CrearExtras($extra: CreateExtraInput!) {
+    crear_extra(createExtraInput: $extra)
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_EXTRAS"></a>
+                    <span class="name">
+                        <span ><b>GET_EXTRAS</b></span>
+                        <a href="#GET_EXTRAS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+query GetExtras{
+  extras{
+    id
+    renta {
+      id
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    horas
+    hospedajes
+    personas
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="PAGAR_EXTRA"></a>
+                    <span class="name">
+                        <span ><b>PAGAR_EXTRA</b></span>
+                        <a href="#PAGAR_EXTRA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  mutation PagarExtra($id: ID!) {
+    pagar_extra(id: $id)
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SALIDA_HABITACION"></a>
+                    <span class="name">
+                        <span ><b>SALIDA_HABITACION</b></span>
+                        <a href="#SALIDA_HABITACION"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  mutation Liberate($id: ID!) {
+    liberar_habitacion(id: $id)
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/cocinabar/services/comanda/getAllInfoComanda.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fakeQuery"></a>
+                    <span class="name">
+                        <span ><b>fakeQuery</b></span>
+                        <a href="#fakeQuery"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;query{fake}&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_ALL_INFO_COMANDA"></a>
+                    <span class="name">
+                        <span ><b>GET_ALL_INFO_COMANDA</b></span>
+                        <a href="#GET_ALL_INFO_COMANDA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query GetAllInfoComandas {
+    comandas {
+      id
+      fechaSolicitud
+      fechaCancelacion
+      fechaEntrega
+      fechaPago
+      renta {
+        habitacion {
+          numeroHabitacion
+        }
+      }
+      alimentosComanda {
+        cantidad
+        comentario
+        fechaPorEntregar
+        cortesia
+        alimento {
+          nombre
+          precio
+        }
+      }
+      tragosComanda {
+        cantidad
+        comentario
+        fechaPorEntregar
+        cortesia
+        trago {
+          nombre
+          precio
+        }
+      }
+    }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_ALL_INFO_COMANDA_SUSCRIPCION"></a>
+                    <span class="name">
+                        <span ><b>GET_ALL_INFO_COMANDA_SUSCRIPCION</b></span>
+                        <a href="#GET_ALL_INFO_COMANDA_SUSCRIPCION"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+
+subscription GetAllInfoComandasSuscripcion {
+  checkComandas {
+      id
+      fechaSolicitud
+      fechaCancelacion
+      fechaEntrega
+      fechaPago
+      renta {
+        habitacion {
+          numeroHabitacion
+        }
+      }
+      alimentosComanda {
+        cantidad
+        comentario
+        fechaPorEntregar
+        cortesia
+        alimento {
+          nombre
+          precio
+        }
+      }
+      tragosComanda {
+        cantidad
+        comentario
+        fechaPorEntregar
+        cortesia
+        trago {
+          nombre
+          precio
+        }
+      }
+    }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/cocinabar/services/comanda/getComanda.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fakeQuery"></a>
+                    <span class="name">
+                        <span ><b>fakeQuery</b></span>
+                        <a href="#fakeQuery"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;query{fake}&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_COMANDAS"></a>
+                    <span class="name">
+                        <span ><b>GET_COMANDAS</b></span>
+                        <a href="#GET_COMANDAS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query {
+    comandas{
+      id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    articulosComanda{
+      cantidad
+      cortesia
+      almacen {
+        menu
+      }
+      articuloRs {
+        nombre
+        precio
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_COMANDAS_BAR_SUSCRIBE"></a>
+                    <span class="name">
+                        <span ><b>GET_COMANDAS_BAR_SUSCRIBE</b></span>
+                        <a href="#GET_COMANDAS_BAR_SUSCRIBE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  subscription SubscriptionBarComandas{
+  checkComandas{
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_COMANDAS_COCINA_SUSCRIBE"></a>
+                    <span class="name">
+                        <span ><b>GET_COMANDAS_COCINA_SUSCRIBE</b></span>
+                        <a href="#GET_COMANDAS_COCINA_SUSCRIBE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+subscription SubscriptionCocinaComandas{
+checkComandas{
+  id
+  fechaSolicitud
+  fechaCancelacion
+  fechaEntrega
+  fechaPago
+  renta {
+    habitacion {
+      numeroHabitacion
+    }
+  }
+  alimentosComanda {
+    cantidad
+    comentario
+    fechaPorEntregar
+    cortesia
+    alimento {
+      nombre
+      precio
+    }
+  }
+}
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_COMANDAS_SUSCRIBE"></a>
+                    <span class="name">
+                        <span ><b>GET_COMANDAS_SUSCRIBE</b></span>
+                        <a href="#GET_COMANDAS_SUSCRIBE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  subscription SubscriptionComandas{
+  checkComandas{
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    articulosComanda{
+      cantidad
+      cortesia
+      almacen {
+        menu
+      }
+      articuloRs {
+        nombre
+        precio
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/core/services/habitaciones/suscripcion-estado-habitacion.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fakeQuery"></a>
+                    <span class="name">
+                        <span ><b>fakeQuery</b></span>
+                        <a href="#fakeQuery"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query {
+    fake
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_HABITAICONES"></a>
+                    <span class="name">
+                        <span ><b>GET_HABITAICONES</b></span>
+                        <a href="#GET_HABITAICONES"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query {
+    habitaciones {
+      id
+      numeroHabitacion
+      tipoHabitacion {
+        nombre
+      }
+      estado
+      rentas {
+        id
+        fechaRegistro
+        fechaSalida
+        fechaInicio
+        fechaFin
+        horasExtra
+        hospedajesExtra
+        personasExtra
+        extras {
+          fechaPago
+          id
+        }
+        tarifa {
+          nombre
+          costoHabitacion
+          horasExtraMax
+          hospedajesExtraMax
+          personasExtraMax
+          costoPersonaExtra
+          costoHospedajeExtra
+          costoHoraExtra
+        }
+      }
+    }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_HABITAICONES_SUSCRIBE"></a>
+                    <span class="name">
+                        <span ><b>GET_HABITAICONES_SUSCRIBE</b></span>
+                        <a href="#GET_HABITAICONES_SUSCRIBE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  subscription SubscriptionHabitaciones {
+    checkHabitaciones {
+      id
+      numeroHabitacion
+      tipoHabitacion {
+        nombre
+      }
+      estado
+      rentas {
+        id
+        fechaRegistro
+        fechaSalida
+        fechaInicio
+        fechaFin
+        horasExtra
+        hospedajesExtra
+        personasExtra
+        extras {
+          fechaPago
+          id
+        }
+        tarifa {
+          nombre
+          costoHabitacion
+          horasExtraMax
+          hospedajesExtraMax
+          personasExtraMax
+          costoPersonaExtra
+          costoHospedajeExtra
+          costoHoraExtra
+        }
+      }
+    }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_TIPOS_HABITACION"></a>
+                    <span class="name">
+                        <span ><b>GET_TIPOS_HABITACION</b></span>
+                        <a href="#GET_TIPOS_HABITACION"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query {
+    tipos_habitaciones {
+      id
+      nombre
+    }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/cocinabar/services/comanda/productos-rs.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_ARTICULOS_COMANDA"></a>
+                    <span class="name">
+                        <span ><b>GET_ARTICULOS_COMANDA</b></span>
+                        <a href="#GET_ARTICULOS_COMANDA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query GetArticulosTodoComanda {
+    alimentos {
+    id
+    nombre
+    precio
+  }
+  tragos {
+    id
+    nombre
+    precio
+  }
+  almacenes {
+    menu
+    id
+    articulosAlmacen {
+      articuloRs {
+        nombre
+        id
+        precio
+      }
+    }
+  }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/cocinabar/services/cocinabar/cocinabar.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_COMANDAS_BAR"></a>
+                    <span class="name">
+                        <span ><b>GET_COMANDAS_BAR</b></span>
+                        <a href="#GET_COMANDAS_BAR"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+query Comandas {
+  comandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_COMANDAS_COCINA"></a>
+                    <span class="name">
+                        <span ><b>GET_COMANDAS_COCINA</b></span>
+                        <a href="#GET_COMANDAS_COCINA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+query Comandas {
+  comandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/room-types/services/id-habitacion.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_HABITACION"></a>
+                    <span class="name">
+                        <span ><b>GET_HABITACION</b></span>
+                        <a href="#GET_HABITACION"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query Habitacion($num:String!){
+  habitacion(id_o_numero: $num) {
+    id
+    numeroHabitacion
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/core/services/habitaciones/obtener-habitaciones.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_HABITACION"></a>
+                    <span class="name">
+                        <span ><b>GET_HABITACION</b></span>
+                        <a href="#GET_HABITACION"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query Habitacion($num: String!) {
+    habitacion(id_o_numero: $num) {
+      id
+      numeroHabitacion
+      tipoHabitacion {
+        id
+        nombre
+      }
+      estado
+    }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_HABITACION_detallada"></a>
+                    <span class="name">
+                        <span ><b>GET_HABITACION_detallada</b></span>
+                        <a href="#GET_HABITACION_detallada"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query Habitacion_Detallada($num: String!) {
+    habitacion(id_o_numero: $num) {
+      numeroHabitacion
+      tipoHabitacion {
+        nombre
+      }
+      estado
+      rentas {
+        id
+        fechaRegistro
+        fechaSalida
+        fechaInicio
+        fechaFin
+        horasExtra
+        hospedajesExtra
+        personasExtra
+        extras {
+          fechaPago
+          id
+        }
+        tarifa {
+          nombre
+          costoHabitacion
+          horasExtraMax
+          hospedajesExtraMax
+          personasExtraMax
+          costoPersonaExtra
+          costoHospedajeExtra
+          costoHoraExtra
+        }
+      }
+    }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_HABITACION_ID"></a>
+                    <span class="name">
+                        <span ><b>GET_HABITACION_ID</b></span>
+                        <a href="#GET_HABITACION_ID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query Habitacion($num: String!) {
+    habitacion(id_o_numero: $num) {
+      id
+    }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/core/services/rentaHabitaicones/getRenta.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_RENTA"></a>
+                    <span class="name">
+                        <span ><b>GET_RENTA</b></span>
+                        <a href="#GET_RENTA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql &#x60;
+query{
+  rentas {
+    habitacion {
+      numeroHabitacion
+      tipoHabitacion {
+        nombre
+      }
+    }
+    tarifa {
+      nombre
+      horasExtraMax
+      hospedajesExtraMax
+      personasExtraMax
+      costoPersonaExtra
+      costoHospedajeExtra
+      costoHoraExtra
+    }
+    id
+    horasExtra
+    hospedajesExtra
+    personasExtra
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/core/services/rentaHabitaicones/tarifas.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_TARIFA"></a>
+                    <span class="name">
+                        <span ><b>GET_TARIFA</b></span>
+                        <a href="#GET_TARIFA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query {
+  tarifas{
+  nombre
+  id
+  tipoHabitacion {
+    nombre
+  }
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GET_TARIFAS"></a>
+                    <span class="name">
+                        <span ><b>GET_TARIFAS</b></span>
+                        <a href="#GET_TARIFAS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  query {
+    tarifas {
+      nombre
+      id
+      costoHabitacion
+      costoHoraExtra
+      costoHospedajeExtra
+      costoPersonaExtra
+      horasExtraMax
+      hospedajesExtraMax
+      personasExtraMax
+      tipoHabitacion {
+        nombre
+      }
+    }
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/sidebar/constants/hamburguesa-menu-list.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="HamburguesaMenuList"></a>
+                    <span class="name">
+                        <span ><b>HamburguesaMenuList</b></span>
+                        <a href="#HamburguesaMenuList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/MenuItem.html" target="_self" >MenuItem[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        titulo: &#x27;CONTROL DE EMPLEADOS&#x27;,
+        ruta: &#x27;TODO:&#x27;
+    },
+    {
+        titulo: &#x27;GASTOS DE CORTE&#x27;,
+        ruta: &#x27;TODO:&#x27;
+    },
+    {
+        titulo: &#x27;+IMPRESORAS&#x27;,
+        submenu: [
+            {
+                titulo: &#x27;NUEVA IMPRESORA&#x27;,
+                ruta: &#x27;hotel/impresoras/lista&#x27;
+            },
+            {
+                titulo: &#x27;CONFIGURACIÓN&#x27;,
+                ruta: &#x27;hotel/impresoras/movimientos&#x27;
+            },
+            {
+                titulo: &#x27;SALIR&#x27;,
+                ruta: &#x27;exit&#x27;
+            }
+        ]
+    },
+    {
+        titulo: &#x27;INVENTARIOS&#x27;,
+        ruta: &#x27;TODO:&#x27;
+    },
+    {
+        titulo: &#x27;LAVANDERIA&#x27;,
+        ruta: &#x27;TODO:&#x27;
+    },
+    {
+        titulo: &#x27;NUEVA FAJILLA&#x27;,
+        ruta: &#x27;TODO:&#x27;
+    },
+    {
+        titulo: &#x27;+OPERACIÓN&#x27;,
+        ruta: &#x27;TODO:&#x27;,
+        submenu: []
+    },
+    {
+        titulo: &#x27;+REPORTES&#x27;,
+        ruta: &#x27;TODO:&#x27;,
+        submenu: []
+    },
+    {
+        titulo: &#x27;VINCULAR VIDEOS&#x27;,
+        submenu: []
+    }
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/impresoras/lista/constants/impresoras.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="impresorasList"></a>
+                    <span class="name">
+                        <span ><b>impresorasList</b></span>
+                        <a href="#impresorasList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        id: &#x27;1&#x27;,
+        nombre: &#x27;BARRA1&#x27;
+    },
+    {
+        id: &#x27;2&#x27;,
+        nombre: &#x27;BARRA2&#x27;
+    },
+    {
+        id: &#x27;3&#x27;,
+        nombre: &#x27;BARRA3&#x27;
+    },
+    {
+        id: &#x27;4&#x27;,
+        nombre: &#x27;BARRA4&#x27;
+    },
+    {
+        id: &#x27;5&#x27;,
+        nombre: &#x27;BARRA5&#x27;
+    },
+    {
+        id: &#x27;6&#x27;,
+        nombre: &#x27;BARRA6&#x27;
+    },
+    {
+        id: &#x27;7&#x27;,
+        nombre: &#x27;COCINA7&#x27;
+    },
+    {
+        id: &#x27;8&#x27;,
+        nombre: &#x27;GERENCIA&#x27;
+    },
+    {
+        id: &#x27;8&#x27;,
+        nombre: &#x27;GERENCIA2&#x27;
+    },
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/impresoras/movimientos/constants/impresoras-list.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="impresorasList"></a>
+                    <span class="name">
+                        <span ><b>impresorasList</b></span>
+                        <a href="#impresorasList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        id: &#x27;4&#x27;,
+        nombre: &#x27;BARRA&#x27;
+    },
+    {
+        id: &#x27;5&#x27;,
+        nombre: &#x27;COCINA&#x27;
+    },
+    {
+        id: &#x27;6&#x27;,
+        nombre: &#x27;GERENCIA&#x27;
+    },
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/cocinabar/services/comanda/liberarCoanda.service.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LIBERAR_BARRA"></a>
+                    <span class="name">
+                        <span ><b>LIBERAR_BARRA</b></span>
+                        <a href="#LIBERAR_BARRA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  mutation LiberarBarrra($id: ID!) {
+    liberar_barra(comandaId: $id)
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LIBERAR_COCINA"></a>
+                    <span class="name">
+                        <span ><b>LIBERAR_COCINA</b></span>
+                        <a href="#LIBERAR_COCINA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>gql&#x60;
+  mutation LiberarCocina($id: ID!) {
+    liberar_cocina(comandaId: $id)
+  }
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/impresoras/movimientos/constants/movimientos-list.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listaMovimientos"></a>
+                    <span class="name">
+                        <span ><b>listaMovimientos</b></span>
+                        <a href="#listaMovimientos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        id: 1,
+        nombre: &quot;Persona Extra&quot;,
+        descripcion: &quot;Movimiento que se genera cuando un cliente solicita que se registre una \r\npersona extra en su habitacion&quot;
+    },
+    {
+        id: 2,
+        nombre: &quot;Hospedaje Extra&quot;,
+        descripcion: &quot;Movimiento que se genera cuando un cliente solicita que se extienda por dias\r\nsu estadia&quot;
+    },
+    {
+        id: 3,
+        nombre: &quot;Hora Extra&quot;,
+        descripcion: &quot;Movimiento que se genera cuando un cliente solicita que se extienda por horas\r\nsu estadia&quot;
+    },
+    {
+        id: 4,
+        nombre: &quot;Room Service Bar&quot;,
+        descripcion: &quot;Movimiento que se genera cuando un cliente solicita un room service del area\r\nde Bar&quot;
+    },
+    {
+        id: 5,
+        nombre: &quot;Room Service Cocina&quot;,
+        descripcion: &quot;Movimiento que se genera cuando un cliente solicita un room service del area de Cocina&quot;
+    },
+    {
+        id: 6,
+        nombre: &quot;Entrada Habitacion&quot;,
+        descripcion: &quot;Movimiento que se genera cuando un cliente\r\npaga la renta de una habitacion&quot;
+    },
+    {
+        id: 7,
+        nombre: &quot;Reservacion&quot;,
+        descripcion: &quot;Movimiento que se genera cuando un cliente\r\npaga la reservacion de una habitacion&quot;
+    },
+    {
+        id: 8,
+        nombre: &quot;Servicio Restaurante Bar&quot;,
+        descripcion: &quot;Movimiento que se genera cuando un un cliente consume en el restaurante algo del area\r\nde Bar&quot;
+    },
+    {
+        id: 9,
+        nombre: &quot;Servicio Restaurante Cocina&quot;,
+        descripcion: &quot;Movimiento que se genera cuando un un cliente consume en el restaurante algo del area\r\nde Cocina&quot;
+    },
+    {
+        id: 10,
+        nombre: &quot;Gastos&quot;,
+        descripcion: &quot;Movimiento que se genera cuando se paga algun gasto derivado de las \r\noperaciones del hotel&quot;
+    }
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/reportar/matricula/components/lista/constants/lista-reportes.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listaReportes"></a>
+                    <span class="name">
+                        <span ><b>listaReportes</b></span>
+                        <a href="#listaReportes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        matricula: &#x27;abc-123&#x27;,
+        descripcion: &#x27;No paga&#x27;,
+        id: &#x27;ABC123&#x27;,
+        activo: true,
+        fechaCreacion: new Date(),
+        nombreUsuarioCreo: &#x27;Luis&#x27;,
+        nombreUsuarioElimino: &#x27;Luis&#x27;
+    },
+    {matricula: &#x27;abc-123&#x27;, descripcion: &#x27;Se llevo toallas&#x27;, id: &#x27;ABC124&#x27;, activo: true, fechaCreacion: new Date(),
+    nombreUsuarioCreo: &#x27;Luis&#x27;,
+    nombreUsuarioElimino: &#x27;Luis&#x27;},
+    {matricula: &#x27;abc-123&#x27;, descripcion: &#x27;Tiro agua en la duela&#x27;, id: &#x27;ABC125&#x27;, activo: true, fechaCreacion: new Date(),
+    nombreUsuarioCreo: &#x27;Luis&#x27;,
+    nombreUsuarioElimino: &#x27;Luis&#x27;},
+    {matricula: &#x27;abc-123&#x27;, descripcion: &#x27;Descompuso televisor&#x27;, id: &#x27;ABC126&#x27;, activo: true, fechaCreacion: new Date(),
+    nombreUsuarioCreo: &#x27;Luis&#x27;,
+    nombreUsuarioElimino: &#x27;Luis&#x27;},
+    {matricula: &#x27;abc-123&#x27;, descripcion: &#x27;Rallo muebles&#x27;, id: &#x27;ABC127&#x27;, activo: false, fechaCreacion: new Date(),
+    nombreUsuarioCreo: &#x27;Luis&#x27;,
+    nombreUsuarioElimino: &#x27;Luis&#x27;}
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/impresoras/movimientos/constants/tickets-list.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listTicketsImpresora"></a>
+                    <span class="name">
+                        <span ><b>listTicketsImpresora</b></span>
+                        <a href="#listTicketsImpresora"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/TicketsImpresora.html" target="_self" >TicketsImpresora[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        impresora: {
+        name: &#x27;BARRA&#x27;,
+        id: &#x27;1&#x27;
+        },
+        movimiento: {
+            name: &#x27;PERSONA EXTRA&#x27;,
+            id: &#x27;AAA-123&#x27;,
+        },
+        tickets: {
+            miniticket: 1,
+            ticket: 2
+        }
+    },
+    {
+        impresora: {
+        name: &#x27;COCINA&#x27;,
+        id: &#x27;2&#x27;
+        },
+        movimiento: {
+            name: &#x27;HOSPEDAJE EXTRA&#x27;,
+            id: &#x27;ACB-123&#x27;,
+        },
+        tickets: {
+            miniticket: 1,
+            ticket: 2
+        }
+    },
+    {
+        impresora: {
+        name: &#x27;GERENCIA&#x27;,
+        id: &#x27;3&#x27;
+        },
+        movimiento: {
+            name: &#x27;ROOM SERVICE BAR&#x27;,
+            id: &#x27;AAY-123&#x27;,
+        },
+        tickets: {
+            miniticket: 1,
+            ticket: 2
+        }
+    },
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/room-types/state/modo-app-room.state.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ModoAppRoomInitialState"></a>
+                    <span class="name">
+                        <span ><b>ModoAppRoomInitialState</b></span>
+                        <a href="#ModoAppRoomInitialState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/ModoAppRoomState.html" target="_self" >ModoAppRoomState</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    cambio: false,
+    seleccionada: false,
+    noSeleccionada: true
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/paquetes/constants/paquetes-list.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="PaquetesList"></a>
+                    <span class="name">
+                        <span ><b>PaquetesList</b></span>
+                        <a href="#PaquetesList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        name: &#x27;Paquete1&#x27;,
+        roomType: &#x27;Junior Villa&#x27;,
+        price: &#x27;2142&#x27;,
+        discount: &#x27;20&#x27;,
+        cobroUnico: true
+    },
+    {
+        name: &#x27;Paquete2&#x27;,
+        roomType: &#x27;Junior Villa&#x27;,
+        price: &#x27;500&#x27;,
+        discount: &#x27;20&#x27;,
+        cobroUnico: true
+    },
+    {
+        name: &#x27;Paquete3&#x27;,
+        roomType: &#x27;Pool &amp; Spa&#x27;,
+        price: &#x27;5000&#x27;,
+        discount: &#x27;20&#x27;,
+        cobroUnico: true
+    },
+    {
+        name: &#x27;Paquete4&#x27;,
+        roomType: &#x27;Pool &amp; Spa&#x27;,
+        price: &#x27;5000&#x27;,
+        discount: &#x27;20&#x27;,
+        cobroUnico: true
+    },
+    {
+        name: &#x27;Paquete5&#x27;,
+        roomType: &#x27;Twin Suite&#x27;,
+        price: &#x27;5000&#x27;,
+        discount: &#x27;20&#x27;,
+        cobroUnico: false
+    },
+    {
+        name: &#x27;Paquete6&#x27;,
+        roomType: &#x27;Pool Villa&#x27;,
+        price: &#x27;3423&#x27;,
+        discount: &#x27;20&#x27;,
+        cobroUnico: false
+    },
+    {
+        name: &#x27;Paquete7&#x27;,
+        roomType: &#x27;Sky Suite&#x27;,
+        price: &#x27;8000&#x27;,
+        discount: &#x27;40&#x27;,
+        cobroUnico: false
+    },
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/ticket-renta/constants/print-style.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="printStyle"></a>
+                    <span class="name">
+                        <span ><b>printStyle</b></span>
+                        <a href="#printStyle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x60;
+@media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  body {
+    padding-top: 72px;
+    padding-bottom: 72px ;
+  }
+  @page:footer {
+    display: none
+  }
+
+  @page:header {
+    display: none
+  }
+  .BotonImprimir {
+    display: none;
+  }
+}
+&#x60;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/room-types/constants/rooms-by-type.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="roomsByType"></a>
+                    <span class="name">
+                        <span ><b>roomsByType</b></span>
+                        <a href="#roomsByType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+      name: &#x27;Junior Villa&#x27;,
+      rooms: [
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 1,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.PREPARADA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 2,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.OCUPADA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 3,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.SUCIA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 4,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.SUCIA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 5,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.EN_LIMPIEZA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 6,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: &#x27;Luis Mario Hernández García&#x27;,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.EN_SUPERVISION,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 7,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: null,
+          supervisor: &#x27;Luis Mario Hernández García&#x27;,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.POR_COBRAR,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 8,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.ROOM_SERVICE_POR_COBRAR,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 9,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.ROOM_SERVICE_EXTRAS_POR_COBRAR,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 10,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.ROOM_SERVICE,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3500,
+          roomNumber: 11,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.ROOM_SERVICE_EXTRAS_POR_COBRAR,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 12,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.ROOM_SERVICE,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 13,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.SUCIA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3500,
+          roomNumber: 14,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.SUCIA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3500,
+          roomNumber: 15,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.EN_LIMPIEZA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3500,
+          roomNumber: 16,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.MANTENIMIENTO,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3500,
+          roomNumber: 17,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          observaciones: &#x27;La pantalla no enciende&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000,
+          tipoMantenimiento: TipoMantenimientoEnum.MANTENIMIENTO
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 18,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 0,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.RESERVADA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 0,
+          roomNumber: 19,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 0,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.RESERVADA_PREPARADA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 0,
+          roomNumber: 20,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 0,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE_CON_DETALLES,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 21,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.BLOQUEADA,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 22,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000,
+          observaciones: &#x27;Bloqueado por texto&#x27;
+        },
+        {
+          status: RoomStatusEnum.SUPERVISION_MANTENIMIENTO,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 23,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: null,
+          supervisor: &#x27;Luis Mario Hernández García&#x27;,
+          duracionTarifa: 10000,
+          observaciones: &#x27;Mant. por texto&#x27;
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Villa&#x27;,
+          statusTimer: 3700,
+          roomNumber: 24,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+      ]
+    },
+    {
+      name: &#x27;Twin Suite&#x27;,
+      rooms: [
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Twin Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 25,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Twin Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 26,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Twin Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 27,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Twin Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 28,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Twin Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 29,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Twin Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 30,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Twin Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 31,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Twin Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 32,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+      ]
+    },
+    {
+      name: &#x27;Junior Suite&#x27;,
+      rooms: [
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 33,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 34,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 35,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 36,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 37,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 38,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 39,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 40,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 41,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 42,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 43,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 44,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 45,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 46,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 47,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 48,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 49,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 50,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 51,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Junior Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 52,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+      ]
+    },
+    {
+      name: &#x27;Pool Villa&#x27;,
+      rooms: [
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool Villa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 53,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool Villa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 54,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+      ]
+    },
+    {
+      name: &#x27;Pool &amp; Spa&#x27;,
+      rooms: [
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 54,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 55,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 56,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 57,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 58,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 59,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 60,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 61,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 62,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Pool &amp; Spa&#x27;,
+          statusTimer: 3400,
+          roomNumber: 63,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+      ]
+    },
+    {
+      name: &#x27;Sky Suite&#x27;,
+      rooms: [
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Sky Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 64,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+        {
+          status: RoomStatusEnum.LIBRE,
+          tipo: &#x27;Sky Suite&#x27;,
+          statusTimer: 3400,
+          roomNumber: 65,
+          matricula: &#x27;ABC-123&#x27;,
+          tarifa: &#x27;Pie&#x27;,
+          camaristaOCamaristas: 2,
+          supervisor: null,
+          duracionTarifa: 10000
+        },
+      ]
+    }
+  ]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/room-types/state/room-types-count-state.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="RoomStateCountInitialState"></a>
+                    <span class="name">
+                        <span ><b>RoomStateCountInitialState</b></span>
+                        <a href="#RoomStateCountInitialState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    libre: 0,
+    porCobrar: 0,
+    preparada: 0,
+    ocupada: 0,
+    roomService: 0,
+    sucia: 0,
+    enLimpieza: 0,
+    enSupervision: 0,
+    reservada: 0,
+    reservadaPreparada: 0,
+    bloqueada: 0,
+    mantenimiento: 0,
+    alertas: 0
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/graphql.module.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="socket"></a>
+                    <span class="name">
+                        <span ><b>socket</b></span>
+                        <a href="#socket"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>environment.ws</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uri"></a>
+                    <span class="name">
+                        <span ><b>uri</b></span>
+                        <a href="#uri"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>environment.urlGraph</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/room-types/constants/status-options.constant.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="statusOptionsfn"></a>
+                    <span class="name">
+                        <span ><b>statusOptionsfn</b></span>
+                        <a href="#statusOptionsfn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>(bgColor: BgColorEnum, textColor: TextColorEnum, icon: RoomIconsEnum) &#x3D;&gt; {
+  const statusOptions: { [key in RoomStatusEnum]: () &#x3D;&gt; void } &#x3D; {
+    [RoomStatusEnum.LIBRE]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.SUCCESS;
+      textColor &#x3D; TextColorEnum.SUCCESS;
+      icon &#x3D; RoomIconsEnum.CHECK;
+    },
+    [RoomStatusEnum.LIBRE_CON_DETALLES]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.PURPLE;
+      textColor &#x3D; TextColorEnum.PURPLE;
+      icon &#x3D; RoomIconsEnum.CHECK;
+    },
+    [RoomStatusEnum.PREPARADA]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.SUCCESS;
+      textColor &#x3D; TextColorEnum.SUCCESS;
+      icon &#x3D; RoomIconsEnum.CAR;
+    },
+    [RoomStatusEnum.OCUPADA]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.DANGER;
+      textColor &#x3D; TextColorEnum.DANGER;
+      icon &#x3D; RoomIconsEnum.PAREJA_OCUPADA;
+    },
+    [RoomStatusEnum.POR_COBRAR]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.DANGER;
+      textColor &#x3D; TextColorEnum.DANGER;
+      icon &#x3D; RoomIconsEnum.PAREJA_OCUPADA;
+    },
+    [RoomStatusEnum.ROOM_SERVICE_POR_COBRAR]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.DANGER;
+      textColor &#x3D; TextColorEnum.DANGER;
+      icon &#x3D; RoomIconsEnum.ROOM_SERVICE;
+    },
+    [RoomStatusEnum.ROOM_SERVICE]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.DANGER;
+      textColor &#x3D; TextColorEnum.DANGER;
+      icon &#x3D; RoomIconsEnum.ROOM_SERVICE;
+    },
+    [RoomStatusEnum.RESERVADA]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.PURPLE;
+      textColor &#x3D; TextColorEnum.PURPLE;
+      icon &#x3D; RoomIconsEnum.RESERVADA;
+    },
+    [RoomStatusEnum.RESERVADA_PREPARADA]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.PURPLE;
+      textColor &#x3D; TextColorEnum.PURPLE;
+      icon &#x3D; RoomIconsEnum.RESERVADA;
+    },
+    [RoomStatusEnum.ROOM_SERVICE_EXTRAS_POR_COBRAR]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.DANGER;
+      textColor &#x3D; TextColorEnum.SUCCESS;
+      icon &#x3D; RoomIconsEnum.POR_COBRAR;
+    },
+    [RoomStatusEnum.SUCIA]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.WARN;
+      textColor &#x3D; TextColorEnum.WARN;
+      icon &#x3D; RoomIconsEnum.SUCIA;
+    },
+    [RoomStatusEnum.EN_LIMPIEZA]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.BLUE;
+      textColor &#x3D; TextColorEnum.BLUE;
+      icon &#x3D; RoomIconsEnum.LIMPIEZA;
+    },
+    [RoomStatusEnum.EN_SUPERVISION]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.BLUE;
+      textColor &#x3D; TextColorEnum.BLUE;
+      icon &#x3D; RoomIconsEnum.SUPERVISION;
+    },
+    [RoomStatusEnum.BLOQUEADA]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.PURPLE;
+      textColor &#x3D; TextColorEnum.PURPLE;
+      icon &#x3D; RoomIconsEnum.CANDADO;
+    },
+    [RoomStatusEnum.SUPERVISION_MANTENIMIENTO]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.BLUE;
+      textColor &#x3D; TextColorEnum.BLUE;
+      icon &#x3D; RoomIconsEnum.SUPERVISION
+    },
+    [RoomStatusEnum.MANTENIMIENTO]: () &#x3D;&gt; {
+      bgColor &#x3D; BgColorEnum.GREY_ITEM;
+      textColor &#x3D; TextColorEnum.GREY_ITEM;
+      icon &#x3D; RoomIconsEnum.MANTENIMIENTO
+    }
+  }
+  return statusOptions;
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/app/tarifas/constants/tarifas-list.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="TarifasList"></a>
+                    <span class="name">
+                        <span ><b>TarifasList</b></span>
+                        <a href="#TarifasList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Tarifa" target="_self" >TarifasGroup[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+        tipoHabitacion: &#x27;Twin Suite&#x27;,
+        tarifas: [
+            {id: &#x27;1&#x27;, name: &#x27;Adan y Eva&#x27;},
+            {id: &#x27;2&#x27;, name: &#x27;Romeo y Julieta&#x27;},
+            {id: &#x27;3&#x27;, name: &#x27;Test3&#x27;},
+            {id: &#x27;4&#x27;, name: &#x27;Test4&#x27;},
+            {id: &#x27;5&#x27;, name: &#x27;Test5&#x27;},
+            {id: &#x27;6&#x27;, name: &#x27;Test6&#x27;},
+        ]
+    },
+    {
+        tipoHabitacion: &#x27;Pool &amp; Spa&#x27;,
+        tarifas: [
+            {id: &#x27;7&#x27;, name: &#x27;Test7&#x27;},
+            {id: &#x27;8&#x27;, name: &#x27;Test8&#x27;},
+            {id: &#x27;9&#x27;, name: &#x27;Test9&#x27;},
+            {id: &#x27;10&#x27;, name: &#x27;Test10&#x27;},
+            {id: &#x27;11&#x27;, name: &#x27;Test11&#x27;},
+            {id: &#x27;12&#x27;, name: &#x27;Test12&#x27;},
+        ]
+    },
+    {
+        tipoHabitacion: &#x27;Junior Suite&#x27;,
+        tarifas: [
+            {id: &#x27;13&#x27;, name: &#x27;Test13&#x27;},
+            {id: &#x27;14&#x27;, name: &#x27;Test14&#x27;},
+            {id: &#x27;15&#x27;, name: &#x27;Test15&#x27;},
+            {id: &#x27;16&#x27;, name: &#x27;Test16&#x27;},
+            {id: &#x27;17&#x27;, name: &#x27;Test17&#x27;},
+            {id: &#x27;18&#x27;, name: &#x27;Test18&#x27;},
+            {id: &#x27;19&#x27;, name: &#x27;Test19&#x27;},
+        ]
+    },
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

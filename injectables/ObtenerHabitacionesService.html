@@ -1,0 +1,865 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Inyectables</li>
+  <li >ObtenerHabitacionesService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/services/habitaciones/obtener-habitaciones.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#habitacion" >habitacion</a>
+                            </li>
+                            <li>
+                                <a href="#habitacion$" >habitacion$</a>
+                            </li>
+                            <li>
+                                <a href="#habitacionDetallada" >habitacionDetallada</a>
+                            </li>
+                            <li>
+                                <a href="#habitacionDetallada$" >habitacionDetallada$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#habitacionDetalladaSubjext" >habitacionDetalladaSubjext</a>
+                            </li>
+                            <li>
+                                <a href="#habitacionId$" >habitacionId$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#habitacionIdSubjext" >habitacionIdSubjext</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#habitacionSubjext" >habitacionSubjext</a>
+                            </li>
+                            <li>
+                                <a href="#idhabitacion" >idhabitacion</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getHabitacio" >getHabitacio</a>
+                            </li>
+                            <li>
+                                <a href="#getHabitacioDetalle" >getHabitacioDetalle</a>
+                            </li>
+                            <li>
+                                <a href="#getHabitacioId" >getHabitacioId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(apollo: Apollo)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="91" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:91</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>apollo</td>
+                                                  
+                                                        <td>
+                                                                    <code>Apollo</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHabitacio"></a>
+                    <span class="name">
+                        <span ><b>getHabitacio</b></span>
+                        <a href="#getHabitacio"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getHabitacio(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="95"
+                            class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHabitacioDetalle"></a>
+                    <span class="name">
+                        <span ><b>getHabitacioDetalle</b></span>
+                        <a href="#getHabitacioDetalle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getHabitacioDetalle(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="131"
+                            class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:131</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHabitacioId"></a>
+                    <span class="name">
+                        <span ><b>getHabitacioId</b></span>
+                        <a href="#getHabitacioId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getHabitacioId(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="113"
+                            class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacion"></a>
+                    <span class="name">
+                        <span ><b>habitacion</b></span>
+                        <a href="#habitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Habitacion" target="_self" >Habitacion</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="74" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:74</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacion$"></a>
+                    <span class="name">
+                        <span ><b>habitacion$</b></span>
+                        <a href="#habitacion$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>this.habitacionSubjext.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="81" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:81</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacionDetallada"></a>
+                    <span class="name">
+                        <span ><b>habitacionDetallada</b></span>
+                        <a href="#habitacionDetallada"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="76" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:76</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacionDetallada$"></a>
+                    <span class="name">
+                        <span ><b>habitacionDetallada$</b></span>
+                        <a href="#habitacionDetallada$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>this.habitacionDetalladaSubjext.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="91" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:91</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacionDetalladaSubjext"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>habitacionDetalladaSubjext</b></span>
+                        <a href="#habitacionDetalladaSubjext"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new BehaviorSubject&lt;
+    HabitacionDetalladaQuery[&#x27;habitacion&#x27;]
+  &gt;(this.habitacionDetallada)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="88" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:88</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacionId$"></a>
+                    <span class="name">
+                        <span ><b>habitacionId$</b></span>
+                        <a href="#habitacionId$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>this.habitacionIdSubjext.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="86" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:86</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacionIdSubjext"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>habitacionIdSubjext</b></span>
+                        <a href="#habitacionIdSubjext"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new BehaviorSubject&lt;
+    GetHabitacionIdQuery[&#x27;habitacion&#x27;]
+  &gt;(this.idhabitacion)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="83" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:83</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacionSubjext"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>habitacionSubjext</b></span>
+                        <a href="#habitacionSubjext"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new BehaviorSubject&lt;
+    HabitacionQuery[&#x27;habitacion&#x27;]
+  &gt;(this.habitacion)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="78" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:78</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idhabitacion"></a>
+                    <span class="name">
+                        <span ><b>idhabitacion</b></span>
+                        <a href="#idhabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="75" class="link-to-prism">src/app/core/services/habitaciones/obtener-habitaciones.service.ts:75</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { Apollo, gql, QueryRef } from &#x27;apollo-angular&#x27;;
+import { BehaviorSubject, take, tap } from &#x27;rxjs&#x27;;
+import {
+  GetAllRoomsQuery,
+  GetHabitacionIdQuery,
+  Habitacion,
+  HabitacionDetalladaQuery,
+  HabitacionQuery,
+} from &#x27;../../graphQL/serviciosGraph&#x27;;
+
+const GET_HABITACION &#x3D; gql&#x60;
+  query Habitacion($num: String!) {
+    habitacion(id_o_numero: $num) {
+      id
+      numeroHabitacion
+      tipoHabitacion {
+        id
+        nombre
+      }
+      estado
+    }
+  }
+&#x60;;
+
+const GET_HABITACION_ID &#x3D; gql&#x60;
+  query Habitacion($num: String!) {
+    habitacion(id_o_numero: $num) {
+      id
+    }
+  }
+&#x60;;
+
+const GET_HABITACION_detallada &#x3D; gql&#x60;
+  query Habitacion_Detallada($num: String!) {
+    habitacion(id_o_numero: $num) {
+      numeroHabitacion
+      tipoHabitacion {
+        nombre
+      }
+      estado
+      rentas {
+        id
+        fechaRegistro
+        fechaSalida
+        fechaInicio
+        fechaFin
+        horasExtra
+        hospedajesExtra
+        personasExtra
+        extras {
+          fechaPago
+          id
+        }
+        tarifa {
+          nombre
+          costoHabitacion
+          horasExtraMax
+          hospedajesExtraMax
+          personasExtraMax
+          costoPersonaExtra
+          costoHospedajeExtra
+          costoHoraExtra
+        }
+      }
+    }
+  }
+&#x60;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class ObtenerHabitacionesService {
+  habitacion!: Habitacion;
+  idhabitacion!: GetHabitacionIdQuery[&#x27;habitacion&#x27;];
+  habitacionDetallada!: HabitacionDetalladaQuery[&#x27;habitacion&#x27;];
+
+  private habitacionSubjext &#x3D; new BehaviorSubject&lt;
+    HabitacionQuery[&#x27;habitacion&#x27;]
+  &gt;(this.habitacion);
+  habitacion$ &#x3D; this.habitacionSubjext.asObservable();
+
+  private habitacionIdSubjext &#x3D; new BehaviorSubject&lt;
+    GetHabitacionIdQuery[&#x27;habitacion&#x27;]
+  &gt;(this.idhabitacion);
+  habitacionId$ &#x3D; this.habitacionIdSubjext.asObservable();
+
+  private habitacionDetalladaSubjext &#x3D; new BehaviorSubject&lt;
+    HabitacionDetalladaQuery[&#x27;habitacion&#x27;]
+  &gt;(this.habitacionDetallada);
+  habitacionDetallada$ &#x3D; this.habitacionDetalladaSubjext.asObservable();
+
+  constructor(private apollo: Apollo) {}
+
+  getHabitacio(id: string) {
+    this.apollo
+      .watchQuery&lt;HabitacionQuery&gt;({
+        query: GET_HABITACION,
+        variables: {
+          num: id,
+        },
+      })
+      .valueChanges.pipe(
+        take(1),
+        tap(({ data }) &#x3D;&gt; {
+          const { habitacion } &#x3D; data;
+          this.habitacionSubjext.next(habitacion);
+        })
+      )
+      .subscribe();
+  }
+
+  getHabitacioId(id: string) {
+    this.apollo
+      .watchQuery&lt;GetHabitacionIdQuery&gt;({
+        query: GET_HABITACION_ID,
+        variables: {
+          num: id,
+        },
+      })
+      .valueChanges.pipe(
+        take(1),
+        tap(({ data }) &#x3D;&gt; {
+          const { habitacion } &#x3D; data;
+          this.habitacionIdSubjext.next(habitacion);
+        })
+      )
+      .subscribe();
+  }
+
+  getHabitacioDetalle(id: string) {
+    this.apollo
+      .watchQuery&lt;HabitacionDetalladaQuery&gt;({
+        query: GET_HABITACION_detallada,
+        variables: {
+          num: id,
+        },
+      })
+      .valueChanges.pipe(
+        take(1),
+        tap(({ data }) &#x3D;&gt; {
+          const { habitacion } &#x3D; data;
+          this.habitacionDetalladaSubjext.next(habitacion);
+        })
+      )
+      .subscribe();
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ObtenerHabitacionesService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

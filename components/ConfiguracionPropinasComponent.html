@@ -1,0 +1,780 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  ConfiguracionPropinasComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/sistemas/configuraciones/configuracion-propinas/configuracion-propinas.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-configuracion-propinas</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./configuracion-propinas.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./configuracion-propinas.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#form" >form</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aceptar" >aceptar</a>
+                            </li>
+                            <li>
+                                <a href="#createForm" >createForm</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, dialogService: DialogService, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/home/sistemas/configuraciones/configuracion-propinas/configuracion-propinas.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aceptar"></a>
+                    <span class="name">
+                        <span ><b>aceptar</b></span>
+                        <a href="#aceptar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>aceptar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="29"
+                            class="link-to-prism">src/app/home/sistemas/configuraciones/configuracion-propinas/configuracion-propinas.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createForm"></a>
+                    <span class="name">
+                        <span ><b>createForm</b></span>
+                        <a href="#createForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="37"
+                            class="link-to-prism">src/app/home/sistemas/configuraciones/configuracion-propinas/configuracion-propinas.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="24"
+                            class="link-to-prism">src/app/home/sistemas/configuraciones/configuracion-propinas/configuracion-propinas.component.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/home/sistemas/configuraciones/configuracion-propinas/configuracion-propinas.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="form"></a>
+                    <span class="name">
+                        <span ><b>form</b></span>
+                        <a href="#form"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/home/sistemas/configuraciones/configuracion-propinas/configuracion-propinas.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { MessageModalAutoclosableComponent } from &#x27;src/app/core/components/message-modal-autoclosable/message-modal-autoclosable.component&#x27;;
+import { controlFormMixto } from &#x27;src/app/core/formsControl/controlFormMixto&#x27;;
+
+@Component({
+  selector: &#x27;app-configuracion-propinas&#x27;,
+  templateUrl: &#x27;./configuracion-propinas.component.html&#x27;,
+  styleUrls: [&#x27;./configuracion-propinas.component.scss&#x27;]
+})
+export class ConfiguracionPropinasComponent implements OnInit {
+
+  display &#x3D; true
+  form!: FormGroup;
+  constructor(
+    private fb :FormBuilder,
+    private dialogService: DialogService,
+    private readonly router: Router,
+  ) {
+  }
+
+  ngOnInit(
+    ) {
+    this.createForm()
+  }
+
+  aceptar(){
+    const genDialogMessage &#x3D; (message: string) &#x3D;&gt; {
+      return this.dialogService.open(MessageModalAutoclosableComponent, {data: { message }});
+    };
+    genDialogMessage(&#x60;CONFIGURACIÓN GUARDADA CON ÉXITO&#x60;)
+    this.router.navigate([&#x60;/hotel&#x60;]);
+
+  }
+  createForm(){
+    this.form &#x3D; this.fb.group({
+      propinas: this.fb.group({
+        alimentos: [null,[controlFormMixto.isNotCero,Validators.required]],
+        bebidas: [null,[controlFormMixto.isNotCero]],
+        sexYspa:[null,[controlFormMixto.isNotCero]],
+        otros:[null,[controlFormMixto.isNotCero]],
+      }),
+      descuentos: this.fb.group({
+        visa:[null,[controlFormMixto.isNotCero]],
+        masterCard:[null,[controlFormMixto.isNotCero]],
+        amex:[null,[controlFormMixto.isNotCero]],
+      }),
+      vendedoresYValets:this.fb.group({
+        lunes:[0,[controlFormMixto.isNotCero]],
+        martes:[0,[controlFormMixto.isNotCero]],
+        miercoles:[0,[controlFormMixto.isNotCero]],
+        jueves:[0,[controlFormMixto.isNotCero]],
+        viernes:[0,[controlFormMixto.isNotCero]],
+        sabado:[0,[controlFormMixto.isNotCero]],
+        domingo:[0,[controlFormMixto.isNotCero]],
+      })
+    })
+
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog header&#x3D;&quot;CONFIGURACIÓN DE PROPINAS&quot; [(visible)]&#x3D;&quot;display&quot; [closable]&#x3D;&quot;false&quot;
+[modal]&#x3D;&quot;true&quot; [draggable]&#x3D;&quot;false&quot; [showHeader]&#x3D;&quot;true&quot;&gt;
+  &lt;form class&#x3D;&quot;container-propinas&quot; [formGroup]&#x3D;&quot;form&quot; &gt;
+    &lt;div class&#x3D;&quot;box-config_propinas&quot;&gt;
+      &lt;div class&#x3D;&quot;tittle-box&quot;&gt;FONDO PARA PROPINAS&lt;/div&gt;
+      &lt;div class&#x3D;&quot;container-form&quot; formGroupName&#x3D;&quot;propinas&quot;&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Alimentos&lt;/label&gt;
+          &lt;p-inputNumber  suffix&#x3D;&quot;%&quot;  [min]&#x3D;&quot;0&quot;  mode&#x3D;&quot;decimal&quot; styleClass&#x3D;&quot;input-cash&quot; formControlName&#x3D;&quot;alimentos&quot; [placeholder]&#x3D;&quot;&#x27;0%&#x27;&quot; &gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Bebidas&lt;/label&gt;
+          &lt;p-inputNumber  suffix&#x3D;&quot;%&quot; [min]&#x3D;&quot;0&quot;  mode&#x3D;&quot;decimal&quot; styleClass&#x3D;&quot;input-cash&quot; formControlName&#x3D;&quot;bebidas&quot; [placeholder]&#x3D;&quot;&#x27;0%&#x27;&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Sex&amp;Spa&lt;/label&gt;
+          &lt;p-inputNumber  suffix&#x3D;&quot;%&quot; [min]&#x3D;&quot;0&quot; mode&#x3D;&quot;decimal&quot; styleClass&#x3D;&quot;input-cash&quot;  formControlName&#x3D;&quot;sexYspa&quot;[placeholder]&#x3D;&quot;&#x27;0%&#x27;&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Otros&lt;/label&gt;
+          &lt;p-inputNumber  suffix&#x3D;&quot;%&quot; [min]&#x3D;&quot;0&quot;  styleClass&#x3D;&quot;input-cash&quot; formControlName&#x3D;&quot;otros&quot; [placeholder]&#x3D;&quot;&#x27;0%&#x27;&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;box-config_propinas&quot;&gt;
+      &lt;div class&#x3D;&quot;tittle-box&quot;&gt;DESCUENTO DE PROPINAS POR TARJETA&lt;/div&gt;
+      &lt;div class&#x3D;&quot;container-form&quot; formGroupName&#x3D;&quot;descuentos&quot;&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Visa&lt;/label&gt;
+          &lt;p-inputNumber  suffix&#x3D;&quot; %&quot; [min]&#x3D;&quot;0&quot; [max]&#x3D;&quot;100&quot; styleClass&#x3D;&quot;input-cash&quot; formControlName&#x3D;&quot;visa&quot; [placeholder]&#x3D;&quot;&#x27;0%&#x27;&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;MasterCard&lt;/label&gt;
+          &lt;p-inputNumber  suffix&#x3D;&quot; %&quot; [min]&#x3D;&quot;0&quot; [max]&#x3D;&quot;100&quot; styleClass&#x3D;&quot;input-cash&quot; formControlName&#x3D;&quot;masterCard&quot; [placeholder]&#x3D;&quot;&#x27;0%&#x27;&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;AMEX&lt;/label&gt;
+          &lt;p-inputNumber  suffix&#x3D;&quot; %&quot; [min]&#x3D;&quot;0&quot; [max]&#x3D;&quot;100&quot; styleClass&#x3D;&quot;input-cash&quot; formControlName&#x3D;&quot;amex&quot; [placeholder]&#x3D;&quot;&#x27;0%&#x27;&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;box-config_propinas&quot; formGroupName&#x3D;&quot;vendedoresYValets&quot;&gt;
+      &lt;div class&#x3D;&quot;tittle-box&quot;&gt;DESCUENTO DE PROPINAS POR TARJETA&lt;/div&gt;
+      &lt;div class&#x3D;&quot;container-form&quot; &gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Lunes&lt;/label&gt;
+          &lt;p-inputNumber formControlName&#x3D;&quot;lunes&quot; [min]&#x3D;&quot;0&quot; mode&#x3D;&quot;decimal&quot; prefix&#x3D;&quot;$&quot;[minFractionDigits]&#x3D;&quot;2&quot; [maxFractionDigits]&#x3D;&quot;2&quot; styleClass&#x3D;&quot;input-cash&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Martes&lt;/label&gt;
+          &lt;p-inputNumber formControlName&#x3D;&quot;martes&quot; [min]&#x3D;&quot;0&quot; mode&#x3D;&quot;decimal&quot; prefix&#x3D;&quot;$&quot;[minFractionDigits]&#x3D;&quot;2&quot; [maxFractionDigits]&#x3D;&quot;2&quot; styleClass&#x3D;&quot;input-cash&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Miércoles&lt;/label&gt;
+          &lt;p-inputNumber formControlName&#x3D;&quot;miercoles&quot; [min]&#x3D;&quot;0&quot; mode&#x3D;&quot;decimal&quot; prefix&#x3D;&quot;$&quot;[minFractionDigits]&#x3D;&quot;2&quot; [maxFractionDigits]&#x3D;&quot;2&quot; styleClass&#x3D;&quot;input-cash&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Jueves&lt;/label&gt;
+          &lt;p-inputNumber formControlName&#x3D;&quot;jueves&quot; [min]&#x3D;&quot;0&quot; mode&#x3D;&quot;decimal&quot; prefix&#x3D;&quot;$&quot;[minFractionDigits]&#x3D;&quot;2&quot; [maxFractionDigits]&#x3D;&quot;2&quot; styleClass&#x3D;&quot;input-cash&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Viernes&lt;/label&gt;
+          &lt;p-inputNumber formControlName&#x3D;&quot;viernes&quot; [min]&#x3D;&quot;0&quot; mode&#x3D;&quot;decimal&quot; prefix&#x3D;&quot;$&quot;[minFractionDigits]&#x3D;&quot;2&quot; [maxFractionDigits]&#x3D;&quot;2&quot; styleClass&#x3D;&quot;input-cash&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Sábado&lt;/label&gt;
+          &lt;p-inputNumber formControlName&#x3D;&quot;sabado&quot; [min]&#x3D;&quot;0&quot; mode&#x3D;&quot;decimal&quot; prefix&#x3D;&quot;$&quot;[minFractionDigits]&#x3D;&quot;2&quot; [maxFractionDigits]&#x3D;&quot;2&quot; styleClass&#x3D;&quot;input-cash&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;propina&quot;&gt;
+          &lt;label&gt;Domingo&lt;/label&gt;
+          &lt;p-inputNumber formControlName&#x3D;&quot;domingo&quot;  [min]&#x3D;&quot;0&quot; mode&#x3D;&quot;decimal&quot; prefix&#x3D;&quot;$&quot;[minFractionDigits]&#x3D;&quot;2&quot; [maxFractionDigits]&#x3D;&quot;2&quot; styleClass&#x3D;&quot;input-cash&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+  &lt;ng-template pTemplate&#x3D;&quot;footer&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-footer-content&quot;&gt;
+      &lt;button class&#x3D;&quot;button-modal button-descartar&quot; [routerLink]&#x3D;&quot;&#x27;/hotel&#x27;&quot;&gt;
+        &lt;div class&#x3D;&quot;icon&quot;&gt;
+            &lt;i class&#x3D;&quot;fa-solid fa-x&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text&quot;&gt;Cancelar&lt;/div&gt;
+    &lt;/button&gt;
+    &lt;button (click)&#x3D;&quot;aceptar()&quot; class&#x3D;&quot;button-modal button-aceptar&quot; [disabled]&#x3D;&quot;form.invalid&quot;&gt;
+      &lt;div class&#x3D;&quot;icon&quot;&gt;
+        &lt;i class&#x3D;&quot;fa-solid fa-check&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;text&quot;&gt;Aceptar&lt;/div&gt;
+    &lt;/button&gt;
+
+    &lt;/div&gt;
+&lt;/ng-template&gt;
+&lt;/p-dialog&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./configuracion-propinas.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../../library.scss&#x27;;
+
+.container-propinas {
+  display       : flex;
+  flex-direction: column;
+  align-items   : stretch;
+  flex-wrap     : nowrap;
+  margin-top    : 10px;
+
+  &amp; .box-config_propinas {
+    border       : $border-item-list;
+    border-radius: $border-radius-tittle;
+    box-shadow   : $shadow-modal-tittle;
+    margin       : 8px 0px;
+    padding      : 8px;
+
+    &amp; .tittle-box {
+      font-family: $font-secundaria;
+      font-weight: 500;
+      font-size  : 19px;
+      text-align : center;
+      color      : $color-title-grey;
+    }
+
+    &amp; .container-form {
+      color          : $color-title-grey;
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-evenly;
+      flex-wrap      : wrap;
+      color          : #9b9898;
+      /* width       : 35vw; */
+      width          : 575px;
+
+      &amp; .propina {
+        display       : flex;
+        flex-direction: column;
+        flex-wrap     : nowrap;
+        align-items   : center;
+        margin        : 6px;
+        width         : 19%;
+
+        label {
+          font-family: $font-secundaria;
+          color      : $color-title-grey;
+          font-weight: 400;
+        }
+
+      }
+    }
+  }
+}
+
+:host ::ng-deep .input-cash.p-inputnumber {
+  .p-inputnumber-input {
+    color      : #0ac917;
+    border     : none;
+    font-weight: 400;
+
+    &amp;::placeholder {
+      color      : #0ac917;
+      font-weight: 400;
+
+    }
+
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin            : 0;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog header="CONFIGURACIÓN DE PROPINAS" [(visible)]="display" [closable]="false"[modal]="true" [draggable]="false" [showHeader]="true">  <form class="container-propinas" [formGroup]="form" >    <div class="box-config_propinas">      <div class="tittle-box">FONDO PARA PROPINAS</div>      <div class="container-form" formGroupName="propinas">        <div class="propina">          <label>Alimentos</label>          <p-inputNumber  suffix="%"  [min]="0"  mode="decimal" styleClass="input-cash" formControlName="alimentos" [placeholder]="\'0%\'" ></p-inputNumber>        </div>        <div class="propina">          <label>Bebidas</label>          <p-inputNumber  suffix="%" [min]="0"  mode="decimal" styleClass="input-cash" formControlName="bebidas" [placeholder]="\'0%\'"></p-inputNumber>        </div>        <div class="propina">          <label>Sex&Spa</label>          <p-inputNumber  suffix="%" [min]="0" mode="decimal" styleClass="input-cash"  formControlName="sexYspa"[placeholder]="\'0%\'"></p-inputNumber>        </div>        <div class="propina">          <label>Otros</label>          <p-inputNumber  suffix="%" [min]="0"  styleClass="input-cash" formControlName="otros" [placeholder]="\'0%\'"></p-inputNumber>        </div>      </div>    </div>    <div class="box-config_propinas">      <div class="tittle-box">DESCUENTO DE PROPINAS POR TARJETA</div>      <div class="container-form" formGroupName="descuentos">        <div class="propina">          <label>Visa</label>          <p-inputNumber  suffix=" %" [min]="0" [max]="100" styleClass="input-cash" formControlName="visa" [placeholder]="\'0%\'"></p-inputNumber>        </div>        <div class="propina">          <label>MasterCard</label>          <p-inputNumber  suffix=" %" [min]="0" [max]="100" styleClass="input-cash" formControlName="masterCard" [placeholder]="\'0%\'"></p-inputNumber>        </div>        <div class="propina">          <label>AMEX</label>          <p-inputNumber  suffix=" %" [min]="0" [max]="100" styleClass="input-cash" formControlName="amex" [placeholder]="\'0%\'"></p-inputNumber>        </div>      </div>    </div>    <div class="box-config_propinas" formGroupName="vendedoresYValets">      <div class="tittle-box">DESCUENTO DE PROPINAS POR TARJETA</div>      <div class="container-form" >        <div class="propina">          <label>Lunes</label>          <p-inputNumber formControlName="lunes" [min]="0" mode="decimal" prefix="$"[minFractionDigits]="2" [maxFractionDigits]="2" styleClass="input-cash"></p-inputNumber>        </div>        <div class="propina">          <label>Martes</label>          <p-inputNumber formControlName="martes" [min]="0" mode="decimal" prefix="$"[minFractionDigits]="2" [maxFractionDigits]="2" styleClass="input-cash"></p-inputNumber>        </div>        <div class="propina">          <label>Miércoles</label>          <p-inputNumber formControlName="miercoles" [min]="0" mode="decimal" prefix="$"[minFractionDigits]="2" [maxFractionDigits]="2" styleClass="input-cash"></p-inputNumber>        </div>        <div class="propina">          <label>Jueves</label>          <p-inputNumber formControlName="jueves" [min]="0" mode="decimal" prefix="$"[minFractionDigits]="2" [maxFractionDigits]="2" styleClass="input-cash"></p-inputNumber>        </div>        <div class="propina">          <label>Viernes</label>          <p-inputNumber formControlName="viernes" [min]="0" mode="decimal" prefix="$"[minFractionDigits]="2" [maxFractionDigits]="2" styleClass="input-cash"></p-inputNumber>        </div>        <div class="propina">          <label>Sábado</label>          <p-inputNumber formControlName="sabado" [min]="0" mode="decimal" prefix="$"[minFractionDigits]="2" [maxFractionDigits]="2" styleClass="input-cash"></p-inputNumber>        </div>        <div class="propina">          <label>Domingo</label>          <p-inputNumber formControlName="domingo"  [min]="0" mode="decimal" prefix="$"[minFractionDigits]="2" [maxFractionDigits]="2" styleClass="input-cash"></p-inputNumber>        </div>      </div>    </div>  </form>  <ng-template pTemplate="footer">    <div class="modal-footer-content">      <button class="button-modal button-descartar" [routerLink]="\'/hotel\'">        <div class="icon">            <i class="fa-solid fa-x"></i>        </div>        <div class="text">Cancelar</div>    </button>    <button (click)="aceptar()" class="button-modal button-aceptar" [disabled]="form.invalid">      <div class="icon">        <i class="fa-solid fa-check"></i>      </div>      <div class="text">Aceptar</div>    </button>    </div></ng-template></p-dialog></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'ConfiguracionPropinasComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ConfiguracionPropinasComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1107 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  ListaComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/reportar/matricula/components/lista/lista.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-lista</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./lista.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./lista.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#filterText" >filterText</a>
+                            </li>
+                            <li>
+                                <a href="#idSelect" >idSelect</a>
+                            </li>
+                            <li>
+                                <a href="#inavilitarReporte" >inavilitarReporte</a>
+                            </li>
+                            <li>
+                                <a href="#listaReportes" >listaReportes</a>
+                            </li>
+                            <li>
+                                <a href="#matricula" >matricula</a>
+                            </li>
+                            <li>
+                                <a href="#showReporte" >showReporte</a>
+                            </li>
+                            <li>
+                                <a href="#validacionesFormulario" >validacionesFormulario</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#inHabilitarReporte" >inHabilitarReporte</a>
+                            </li>
+                            <li>
+                                <a href="#liberarVariables" >liberarVariables</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#search" >search</a>
+                            </li>
+                            <li>
+                                <a href="#selectMatricula" >selectMatricula</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(matriculaService: <a href="../injectables/MatriculaService.html" target="_self">MatriculaService</a>, dialogService: DialogService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>matriculaService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MatriculaService.html" target="_self" >MatriculaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inHabilitarReporte"></a>
+                    <span class="name">
+                        <span ><b>inHabilitarReporte</b></span>
+                        <a href="#inHabilitarReporte"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>inHabilitarReporte()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="76"
+                            class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="liberarVariables"></a>
+                    <span class="name">
+                        <span ><b>liberarVariables</b></span>
+                        <a href="#liberarVariables"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>liberarVariables()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="37"
+                            class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="32"
+                            class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="search"></a>
+                    <span class="name">
+                        <span ><b>search</b></span>
+                        <a href="#search"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>search()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="46"
+                            class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectMatricula"></a>
+                    <span class="name">
+                        <span ><b>selectMatricula</b></span>
+                        <a href="#selectMatricula"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectMatricula(reporte: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="69"
+                            class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>reporte</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterText"></a>
+                    <span class="name">
+                        <span ><b>filterText</b></span>
+                        <a href="#filterText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idSelect"></a>
+                    <span class="name">
+                        <span ><b>idSelect</b></span>
+                        <a href="#idSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inavilitarReporte"></a>
+                    <span class="name">
+                        <span ><b>inavilitarReporte</b></span>
+                        <a href="#inavilitarReporte"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listaReportes"></a>
+                    <span class="name">
+                        <span ><b>listaReportes</b></span>
+                        <a href="#listaReportes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="matricula"></a>
+                    <span class="name">
+                        <span ><b>matricula</b></span>
+                        <a href="#matricula"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showReporte"></a>
+                    <span class="name">
+                        <span ><b>showReporte</b></span>
+                        <a href="#showReporte"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="21" class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validacionesFormulario"></a>
+                    <span class="name">
+                        <span ><b>validacionesFormulario</b></span>
+                        <a href="#validacionesFormulario"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../classes/validaciones.html" target="_self" >validaciones</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/reportar/matricula/components/lista/lista.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormControl } from &#x27;@angular/forms&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { debounceTime, distinctUntilChanged } from &#x27;rxjs/operators&#x27;;
+import { ConfimModalMessageComponent } from &#x27;src/app/core/components/confim-modal-message/confim-modal-message.component&#x27;;
+import { MessageModalAutoclosableComponent } from &#x27;src/app/core/components/message-modal-autoclosable/message-modal-autoclosable.component&#x27;;
+import { validaciones } from &#x27;src/app/core/formsControl/validaciones&#x27;;
+import { MatriculaService } from &#x27;../../services/matricula/matricula.service&#x27;;
+import { listaReportes } from &#x27;./constants/lista-reportes&#x27;;
+
+@Component({
+  selector: &#x27;app-lista&#x27;,
+  templateUrl: &#x27;./lista.component.html&#x27;,
+  styleUrls: [&#x27;./lista.component.scss&#x27;]
+})
+export class ListaComponent implements OnInit {
+
+  filterText!: FormControl;
+  validacionesFormulario!: validaciones;
+
+  showReporte!: boolean;
+  listaReportes!: any[];
+  idSelect!: string;
+  matricula!: string;
+  inavilitarReporte!: boolean;
+
+  constructor(
+    private readonly matriculaService: MatriculaService,
+    private readonly dialogService: DialogService
+  ) { }
+
+  ngOnInit(): void {
+    this.search()
+    this.liberarVariables();
+  }
+
+  liberarVariables() {
+    this.showReporte &#x3D; true;
+    this.listaReportes &#x3D; [];
+    this.idSelect &#x3D; &#x27;&#x27;;
+    this.matricula &#x3D; &#x27;&#x27;;
+    this.inavilitarReporte &#x3D; false;
+    this.validacionesFormulario &#x3D; new validaciones();
+  }
+
+  search() {
+    this.filterText &#x3D; new FormControl(&quot;&quot;);
+    this.filterText.valueChanges
+      .pipe(debounceTime(400), distinctUntilChanged())
+      .subscribe((v) &#x3D;&gt; {
+        this.matriculaService.updateMatricula(v);
+        if(this.filterText.value.length &lt; 6) {
+          this.listaReportes &#x3D; [];
+          this.showReporte &#x3D; true;
+          return;
+        }
+        // TODO: http a getReportes
+        // subscribe(reportes) &#x3D;&gt; {
+          this.listaReportes &#x3D; [...listaReportes]
+          // TODO: mostrar en rojo los reportes inhabilitados
+          this.showReporte &#x3D; true;
+          if(!this.listaReportes.length) {
+            this.showReporte &#x3D; false;
+          }
+        // }
+      });
+  }
+
+  selectMatricula(reporte: any) {
+    this.idSelect &#x3D; reporte.id
+    this.matriculaService.updateMatriculaDetails(reporte);
+    this.matriculaService.updateMatricula(reporte.matricula);
+    this.inavilitarReporte &#x3D; reporte.activo ? true : false;
+  }
+
+  inHabilitarReporte() {
+    const ref &#x3D; this.dialogService.open(ConfimModalMessageComponent, {
+      data: {
+        message: &#x27;¿DESEAS INHABILITAR EL REPORTE?&#x27;
+      }
+    });
+
+    ref.onClose.subscribe(({confirmed}) &#x3D;&gt; {
+      if(!confirmed) {
+        return;
+      }
+      this.matriculaService.updateAuthMode(true);
+    });
+  }
+  
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;box-search-matricula&quot;&gt;
+  &lt;span class&#x3D;&quot;p-input-icon-right&quot;&gt;
+    &lt;i class&#x3D;&quot;fa-solid fa-magnifying-glass&quot;&gt;&lt;/i&gt;
+    &lt;input [formControl]&#x3D;&quot;filterText&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Ingresar Matrícula&quot; maxlength&#x3D;&quot;7&quot;
+      (keypress)&#x3D;&quot;validacionesFormulario.esAlfanumericoGuion($event)&quot;&gt;
+  &lt;/span&gt;
+  &lt;div class&#x3D;&quot;box_matricula&quot;&gt;
+    &lt;div class&#x3D;&quot;modalTitleContainer_mini&quot;&gt;
+      &lt;div class&#x3D;&quot;col modalTitle_mini text-center&quot;&gt;
+        &lt;b&gt;REPORTES&lt;/b&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;box_matricula__reportes text-center&quot;&gt;
+      &lt;div *ngIf&#x3D;&quot;showReporte&quot;&gt;
+        &lt;div *ngFor&#x3D;&quot;let reporte of listaReportes&quot;&gt;
+          &lt;div (click)&#x3D;&quot;selectMatricula(reporte)&quot; *ngIf&#x3D;&quot;reporte.activo &#x3D;&#x3D; true&quot;
+            class&#x3D;&quot;box_matricula__reportes-component&quot; [class.select]&#x3D;&quot;reporte.id &#x3D;&#x3D; idSelect&quot;&gt;
+            &lt;div class&#x3D;&quot;diplay&quot;&gt;
+              &lt;div class&#x3D;&quot;col-7&quot;&gt;
+                {{ reporte.fechaCreacion | date: &quot;dd/MM/yyyy&quot; }}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-5&quot;&gt;
+                {{ reporte.fechaCreacion | date: &quot;HH:mm&quot; }}
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div (click)&#x3D;&quot;selectMatricula(reporte)&quot; *ngIf&#x3D;&quot;reporte.activo &#x3D;&#x3D; false&quot;
+            class&#x3D;&quot;box_matricula__reportes-component-inhabilitado&quot; [class.select]&#x3D;&quot;reporte.id &#x3D;&#x3D; idSelect&quot;&gt;
+            &lt;div class&#x3D;&quot;diplay&quot;&gt;
+              &lt;div class&#x3D;&quot;col-7&quot;&gt;
+                {{ reporte.fechaCreacion | date: &quot;dd/MM/yyyy&quot; }}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-5&quot;&gt;
+                {{ reporte.fechaCreacion | date: &quot;HH:mm&quot; }}
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div *ngIf&#x3D;&quot;!showReporte&quot; class&#x3D;&quot;box_matricula__reportes-notfound text-center&quot;&gt;
+        &lt;div *ngIf&#x3D;&quot;!listaReportes.length&quot;&gt;SIN REPORTES&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button (click)&#x3D;&quot;inHabilitarReporte()&quot; [disabled]&#x3D;&quot;!inavilitarReporte&quot; class&#x3D;&quot;btn_reporte&quot;&gt;
+    Inhabilitar Reporte
+  &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./lista.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.box_matricula__reportes-component {
+    font-family: &#x27;Rubik&#x27;, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px;
+    margin: 8px;
+    background-color: #FFB2BD;
+    border-radius: 10px;
+    color: #707070;
+    /* border:1px solid #FD0022; */
+}
+
+.box_matricula__reportes-component.select {
+    font-family: &#x27;Rubik&#x27;, sans-serif;
+    box-shadow: 0 0 3pt #FD0022;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px;
+    margin: 8px;
+    background-color: #FFB2BD;
+    border-radius: 10px;
+    color: #707070;
+    border: 1px solid #FD0022;
+}
+
+
+.box_matricula__reportes-component:hover {
+    cursor: pointer;
+    background-color: #fa90a0;
+    border-radius: 10px;
+    color: #707070;
+    /* border:1px solid #FD0022; */
+}
+
+.diplay {
+    display: flex;
+}
+
+.box_matricula__reportes-component-inhabilitado {
+    cursor: pointer;
+    padding: 5px;
+    margin: 8px;
+    background-color: #e0e0e0;
+    color: #707070;
+    border-radius: 10px;
+    /* box-shadow: 0 0 3pt #FD0022; */
+    border: none
+}
+
+.box_matricula__reportes-component-inhabilitado.select {
+    cursor: pointer;
+    padding: 5px;
+    margin: 8px;
+    background-color: #e0e0e0;
+    color: #707070;
+    border-radius: 10px;
+    box-shadow: 0 0 6pt #707070;
+    border: 1px solid #707070;
+}
+
+.box_matricula__reportes-component-inhabilitado:hover {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #c9c7c7;
+    color: #707070;
+    border-radius: 10px;
+    /* box-shadow: 0 0 3pt #FD0022; */
+}
+
+.box_matricula__reportes-notfound {
+    color: #0ac917;
+    font-family: &quot;Rubik&quot;, sans-serif;
+    font-weight: bold;
+    height: 100%;
+    margin-top: 104px;
+}
+
+.box_matricula__reportes {
+    width: 100%;
+    height: 88%;
+    overflow: auto;
+}
+
+.box_matricula__detalleRepo__content-titulo {
+    width: 105%;
+    font-size: 10pt;
+    margin-top: 8px;
+}
+
+.box_matricula__detalleRepo__content__body {
+    display: flex;
+    font-family: &quot;Epilogue&quot;, sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_matricula__detalleRepo__content__body hr {
+    margin: 5px;
+    border: 1px solid;
+    border-color: #707070;
+    width: 97%;
+}
+
+.box_matricula {
+    width: 100%;
+    height: 76%;
+    background-color: #fff;
+    color: #707070;
+    border-radius: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 3pt #00000045;
+}
+
+
+.box-search-matricula {
+    background-color: #fff;
+    color: #707070;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 3pt #00000045;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.modalTitle_mini {
+    font-family: &#x27;Epilogue&#x27;, sans-serif;
+    font-size: 16pt;
+    font-weight: 700;
+    color: #9b9898;
+    height: 100%;
+}
+
+.modal-content {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+}
+
+.btn_reporte {
+    width: 70%;
+    font-family: &quot;Epilogue&quot;, sans-serif;
+    font-size: 14pt;
+    border-radius: 11px;
+    background-color: #c6c5c5;
+    color: #707070;
+    border: none;
+    padding: 4px 12px 3px;
+}
+
+.btn_reporte:disabled {
+    font-family: &quot;Epilogue&quot;, sans-serif;
+    font-size: 14pt;
+    border-radius: 11px;
+    background-color: #E4E4E4;
+    color: #FFFFFF;
+    border: none;
+    padding: 4px 12px 3px;
+    cursor: not-allowed;
+}
+
+.modalTitleContainer_mini {
+    background-color: #e4e4e4;
+    border-radius: 10pt 10pt 0 0 !important;
+    height: 22pt;
+    width: 100%;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="box-search-matricula">  <span class="p-input-icon-right">    <i class="fa-solid fa-magnifying-glass"></i>    <input [formControl]="filterText" type="text" pInputText placeholder="Ingresar Matrícula" maxlength="7"      (keypress)="validacionesFormulario.esAlfanumericoGuion($event)">  </span>  <div class="box_matricula">    <div class="modalTitleContainer_mini">      <div class="col modalTitle_mini text-center">        <b>REPORTES</b>      </div>    </div>    <div class="box_matricula__reportes text-center">      <div *ngIf="showReporte">        <div *ngFor="let reporte of listaReportes">          <div (click)="selectMatricula(reporte)" *ngIf="reporte.activo == true"            class="box_matricula__reportes-component" [class.select]="reporte.id == idSelect">            <div class="diplay">              <div class="col-7">                {{ reporte.fechaCreacion | date: "dd/MM/yyyy" }}              </div>              <div class="col-5">                {{ reporte.fechaCreacion | date: "HH:mm" }}              </div>            </div>          </div>          <div (click)="selectMatricula(reporte)" *ngIf="reporte.activo == false"            class="box_matricula__reportes-component-inhabilitado" [class.select]="reporte.id == idSelect">            <div class="diplay">              <div class="col-7">                {{ reporte.fechaCreacion | date: "dd/MM/yyyy" }}              </div>              <div class="col-5">                {{ reporte.fechaCreacion | date: "HH:mm" }}              </div>            </div>          </div>        </div>      </div>      <div *ngIf="!showReporte" class="box_matricula__reportes-notfound text-center">        <div *ngIf="!listaReportes.length">SIN REPORTES</div>      </div>    </div>  </div>  <button (click)="inHabilitarReporte()" [disabled]="!inavilitarReporte" class="btn_reporte">    Inhabilitar Reporte  </button></div></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'ListaComponent-1'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ListaComponent-1.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

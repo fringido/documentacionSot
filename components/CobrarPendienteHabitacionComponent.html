@@ -1,0 +1,1819 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  CobrarPendienteHabitacionComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-cobrar-pendiente-habitacion</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./cobrar-pendiente-habitacion.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./cobrar-pendiente-habitacion.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#costoHabitacion" >costoHabitacion</a>
+                            </li>
+                            <li>
+                                <a href="#destroy$" >destroy$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialogService" >dialogService</a>
+                            </li>
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#extras" >extras</a>
+                            </li>
+                            <li>
+                                <a href="#extras$" >extras$</a>
+                            </li>
+                            <li>
+                                <a href="#form" >form</a>
+                            </li>
+                            <li>
+                                <a href="#habitacion" >habitacion</a>
+                            </li>
+                            <li>
+                                <a href="#habitacion$" >habitacion$</a>
+                            </li>
+                            <li>
+                                <a href="#loader" >loader</a>
+                            </li>
+                            <li>
+                                <a href="#maxHoras" >maxHoras</a>
+                            </li>
+                            <li>
+                                <a href="#maxHorasPrecio" >maxHorasPrecio</a>
+                            </li>
+                            <li>
+                                <a href="#maxHospedaje" >maxHospedaje</a>
+                            </li>
+                            <li>
+                                <a href="#maxHospedajePrecio" >maxHospedajePrecio</a>
+                            </li>
+                            <li>
+                                <a href="#maxPersonas" >maxPersonas</a>
+                            </li>
+                            <li>
+                                <a href="#maxPersonasPrecio" >maxPersonasPrecio</a>
+                            </li>
+                            <li>
+                                <a href="#numHabitacion" >numHabitacion</a>
+                            </li>
+                            <li>
+                                <a href="#total" >total</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aceptar" >aceptar</a>
+                            </li>
+                            <li>
+                                <a href="#formCreate" >formCreate</a>
+                            </li>
+                            <li>
+                                <a href="#getInfo" >getInfo</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#salir" >salir</a>
+                            </li>
+                            <li>
+                                <a href="#sumTotal" >sumTotal</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(location: <a href="https://angular.io/api/common/Location" target="_blank">Location</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, dialogService: DialogService, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, pagoService: <a href="../injectables/ComunicacionPagoService.html" target="_self">ComunicacionPagoService</a>, habitacionService: <a href="../injectables/ObtenerHabitacionesService.html" target="_self">ObtenerHabitacionesService</a>, extrasService: <a href="../injectables/ExtrasDeHabitacionService.html" target="_self">ExtrasDeHabitacionService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="44" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/Location" target="_blank" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>pagoService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ComunicacionPagoService.html" target="_self" >ComunicacionPagoService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>habitacionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ObtenerHabitacionesService.html" target="_self" >ObtenerHabitacionesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>extrasService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ExtrasDeHabitacionService.html" target="_self" >ExtrasDeHabitacionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aceptar"></a>
+                    <span class="name">
+                        <span ><b>aceptar</b></span>
+                        <a href="#aceptar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>aceptar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="133"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formCreate"></a>
+                    <span class="name">
+                        <span ><b>formCreate</b></span>
+                        <a href="#formCreate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>formCreate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="74"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInfo"></a>
+                    <span class="name">
+                        <span ><b>getInfo</b></span>
+                        <a href="#getInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="97"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="144"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="67"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="salir"></a>
+                    <span class="name">
+                        <span ><b>salir</b></span>
+                        <a href="#salir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>salir()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="127"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sumTotal"></a>
+                    <span class="name">
+                        <span ><b>sumTotal</b></span>
+                        <a href="#sumTotal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sumTotal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="118"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="costoHabitacion"></a>
+                    <span class="name">
+                        <span ><b>costoHabitacion</b></span>
+                        <a href="#costoHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="40" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="destroy$"></a>
+                    <span class="name">
+                        <span ><b>destroy$</b></span>
+                        <a href="#destroy$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Subject&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new Subject&lt;boolean&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialogService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialogService</b></span>
+                        <a href="#dialogService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>DialogService</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="50" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extras"></a>
+                    <span class="name">
+                        <span ><b>extras</b></span>
+                        <a href="#extras"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="30" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extras$"></a>
+                    <span class="name">
+                        <span ><b>extras$</b></span>
+                        <a href="#extras$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>this.extrasService.extras$</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="form"></a>
+                    <span class="name">
+                        <span ><b>form</b></span>
+                        <a href="#form"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacion"></a>
+                    <span class="name">
+                        <span ><b>habitacion</b></span>
+                        <a href="#habitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacion$"></a>
+                    <span class="name">
+                        <span ><b>habitacion$</b></span>
+                        <a href="#habitacion$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>this.habitacionService.habitacionDetallada$</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loader"></a>
+                    <span class="name">
+                        <span ><b>loader</b></span>
+                        <a href="#loader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="60" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maxHoras"></a>
+                    <span class="name">
+                        <span ><b>maxHoras</b></span>
+                        <a href="#maxHoras"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="34" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maxHorasPrecio"></a>
+                    <span class="name">
+                        <span ><b>maxHorasPrecio</b></span>
+                        <a href="#maxHorasPrecio"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="38" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maxHospedaje"></a>
+                    <span class="name">
+                        <span ><b>maxHospedaje</b></span>
+                        <a href="#maxHospedaje"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="33" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maxHospedajePrecio"></a>
+                    <span class="name">
+                        <span ><b>maxHospedajePrecio</b></span>
+                        <a href="#maxHospedajePrecio"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="37" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maxPersonas"></a>
+                    <span class="name">
+                        <span ><b>maxPersonas</b></span>
+                        <a href="#maxPersonas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="32" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maxPersonasPrecio"></a>
+                    <span class="name">
+                        <span ><b>maxPersonasPrecio</b></span>
+                        <a href="#maxPersonasPrecio"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="36" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numHabitacion"></a>
+                    <span class="name">
+                        <span ><b>numHabitacion</b></span>
+                        <a href="#numHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="65" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:65</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="total"></a>
+                    <span class="name">
+                        <span ><b>total</b></span>
+                        <a href="#total"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="44" class="link-to-prism">src/app/home/inicio-habitaciones/entrada-habitacion/cobrar-pendiente-habitacion/cobrar-pendiente-habitacion.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Location } from &#x27;@angular/common&#x27;;
+import { Component, OnDestroy, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { throwServerError } from &#x27;@apollo/client&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { Subject, takeUntil } from &#x27;rxjs&#x27;;
+import {
+  GetExtrasQuery,
+  HabitacionDetalladaQuery,
+} from &#x27;src/app/core/graphQL/serviciosGraph&#x27;;
+import { ObtenerHabitacionesService } from &#x27;src/app/core/services/habitaciones/obtener-habitaciones.service&#x27;;
+import { ExtrasDeHabitacionService } from &#x27;src/app/core/services/rentaHabitaicones/extrasDeHabitacion.service&#x27;;
+import { ComunicacionPagoService } from &#x27;../services/comunicacionPago.service&#x27;;
+
+@Component({
+  selector: &#x27;app-cobrar-pendiente-habitacion&#x27;,
+  templateUrl: &#x27;./cobrar-pendiente-habitacion.component.html&#x27;,
+  styleUrls: [&#x27;./cobrar-pendiente-habitacion.component.scss&#x27;],
+})
+export class CobrarPendienteHabitacionComponent implements OnInit, OnDestroy {
+  form!: FormGroup;
+  display &#x3D; true;
+  destroy$: Subject&lt;boolean&gt; &#x3D; new Subject&lt;boolean&gt;();
+
+  // Variables provisionales la habitacion seleccionada se va a obtener por medio de los params en la ruta
+  habitacion$ &#x3D; this.habitacionService.habitacionDetallada$
+  habitacion!: HabitacionDetalladaQuery[&quot;habitacion&quot;]
+  extras$ &#x3D; this.extrasService.extras$
+  extras!: GetExtrasQuery[&#x27;extras&#x27;];
+
+  maxPersonas:number &#x3D; 0;
+  maxHospedaje:number &#x3D; 0;
+  maxHoras:number &#x3D; 0;
+
+  maxPersonasPrecio: number &#x3D; 0;
+  maxHospedajePrecio: number &#x3D; 0;
+  maxHorasPrecio: number &#x3D; 0;
+
+  costoHabitacion:number&#x3D; 0
+
+
+
+  total: number &#x3D; 0
+
+
+  constructor(
+    private location: Location,
+    private readonly router: Router,
+    public dialogService: DialogService,
+    private fb: FormBuilder,
+    private route: ActivatedRoute,
+    private pagoService: ComunicacionPagoService,
+    private habitacionService: ObtenerHabitacionesService,
+    private extrasService: ExtrasDeHabitacionService
+  ) {
+    this.numHabitacion &#x3D; String(this.route.snapshot.paramMap.get(&quot;roomNumber&quot;));
+    this.formCreate()
+  }
+  loader &#x3D; true
+
+  // *Crea las opciones de tarifa
+
+  //* --------------------------------
+  numHabitacion!: string;
+
+  ngOnInit(): void {
+    this.habitacionService.getHabitacioDetalle(this.numHabitacion)
+    this.getInfo()
+  }
+
+
+  //* Inicia el formulario
+  formCreate() {
+    this.form &#x3D; this.fb.group({
+      tarifa: [&#x27;&#x27;, [Validators.required]],
+      tarjetaLealtad: [&#x27;&#x27;],
+      aPie: [false],
+      matricula: [&#x27;&#x27;, [Validators.required]],
+      marca: [&#x27;&#x27;, [Validators.required]],
+      modelo: [&#x27;&#x27;, [Validators.required]],
+      color: [&#x27;&#x27;, [Validators.required]],
+      comentario: [&#x27;&#x27;],
+      personaExtra: [ 0],
+      hospedaje: [0],
+      horasExtra: [0],
+      paquetes: [0],
+      descuento: [0],
+    });
+    // se deshabilitan todos los controls porque no cambiarán
+
+    this.sumTotal()
+
+    this.form.disable();
+  }
+  //* --------------------------------
+  getInfo() {
+    this.extrasService.getextras()
+    this.habitacion$.pipe(takeUntil(this.destroy$)).subscribe(data &#x3D;&gt; {
+      this.habitacion &#x3D; data
+      this.maxPersonasPrecio &#x3D;  this.habitacion.rentas[0].tarifa.costoPersonaExtra;
+      this.maxHospedajePrecio &#x3D; this.habitacion.rentas[0].tarifa.costoHospedajeExtra;
+      this.maxHorasPrecio &#x3D; this.habitacion.rentas[0].tarifa.costoHoraExtra;
+      this.extras$.pipe(takeUntil(this.destroy$)).subscribe(data &#x3D;&gt;{
+        this.extras &#x3D; data.filter(extra &#x3D;&gt; extra.renta.habitacion.numeroHabitacion &#x3D;&#x3D; Number(this.numHabitacion))
+        this.extras.reverse()
+        this.form.patchValue({
+          personaExtra: this.extras[0].personas,
+          horasExtra: this.extras[0].horas,
+          hospedaje:this.extras[0].hospedajes
+        })
+       this.sumTotal()
+      })
+    })
+
+  }
+
+  sumTotal(){
+    this.form.disable()
+    this.total &#x3D; (this.maxHorasPrecio * this.form.controls[&quot;horasExtra&quot;].value) +
+      (this.maxHospedajePrecio * this.form.controls[&quot;hospedaje&quot;].value) +
+      (this.maxPersonasPrecio * this.form.controls[&quot;personaExtra&quot;].value)
+      this.loader &#x3D; false
+  }
+
+  //* Botones de modal
+  salir() {
+    this.router.navigate([
+      &#x60;/hotel&#x60;,
+    ]);
+  }
+
+  aceptar() {
+    this.pagoService.tipoPago$ &#x3D; &#x27;Extra&#x27;;
+    this.pagoService.pago$ &#x3D; this.total
+    this.pagoService.infoPago$ &#x3D; this.extras[0].id
+    this.router.navigate([
+      &#x60;/hotel/rentaHabitacion/pagoRenta/${this.numHabitacion}&#x60;,
+    ]);
+  }
+
+  //* --------------------------------
+
+  ngOnDestroy(){
+    this.total &#x3D; 0
+    // this.extrasService.getextras()
+
+    this.extras$.subscribe().unsubscribe();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog [(visible)]&#x3D;&quot;display&quot; [modal]&#x3D;&quot;true&quot; [closable]&#x3D;&quot;false&quot; [draggable]&#x3D;&quot;false&quot; [showHeader]&#x3D;&quot;false&quot;&gt;
+  &lt;form class&#x3D;&quot;form-container&quot; [formGroup]&#x3D;&quot;form&quot; *ngIf&#x3D;&quot;!loader&quot;&gt;
+    &lt;!-- ?FORMULARIO IZQUIERDO --&gt;
+    &lt;div class&#x3D;&quot;form-left&quot;&gt;
+      &lt;div class&#x3D;&quot;titulo&quot;&gt;
+        &lt;h1&gt;DATOS DE ENTRADA&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;label&gt;TARIFA&lt;/label&gt;
+        &lt;p-dropdown placeholder&#x3D;&quot;{{habitacion.rentas[0].tarifa.nombre}}&quot; formControlName&#x3D;&quot;tarifa&quot; &gt;&lt;/p-dropdown&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;label&gt;TARJETA DE LEALTAD&lt;/label&gt;
+        &lt;span class&#x3D;&quot;p-input-icon-right&quot;&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-address-card&quot;&gt;&lt;/i&gt;
+          &lt;input formControlName&#x3D;&quot;tarjetaLealtad&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Código de Tarjeta&quot;&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;p&gt;CÓDIGO DE RESERVACIÓN&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;div class&#x3D;&quot;radio-button&quot;&gt;
+          &lt;p-checkbox formControlName&#x3D;&quot;form.controls[&#x27;aPie&#x27;]&quot; [binary]&#x3D;&quot;true&quot;&gt;&lt;/p-checkbox&gt;
+          &lt;label&gt;&amp;nbsp; A PIE&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;hr&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+
+        &lt;span class&#x3D;&quot;p-input-icon-right&quot;&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;matricula&#x27;].touched &#x3D;&#x3D; false &amp;&amp; form.controls[&#x27;matricula&#x27;].value &#x3D;&#x3D; &#x27;&#x27;&quot;
+            style&#x3D;&quot;color: #495057;&quot; class&#x3D;&quot;fa-solid fa-car&quot;&gt;&lt;/i&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;matricula&#x27;].status &#x3D;&#x3D; &#x27;INVALID&#x27; &amp;&amp; form.controls[&#x27;matricula&#x27;].touched &#x3D;&#x3D; true&quot;
+            class&#x3D;&quot;fa-solid fa-car&quot; style&#x3D;&quot;color: red;&quot;&gt;&lt;/i&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;matricula&#x27;].status &#x3D;&#x3D; &#x27;VALID&#x27;&quot; class&#x3D;&quot;fa-solid fa-car&quot; style&#x3D;&quot;color: #0AC917;&quot;&gt;&lt;/i&gt;
+          &lt;input formControlName&#x3D;&quot;matricula&quot; maxlength&#x3D;&quot;9&quot; minlength&#x3D;&quot;6&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Matricula&quot;&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;span class&#x3D;&quot;p-input-icon-right&quot;&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;marca&#x27;].touched &#x3D;&#x3D; false &amp;&amp; form.controls[&#x27;marca&#x27;].value &#x3D;&#x3D; &#x27;&#x27;&quot; style&#x3D;&quot;color: #495057;&quot;
+            class&#x3D;&quot;fa-solid fa-check&quot;&gt;&lt;/i&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;marca&#x27;].status &#x3D;&#x3D; &#x27;INVALID&#x27; &amp;&amp; form.controls[&#x27;marca&#x27;].touched &#x3D;&#x3D; true&quot;
+            class&#x3D;&quot;fa-solid fa-check&quot; style&#x3D;&quot;color: red;&quot;&gt;&lt;/i&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;marca&#x27;].status &#x3D;&#x3D; &#x27;VALID&#x27;&quot; class&#x3D;&quot;fa-solid fa-check&quot; style&#x3D;&quot;color: #0AC917;&quot;&gt;&lt;/i&gt;
+          &lt;input formControlName&#x3D;&quot;marca&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Marca&quot;&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;span class&#x3D;&quot;p-input-icon-right&quot;&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;modelo&#x27;].touched &#x3D;&#x3D; false &amp;&amp; form.controls[&#x27;modelo&#x27;].value &#x3D;&#x3D; &#x27;&#x27;&quot; style&#x3D;&quot;color: #495057;&quot;
+            class&#x3D;&quot;fa-solid fa-check&quot;&gt;&lt;/i&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;modelo&#x27;].status &#x3D;&#x3D; &#x27;INVALID&#x27; &amp;&amp; form.controls[&#x27;modelo&#x27;].touched &#x3D;&#x3D; true&quot;
+            class&#x3D;&quot;fa-solid fa-check&quot; style&#x3D;&quot;color: red;&quot;&gt;&lt;/i&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;modelo&#x27;].status &#x3D;&#x3D; &#x27;VALID&#x27;&quot; class&#x3D;&quot;fa-solid fa-check&quot; style&#x3D;&quot;color: #0AC917;&quot;&gt;&lt;/i&gt;
+          &lt;input formControlName&#x3D;&quot;modelo&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Modelo&quot;&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;span class&#x3D;&quot;p-input-icon-right&quot;&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;color&#x27;].touched &#x3D;&#x3D; false &amp;&amp; form.controls[&#x27;color&#x27;].value &#x3D;&#x3D; &#x27;&#x27;&quot; style&#x3D;&quot;color: #495057;&quot;
+            class&#x3D;&quot;fa-solid fa-brush&quot;&gt;&lt;/i&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;color&#x27;].status &#x3D;&#x3D; &#x27;INVALID&#x27; &amp;&amp; form.controls[&#x27;color&#x27;].touched &#x3D;&#x3D; true&quot;
+            class&#x3D;&quot;fa-solid fa-brush&quot; style&#x3D;&quot;color: red;&quot;&gt;&lt;/i&gt;
+          &lt;i *ngIf&#x3D;&quot;form.controls[&#x27;color&#x27;].status &#x3D;&#x3D; &#x27;VALID&#x27;&quot; class&#x3D;&quot;fa-solid fa-brush&quot; style&#x3D;&quot;color: #0AC917;&quot;&gt;&lt;/i&gt;
+          &lt;input formControlName&#x3D;&quot;color&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Color&quot; pKeyFilter&#x3D;&quot;alpha&quot;&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component &quot;&gt;
+        &lt;div class&#x3D;&quot;container_textarea&quot;&gt;
+          &lt;span class&#x3D;&quot;text-area&quot;&gt;
+            &lt;textarea formControlName&#x3D;&quot;comentario&quot; placeholder&#x3D;&quot;OBSERVACIONES&quot; rows&#x3D;&quot;4&quot; cols&#x3D;&quot;36&quot; pInputTextarea&gt;&lt;/textarea&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;!--? ------------------- --&gt;
+    &lt;!--? FORMULARIO DERECHO --&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;form-rigth&quot;&gt;
+      &lt;div class&#x3D;&quot;titulo-rigth&quot;&gt;
+        &lt;h1&gt;HABITACIÓN&lt;/h1&gt;
+        &lt;div class&#x3D;&quot;info-habitacion&quot;&gt;
+        &lt;div class&#x3D;&quot;number&quot;&gt;{{habitacion.numeroHabitacion}}&lt;/div&gt;
+        &lt;div class&#x3D;&quot;tipo&quot;&gt;{{habitacion.tipoHabitacion.nombre}}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;label&gt;Habitación&lt;/label&gt;
+        &lt;div class&#x3D;&quot;form-component_contador&quot;&gt;
+          &lt;div class&#x3D;&quot;divisor-form-l&quot;&gt;
+            &lt;p&gt;{{ 0 | currency: &#x27;$&#x27;}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;divisor-form-r&quot;&gt;
+            &lt;p&gt;{{ 0 | currency: &#x27;$&#x27;}}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;label&gt;Persona extra&lt;/label&gt;
+        &lt;div class&#x3D;&quot;form-component_contador&quot;&gt;
+          &lt;div class&#x3D;&quot;divisor-form-l&quot;&gt;
+            &lt;p-inputNumber formControlName&#x3D;&quot;personaExtra&quot; [showButtons]&#x3D;&quot;true&quot; [min]&#x3D;&quot;0&quot; [max]&#x3D;&quot;maxPersonas&quot; buttonLayout&#x3D;&quot;horizontal&quot;
+              spinnerMode&#x3D;&quot;horizontal&quot; decrementButtonClass&#x3D;&quot;p-button-danger&quot; incrementButtonClass&#x3D;&quot;p-button-success&quot;
+              incrementButtonIcon&#x3D;&quot;pi pi-plus&quot; decrementButtonIcon&#x3D;&quot;pi pi-minus&quot;&gt;&lt;/p-inputNumber&gt;
+            &lt;p&gt;{{maxPersonasPrecio | currency: &#x27;$&#x27;}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;divisor-form-r&quot;&gt;
+            &lt;p&gt;{{maxPersonasPrecio   * form.controls[&#x27;personaExtra&#x27;].value  | currency: &#x27;$&#x27;}}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;label&gt;Hospedaje&lt;/label&gt;
+        &lt;div class&#x3D;&quot;form-component_contador&quot;&gt;
+          &lt;div class&#x3D;&quot;divisor-form-l&quot;&gt;
+            &lt;p-inputNumber formControlName&#x3D;&quot;hospedaje&quot; [showButtons]&#x3D;&quot;true&quot; [min]&#x3D;&quot;0&quot; [max]&#x3D;&quot;maxHospedaje&quot; buttonLayout&#x3D;&quot;horizontal&quot;
+              spinnerMode&#x3D;&quot;horizontal&quot; decrementButtonClass&#x3D;&quot;p-button-danger&quot; incrementButtonClass&#x3D;&quot;p-button-success&quot;
+              incrementButtonIcon&#x3D;&quot;pi pi-plus&quot; decrementButtonIcon&#x3D;&quot;pi pi-minus&quot;&gt;&lt;/p-inputNumber&gt;
+            &lt;p&gt;{{maxHospedajePrecio  | currency: &#x27;$&#x27;}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;divisor-form-r&quot;&gt;
+            &lt;p&gt;{{maxHospedajePrecio * form.controls[&#x27;hospedaje&#x27;].value  | currency: &#x27;$&#x27;}}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;label&gt;Horas extra&lt;/label&gt;
+        &lt;div class&#x3D;&quot;form-component_contador&quot;&gt;
+          &lt;div class&#x3D;&quot;divisor-form-l&quot;&gt;
+            &lt;p-inputNumber formControlName&#x3D;&quot;horasExtra&quot; [showButtons]&#x3D;&quot;true&quot; [min]&#x3D;&quot;0&quot; [max]&#x3D;&quot;maxHoras&quot; buttonLayout&#x3D;&quot;horizontal&quot;
+              spinnerMode&#x3D;&quot;horizontal&quot; decrementButtonClass&#x3D;&quot;p-button-danger&quot; incrementButtonClass&#x3D;&quot;p-button-success&quot;
+              incrementButtonIcon&#x3D;&quot;pi pi-plus&quot; decrementButtonIcon&#x3D;&quot;pi pi-minus&quot;&gt;&lt;/p-inputNumber&gt;
+            &lt;p&gt;{{maxHorasPrecio | currency: &#x27;$&#x27;}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;divisor-form-r&quot;&gt;
+            &lt;p&gt;{{maxHorasPrecio  *  form.controls[&#x27;horasExtra&#x27;].value  | currency: &#x27;$&#x27;}}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;h2&gt;PAQUETES&lt;/h2&gt;
+        &lt;div class&#x3D;&quot;form-component_contador&quot;&gt;
+          &lt;div class&#x3D;&quot;divisor-form-l&quot; style&#x3D;&quot;padding: 0px 74px 0 22px;&quot;&gt;
+            &lt;p-inputNumber formControlName&#x3D;&quot;paquetes&quot;&gt;&lt;/p-inputNumber&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;divisor-form-r&quot;&gt;
+            &lt;p&gt;$0.00&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;h2&gt;DESCUENTOS&lt;/h2&gt;
+        &lt;div class&#x3D;&quot;form-component_contador&quot;&gt;
+          &lt;div class&#x3D;&quot;divisor-form-l&quot; style&#x3D;&quot;padding: 0px 74px 0 22px;&quot;&gt;
+            &lt;p-inputNumber formControlName&#x3D;&quot;descuento&quot;&gt;&lt;/p-inputNumber&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;divisor-form-r&quot;&gt;
+            &lt;p&gt;$0.00&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-component&quot;&gt;
+        &lt;div class&#x3D;&quot;form-component_contador&quot;&gt;
+          &lt;div class&#x3D;&quot;divisor-form-l&quot; class&#x3D;&quot;&quot;&gt;
+            &lt;h2&gt;DESCUENTOS TARJETA DE LEALTAD&lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;divisor-form-r&quot;&gt;
+            &lt;p&gt;$0.00&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;total&quot;&gt;
+        &lt;div&gt;Total:&lt;/div&gt;
+      &lt;div&gt;{{total | currency: &#x27;$&#x27;}}&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--? ------------------- --&gt;
+  &lt;/form&gt;
+  &lt;!--? BOTONES DE FORMULARIO --&gt;
+  &lt;ng-template pTemplate&#x3D;&quot;footer&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-footer-content&quot;&gt;
+      &lt;button class&#x3D;&quot;button-modal button-salir&quot; [routerLink]&#x3D;&quot;&#x27;/hotel&#x27;&quot;&gt;
+        &lt;div class&#x3D;&quot;icon&quot;&gt;
+          &lt;i class&#x3D;&quot;fas icon-icon-metro-exit&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text&quot;&gt;Salir&lt;/div&gt;
+      &lt;/button&gt;
+      &lt;button (click)&#x3D;&quot;aceptar()&quot; class&#x3D;&quot;button-modal button-aceptar&quot; [disabled]&#x3D;&quot;form.invalid&quot;&gt;
+        &lt;div class&#x3D;&quot;icon&quot;&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-check&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text&quot;&gt;Aceptar&lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/ng-template&gt;
+  &lt;!--? ------------------- --&gt;
+  &lt;div class&#x3D;&quot;spiner&quot; *ngIf&#x3D;&quot;loader&quot;&gt;
+    &lt;p-progressSpinner&gt;&lt;/p-progressSpinner&gt;
+  &lt;/div&gt;
+
+&lt;/p-dialog&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./cobrar-pendiente-habitacion.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;./../../../../../library.scss&quot;;
+
+.form-container {
+  display       : flex;
+  flex-direction: row;
+  flex-wrap     : nowrap;
+  height        : 100%;
+  overflow      : auto;
+  font-family   : $font-secundaria;
+  padding       : 10px;
+  width         : 100%;
+
+  &amp; .form-left {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    border-radius : $border-radius-tittle;
+    box-shadow    : $shadow-boton;
+    padding       : 7px 0px;
+    margin        : 0.2rem 1rem;
+    height        : auto;
+    width         : 100%;
+
+    &amp; .form-component {
+      display       : flex;
+      flex-direction: column;
+      margin-bottom : 10px;
+      padding       : 0px 29px;
+      margin        : 5px auto;
+      width         : 88%;
+      text-align    : center;
+    }
+
+    &amp; .titulo h1 {
+      text-align : center;
+      color      : $color-text;
+      font-size  : 27px;
+      font-weight: 700;
+      margin     : 0.8rem 0px 5px;
+    }
+
+    &amp; p {
+      color        : $wine;
+      font-weight  : 600;
+      border-bottom: 1px solid $wine;
+      margin       : 0;
+    }
+  }
+
+  &amp; .form-rigth {
+    border-radius  : $border-radius-tittle;
+    box-shadow     : $shadow-boton;
+    padding        : 14px 24px;
+    margin         : 0.2rem 1rem;
+    height         : auto;
+    display        : flex;
+    width          : 100%;
+    flex-direction : column;
+    justify-content: space-between;
+
+    &amp; .form-component {
+      display       : flex;
+      flex-direction: column;
+      margin-bottom : 5px;
+      align-items   : flex-start;
+
+      // padding-left: 10px;
+      // width: 19vw;
+      &amp; h2 {
+        color      : $grey-item;
+        font-size  : 16px;
+        font-weight: 400;
+        margin     : 0;
+      }
+    }
+
+    &amp; .titulo-rigth {
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-around;
+      align-items    : center;
+
+      &amp; h1 {
+        text-align : center;
+        color      : $color-text;
+        font-size  : 27px;
+        font-weight: 700;
+      }
+
+      &amp; .info-habitacion {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+
+        &amp; .number {
+          color      : $wine;
+          font-size  : 22px;
+          font-weight: 800;
+        }
+
+        &amp; .tipo {
+          color      : $color-text;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &amp; .total {
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-between;
+      color          : $red-danger;
+      text-align     : center;
+      font-size      : 4vh;
+      font-weight    : bolder;
+    }
+  }
+}
+
+.text-area {
+  margin-top: 17px;
+}
+
+.form-component_contador {
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : nowrap;
+  width          : 100%;
+  justify-content: space-between;
+
+  &amp; .divisor-form-l {
+    width         : 42%;
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+
+    &amp; p {
+      margin     : 0;
+      margin-left: 10px;
+      color      : $grey;
+      font-size  : 18px;
+      width      : 42%;
+    }
+  }
+
+  &amp; .divisor-form-r {
+    width          : 35%;
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: flex-end;
+
+    &amp; p {
+      margin       : 0;
+      color        : $red-danger;
+      border-bottom: 1px solid $color-text;
+      font-size    : 18px;
+      font-weight  : 100;
+    }
+  }
+}
+
+hr {
+  width: 85%;
+  color: $color-title-grey;
+}
+
+.radio-button {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+:host ::ng-deep .p-dropdown-panel {
+  &amp; .p-dropdown-items {
+    &amp; .p-dropdown-item li {
+      text-transform: uppercase;
+    }
+  }
+}
+
+span li.ng-star-inserted {
+  text-transform: uppercase !important;
+}
+
+.container_textarea {
+  margin-bottom: -10px;
+
+  textarea {
+    font-size: 12pt;
+  }
+}
+
+span.p-input-icon-right {
+  width : 93%;
+  margin: 0 auto;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog [(visible)]="display" [modal]="true" [closable]="false" [draggable]="false" [showHeader]="false">  <form class="form-container" [formGroup]="form" *ngIf="!loader">    <!-- ?FORMULARIO IZQUIERDO -->    <div class="form-left">      <div class="titulo">        <h1>DATOS DE ENTRADA</h1>      </div>      <div class="form-component">        <label>TARIFA</label>        <p-dropdown placeholder="{{habitacion.rentas[0].tarifa.nombre}}" formControlName="tarifa" ></p-dropdown>      </div>      <div class="form-component">        <label>TARJETA DE LEALTAD</label>        <span class="p-input-icon-right">          <i class="fa-solid fa-address-card"></i>          <input formControlName="tarjetaLealtad" type="text" pInputText placeholder="Código de Tarjeta">        </span>      </div>      <div class="form-component">        <p>CÓDIGO DE RESERVACIÓN</p>      </div>      <div class="form-component">        <div class="radio-button">          <p-checkbox formControlName="form.controls[\'aPie\']" [binary]="true"></p-checkbox>          <label>&nbsp; A PIE</label>        </div>      </div>      <hr>      <div class="form-component">        <span class="p-input-icon-right">          <i *ngIf="form.controls[\'matricula\'].touched == false && form.controls[\'matricula\'].value == \'\'"            style="color: #495057;" class="fa-solid fa-car"></i>          <i *ngIf="form.controls[\'matricula\'].status == \'INVALID\' && form.controls[\'matricula\'].touched == true"            class="fa-solid fa-car" style="color: red;"></i>          <i *ngIf="form.controls[\'matricula\'].status == \'VALID\'" class="fa-solid fa-car" style="color: #0AC917;"></i>          <input formControlName="matricula" maxlength="9" minlength="6" type="text" pInputText placeholder="Matricula">        </span>      </div>      <div class="form-component">        <span class="p-input-icon-right">          <i *ngIf="form.controls[\'marca\'].touched == false && form.controls[\'marca\'].value == \'\'" style="color: #495057;"            class="fa-solid fa-check"></i>          <i *ngIf="form.controls[\'marca\'].status == \'INVALID\' && form.controls[\'marca\'].touched == true"            class="fa-solid fa-check" style="color: red;"></i>          <i *ngIf="form.controls[\'marca\'].status == \'VALID\'" class="fa-solid fa-check" style="color: #0AC917;"></i>          <input formControlName="marca" type="text" pInputText placeholder="Marca">        </span>      </div>      <div class="form-component">        <span class="p-input-icon-right">          <i *ngIf="form.controls[\'modelo\'].touched == false && form.controls[\'modelo\'].value == \'\'" style="color: #495057;"            class="fa-solid fa-check"></i>          <i *ngIf="form.controls[\'modelo\'].status == \'INVALID\' && form.controls[\'modelo\'].touched == true"            class="fa-solid fa-check" style="color: red;"></i>          <i *ngIf="form.controls[\'modelo\'].status == \'VALID\'" class="fa-solid fa-check" style="color: #0AC917;"></i>          <input formControlName="modelo" type="text" pInputText placeholder="Modelo">        </span>      </div>      <div class="form-component">        <span class="p-input-icon-right">          <i *ngIf="form.controls[\'color\'].touched == false && form.controls[\'color\'].value == \'\'" style="color: #495057;"            class="fa-solid fa-brush"></i>          <i *ngIf="form.controls[\'color\'].status == \'INVALID\' && form.controls[\'color\'].touched == true"            class="fa-solid fa-brush" style="color: red;"></i>          <i *ngIf="form.controls[\'color\'].status == \'VALID\'" class="fa-solid fa-brush" style="color: #0AC917;"></i>          <input formControlName="color" type="text" pInputText placeholder="Color" pKeyFilter="alpha">        </span>      </div>      <div class="form-component ">        <div class="container_textarea">          <span class="text-area">            <textarea formControlName="comentario" placeholder="OBSERVACIONES" rows="4" cols="36" pInputTextarea></textarea>          </span>        </div>      </div>    <!--? ------------------- -->    <!--? FORMULARIO DERECHO -->    </div>    <div class="form-rigth">      <div class="titulo-rigth">        <h1>HABITACIÓN</h1>        <div class="info-habitacion">        <div class="number">{{habitacion.numeroHabitacion}}</div>        <div class="tipo">{{habitacion.tipoHabitacion.nombre}}</div>        </div>      </div>      <div class="form-component">        <label>Habitación</label>        <div class="form-component_contador">          <div class="divisor-form-l">            <p>{{ 0 | currency: \'$\'}}</p>          </div>          <div class="divisor-form-r">            <p>{{ 0 | currency: \'$\'}}</p>          </div>        </div>      </div>      <div class="form-component">        <label>Persona extra</label>        <div class="form-component_contador">          <div class="divisor-form-l">            <p-inputNumber formControlName="personaExtra" [showButtons]="true" [min]="0" [max]="maxPersonas" buttonLayout="horizontal"              spinnerMode="horizontal" decrementButtonClass="p-button-danger" incrementButtonClass="p-button-success"              incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>            <p>{{maxPersonasPrecio | currency: \'$\'}}</p>          </div>          <div class="divisor-form-r">            <p>{{maxPersonasPrecio   * form.controls[\'personaExtra\'].value  | currency: \'$\'}}</p>          </div>        </div>      </div>      <div class="form-component">        <label>Hospedaje</label>        <div class="form-component_contador">          <div class="divisor-form-l">            <p-inputNumber formControlName="hospedaje" [showButtons]="true" [min]="0" [max]="maxHospedaje" buttonLayout="horizontal"              spinnerMode="horizontal" decrementButtonClass="p-button-danger" incrementButtonClass="p-button-success"              incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>            <p>{{maxHospedajePrecio  | currency: \'$\'}}</p>          </div>          <div class="divisor-form-r">            <p>{{maxHospedajePrecio * form.controls[\'hospedaje\'].value  | currency: \'$\'}}</p>          </div>        </div>      </div>      <div class="form-component">        <label>Horas extra</label>        <div class="form-component_contador">          <div class="divisor-form-l">            <p-inputNumber formControlName="horasExtra" [showButtons]="true" [min]="0" [max]="maxHoras" buttonLayout="horizontal"              spinnerMode="horizontal" decrementButtonClass="p-button-danger" incrementButtonClass="p-button-success"              incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>            <p>{{maxHorasPrecio | currency: \'$\'}}</p>          </div>          <div class="divisor-form-r">            <p>{{maxHorasPrecio  *  form.controls[\'horasExtra\'].value  | currency: \'$\'}}</p>          </div>        </div>      </div>      <div class="form-component">        <h2>PAQUETES</h2>        <div class="form-component_contador">          <div class="divisor-form-l" style="padding: 0px 74px 0 22px;">            <p-inputNumber formControlName="paquetes"></p-inputNumber>          </div>          <div class="divisor-form-r">            <p>$0.00</p>          </div>        </div>      </div>      <div class="form-component">        <h2>DESCUENTOS</h2>        <div class="form-component_contador">          <div class="divisor-form-l" style="padding: 0px 74px 0 22px;">            <p-inputNumber formControlName="descuento"></p-inputNumber>          </div>          <div class="divisor-form-r">            <p>$0.00</p>          </div>        </div>      </div>      <div class="form-component">        <div class="form-component_contador">          <div class="divisor-form-l" class="">            <h2>DESCUENTOS TARJETA DE LEALTAD</h2>          </div>          <div class="divisor-form-r">            <p>$0.00</p>          </div>        </div>      </div>      <div class="total">        <div>Total:</div>      <div>{{total | currency: \'$\'}}</div>      </div>    </div>    <!--? ------------------- -->  </form>  <!--? BOTONES DE FORMULARIO -->  <ng-template pTemplate="footer">    <div class="modal-footer-content">      <button class="button-modal button-salir" [routerLink]="\'/hotel\'">        <div class="icon">          <i class="fas icon-icon-metro-exit"></i>        </div>        <div class="text">Salir</div>      </button>      <button (click)="aceptar()" class="button-modal button-aceptar" [disabled]="form.invalid">        <div class="icon">          <i class="fa-solid fa-check"></i>        </div>        <div class="text">Aceptar</div>      </button>    </div>  </ng-template>  <!--? ------------------- -->  <div class="spiner" *ngIf="loader">    <p-progressSpinner></p-progressSpinner>  </div></p-dialog></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'CobrarPendienteHabitacionComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CobrarPendienteHabitacionComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

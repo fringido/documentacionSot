@@ -1,0 +1,1748 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  ListaComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/impresoras/lista/lista.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-lista</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./lista.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./lista.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#filterText" >filterText</a>
+                            </li>
+                            <li>
+                                <a href="#impresoras" >impresoras</a>
+                            </li>
+                            <li>
+                                <a href="#pages" >pages</a>
+                            </li>
+                            <li>
+                                <a href="#pageSelected" >pageSelected</a>
+                            </li>
+                            <li>
+                                <a href="#pagesRef" >pagesRef</a>
+                            </li>
+                            <li>
+                                <a href="#printersImg" >printersImg</a>
+                            </li>
+                            <li>
+                                <a href="#printersRef" >printersRef</a>
+                            </li>
+                            <li>
+                                <a href="#selectedPageId" >selectedPageId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#selectedPrinterId" >selectedPrinterId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#selectedPrinterImg" >selectedPrinterImg</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#selectedPrinterRefId" >selectedPrinterRefId</a>
+                            </li>
+                            <li>
+                                <a href="#totalImpresoras" >totalImpresoras</a>
+                            </li>
+                            <li>
+                                <a href="#visible" >visible</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changePage" >changePage</a>
+                            </li>
+                            <li>
+                                <a href="#descartarImpresora" >descartarImpresora</a>
+                            </li>
+                            <li>
+                                <a href="#liberarVariables" >liberarVariables</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#redirect" >redirect</a>
+                            </li>
+                            <li>
+                                <a href="#salir" >salir</a>
+                            </li>
+                            <li>
+                                <a href="#search" >search</a>
+                            </li>
+                            <li>
+                                <a href="#selectPrinter" >selectPrinter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#togglePrinterStatus" >togglePrinterStatus</a>
+                            </li>
+                            <li>
+                                <a href="#unselectPrinters" >unselectPrinters</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(location: <a href="https://angular.io/api/common/Location" target="_blank">Location</a>, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, dialogService: DialogService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="34" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/Location" target="_blank" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changePage"></a>
+                    <span class="name">
+                        <span ><b>changePage</b></span>
+                        <a href="#changePage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changePage(pageIndex: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="157"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Método que se ejecuta al cambiar de página en la lista de impresoras, en caso de haber
+una impresora seleccionada la deselecciona</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageIndex</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>void</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="descartarImpresora"></a>
+                    <span class="name">
+                        <span ><b>descartarImpresora</b></span>
+                        <a href="#descartarImpresora"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>descartarImpresora()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="172"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="liberarVariables"></a>
+                    <span class="name">
+                        <span ><b>liberarVariables</b></span>
+                        <a href="#liberarVariables"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>liberarVariables()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="52"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="43"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirect"></a>
+                    <span class="name">
+                        <span ><b>redirect</b></span>
+                        <a href="#redirect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>redirect(path: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="168"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>path</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="salir"></a>
+                    <span class="name">
+                        <span ><b>salir</b></span>
+                        <a href="#salir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>salir()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="48"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="search"></a>
+                    <span class="name">
+                        <span ><b>search</b></span>
+                        <a href="#search"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>search()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="58"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectPrinter"></a>
+                    <span class="name">
+                        <span ><b>selectPrinter</b></span>
+                        <a href="#selectPrinter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectPrinter(printerRefId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, printerImgRefId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, printerId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="91"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>printerRefId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>printerImgRefId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>printerId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="togglePrinterStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>togglePrinterStatus</b></span>
+                        <a href="#togglePrinterStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>togglePrinterStatus(undefined: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="142"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unselectPrinters"></a>
+                    <span class="name">
+                        <span ><b>unselectPrinters</b></span>
+                        <a href="#unselectPrinters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>unselectPrinters()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="77"
+                            class="link-to-prism">src/app/impresoras/lista/lista.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterText"></a>
+                    <span class="name">
+                        <span ><b>filterText</b></span>
+                        <a href="#filterText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new FormControl()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="34" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="impresoras"></a>
+                    <span class="name">
+                        <span ><b>impresoras</b></span>
+                        <a href="#impresoras"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pages"></a>
+                    <span class="name">
+                        <span ><b>pages</b></span>
+                        <a href="#pages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="31" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageSelected"></a>
+                    <span class="name">
+                        <span ><b>pageSelected</b></span>
+                        <a href="#pageSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="32" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pagesRef"></a>
+                    <span class="name">
+                        <span ><b>pagesRef</b></span>
+                        <a href="#pagesRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryList&lt;ElementRef&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(&#x27;pagesRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="printersImg"></a>
+                    <span class="name">
+                        <span ><b>printersImg</b></span>
+                        <a href="#printersImg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryList&lt;ElementRef&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(&#x27;printersImg&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="printersRef"></a>
+                    <span class="name">
+                        <span ><b>printersRef</b></span>
+                        <a href="#printersRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryList&lt;ElementRef&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(&#x27;printersRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedPageId"></a>
+                    <span class="name">
+                        <span ><b>selectedPageId</b></span>
+                        <a href="#selectedPageId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedPrinterId"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>selectedPrinterId</b></span>
+                        <a href="#selectedPrinterId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedPrinterImg"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>selectedPrinterImg</b></span>
+                        <a href="#selectedPrinterImg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedPrinterRefId"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>selectedPrinterRefId</b></span>
+                        <a href="#selectedPrinterRefId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="26" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="totalImpresoras"></a>
+                    <span class="name">
+                        <span ><b>totalImpresoras</b></span>
+                        <a href="#totalImpresoras"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="visible"></a>
+                    <span class="name">
+                        <span ><b>visible</b></span>
+                        <a href="#visible"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/impresoras/lista/lista.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Location } from &#x27;@angular/common&#x27;;
+import { Component, ElementRef, OnInit, QueryList, Renderer2, ViewChildren } from &#x27;@angular/core&#x27;;
+import { FormControl } from &#x27;@angular/forms&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { debounceTime, distinctUntilChanged } from &#x27;rxjs/operators&#x27;;
+import { ConfimModalMessageComponent } from &#x27;src/app/core/components/confim-modal-message/confim-modal-message.component&#x27;;
+import { MessageModalAutoclosableComponent } from &#x27;src/app/core/components/message-modal-autoclosable/message-modal-autoclosable.component&#x27;;
+import { impresorasList } from &#x27;./constants/impresoras&#x27;;
+
+@Component({
+  selector: &#x27;app-lista&#x27;,
+  templateUrl: &#x27;./lista.component.html&#x27;,
+  styleUrls: [&#x27;./lista.component.scss&#x27;]
+})
+export class ListaComponent implements OnInit {
+
+  visible &#x3D; true;
+  totalImpresoras!: any[];
+  impresoras!: any[];
+
+  @ViewChildren(&#x27;printersRef&#x27;) printersRef!: QueryList&lt;ElementRef&gt;;
+  @ViewChildren(&#x27;printersImg&#x27;) printersImg!: QueryList&lt;ElementRef&gt;;
+  @ViewChildren(&#x27;pagesRef&#x27;) pagesRef!: QueryList&lt;ElementRef&gt;;
+
+  selectedPrinterRefId?: string;
+  selectedPrinterImg?: string;
+  selectedPrinterId?: string;
+  selectedPageId: number &#x3D; 0;
+
+  pages!: number;
+  pageSelected &#x3D; 0;
+
+  filterText &#x3D; new FormControl();
+
+  constructor(
+    private readonly location: Location,
+    private readonly renderer: Renderer2,
+    private readonly router: Router,
+    private readonly dialogService: DialogService
+  ) { }
+
+  ngOnInit(): void {
+    this.liberarVariables();
+    this.search();
+  }
+
+  salir() {
+    this.location.back();
+  }
+
+  liberarVariables() {
+    this.totalImpresoras &#x3D; [...impresorasList];
+    this.impresoras &#x3D; this.totalImpresoras.slice(0, 8);
+    this.pages &#x3D; Math.ceil(this.totalImpresoras.length / 8);
+  }
+
+  search() {
+    this.filterText &#x3D; new FormControl(&quot;&quot;);
+    this.filterText.valueChanges
+      .pipe(debounceTime(400), distinctUntilChanged())
+      .subscribe((v) &#x3D;&gt; {
+        this.unselectPrinters();
+        if (v) {
+          const filter &#x3D; new RegExp(v, &quot;i&quot;);
+          const filterFields &#x3D; [&quot;nombre&quot;];
+          this.impresoras &#x3D; this.totalImpresoras.filter((role) &#x3D;&gt;
+            filterFields.some((field) &#x3D;&gt; filter.test(role[field]))
+          );
+          this.pages &#x3D; Math.ceil(this.impresoras.length / 8);
+        } else {
+          this.liberarVariables();
+        }
+    });
+  }
+
+  unselectPrinters() {
+    this.printersRef.toArray().forEach((el, index) &#x3D;&gt; {
+      this.togglePrinterStatus({
+        printerEl: el?.nativeElement,
+        printerImgEl: this.printersImg.toArray()[index]?.nativeElement,
+        fromClass: &#x27;boxBadgeSelected&#x27;,
+        toClass: &#x27;boxBadge&#x27;,
+        imgPath: &#x27;../../../../../assets/img/impresora.png&#x27;
+      })
+    });
+    this.selectedPrinterRefId &#x3D; undefined;
+    this.selectedPrinterImg &#x3D; undefined;
+  }
+
+  selectPrinter(printerRefId: string, printerImgRefId: string, printerId: string) {
+
+    const getElement &#x3D; (refs: QueryList&lt;ElementRef&gt;, id: string ) &#x3D;&gt; {
+      return refs.toArray().find(el &#x3D;&gt; el.nativeElement.id &#x3D;&#x3D;&#x3D; id)?.nativeElement;
+    }
+
+    const printer &#x3D; getElement(this.printersRef, printerRefId);
+    const prevPrinter &#x3D; getElement(this.printersRef, this.selectedPrinterRefId!);
+
+
+    const printerImg &#x3D; getElement(this.printersImg, printerImgRefId);
+    const prevPrinterImg &#x3D; getElement(this.printersImg, this.selectedPrinterImg!);
+    // Al cambiar de pagina se ejecuta este metodo, por lo tanto es posible que no se haya seleccionado
+    // una impresora previamente, para evitar error property classList of undefined se añade esta validacion
+    if(!printer || !printerImg ) {
+      return;
+    }
+    if(printer &#x3D;&#x3D;&#x3D; prevPrinter) {
+      this.togglePrinterStatus({
+        printerEl: prevPrinter,
+        printerImgEl: prevPrinterImg,
+        fromClass: &#x27;boxBadgeSelected&#x27;,
+        toClass: &#x27;boxBadge&#x27;,
+        imgPath: &#x27;../../../../../assets/img/impresora.png&#x27;
+      });
+      this.selectedPrinterRefId &#x3D; undefined;
+      this.selectedPrinterImg &#x3D; undefined;
+        return;
+    }
+    this.selectedPrinterId &#x3D; printerId;
+    if(prevPrinter &amp;&amp; prevPrinterImg) {
+      this.togglePrinterStatus({
+        printerEl: prevPrinter,
+        printerImgEl: prevPrinterImg,
+        fromClass: &#x27;boxBadgeSelected&#x27;,
+        toClass: &#x27;boxBadge&#x27;,
+        imgPath: &#x27;../../../../../assets/img/impresora.png&#x27;
+      });
+    }
+    this.selectedPrinterRefId &#x3D; printerRefId;
+    this.selectedPrinterImg &#x3D; printerImgRefId;
+
+    this.togglePrinterStatus({
+      printerEl: printer,
+      printerImgEl: printerImg,
+      fromClass: &#x27;boxBadge&#x27;,
+      toClass: &#x27;boxBadgeSelected&#x27;,
+      imgPath: &#x27;../../../../../assets/img/impresora_seleccionado.png&#x27;
+    });
+  }
+
+  private togglePrinterStatus(
+    {printerEl, printerImgEl, fromClass, toClass, imgPath}:
+    {printerEl: string, printerImgEl: string, fromClass: string, toClass: string, imgPath: string}
+    ) {
+    this.renderer.removeClass(printerEl, fromClass);
+    this.renderer.addClass(printerEl, toClass);
+    this.renderer.setAttribute(printerImgEl, &#x27;src&#x27;, imgPath)
+  }
+
+  /**
+ * Método que se ejecuta al cambiar de página en la lista de impresoras, en caso de haber
+ * una impresora seleccionada la deselecciona
+ * @param {number} pageIndex
+ * @returns void
+ */
+  changePage(pageIndex: number){
+    // TODO: al hacer una busqueda y dar click en el bullet se vuelven a mostrar la primera pagina de impresoras y no muestra todos los botones
+    
+    this.impresoras &#x3D; this.totalImpresoras.slice(pageIndex * 8 , (pageIndex + 1) * 8);
+    if(this.selectedPageId &#x3D;&#x3D;&#x3D; pageIndex) {
+      return;
+    }
+    this.selectedPageId &#x3D; pageIndex;
+    this.selectPrinter(this.selectedPrinterRefId!, this.selectedPrinterImg!, this.selectedPrinterId!);
+  }
+
+  redirect(path: string) {
+    this.router.navigateByUrl(path)
+  }
+
+  descartarImpresora() {
+    // if(impresoraconfigurada) {
+    // const ref &#x3D; this.dialogService.open(MessageModalAutoclosableComponent, {
+    //   data: {
+    //     message: &#x27;NO SE PUEDE DESCARTAR PORQUE TIENES UNA CONFIGURACIÓN PARA ESTA IMPRESORA&#x27;
+    //   }
+    // });
+    // }
+    const ref &#x3D; this.dialogService.open(ConfimModalMessageComponent, {
+      data: {
+        message: &#x27;¿DESEA DESCARTAR IMPRESORA?&#x27;
+      }
+    });
+
+    ref.onClose.subscribe(({confirmed}) &#x3D;&gt; {
+      if(!confirmed) {
+        return;
+      }
+      this.dialogService.open(MessageModalAutoclosableComponent, {
+        data: {
+          message: &#x27;IMPRESORA DESCARTADA CON ÉXITO&#x27;
+        }
+      });
+    });
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog header&#x3D;&quot;IMPRESORAS&quot; [(visible)]&#x3D;&quot;visible&quot; [closable]&#x3D;&quot;false&quot; [modal]&#x3D;&quot;true&quot; [draggable]&#x3D;&quot;false&quot; [style]&#x3D;&quot;{&#x27;width&#x27;:&#x27;860px&#x27;}&quot;
+    [showHeader]&#x3D;&quot;true&quot;&gt;
+    &lt;div class&#x3D;&quot;text-center my-3&quot;&gt;
+        &lt;span class&#x3D;&quot;p-input-icon-right&quot;&gt;
+            &lt;i class&#x3D;&quot;fa-solid fa-magnifying-glass&quot;&gt;&lt;/i&gt;
+            &lt;input [formControl]&#x3D;&quot;filterText&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Buscar impresora&quot;&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;impresoras&quot;&gt;
+        &lt;div class&#x3D;&quot;box-modal boxBadge&quot;
+              *ngFor&#x3D;&quot;let item of impresoras
+              let i &#x3D; index&quot;
+              id&#x3D;&quot;printer_{{i}}&quot;
+              #printersRef
+              (click)&#x3D;&quot;selectPrinter(&#x27;printer_&#x27; + i, &#x27;printer_img_&#x27; + i, item.id)&quot;
+            &gt;
+                &lt;img src&#x3D;&quot;../../../../../assets/img/impresora.png&quot; class&#x3D;&quot;print-img&quot; id&#x3D;&quot;printer_img_{{i}}&quot; #printersImg&gt;
+              &lt;p &gt;{{item.nombre}}&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- buttonSotSelected clase para mostrar boton seleccionado --&gt;
+    &lt;div class&#x3D;&quot;text-center&quot;&gt;
+        &lt;p-radioButton
+            *ngFor&#x3D;&quot;let page of [].constructor(pages) let i &#x3D; index&quot;
+            id&#x3D;&quot;{{&#x27;page_&#x27; + i}}&quot;
+            #pagesRef
+            class&#x3D;&quot;mx-1&quot;
+            [(ngModel)]&#x3D;&quot;pageSelected&quot;
+            [value]&#x3D;&quot;i&quot;
+            [ngModelOptions]&#x3D;&quot;{standalone: true}&quot;
+            (click)&#x3D;&quot;changePage(i)&quot;
+        &gt;
+        &lt;/p-radioButton&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;modal-footer-content&quot;&gt;
+        &lt;button (click)&#x3D;&quot;salir()&quot; class&#x3D;&quot;button-modal button-descartar&quot;&gt;
+          &lt;div class&#x3D;&quot;icon&quot;&gt;
+              &lt;i class&#x3D;&quot;fa-solid fa-x&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;text&quot;&gt;Cancelar&lt;/div&gt;
+        &lt;/button&gt;
+        &lt;button  class&#x3D;&quot;button-modal button-descartar&quot; (click)&#x3D;&quot;descartarImpresora()&quot; [disabled]&#x3D;&quot;!selectedPrinterRefId&quot;&gt;
+            &lt;div class&#x3D;&quot;icon&quot;&gt;
+                &lt;i class&#x3D;&quot;fa fa-trash&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;text&quot;&gt;Descartar&lt;/div&gt;
+        &lt;/button&gt;
+        &lt;button  class&#x3D;&quot;button-modal button-ver&quot; (click)&#x3D;&quot;redirect(&#x27;hotel/impresoras/lista/ver&#x27;)&quot; [disabled]&#x3D;&quot;!selectedPrinterRefId&quot;&gt;
+            &lt;div class&#x3D;&quot;icon&quot;&gt;
+                &lt;i class&#x3D;&quot;fa fa-eye&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;text&quot;&gt;Ver&lt;/div&gt;
+        &lt;/button&gt;
+        &lt;button  class&#x3D;&quot;button-modal button-change&quot; (click)&#x3D;&quot;redirect(&#x27;hotel/impresoras/lista/editar&#x27;)&quot; [disabled]&#x3D;&quot;!selectedPrinterRefId&quot;&gt;
+            &lt;div class&#x3D;&quot;icon&quot;&gt;
+                &lt;i class&#x3D;&quot;fa fa-edit&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;text&quot;&gt;Modificar&lt;/div&gt;
+        &lt;/button&gt;
+        &lt;button (click)&#x3D;&quot;redirect(&#x27;hotel/impresoras/lista/registro&#x27;)&quot; class&#x3D;&quot;button-modal button-aceptar&quot;&gt;
+            &lt;div class&#x3D;&quot;icon&quot;&gt;
+                &lt;i class&#x3D;&quot;fa-solid fa-plus&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;text&quot;&gt;Registrar&lt;/div&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/p-dialog&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./lista.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../library.scss&#x27;;
+
+.impresoras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 9pt #50505045;
+    border-radius: 20px;
+    width: 7vw;
+    margin: 10px;
+    height: 14vh;
+    border: solid #80133650;
+    border-width: 3pt;
+    background-color: #fff;
+}
+
+.print-img {
+    width: 4vw;
+    border-radius: 20px;
+}
+
+@media (max-width: 1025px) and (orientation: landscape) {
+
+    /*IPAD MINI horizontal*/
+    .modal-dialogSOT {
+      height: 80vh;
+
+      width: 67vw;
+    }
+
+    .box-modal {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      box-shadow: 0 0 9pt #50505045;
+      border-radius: 20px;
+      width: 12vw;
+      margin: 10px;
+      min-height: 120px;
+      max-height: 120px;
+      border: solid #80133650;
+      border-width: 3pt;
+      background-color: #fff;
+    }
+
+    .print-img {
+      width: 6vw;
+      border-radius: 20px;
+    }
+  }
+
+.boxBadgeSelected {
+    color: #FCFCFC;
+    box-shadow: 0pt 0pt 6pt #00000026;
+    background-color: #7E1637;
+    overflow: hidden;
+}
+
+.bulletButtonStyle {
+    border-radius: 50%;
+    width: 2.2vh;
+    height: 2.2vh;
+    margin-right: 0.3vw;
+    background-color: white;
+}
+
+.buttonSotSelected {
+    border-radius: 50%;
+    width: 2.2vh;
+    height: 2.2vh;
+    margin-right: 0.3vw;
+    background-color: #08e416 !important;
+    border: 2.5px solid #9d9494;
+}
+
+.boxBadge {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px #B4B4B4;
+    font-family: $font-principal;
+  color: #6D6D6D;
+}
+
+:host ::ng-deep .p-radiobutton .p-radiobutton-box.p-highlight {
+  border-color: $green-item;
+  background  : $green-item;
+
+  &amp;::hover {
+    border-color: $green-money;
+    background  : $green-money;
+  }
+  &amp;:focus-visible {
+    outline: $green-money 1px;
+  }
+}
+
+:host ::ng-deep .p-radiobutton:not(.p-radiobutton-disabled) .p-radiobutton-box:hover {
+  border-color: $green-money;
+}
+
+:host ::ng-deep .p-radiobutton:not(.p-radiobutton-disabled) .p-radiobutton-box.p-focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem $green-money;
+  border-color: $green-item;
+}
+
+:host ::ng-deep .p-radiobutton:not(.p-radiobutton-disabled) .p-radiobutton-box.p-highlight:hover {
+  border-color: $green-item;
+  background: $green-money;
+  color: #ffffff;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog header="IMPRESORAS" [(visible)]="visible" [closable]="false" [modal]="true" [draggable]="false" [style]="{\'width\':\'860px\'}"    [showHeader]="true">    <div class="text-center my-3">        <span class="p-input-icon-right">            <i class="fa-solid fa-magnifying-glass"></i>            <input [formControl]="filterText" type="text" pInputText placeholder="Buscar impresora">        </span>    </div>    <div class="impresoras">        <div class="box-modal boxBadge"              *ngFor="let item of impresoras              let i = index"              id="printer_{{i}}"              #printersRef              (click)="selectPrinter(\'printer_\' + i, \'printer_img_\' + i, item.id)"            >                <img src="../../../../../assets/img/impresora.png" class="print-img" id="printer_img_{{i}}" #printersImg>              <p >{{item.nombre}}</p>        </div>    </div>    <!-- buttonSotSelected clase para mostrar boton seleccionado -->    <div class="text-center">        <p-radioButton            *ngFor="let page of [].constructor(pages) let i = index"            id="{{\'page_\' + i}}"            #pagesRef            class="mx-1"            [(ngModel)]="pageSelected"            [value]="i"            [ngModelOptions]="{standalone: true}"            (click)="changePage(i)"        >        </p-radioButton>    </div>    <div class="modal-footer-content">        <button (click)="salir()" class="button-modal button-descartar">          <div class="icon">              <i class="fa-solid fa-x"></i>          </div>          <div class="text">Cancelar</div>        </button>        <button  class="button-modal button-descartar" (click)="descartarImpresora()" [disabled]="!selectedPrinterRefId">            <div class="icon">                <i class="fa fa-trash"></i>            </div>            <div class="text">Descartar</div>        </button>        <button  class="button-modal button-ver" (click)="redirect(\'hotel/impresoras/lista/ver\')" [disabled]="!selectedPrinterRefId">            <div class="icon">                <i class="fa fa-eye"></i>            </div>            <div class="text">Ver</div>        </button>        <button  class="button-modal button-change" (click)="redirect(\'hotel/impresoras/lista/editar\')" [disabled]="!selectedPrinterRefId">            <div class="icon">                <i class="fa fa-edit"></i>            </div>            <div class="text">Modificar</div>        </button>        <button (click)="redirect(\'hotel/impresoras/lista/registro\')" class="button-modal button-aceptar">            <div class="icon">                <i class="fa-solid fa-plus"></i>            </div>            <div class="text">Registrar</div>        </button>    </div></p-dialog></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'ListaComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ListaComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

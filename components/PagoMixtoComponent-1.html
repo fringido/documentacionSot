@@ -1,0 +1,1137 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  PagoMixtoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-pago-mixto</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./pago-mixto.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./pago-mixto.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#contador" >contador</a>
+                            </li>
+                            <li>
+                                <a href="#form" >form</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aumentarPago" >aumentarPago</a>
+                            </li>
+                            <li>
+                                <a href="#crearMixto" >crearMixto</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createForm" >createForm</a>
+                            </li>
+                            <li>
+                                <a href="#iniciarArrayForm" >iniciarArrayForm</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#quitarPago" >quitarPago</a>
+                            </li>
+                            <li>
+                                <a href="#selectCard" >selectCard</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#totalPagar" >totalPagar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Salidas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#newItemEvent" >newItemEvent</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accesorios</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#mixtoField" >mixtoField</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="totalPagar"></a>
+                        <b>totalPagar</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="12" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:12</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Salidas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="newItemEvent"></a>
+                        <b>newItemEvent</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="14" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:14</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aumentarPago"></a>
+                    <span class="name">
+                        <span ><b>aumentarPago</b></span>
+                        <a href="#aumentarPago"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>aumentarPago()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="103"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="crearMixto"></a>
+                    <span class="name">
+                        <span ><b>crearMixto</b></span>
+                        <a href="#crearMixto"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>crearMixto()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="120"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createForm"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>createForm</b></span>
+                        <a href="#createForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="63"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="iniciarArrayForm"></a>
+                    <span class="name">
+                        <span ><b>iniciarArrayForm</b></span>
+                        <a href="#iniciarArrayForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>iniciarArrayForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="42"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="31"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="quitarPago"></a>
+                    <span class="name">
+                        <span ><b>quitarPago</b></span>
+                        <a href="#quitarPago"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>quitarPago()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="110"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectCard"></a>
+                    <span class="name">
+                        <span ><b>selectCard</b></span>
+                        <a href="#selectCard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectCard(i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, tipo: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="132"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:132</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>tipo</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contador"></a>
+                    <span class="name">
+                        <span ><b>contador</b></span>
+                        <a href="#contador"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>2</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="form"></a>
+                    <span class="name">
+                        <span ><b>form</b></span>
+                        <a href="#form"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accesorios
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mixtoField"></a>
+                        <span class="name"><b>mixtoField</b><a href="#mixtoField"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>mixtoField()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="26" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/pago-comandas/pago-mixto/pago-mixto.component.ts:26</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { FormArray, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { controlFormMixto } from &#x27;src/app/core/formsControl/controlFormMixto&#x27;;
+
+@Component({
+  selector: &#x27;app-pago-mixto&#x27;,
+  templateUrl: &#x27;./pago-mixto.component.html&#x27;,
+  styleUrls: [&#x27;./pago-mixto.component.scss&#x27;]
+})
+export class PagoMixtoComponent implements OnInit {
+
+  @Input() totalPagar: number &#x3D; 0;
+
+  @Output() newItemEvent &#x3D; new EventEmitter&lt;FormGroup&gt;();
+
+  //* Inicia las variables
+  form!: FormGroup
+  contador: number &#x3D; 2;
+  //* ------------------------------------------
+  constructor(
+    private fb: FormBuilder
+
+  ) { }
+
+  //* trae los datos de el FormArray
+  get mixtoField() {
+    return this.form.get(&#x27;mixto&#x27;) as FormArray
+  }
+  //* ------------------------------------------
+
+  ngOnInit(): void {
+    this.createForm()
+    this.iniciarArrayForm()
+
+    setTimeout(() &#x3D;&gt; {
+      this.newItemEvent.emit(this.form)
+    }, 1);
+  }
+
+   //*Inicio del componente
+
+   iniciarArrayForm() {
+    //? Al iniciarse el componente divide el total entre 2 y los inserta en el importe
+    let total &#x3D; this.totalPagar / 2
+    this.mixtoField.push(this.crearMixto())
+    this.mixtoField.push(this.crearMixto())
+
+    this.mixtoField.at(0).patchValue({
+      importe: total,
+      TipoTarjeta: &#x27;1&#x27;
+    })
+
+    this.mixtoField.at(1).patchValue({
+      importe: total,
+      TipoTarjeta: &#x27;1&#x27;
+    })
+
+
+  }
+  //* ------------------------------------------
+
+  //*Creación del formulario
+  private createForm() {
+    this.form &#x3D; this.fb.group({
+      tipoDePago: [3],
+      totalPagar: [this.totalPagar],
+      mixto: this.fb.array([])
+    }, {
+      validators: controlFormMixto.totalValidator
+    })
+    //? Si la suma de importe es mayor a el total el componente cambia a  0
+    this.form.valueChanges.subscribe(d &#x3D;&gt; {
+
+      let suma &#x3D; 0
+      let indice &#x3D; null
+      let contador &#x3D; this.mixtoField.value.length
+
+      for (let i &#x3D; 0; i &lt; contador; i++) {
+
+        if (!this.mixtoField.at(i).get(&#x27;importe&#x27;)?.pristine) {
+          indice &#x3D; i
+        }
+        this.mixtoField.at(i).get(&#x27;importe&#x27;)?.markAsPristine();
+
+        suma &#x3D; suma + this.mixtoField.at(i).get(&#x27;importe&#x27;)?.value
+      }
+
+      if (suma &gt; this.totalPagar) {
+        if (indice !&#x3D; null) {
+          this.mixtoField.at(indice).patchValue({
+            importe: 0
+          })
+          indice &#x3D; null
+        }
+      }
+      this.newItemEvent.emit(this.form)
+    })
+  }
+  //* ------------------------------------------
+
+  //* Botones de agregar o quitar formulario
+
+  aumentarPago() {
+    if (this.contador &lt; 4) {
+      this.contador++
+      this.mixtoField.push(this.crearMixto())
+    }
+  }
+
+  quitarPago() {
+    if (this.contador &gt; 2) {
+      this.contador--;
+      this.mixtoField.removeAt(this.contador)
+    }
+  }
+
+  //* ------------------------------------------
+
+  //* Creacion del formulario Array
+  crearMixto() {
+    return this.fb.group({
+      importe: [0, [Validators.required, controlFormMixto.isNotCero]],
+      tipoTarjeta: [1, [Validators.required]],
+      numeroTarjeta: [&#x27;&#x27;, [Validators.required]],
+      numeroAprobacion: [&#x27;&#x27;, [Validators.required]],
+      propina: [0]
+    })
+  }
+  //* ------------------------------------------
+
+  //* Seleccion del tipo de pago
+  selectCard(i: number, tipo: number) {
+    this.mixtoField.at(i).patchValue({
+      total: this.totalPagar,
+      tipoTarjeta: tipo
+    })
+
+    if (tipo &#x3D;&#x3D; 4) {
+      //? De habilita los botones
+      this.mixtoField.at(i).get(&#x27;numeroTarjeta&#x27;)?.disable();
+      this.mixtoField.at(i).get(&#x27;numeroAprobacion&#x27;)?.disable()
+      this.mixtoField.at(i).get(&#x27;propina&#x27;)?.disable()
+      this.mixtoField.at(i).get(&#x27;propina&#x27;)?.setValue(&#x27;&#x27;);
+      this.mixtoField.at(i).get(&#x27;numeroTarjeta&#x27;)?.setValue(&#x27;&#x27;);
+      this.mixtoField.at(i).get(&#x27;numeroAprobacion&#x27;)?.setValue(&#x27;&#x27;);
+      this.mixtoField.at(i).get(&#x27;propina&#x27;)?.setValue(&#x27;&#x27;);
+    }
+    if (tipo !&#x3D; 4) {
+      //? Habilita los Botones
+      this.mixtoField.at(i).get(&#x27;numeroTarjeta&#x27;)?.enable();
+      this.mixtoField.at(i).get(&#x27;numeroAprobacion&#x27;)?.enable()
+      this.mixtoField.at(i).get(&#x27;propina&#x27;)?.enable()
+    }
+  }
+  //* ------------------------------------------
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;content-form-array&quot;&gt;
+  &lt;form [formGroup]&#x3D;&quot;form&quot; class&#x3D;&quot;form-container&quot;&gt;
+    &lt;div class&#x3D;&quot;button_add&quot; (click)&#x3D;&quot;quitarPago()&quot;  [class.desactivar]&#x3D;&quot;contador&#x3D;&#x3D;2&quot;&gt;
+      &lt;i class&#x3D;&quot;fa-solid fa-minus&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;!--? INICIO DEL FOR PARA EL FORMULARIO --&gt;
+    &lt;div class&#x3D;&quot;form-array&quot; formArrayName&#x3D;&quot;mixto&quot; *ngFor&#x3D;&quot;let pago of mixtoField.controls ; let i &#x3D; index&quot;&gt;
+      &lt;div class&#x3D;&quot;individual-formGroup&quot; [formGroupName]&#x3D;&quot;i&quot;&gt;
+        &lt;label&gt;TIPO TARJETA&lt;/label&gt;
+        &lt;div class&#x3D;&quot;tarjeta-content&quot;&gt;
+          &lt;i class&#x3D;&quot;fa-brands fa-cc-visa tarjeta-icon-visa&quot; (click)&#x3D;&quot;selectCard(i,1)&quot; [class.activate]&#x3D;&quot;pago.value.tipoTarjeta &#x3D;&#x3D;  1&quot; &gt;&lt;/i&gt;
+          &lt;i class&#x3D;&quot;fa-brands fa-cc-mastercard tarjeta-icon-mc&quot; (click)&#x3D;&quot;selectCard(i,2)&quot; [class.activate]&#x3D;&quot;pago.value.tipoTarjeta &#x3D;&#x3D; 2&quot;&gt;&lt;/i&gt;
+          &lt;i class&#x3D;&quot;fa-brands fa-cc-amex tarjeta-icon-ax&quot; (click)&#x3D;&quot;selectCard(i,3)&quot; [class.activate]&#x3D;&quot;pago.value.tipoTarjeta &#x3D;&#x3D; 3&quot;&gt;&lt;/i&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-money-bill tarjeta-efectivo&quot; (click)&#x3D;&quot;selectCard(i,4)&quot; [class.activate]&#x3D;&quot;pago.value.tipoTarjeta &#x3D;&#x3D; 4&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;label&gt;IMPORTE:&lt;/label&gt;
+        &lt;p-inputNumber [min]&#x3D;&quot;0&quot; formControlName&#x3D;&quot;importe&quot;  mode&#x3D;&quot;decimal&quot; prefix&#x3D;&quot;$&quot; [minFractionDigits]&#x3D;&quot;2&quot; [maxFractionDigits]&#x3D;&quot;2&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;div *ngIf&#x3D;&quot;pago.value.tipoTarjeta !&#x3D; 4&quot; class&#x3D;&quot;form-condicional&quot;&gt;
+          &lt;label&gt;NÚMERO DE TARJETA&lt;/label&gt;
+          &lt;p-inputMask minlength&#x3D;&quot;4&quot; mask&#x3D;&quot;9-9-9-9&quot; formControlName&#x3D;&quot;numeroTarjeta&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Últimos 4 Dígitos&quot;&gt;
+          &lt;/p-inputMask&gt;
+          &lt;label&gt;NÚMERO DE APROBACIÓN&lt;/label&gt;
+          &lt;p-inputMask  mask&#x3D;&quot;9 9 9 9&quot; minlength&#x3D;&quot;4&quot; formControlName&#x3D;&quot;numeroAprobacion&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Número de Aprobación&quot;&gt;&lt;/p-inputMask&gt;
+          &lt;label&gt;PROPINA&lt;/label&gt;
+          &lt;p-inputNumber formControlName&#x3D;&quot;propina&quot; mode&#x3D;&quot;decimal&quot; prefix&#x3D;&quot;$&quot;[minFractionDigits]&#x3D;&quot;2&quot; [maxFractionDigits]&#x3D;&quot;2&quot;&gt;&lt;/p-inputNumber&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;button_add&quot; (click)&#x3D;&quot;aumentarPago()&quot; [class.desactivar]&#x3D;&quot;contador&#x3D;&#x3D;4&quot;&gt;
+      &lt;i class&#x3D;&quot;fa-solid fa-plus&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+ &lt;!--? ------------------------------------- --&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./pago-mixto.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../../../../library.scss&#x27;;
+
+.content-form-array{
+  margin: 0 -30px;
+  max-width: 95vw;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  &amp; .button_add{
+    box-shadow: 0 0 5pt;
+    border-radius: $border-radius-tittle;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+
+    &amp;.desactivar{
+      box-shadow: 0 0 5pt rgb(99, 87, 87);
+      border-radius: 10px;
+      color: rgb(116, 100, 100);
+      cursor: not-allowed;
+    }
+
+    &amp; i{
+      padding: 11px 13px;
+    }
+  }
+}
+
+.tarjeta-icon-visa{
+  cursor: pointer;
+  &amp;.activate{
+    color: $blue-visa;
+  }
+}
+.tarjeta-icon-mc{
+  cursor: pointer;
+
+  &amp;.activate{
+    color: $orange-mc;
+  }
+}
+.tarjeta-icon-ax{
+  cursor: pointer;
+
+  &amp;.activate{
+    color: $blue-AE;
+  }
+}
+
+.tarjeta-efectivo{
+  cursor: pointer;
+
+  &amp;.activate{
+    color: $green-money;
+  }
+}
+
+.individual-formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 15px;
+
+  &amp; .tarjeta-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 22px;
+}
+
+
+}
+
+.form-condicional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="content-form-array">  <form [formGroup]="form" class="form-container">    <div class="button_add" (click)="quitarPago()"  [class.desactivar]="contador==2">      <i class="fa-solid fa-minus"></i>    </div>    <!--? INICIO DEL FOR PARA EL FORMULARIO -->    <div class="form-array" formArrayName="mixto" *ngFor="let pago of mixtoField.controls ; let i = index">      <div class="individual-formGroup" [formGroupName]="i">        <label>TIPO TARJETA</label>        <div class="tarjeta-content">          <i class="fa-brands fa-cc-visa tarjeta-icon-visa" (click)="selectCard(i,1)" [class.activate]="pago.value.tipoTarjeta ==  1" ></i>          <i class="fa-brands fa-cc-mastercard tarjeta-icon-mc" (click)="selectCard(i,2)" [class.activate]="pago.value.tipoTarjeta == 2"></i>          <i class="fa-brands fa-cc-amex tarjeta-icon-ax" (click)="selectCard(i,3)" [class.activate]="pago.value.tipoTarjeta == 3"></i>          <i class="fa-solid fa-money-bill tarjeta-efectivo" (click)="selectCard(i,4)" [class.activate]="pago.value.tipoTarjeta == 4"></i>        </div>        <label>IMPORTE:</label>        <p-inputNumber [min]="0" formControlName="importe"  mode="decimal" prefix="$" [minFractionDigits]="2" [maxFractionDigits]="2"></p-inputNumber>        <div *ngIf="pago.value.tipoTarjeta != 4" class="form-condicional">          <label>NÚMERO DE TARJETA</label>          <p-inputMask minlength="4" mask="9-9-9-9" formControlName="numeroTarjeta" type="text" pInputText placeholder="Últimos 4 Dígitos">          </p-inputMask>          <label>NÚMERO DE APROBACIÓN</label>          <p-inputMask  mask="9 9 9 9" minlength="4" formControlName="numeroAprobacion" type="text" pInputText placeholder="Número de Aprobación"></p-inputMask>          <label>PROPINA</label>          <p-inputNumber formControlName="propina" mode="decimal" prefix="$"[minFractionDigits]="2" [maxFractionDigits]="2"></p-inputNumber>        </div>      </div>    </div>    <div class="button_add" (click)="aumentarPago()" [class.desactivar]="contador==4">      <i class="fa-solid fa-plus"></i>    </div>  </form> <!--? ------------------------------------- --></div></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'PagoMixtoComponent-1'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PagoMixtoComponent-1.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

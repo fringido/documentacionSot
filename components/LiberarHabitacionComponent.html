@@ -1,0 +1,1612 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  LiberarHabitacionComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/salida/liberar-habitacion/liberar-habitacion.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-liberar-habitacion</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./liberar-habitacion.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./liberar-habitacion.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#AvailableRoomStatus" >AvailableRoomStatus</a>
+                            </li>
+                            <li>
+                                <a href="#destroy$" >destroy$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#detalles" >detalles</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#detalleSelected" >detalleSelected</a>
+                            </li>
+                            <li>
+                                <a href="#detalleSelectedIndex" >detalleSelectedIndex</a>
+                            </li>
+                            <li>
+                                <a href="#detallesRef" >detallesRef</a>
+                            </li>
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#exitosa" >exitosa</a>
+                            </li>
+                            <li>
+                                <a href="#form" >form</a>
+                            </li>
+                            <li>
+                                <a href="#habitacion" >habitacion</a>
+                            </li>
+                            <li>
+                                <a href="#idHabitacion" >idHabitacion</a>
+                            </li>
+                            <li>
+                                <a href="#liberacion" >liberacion</a>
+                            </li>
+                            <li>
+                                <a href="#numHabitacion" >numHabitacion</a>
+                            </li>
+                            <li>
+                                <a href="#seleccionRazon" >seleccionRazon</a>
+                            </li>
+                            <li>
+                                <a href="#selectedRoom" >selectedRoom</a>
+                            </li>
+                            <li>
+                                <a href="#selectedRoomSubs" >selectedRoomSubs</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aceptar" >aceptar</a>
+                            </li>
+                            <li>
+                                <a href="#enableAceptarButton" >enableAceptarButton</a>
+                            </li>
+                            <li>
+                                <a href="#enableObservacionesInput" >enableObservacionesInput</a>
+                            </li>
+                            <li>
+                                <a href="#getInfo" >getInfo</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#salir" >salir</a>
+                            </li>
+                            <li>
+                                <a href="#selectDetalle" >selectDetalle</a>
+                            </li>
+                            <li>
+                                <a href="#unselectDetalles" >unselectDetalles</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, location: <a href="https://angular.io/api/common/Location" target="_blank">Location</a>, dialogService: DialogService, roomService: <a href="../injectables/RoomService.html" target="_self">RoomService</a>, habitacionService: <a href="../injectables/ObtenerHabitacionesService.html" target="_self">ObtenerHabitacionesService</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, mutarEstadoService: <a href="../injectables/MutarEstadoHabitacionService.html" target="_self">MutarEstadoHabitacionService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="55" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/Location" target="_blank" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>roomService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RoomService.html" target="_self" >RoomService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>habitacionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ObtenerHabitacionesService.html" target="_self" >ObtenerHabitacionesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>mutarEstadoService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MutarEstadoHabitacionService.html" target="_self" >MutarEstadoHabitacionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aceptar"></a>
+                    <span class="name">
+                        <span ><b>aceptar</b></span>
+                        <a href="#aceptar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>aceptar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="138"
+                            class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="enableAceptarButton"></a>
+                    <span class="name">
+                        <span ><b>enableAceptarButton</b></span>
+                        <a href="#enableAceptarButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>enableAceptarButton()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="118"
+                            class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="enableObservacionesInput"></a>
+                    <span class="name">
+                        <span ><b>enableObservacionesInput</b></span>
+                        <a href="#enableObservacionesInput"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>enableObservacionesInput()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="129"
+                            class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>    <code>boolean | { name: string; text: string; }</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInfo"></a>
+                    <span class="name">
+                        <span ><b>getInfo</b></span>
+                        <a href="#getInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="80"
+                            class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="71"
+                            class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="salir"></a>
+                    <span class="name">
+                        <span ><b>salir</b></span>
+                        <a href="#salir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>salir()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="134"
+                            class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectDetalle"></a>
+                    <span class="name">
+                        <span ><b>selectDetalle</b></span>
+                        <a href="#selectDetalle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectDetalle(detalle: literal type, index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="87"
+                            class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>detalle</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unselectDetalles"></a>
+                    <span class="name">
+                        <span ><b>unselectDetalles</b></span>
+                        <a href="#unselectDetalles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>unselectDetalles()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="107"
+                            class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="AvailableRoomStatus"></a>
+                    <span class="name">
+                        <span ><b>AvailableRoomStatus</b></span>
+                        <a href="#AvailableRoomStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>RoomStatusEnum</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="destroy$"></a>
+                    <span class="name">
+                        <span ><b>destroy$</b></span>
+                        <a href="#destroy$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Subject&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new Subject&lt;boolean&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="detalles"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>detalles</b></span>
+                        <a href="#detalles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {name: &#x27;exitosa&#x27;, text: &#x27;Liberación Exitosa&#x27;},
+    {name: &#x27;supervision&#x27;, text: &#x27;Hubo detalle de supervisión&#x27;},
+    {name: &#x27;ventilacion&#x27;, text: &#x27;Hubo detalle de ventilación&#x27;},
+    {name: &#x27;pormenor&#x27;, text: &#x27;Hubo detalle por menor&#x27;},
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="detalleSelected"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>detalleSelected</b></span>
+                        <a href="#detalleSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>literal type | null</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="30" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="detalleSelectedIndex"></a>
+                    <span class="name">
+                        <span ><b>detalleSelectedIndex</b></span>
+                        <a href="#detalleSelectedIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="31" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="detallesRef"></a>
+                    <span class="name">
+                        <span ><b>detallesRef</b></span>
+                        <a href="#detallesRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryList&lt;ElementRef&lt;HTMLDivElement&gt;&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(&#x27;detallesRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="46" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exitosa"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>exitosa</b></span>
+                        <a href="#exitosa"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {name: &#x27;exitosa&#x27;, text: &#x27;Liberación Exitosa&#x27;},
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="42" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="form"></a>
+                    <span class="name">
+                        <span ><b>form</b></span>
+                        <a href="#form"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="47" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="habitacion"></a>
+                    <span class="name">
+                        <span ><b>habitacion</b></span>
+                        <a href="#habitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="53" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idHabitacion"></a>
+                    <span class="name">
+                        <span ><b>idHabitacion</b></span>
+                        <a href="#idHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="55" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="liberacion"></a>
+                    <span class="name">
+                        <span ><b>liberacion</b></span>
+                        <a href="#liberacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{conDetalle: false}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="33" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numHabitacion"></a>
+                    <span class="name">
+                        <span ><b>numHabitacion</b></span>
+                        <a href="#numHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="54" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="seleccionRazon"></a>
+                    <span class="name">
+                        <span ><b>seleccionRazon</b></span>
+                        <a href="#seleccionRazon"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="26" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedRoom"></a>
+                    <span class="name">
+                        <span ><b>selectedRoom</b></span>
+                        <a href="#selectedRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="50" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedRoomSubs"></a>
+                    <span class="name">
+                        <span ><b>selectedRoomSubs</b></span>
+                        <a href="#selectedRoomSubs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Subscription" target="_self" >Subscription</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="51" class="link-to-prism">src/app/salida/liberar-habitacion/liberar-habitacion.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Location } from &#x27;@angular/common&#x27;;
+import { Component, ElementRef, OnInit, QueryList, Renderer2, ViewChildren } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { Subject, Subscription, takeUntil } from &#x27;rxjs&#x27;;
+import { MessageModalAutoclosableComponent } from &#x27;src/app/core/components/message-modal-autoclosable/message-modal-autoclosable.component&#x27;;
+import { ObtenerHabitacionesService } from &#x27;src/app/core/services/habitaciones/obtener-habitaciones.service&#x27;;
+import { RoomStatusEnum } from &#x27;src/app/room-types/enums/room-status.enum&#x27;;
+import { RoomService } from &#x27;src/app/room-types/services/room/room.service&#x27;;
+import { MutarEstadoHabitacionService } from &#x27;src/app/core/services/habitaciones/mutar-estado-habitacion.service&#x27;;
+import { ValidEstadosHabitaciones } from &#x27;src/app/core/graphQL/serviciosGraph&#x27;;
+
+
+@Component({
+  selector: &#x27;app-liberar-habitacion&#x27;,
+  templateUrl: &#x27;./liberar-habitacion.component.html&#x27;,
+  styleUrls: [&#x27;./liberar-habitacion.component.scss&#x27;]
+})
+export class LiberarHabitacionComponent implements OnInit {
+
+  AvailableRoomStatus &#x3D; RoomStatusEnum;
+
+  display &#x3D; true;
+
+  seleccionRazon &#x3D; false;
+  destroy$: Subject&lt;boolean&gt; &#x3D; new Subject&lt;boolean&gt;();
+
+
+  detalleSelected?: {name: string, text: string} | null;
+  detalleSelectedIndex!: number;
+
+  liberacion: {conDetalle: boolean} &#x3D; {conDetalle: false};
+
+  readonly detalles &#x3D; [
+    {name: &#x27;exitosa&#x27;, text: &#x27;Liberación Exitosa&#x27;},
+    {name: &#x27;supervision&#x27;, text: &#x27;Hubo detalle de supervisión&#x27;},
+    {name: &#x27;ventilacion&#x27;, text: &#x27;Hubo detalle de ventilación&#x27;},
+    {name: &#x27;pormenor&#x27;, text: &#x27;Hubo detalle por menor&#x27;},
+  ]
+
+  readonly exitosa &#x3D; [
+    {name: &#x27;exitosa&#x27;, text: &#x27;Liberación Exitosa&#x27;},
+  ]
+
+  @ViewChildren(&#x27;detallesRef&#x27;) detallesRef!: QueryList&lt;ElementRef&lt;HTMLDivElement&gt;&gt;;
+  form!:FormGroup;
+
+    // Variables provisionales la habitacion seleccionada se va a obtener por medio de los params en la ruta
+    selectedRoom!: any;
+    selectedRoomSubs!: Subscription;
+
+    habitacion:string &#x3D; &#x27;&#x27;
+    numHabitacion!:string
+  idHabitacion!:string
+
+  constructor(
+    private readonly renderer: Renderer2,
+    private readonly fb: FormBuilder,
+    private readonly location: Location,
+    private readonly dialogService: DialogService,
+    private readonly roomService: RoomService,
+    private habitacionService:ObtenerHabitacionesService,
+    private route: ActivatedRoute,
+    private mutarEstadoService: MutarEstadoHabitacionService
+  ) {
+    this.numHabitacion &#x3D; String(this.route.snapshot.paramMap.get(&quot;roomNumber&quot;));
+    this.habitacionService.getHabitacioId(this.numHabitacion)
+  }
+
+  ngOnInit(): void {
+    this.getInfo()
+    this.form &#x3D; this.fb.group({
+      tipoLiberacion: [&#x27;&#x27;],
+      motivo:[&#x27;&#x27;, Validators.required]
+    });
+
+  }
+
+    getInfo(){
+    this.habitacionService.habitacionId$.pipe(takeUntil(this.destroy$)).subscribe(data &#x3D;&gt;{
+      this.habitacion &#x3D; data.id
+    })
+  }
+
+
+  selectDetalle(detalle: {name: string, text: string}, index: number) {
+    if(this.detalleSelectedIndex &#x3D;&#x3D;&#x3D; index) {
+      return this.unselectDetalles();
+    }
+    this.unselectDetalles();
+    this.liberacion.conDetalle &#x3D; true;
+    if(detalle.name &#x3D;&#x3D;&#x3D; &#x27;exitosa&#x27;) {
+      this.seleccionRazon &#x3D; true;
+      this.liberacion.conDetalle &#x3D; false;
+    }
+    this.detalleSelectedIndex &#x3D; index;
+    this.detalleSelected &#x3D; detalle;
+    const detalleToSelect &#x3D; this.detallesRef.toArray().find((el) &#x3D;&gt; el.nativeElement.id &#x3D;&#x3D;&#x3D; &#x27;detalle_&#x27; + index);
+    this.renderer.addClass(detalleToSelect?.nativeElement, &#x27;concepto-lib-touple-assigned&#x27;);
+    this.renderer.removeClass(detalleToSelect?.nativeElement, &#x27;concepto-lib-touple&#x27;);
+    this.form.patchValue({
+      tipoLiberacion: this.detalleSelected.name
+    })
+  }
+
+  unselectDetalles() {
+    this.form.reset();
+    this.seleccionRazon &#x3D; false;
+    this.detalleSelectedIndex &#x3D; -1;
+    this.detalleSelected &#x3D; null;
+    this.detallesRef.toArray().forEach((el) &#x3D;&gt; {
+      this.renderer.addClass(el.nativeElement, &#x27;concepto-lib-touple&#x27;);
+      this.renderer.removeClass(el.nativeElement, &#x27;concepto-lib-touple-assigned&#x27;);
+    });
+  }
+
+  enableAceptarButton() {
+    return (this.form.valid || this.selectedRoom?.status !&#x3D;&#x3D; this.AvailableRoomStatus.SUPERVISION_MANTENIMIENTO) &amp;&amp; this.detalleSelected &amp;&amp;
+    ((this.selectedRoom?.status &#x3D;&#x3D;&#x3D; this.AvailableRoomStatus.SUPERVISION_MANTENIMIENTO) ||
+      (this.seleccionRazon ||
+        (this.detalleSelected?.name !&#x3D;&#x3D; &#x27;exitosa&#x27; &amp;&amp;
+          this.selectedRoom?.status !&#x3D;&#x3D; this.AvailableRoomStatus.SUPERVISION_MANTENIMIENTO &amp;&amp; this.form.valid
+        )
+      )
+    );
+  }
+
+  enableObservacionesInput() {
+    return (this.liberacion.conDetalle &amp;&amp; this.detalleSelected) ||
+          (this.selectedRoom?.status &#x3D;&#x3D;&#x3D; this.AvailableRoomStatus.SUPERVISION_MANTENIMIENTO &amp;&amp; this.detalleSelected?.name &#x3D;&#x3D;&#x3D; &#x27;exitosa&#x27;)
+  }
+
+  salir() {
+    this.location.back();
+  }
+
+  aceptar() {
+
+    this.mutarEstadoService.cambiarEstado(this.habitacion, &quot;Libre&quot;)
+    this.salir();
+    this.dialogService.open(MessageModalAutoclosableComponent, {
+      data: {
+        message: &#x27;Liberación exitosa&#x27;
+      }
+    });
+
+  //   switch (this.form.get(&#x27;tipoLiberacion&#x27;)?.value) {
+  //     case &#x27;exitosa&#x27;:
+  //       const estadoL &#x3D; &#x27;Libre&#x27;
+  //     default:
+  //       const estado &#x3D; ValidEstadosHabitaciones.ConDetalles
+  //       this.mutarEstadoService.cambiarEstado(this.idHabitacion, estado)
+  //       this.roomService.updateSelectedRoom({
+  //         ...this.selectedRoom,
+  //         status: RoomStatusEnum.LIBRE_CON_DETALLES
+  //       });
+  //       break;
+  //   }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog [(visible)]&#x3D;&quot;display&quot; [closable]&#x3D;&quot;false&quot; [modal]&#x3D;&quot;true&quot; [draggable]&#x3D;&quot;false&quot; [showHeader]&#x3D;&quot;true&quot; header&#x3D;&quot;Liberar Habitación&quot;&gt;
+    &lt;div class&#x3D;&quot;modalBody&quot; id&#x3D;&quot;modalSOTLiberarHabitacion&quot;&gt;
+        &lt;div class&#x3D;&quot;row modal-content modal-dialog modal-dialogSOT&quot;&gt;
+            &lt;div class&#x3D;&quot;row rowModal body-ModalSOT box-modal&quot; style&#x3D;&quot;overflow-y:auto;&quot;&gt;
+                &lt;div 
+                    class&#x3D;&quot;concepto-lib-touple my-2 mx-4&quot; 
+                    *ngFor&#x3D;&quot;let detalle of 
+                        (selectedRoom?.status &#x3D;&#x3D;&#x3D; 
+                        AvailableRoomStatus.SUPERVISION_MANTENIMIENTO ? exitosa : detalles)
+                    let i &#x3D; index&quot; 
+                    (click)&#x3D;&quot;selectDetalle(detalle, i)&quot; 
+                    #detallesRef 
+                    [id]&#x3D;&quot;&#x27;detalle_&#x27; + i&quot;
+                &gt;
+                    &lt;p class&#x3D;&quot;w-100&quot;&gt;{{detalle.text}}&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;form [formGroup]&#x3D;&quot;form&quot;&gt;
+                &lt;textarea 
+                    formControlName&#x3D;&quot;motivo&quot;
+                    placeholder&#x3D;&quot;OBSERVACIONES&quot;
+                    rows&#x3D;&quot;4&quot;
+                    cols&#x3D;&quot;36&quot;
+                    pInputTextarea 
+                    [attr.disabled]&#x3D;&quot;enableObservacionesInput() ? null: &#x27;&#x27;&quot;
+                &gt;&lt;/textarea&gt;
+            &lt;/form&gt;
+            &lt;div class&#x3D;&quot;modal-footer-content&quot;&gt;
+                &lt;div class&#x3D;&quot;col s12 m12 l12 text-center&quot;&gt;
+                    &lt;button class&#x3D;&quot;button-modal button-salir&quot; (click)&#x3D;&quot;salir()&quot;&gt;
+                        &lt;div class&#x3D;&quot;icon&quot;&gt;
+                          &lt;i class&#x3D;&quot;fas icon-icon-metro-exit&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;text&quot;&gt;Salir&lt;/div&gt;
+                    &lt;/button&gt;
+                    &lt;button  
+                      (focus)&#x3D;&quot;aceptar()&quot;
+                      class&#x3D;&quot;button-modal button-aceptar&quot;
+                      [attr.disabled]&#x3D;&quot;enableAceptarButton() ? null: &#x27;&#x27;&quot;    
+                    &gt;
+                        &lt;div class&#x3D;&quot;icon&quot;&gt;
+                            &lt;i class&#x3D;&quot;fa-solid fa-check&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;text&quot;&gt;Aceptar&lt;/div&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/p-dialog&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./liberar-habitacion.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+.concepto-lib-touple {
+  cursor:pointer;
+  height: 50px;
+  background-color:white;
+  border: 1px solid #582222;
+  border-radius: 12px;
+  font-family: &#x27;Epilogue&#x27;;
+  box-shadow: 0pt 3pt 6pt #00000019;
+  text-align: center;
+  display: table;
+  width: -webkit-fill-available;
+}
+
+
+.concepto-lib-touple:hover {
+  background-color: #ededed;
+  border-radius: 12px;
+}
+
+.concepto-lib-touple-assigned {
+  cursor:pointer;
+  height: 50px;
+  background-color:#801336;
+  border-radius: 12px;
+  font-family: &#x27;Epilogue&#x27;;
+  box-shadow: 0pt 3pt 6pt #00000019;
+  text-align: center;
+  display: table;
+  width: -webkit-fill-available;
+}
+
+.concepto-lib-touple-assigned p {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-weight: 500;
+  cursor:pointer;
+}
+
+.concepto-lib-touple p {
+  cursor:pointer;
+  display: table-cell;
+  vertical-align: middle;
+  color: #707070;
+  font-weight: 500;
+}
+
+.bulletButtonStyleconcepto-lib{
+    border-radius: 50%;
+    width: 2.2vh;
+    height: 2.2vh;
+    margin-right: 0.3vw;
+    transform: translateY(50%);
+}
+
+.box-inside {
+    border: solid #C6C5C5;
+    border-width: 1px 0 1px 0;
+    width: 445px !important;
+    height: 80px;
+    padding: 0%;
+    padding-left: 3px;
+  }
+
+.box-inside p {
+    font-family: &#x27;Rubik&#x27;, sans-serif;
+    color:#707070;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box-modal {
+    box-shadow: 0pt 0pt 9pt #00000045;
+    border-radius: 20px;
+    min-height: auto;
+    width: 430px;
+    max-height: 443px;
+    border-width: 3pt;  
+    background-color: #FFFFFF;
+    align-self: center;   
+    padding: 0%;
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;    
+    margin: 0.8rem;
+    overflow-x: hidden;
+    cursor:pointer;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog [(visible)]="display" [closable]="false" [modal]="true" [draggable]="false" [showHeader]="true" header="Liberar Habitación">    <div class="modalBody" id="modalSOTLiberarHabitacion">        <div class="row modal-content modal-dialog modal-dialogSOT">            <div class="row rowModal body-ModalSOT box-modal" style="overflow-y:auto;">                <div                     class="concepto-lib-touple my-2 mx-4"                     *ngFor="let detalle of                         (selectedRoom?.status ===                         AvailableRoomStatus.SUPERVISION_MANTENIMIENTO ? exitosa : detalles)                    let i = index"                     (click)="selectDetalle(detalle, i)"                     #detallesRef                     [id]="\'detalle_\' + i"                >                    <p class="w-100">{{detalle.text}}</p>                </div>            </div>            <form [formGroup]="form">                <textarea                     formControlName="motivo"                    placeholder="OBSERVACIONES"                    rows="4"                    cols="36"                    pInputTextarea                     [attr.disabled]="enableObservacionesInput() ? null: \'\'"                ></textarea>            </form>            <div class="modal-footer-content">                <div class="col s12 m12 l12 text-center">                    <button class="button-modal button-salir" (click)="salir()">                        <div class="icon">                          <i class="fas icon-icon-metro-exit"></i>                        </div>                        <div class="text">Salir</div>                    </button>                    <button                        (focus)="aceptar()"                      class="button-modal button-aceptar"                      [attr.disabled]="enableAceptarButton() ? null: \'\'"                        >                        <div class="icon">                            <i class="fa-solid fa-check"></i>                        </div>                        <div class="text">Aceptar</div>                    </button>                </div>              </div>        </div>    </div></p-dialog></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'LiberarHabitacionComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LiberarHabitacionComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

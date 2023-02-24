@@ -1,0 +1,770 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  TicketRentaComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/ticket-renta/ticket-renta.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-ticket-renta</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./ticket-renta.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./ticket-renta.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#baseUrl" >baseUrl</a>
+                            </li>
+                            <li>
+                                <a href="#rentaHabitacion" >rentaHabitacion</a>
+                            </li>
+                            <li>
+                                <a href="#ticketHabitacion" >ticketHabitacion</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#imprSelec" >imprSelec</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/ticket-renta/ticket-renta.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="imprSelec"></a>
+                    <span class="name">
+                        <span ><b>imprSelec</b></span>
+                        <a href="#imprSelec"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>imprSelec()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="27"
+                            class="link-to-prism">src/app/ticket-renta/ticket-renta.component.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="23"
+                            class="link-to-prism">src/app/ticket-renta/ticket-renta.component.ts:23</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="baseUrl"></a>
+                    <span class="name">
+                        <span ><b>baseUrl</b></span>
+                        <a href="#baseUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>location.origin</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/ticket-renta/ticket-renta.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rentaHabitacion"></a>
+                    <span class="name">
+                        <span ><b>rentaHabitacion</b></span>
+                        <a href="#rentaHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    idEmpleado: 0
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="13" class="link-to-prism">src/app/ticket-renta/ticket-renta.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ticketHabitacion"></a>
+                    <span class="name">
+                        <span ><b>ticketHabitacion</b></span>
+                        <a href="#ticketHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>ElementRef&lt;HTMLHtmlElement&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;ticketHabitacion&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="11" class="link-to-prism">src/app/ticket-renta/ticket-renta.component.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, OnInit, Renderer2, ViewChild } from &#x27;@angular/core&#x27;;
+import { printStyle } from &#x27;./constants/print-style&#x27;;
+
+@Component({
+  selector: &#x27;app-ticket-renta&#x27;,
+  templateUrl: &#x27;./ticket-renta.component.html&#x27;,
+  styleUrls: [&#x27;./ticket-renta.component.scss&#x27;]
+})
+export class TicketRentaComponent implements OnInit {
+
+  @ViewChild(&#x27;ticketHabitacion&#x27;) ticketHabitacion!: ElementRef&lt;HTMLHtmlElement&gt;;
+
+  rentaHabitacion &#x3D; {
+    idEmpleado: 0
+  }
+
+  baseUrl &#x3D; location.origin
+
+  constructor(
+    private readonly renderer: Renderer2
+  ) { }
+
+  ngOnInit(): void {
+
+  }
+
+  imprSelec() {
+    const style &#x3D; this.renderer.createElement(&#x27;style&#x27;);
+    style.innerHTML &#x3D; printStyle;
+    this.renderer.appendChild(this.ticketHabitacion.nativeElement, style);
+    const ventimp &#x3D; window.open(&#x27;&#x27;, &#x27;popimpr&#x27;)!;
+    ventimp.document.write(this.ticketHabitacion.nativeElement.innerHTML);
+    
+    const onClose &#x3D; () &#x3D;&gt; {
+      ventimp.document.close();
+      ventimp.close();
+      window.close();
+    }
+    setTimeout(() &#x3D;&gt; {ventimp.print(); onClose()}, 100);
+    ventimp.onclose &#x3D; onClose
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang&#x3D;&quot;es&quot; #ticketHabitacion&gt;
+
+&lt;head&gt;
+
+  &lt;title&gt;Imprimir ticket&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;div&gt;
+    &lt;div style&#x3D;&quot;text-align: center; width: auto; &quot;&gt;
+      &lt;img src&#x3D;&quot;{{baseUrl}}/assets/img/motelv_Logo_print.png&quot; width&#x3D;&quot;286px&quot; height&#x3D;&quot;94px&quot;&gt;
+      &lt;p&gt;&lt;/p&gt;
+      &lt;div style&#x3D;&quot;color: black; font-size: 13px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; margin: 5px auto; text-align: center;&quot;&gt;
+        BOUTIQUE VIADUCTO S DE RL DE CV
+        BLVD. ADOLFO RUIZ CORTINEZ 5552, COL. EL CARACOL, COYOACAN C.P. 04739
+      &lt;/div&gt;
+      &lt;div
+        style&#x3D;&quot;color: black; font-size: 13px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; margin: 5px auto; text-align: center;&quot;&gt;
+        RFC: BVI1102117P9
+      &lt;/div&gt;
+      &lt;p&gt;&lt;/p&gt;
+      &lt;p id&#x3D;&quot;Console&quot; style&#x3D;&quot;color: black; font-size: 13px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; text-align: center; font-size: 13px;&quot;&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;/p&gt;
+      &lt;div style&#x3D;&quot; font-size: 21px; color: black; text-align: center; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; &quot;&gt;
+        Habitacion {{ &#x27;numeroHabitacion&#x27; }}&lt;/div&gt;
+
+      &lt;div style&#x3D;&quot; font-size: 21px; color: black; text-align: center; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; &quot;&gt;
+        Tipo de Pago {{ &#x27;rentaHabitacion.tipoPago&#x27; }}&lt;/div&gt;
+
+      &lt;div style&#x3D;&quot; width:50%; margin-left: 0px; margin: 30px;&quot;&gt;
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th
+                style&#x3D;&quot;color: black;font-weight: bold; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                Descripción&lt;/th&gt;
+              &lt;th
+                style&#x3D;&quot;color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                Cantidad&lt;/th&gt;
+              &lt;th
+                style&#x3D;&quot;color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                Precio&lt;/th&gt;
+              &lt;th
+                style&#x3D;&quot;color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                Total&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;!-- Detalle Habitacion --&gt;
+              &lt;td style&#x3D;&quot;text-align: left; color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                {{&#x27;rentaHabitacion.nombreHabitacion&#x27;}}
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                1
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;text-align: left; color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                ${{&#x27;rentaHabitacion.precioHabitacion&#x27;}}
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;text-align: right; color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                ${{&#x27;rentaHabitacion.precioHabitacion&#x27;}}
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;!--PErsona Extra--&gt;
+            &lt;tr&gt;
+              &lt;td style&#x3D;&quot;text-align: left;color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                Personas Extra
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                {{&#x27;rentaHabitacion.personasExtras&#x27;}}
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;text-align: left; color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                ${{&#x27;rentaHabitacion.precioPersonaExtra&#x27;}}
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;text-align: right; color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                ${{&#x27;rentaHabitacion.totalPrecioPersonasExtras&#x27;}}
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;!--Hospedaje Extra--&gt;
+            &lt;tr&gt;
+              &lt;td style&#x3D;&quot;text-align: left;color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                Hospedaje Extra
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                {{&#x27;rentaHabitacion.hospedajeExtra&#x27;}}
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;text-align: left; color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                ${{&#x27;rentaHabitacion.precioHospedajeExtra&#x27;}}
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;text-align: right; color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                ${{&#x27;rentaHabitacion.totalHospedajeExtra&#x27;}}
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;!--Horas Extra--&gt;
+            &lt;tr&gt;
+              &lt;td style&#x3D;&quot;text-align: left;color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                Horas Extra
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                {{&#x27;rentaHabitacion.horasExtra&#x27;}}
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;text-align: left;color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                ${{&#x27;rentaHabitacion.precioHoraExtra&#x27;}}
+              &lt;/td&gt;
+              &lt;td style&#x3D;&quot;text-align: right; color: black; font-size: 12px; width: 1000px 300px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+                ${{&#x27;rentaHabitacion.totalHoraExtra&#x27;}}
+              &lt;/td&gt;
+            &lt;/tr&gt;
+
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+
+      &lt;/div&gt;
+
+      &lt;div style&#x3D;&quot;margin: 10px 50px; text-align: center;   margin-left: 60px;&quot;&gt;
+        &lt;table style&#x3D;&quot;border: black 1px solid ; width: auto;&quot;&gt;
+          &lt;tr&gt;
+            &lt;th style&#x3D;&quot;color: black; font-size: 12px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; &quot;&gt;
+              Subtotal&lt;/th&gt;
+            &lt;th style&#x3D;&quot;color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; text-align: right; padding-right: 10px;&quot;&gt;
+              ${{&#x27;rentaHabitacion.subtotal&#x27; }}
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th
+              style&#x3D;&quot;color: black; font-size: 12px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;&quot;&gt;
+              Descuento&lt;/th&gt;
+            &lt;th
+              style&#x3D;&quot;color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; text-align: right; padding-right: 10px;&quot;&gt;
+              $0.00&lt;/th&gt;
+          &lt;/tr&gt;
+
+          &lt;tr&gt;
+            &lt;th
+              style&#x3D;&quot;color: black; font-size: 12px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; &quot;&gt;
+              Cortesía&lt;/th&gt;
+            &lt;th
+              style&#x3D;&quot;color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; text-align: right; padding-right: 10px;&quot;&gt;
+              $0.00&lt;/th&gt;
+          &lt;/tr&gt;
+
+          &lt;tr&gt;
+            &lt;th
+              style&#x3D;&quot;color: black;font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; font-size: 18px; height: 100%;&quot;&gt;
+              Total&lt;/th&gt;
+            &lt;th
+              style&#x3D;&quot;color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif; text-align: right;  padding-right: 10px;&quot;&gt;
+              ${{&#x27;rentaHabitacion.subtotal&#x27; }}&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;/p&gt;
+
+    &lt;div style&#x3D;&quot;margin-left: 50px; text-align: center; margin: 0 30px;&quot;&gt;
+      &lt;h6 style&#x3D;&quot;font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;color: black; font-size: 14px;&quot;&gt;GRACIAS
+        POR SU PREFERENCIA&lt;/h6&gt;
+      &lt;h5 style&#x3D;&quot;font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;color: black; font-size: 14px;&quot;&gt;Empleado {{ &#x27;idEmpleado&#x27; }}&lt;/h5&gt;
+      &lt;div *ngIf&#x3D;&quot;rentaHabitacion.idEmpleado !&#x3D; 0&quot;&gt;
+        &lt;h6 style&#x3D;&quot;font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;color: black; font-size: 12px;&quot;&gt;Gracias por su Propina&lt;/h6&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div style&#x3D;&quot;margin-left: 50px; text-align: center; margin: 0 30px;&quot;&gt;
+      &lt;h6 style&#x3D;&quot;font-family:&#x27;Gill Sans&#x27;, &#x27;Gill Sans MT&#x27;, Calibri, &#x27;Trebuchet MS&#x27;, sans-serif;color: black; font-size: 12px;&quot;&gt;
+        **Si requiere factura solicítela a recepción previo a su salida presentando su RFC**&lt;/h6&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;div style&#x3D;&quot;text-align: center; padding-top: 2vh; padding-bottom: 2vh;&quot;&gt;
+    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;BotonImprimir&quot; (click)&#x3D;&quot;imprSelec()&quot;
+      style&#x3D;&quot;width: 30vh;
+            height: 6vh;
+            background-color: #801336;
+            color: white;
+            font-weight: bold;
+            border-radius: 5vh;
+            box-shadow: 2px 2px 2px #801336;
+            font-size: 2vh;&quot;&gt;
+      Imprimir ticket
+    &lt;/button&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./ticket-renta.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.BotonImprimir
+{
+    border: 0;
+    text-align: center;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!doctype html><html lang="es" #ticketHabitacion><head>  <title>Imprimir ticket</title></head><body>  <div>    <div style="text-align: center; width: auto; ">      <img src="{{baseUrl}}/assets/img/motelv_Logo_print.png" width="286px" height="94px">      <p></p>      <div style="color: black; font-size: 13px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; margin: 5px auto; text-align: center;">        BOUTIQUE VIADUCTO S DE RL DE CV        BLVD. ADOLFO RUIZ CORTINEZ 5552, COL. EL CARACOL, COYOACAN C.P. 04739      </div>      <div        style="color: black; font-size: 13px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; margin: 5px auto; text-align: center;">        RFC: BVI1102117P9      </div>      <p></p>      <p id="Console" style="color: black; font-size: 13px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; text-align: center; font-size: 13px;">      </p>      <p></p>      <div style=" font-size: 21px; color: black; text-align: center; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; ">        Habitacion {{ \'numeroHabitacion\' }}</div>      <div style=" font-size: 21px; color: black; text-align: center; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; ">        Tipo de Pago {{ \'rentaHabitacion.tipoPago\' }}</div>      <div style=" width:50%; margin-left: 0px; margin: 30px;">        <table>          <thead>            <tr>              <th                style="color: black;font-weight: bold; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                Descripción</th>              <th                style="color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                Cantidad</th>              <th                style="color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                Precio</th>              <th                style="color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                Total</th>            </tr>          </thead>          <tbody>            <tr>              <!-- Detalle Habitacion -->              <td style="text-align: left; color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                {{\'rentaHabitacion.nombreHabitacion\'}}              </td>              <td style="color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                1              </td>              <td style="text-align: left; color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                ${{\'rentaHabitacion.precioHabitacion\'}}              </td>              <td style="text-align: right; color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                ${{\'rentaHabitacion.precioHabitacion\'}}              </td>            </tr>            <!--PErsona Extra-->            <tr>              <td style="text-align: left;color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                Personas Extra              </td>              <td style="color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                {{\'rentaHabitacion.personasExtras\'}}              </td>              <td style="text-align: left; color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                ${{\'rentaHabitacion.precioPersonaExtra\'}}              </td>              <td style="text-align: right; color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                ${{\'rentaHabitacion.totalPrecioPersonasExtras\'}}              </td>            </tr>            <!--Hospedaje Extra-->            <tr>              <td style="text-align: left;color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                Hospedaje Extra              </td>              <td style="color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                {{\'rentaHabitacion.hospedajeExtra\'}}              </td>              <td style="text-align: left; color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                ${{\'rentaHabitacion.precioHospedajeExtra\'}}              </td>              <td style="text-align: right; color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                ${{\'rentaHabitacion.totalHospedajeExtra\'}}              </td>            </tr>            <!--Horas Extra-->            <tr>              <td style="text-align: left;color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                Horas Extra              </td>              <td style="color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                {{\'rentaHabitacion.horasExtra\'}}              </td>              <td style="text-align: left;color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                ${{\'rentaHabitacion.precioHoraExtra\'}}              </td>              <td style="text-align: right; color: black; font-size: 12px; width: 1000px 300px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">                ${{\'rentaHabitacion.totalHoraExtra\'}}              </td>            </tr>          </tbody>        </table>      </div>      <div style="margin: 10px 50px; text-align: center;   margin-left: 60px;">        <table style="border: black 1px solid ; width: auto;">          <tr>            <th style="color: black; font-size: 12px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; ">              Subtotal</th>            <th style="color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; text-align: right; padding-right: 10px;">              ${{\'rentaHabitacion.subtotal\' }}          </tr>          <tr>            <th              style="color: black; font-size: 12px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;">              Descuento</th>            <th              style="color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; text-align: right; padding-right: 10px;">              $0.00</th>          </tr>          <tr>            <th              style="color: black; font-size: 12px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; ">              Cortesía</th>            <th              style="color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; text-align: right; padding-right: 10px;">              $0.00</th>          </tr>          <tr>            <th              style="color: black;font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; font-size: 18px; height: 100%;">              Total</th>            <th              style="color: black;font-weight: bold; font-size: 12px; width: 100px; font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif; text-align: right;  padding-right: 10px;">              ${{\'rentaHabitacion.subtotal\' }}</th>          </tr>        </table>      </div>    </div>    <p></p>    <div style="margin-left: 50px; text-align: center; margin: 0 30px;">      <h6 style="font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;color: black; font-size: 14px;">GRACIAS        POR SU PREFERENCIA</h6>      <h5 style="font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;color: black; font-size: 14px;">Empleado {{ \'idEmpleado\' }}</h5>      <div *ngIf="rentaHabitacion.idEmpleado != 0">        <h6 style="font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;color: black; font-size: 12px;">Gracias por su Propina</h6>      </div>    </div>    <div style="margin-left: 50px; text-align: center; margin: 0 30px;">      <h6 style="font-family:\'Gill Sans\', \'Gill Sans MT\', Calibri, \'Trebuchet MS\', sans-serif;color: black; font-size: 12px;">        **Si requiere factura solicítela a recepción previo a su salida presentando su RFC**</h6>    </div>  </div>  <div style="text-align: center; padding-top: 2vh; padding-bottom: 2vh;">    <button type="button" class="BotonImprimir" (click)="imprSelec()"      style="width: 30vh;            height: 6vh;            background-color: #801336;            color: white;            font-weight: bold;            border-radius: 5vh;            box-shadow: 2px 2px 2px #801336;            font-size: 2vh;">      Imprimir ticket    </button>  </div></body></html></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'TicketRentaComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TicketRentaComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

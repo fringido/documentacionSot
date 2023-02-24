@@ -1,0 +1,1271 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  LimpiezaComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-limpieza</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./limpieza.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./limpieza.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#empleados" >empleados</a>
+                            </li>
+                            <li>
+                                <a href="#form" >form</a>
+                            </li>
+                            <li>
+                                <a href="#limpieza" >limpieza</a>
+                            </li>
+                            <li>
+                                <a href="#limpiezaAll" >limpiezaAll</a>
+                            </li>
+                            <li>
+                                <a href="#selectLimpieza" >selectLimpieza</a>
+                            </li>
+                            <li>
+                                <a href="#tipos_habitaciones" >tipos_habitaciones</a>
+                            </li>
+                            <li>
+                                <a href="#turno" >turno</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#formCreate" >formCreate</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, filterService: FilterService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="208" class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:208</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>filterService</td>
+                                                  
+                                                        <td>
+                                                                    <code>FilterService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formCreate"></a>
+                    <span class="name">
+                        <span ><b>formCreate</b></span>
+                        <a href="#formCreate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>formCreate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="217"
+                            class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:217</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="213"
+                            class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:213</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="13" class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="empleados"></a>
+                    <span class="name">
+                        <span ><b>empleados</b></span>
+                        <a href="#empleados"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    { nombre: &#x27;Juan Pérez&#x27;, id: &#x27;abc123&#x27; },
+    { nombre: &#x27;María García&#x27;, id: &#x27;def456&#x27; },
+    { nombre: &#x27;Luisa Torres&#x27;, id: &#x27;ghi789&#x27; },
+    { nombre: &#x27;Pedro Gómez&#x27;, id: &#x27;jkl012&#x27; },
+    { nombre: &#x27;Ana Rodríguez&#x27;, id: &#x27;mno345&#x27; },
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="173" class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:173</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="form"></a>
+                    <span class="name">
+                        <span ><b>form</b></span>
+                        <a href="#form"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="208" class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:208</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="limpieza"></a>
+                    <span class="name">
+                        <span ><b>limpieza</b></span>
+                        <a href="#limpieza"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+      habitacion: 102,
+      recamerera: &#x27;Maria Hernandez Rodriguez&#x27;,
+      supervisor: &#x27;Juan Perez Garcia&#x27;,
+      estado: &#x27;En proceso&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-09-20T10:30:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-09-20T12:30:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-09-20T12:45:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-09-20T13:30:00.000Z&#x27;,
+    },
+    {
+      habitacion: 103,
+      recamerera: &#x27;Ana Lopez Fernandez&#x27;,
+      supervisor: &#x27;Jose Martinez Jimenez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-08-10T08:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-10T10:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-10T10:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-10T11:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 104,
+      recamerera: &#x27;Isabel Rodriguez Fernandez&#x27;,
+      supervisor: &#x27;Pedro Gonzalez Martinez&#x27;,
+      estado: &#x27;En supervisión&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-07-01T09:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-07-01T11:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-07-01T11:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-07-01T12:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 105,
+      recamerera: &#x27;Carla Gonzalez Rodriguez&#x27;,
+      supervisor: &#x27;Antonio Perez Fernandez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-08-10T08:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-10T10:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-10T10:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-10T11:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 100,
+      recamerera: &#x27;Ana Maria Gonzalez Rodriguez&#x27;,
+      supervisor: &#x27;Juan Carlos Martinez García&#x27;,
+      estado: &#x27;En proceso&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-11-02T08:45:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-11-02T11:15:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-11-02T11:30:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-11-02T12:15:00.000Z&#x27;,
+    },
+    {
+      habitacion: 519,
+      recamerera: &#x27;María Teresa García Martinez&#x27;,
+      supervisor: &#x27;Pedro Martinez Rodriguez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-08-25T09:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-25T12:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-25T12:30:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-25T13:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 251,
+      recamerera: &#x27;Luis Antonio Rodriguez García&#x27;,
+      supervisor: &#x27;Sandra Martínez Rodríguez&#x27;,
+      estado: &#x27;En supervisión&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-10-15T07:30:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-10-15T10:30:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-10-15T10:45:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-10-15T11:30:00.000Z&#x27;,
+    },
+    {
+      habitacion: 902,
+      recamerera: &#x27;Maria Hernandez Rodriguez&#x27;,
+      supervisor: &#x27;Juan Perez Garcia&#x27;,
+      estado: &#x27;En proceso&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-09-20T10:30:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-09-20T12:30:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-09-20T12:45:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-09-20T13:30:00.000Z&#x27;,
+    },
+    {
+      habitacion: 103,
+      recamerera: &#x27;Ana Lopez Fernandez&#x27;,
+      supervisor: &#x27;Jose Martinez Jimenez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-08-10T08:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-10T10:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-10T10:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-10T11:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 104,
+      recamerera: &#x27;Isabel Rodriguez Fernandez&#x27;,
+      supervisor: &#x27;Pedro Gonzalez Martinez&#x27;,
+      estado: &#x27;En supervisión&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-07-01T09:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-07-01T11:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-07-01T11:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-07-01T12:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 105,
+      recamerera: &#x27;Carla Gonzalez Rodriguez&#x27;,
+      supervisor: &#x27;Antonio Perez Fernandez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-08-10T08:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-10T10:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-10T10:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-10T11:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 107,
+      recamerera: &#x27;Ana Maria Gonzalez Rodriguez&#x27;,
+      supervisor: &#x27;Juan Carlos Martinez García&#x27;,
+      estado: &#x27;En proceso&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-11-02T08:45:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-11-02T11:15:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-11-02T11:30:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-11-02T12:15:00.000Z&#x27;,
+    },
+    {
+      habitacion: 519,
+      recamerera: &#x27;María Teresa García Martinez&#x27;,
+      supervisor: &#x27;Pedro Martinez Rodriguez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-08-25T09:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-25T12:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-25T12:30:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-25T13:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 801,
+      recamerera: &#x27;Luis Antonio Rodriguez García&#x27;,
+      supervisor: &#x27;Sandra Martínez Rodríguez&#x27;,
+      estado: &#x27;En supervisión&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-10-15T07:30:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-10-15T10:30:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-10-15T10:45:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-10-15T11:30:00.000Z&#x27;,
+    },
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="limpiezaAll"></a>
+                    <span class="name">
+                        <span ><b>limpiezaAll</b></span>
+                        <a href="#limpiezaAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>literal type[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectLimpieza"></a>
+                    <span class="name">
+                        <span ><b>selectLimpieza</b></span>
+                        <a href="#selectLimpieza"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="14" class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tipos_habitaciones"></a>
+                    <span class="name">
+                        <span ><b>tipos_habitaciones</b></span>
+                        <a href="#tipos_habitaciones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {
+      nombre: &#x27;Junior Villa&#x27;,
+    },
+    {
+      nombre: &#x27;Twin Suite&#x27;,
+    },
+    {
+      nombre: &#x27;Pool &amp; Spa&#x27;,
+    },
+    {
+      nombre: &#x27;Junior Suite&#x27;,
+    },
+    {
+      nombre: &#x27;Pool Villa&#x27;,
+    },
+    {
+      nombre: &#x27;Sky Suite&#x27;,
+    },
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="187" class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:187</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="turno"></a>
+                    <span class="name">
+                        <span ><b>turno</b></span>
+                        <a href="#turno"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    { turno: &#x27;Matutino&#x27;, id: &#x27;2&#x27; },
+    { turno: &#x27;Vespertino&#x27;, id: &#x27;3&#x27; },
+    { turno: &#x27;Nocturno&#x27;, id: &#x27;5&#x27; },
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="181" class="link-to-prism">src/app/home/sistemas/habitaciones/limpieza/limpieza.component.ts:181</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ThisReceiver } from &#x27;@angular/compiler&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormControl, FormGroup } from &#x27;@angular/forms&#x27;;
+import { FilterService } from &#x27;primeng/api&#x27;;
+import { debounceTime, distinctUntilChanged } from &#x27;rxjs&#x27;;
+
+@Component({
+  selector: &#x27;app-limpieza&#x27;,
+  templateUrl: &#x27;./limpieza.component.html&#x27;,
+  styleUrls: [&#x27;./limpieza.component.scss&#x27;],
+})
+export class LimpiezaComponent implements OnInit {
+  display &#x3D; true;
+  selectLimpieza: any;
+  limpiezaAll: { habitacion: number; recamerera: string; supervisor: string; estado: string; tipo: string; inicioLimpieza: string; finLimpieza: string; inicioSupervicion: string; finSupervicion: string; }[] &#x3D; []
+  limpieza &#x3D; [
+    {
+      habitacion: 102,
+      recamerera: &#x27;Maria Hernandez Rodriguez&#x27;,
+      supervisor: &#x27;Juan Perez Garcia&#x27;,
+      estado: &#x27;En proceso&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-09-20T10:30:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-09-20T12:30:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-09-20T12:45:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-09-20T13:30:00.000Z&#x27;,
+    },
+    {
+      habitacion: 103,
+      recamerera: &#x27;Ana Lopez Fernandez&#x27;,
+      supervisor: &#x27;Jose Martinez Jimenez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-08-10T08:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-10T10:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-10T10:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-10T11:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 104,
+      recamerera: &#x27;Isabel Rodriguez Fernandez&#x27;,
+      supervisor: &#x27;Pedro Gonzalez Martinez&#x27;,
+      estado: &#x27;En supervisión&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-07-01T09:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-07-01T11:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-07-01T11:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-07-01T12:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 105,
+      recamerera: &#x27;Carla Gonzalez Rodriguez&#x27;,
+      supervisor: &#x27;Antonio Perez Fernandez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-08-10T08:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-10T10:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-10T10:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-10T11:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 100,
+      recamerera: &#x27;Ana Maria Gonzalez Rodriguez&#x27;,
+      supervisor: &#x27;Juan Carlos Martinez García&#x27;,
+      estado: &#x27;En proceso&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-11-02T08:45:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-11-02T11:15:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-11-02T11:30:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-11-02T12:15:00.000Z&#x27;,
+    },
+    {
+      habitacion: 519,
+      recamerera: &#x27;María Teresa García Martinez&#x27;,
+      supervisor: &#x27;Pedro Martinez Rodriguez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-08-25T09:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-25T12:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-25T12:30:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-25T13:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 251,
+      recamerera: &#x27;Luis Antonio Rodriguez García&#x27;,
+      supervisor: &#x27;Sandra Martínez Rodríguez&#x27;,
+      estado: &#x27;En supervisión&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-10-15T07:30:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-10-15T10:30:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-10-15T10:45:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-10-15T11:30:00.000Z&#x27;,
+    },
+    {
+      habitacion: 902,
+      recamerera: &#x27;Maria Hernandez Rodriguez&#x27;,
+      supervisor: &#x27;Juan Perez Garcia&#x27;,
+      estado: &#x27;En proceso&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-09-20T10:30:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-09-20T12:30:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-09-20T12:45:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-09-20T13:30:00.000Z&#x27;,
+    },
+    {
+      habitacion: 103,
+      recamerera: &#x27;Ana Lopez Fernandez&#x27;,
+      supervisor: &#x27;Jose Martinez Jimenez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-08-10T08:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-10T10:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-10T10:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-10T11:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 104,
+      recamerera: &#x27;Isabel Rodriguez Fernandez&#x27;,
+      supervisor: &#x27;Pedro Gonzalez Martinez&#x27;,
+      estado: &#x27;En supervisión&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-07-01T09:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-07-01T11:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-07-01T11:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-07-01T12:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 105,
+      recamerera: &#x27;Carla Gonzalez Rodriguez&#x27;,
+      supervisor: &#x27;Antonio Perez Fernandez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-08-10T08:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-10T10:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-10T10:15:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-10T11:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 107,
+      recamerera: &#x27;Ana Maria Gonzalez Rodriguez&#x27;,
+      supervisor: &#x27;Juan Carlos Martinez García&#x27;,
+      estado: &#x27;En proceso&#x27;,
+      tipo: &#x27;Retoque&#x27;,
+      inicioLimpieza: &#x27;2022-11-02T08:45:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-11-02T11:15:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-11-02T11:30:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-11-02T12:15:00.000Z&#x27;,
+    },
+    {
+      habitacion: 519,
+      recamerera: &#x27;María Teresa García Martinez&#x27;,
+      supervisor: &#x27;Pedro Martinez Rodriguez&#x27;,
+      estado: &#x27;finalizada&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-08-25T09:00:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-08-25T12:00:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-08-25T12:30:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-08-25T13:00:00.000Z&#x27;,
+    },
+    {
+      habitacion: 801,
+      recamerera: &#x27;Luis Antonio Rodriguez García&#x27;,
+      supervisor: &#x27;Sandra Martínez Rodríguez&#x27;,
+      estado: &#x27;En supervisión&#x27;,
+      tipo: &#x27;Detallada&#x27;,
+      inicioLimpieza: &#x27;2022-10-15T07:30:00.000Z&#x27;,
+      finLimpieza: &#x27;2022-10-15T10:30:00.000Z&#x27;,
+      inicioSupervicion: &#x27;2022-10-15T10:45:00.000Z&#x27;,
+      finSupervicion: &#x27;2022-10-15T11:30:00.000Z&#x27;,
+    },
+  ];
+
+  empleados &#x3D; [
+    { nombre: &#x27;Juan Pérez&#x27;, id: &#x27;abc123&#x27; },
+    { nombre: &#x27;María García&#x27;, id: &#x27;def456&#x27; },
+    { nombre: &#x27;Luisa Torres&#x27;, id: &#x27;ghi789&#x27; },
+    { nombre: &#x27;Pedro Gómez&#x27;, id: &#x27;jkl012&#x27; },
+    { nombre: &#x27;Ana Rodríguez&#x27;, id: &#x27;mno345&#x27; },
+  ];
+
+  turno &#x3D; [
+    { turno: &#x27;Matutino&#x27;, id: &#x27;2&#x27; },
+    { turno: &#x27;Vespertino&#x27;, id: &#x27;3&#x27; },
+    { turno: &#x27;Nocturno&#x27;, id: &#x27;5&#x27; },
+  ];
+
+  tipos_habitaciones &#x3D; [
+    {
+      nombre: &#x27;Junior Villa&#x27;,
+    },
+    {
+      nombre: &#x27;Twin Suite&#x27;,
+    },
+    {
+      nombre: &#x27;Pool &amp; Spa&#x27;,
+    },
+    {
+      nombre: &#x27;Junior Suite&#x27;,
+    },
+    {
+      nombre: &#x27;Pool Villa&#x27;,
+    },
+    {
+      nombre: &#x27;Sky Suite&#x27;,
+    },
+  ];
+
+  form!: FormGroup;
+
+  constructor(private fb: FormBuilder,
+    private filterService: FilterService) { }
+
+  ngOnInit(): void {
+    this.formCreate();
+  }
+
+  formCreate() {
+    this.limpiezaAll &#x3D; this.limpieza
+    this.form &#x3D; this.fb.group({
+      fechaInicio: [&#x27;&#x27;],
+      fechaFinal: [&#x27;&#x27;],
+      turno: [&#x27;&#x27;],
+      personal: [&#x27;&#x27;],
+      habitacion: [&#x27;&#x27;],
+    });
+
+    this.form.valueChanges
+      .pipe(debounceTime(400), distinctUntilChanged())
+      .subscribe((v) &#x3D;&gt; {
+        if (v) {
+          this.limpieza &#x3D; this.limpiezaAll.filter(limpieza &#x3D;&gt; new Date(limpieza.inicioLimpieza) &gt;&#x3D; new Date(v.fechaInicio) || v.fechaInicio &#x3D;&#x3D; &#x27;&#x27;)
+          this.limpieza &#x3D; this.limpieza.filter(limpieza &#x3D;&gt; new Date(limpieza.finLimpieza) &lt;&#x3D; new Date(v.fechaFinal) || v.fechaFinal &#x3D;&#x3D; &#x27;&#x27;)
+          this.limpieza &#x3D; this.limpieza.filter(limpieza &#x3D;&gt; limpieza.recamerera || limpieza.supervisor &#x3D;&#x3D; v.personal.nombre || v.nombre &#x3D;&#x3D; &#x27;&#x27;)
+        } else {
+          this.limpieza &#x3D; this.limpiezaAll;
+        }
+      });
+  }
+}
+
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog header&#x3D;&quot;LIMPIEZA DE HABITACIONES&quot; [(visible)]&#x3D;&quot;display&quot; [closable]&#x3D;&quot;false&quot;  [modal]&#x3D;&quot;true&quot; [draggable]&#x3D;&quot;false&quot;
+  [showHeader]&#x3D;&quot;true&quot;&gt;
+  &lt;form [formGroup]&#x3D;&quot;form&quot; class&#x3D;&quot;conteiner-components&quot;&gt;
+    &lt;div class&#x3D;&quot;container-filters&quot;&gt;
+      &lt;div class&#x3D;&quot;input-container&quot;&gt;
+        &lt;label&gt;FECHA INICIO&lt;/label&gt;
+        &lt;div class&#x3D;&quot;containes-form_fecha&quot;&gt;
+          &lt;p-calendar [showButtonBar]&#x3D;&quot;true&quot; dateFormat&#x3D;&quot;dd-mm-yy&quot; formControlName&#x3D;&quot;fechaInicio&quot;  placeholder&#x3D;&quot;Filtra por fecha de inicio&quot;  [maxDate]&#x3D;&quot;form.controls[&#x27;fechaFinal&#x27;].value&quot; &gt;&lt;/p-calendar&gt;
+          &lt;i class&#x3D;&quot;fa-regular fa-calendar idle&quot; *ngIf&#x3D;&quot;form.controls[&#x27;fechaInicio&#x27;].value &#x3D;&#x3D; &#x27;&#x27; || form.controls[&#x27;fechaInicio&#x27;].value &#x3D;&#x3D; null&quot;&gt;&lt;/i&gt;
+          &lt;i class&#x3D;&quot;fa-regular fa-calendar idle&quot; style&#x3D;&quot;color: #0AC917;&quot; *ngIf&#x3D;&quot;form.controls[&#x27;fechaInicio&#x27;].value !&#x3D; &#x27;&#x27; &amp;&amp; form.controls[&#x27;fechaInicio&#x27;].value !&#x3D; null&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;input-container&quot;&gt;
+        &lt;label&gt;FECHA FINAL&lt;/label&gt;
+        &lt;div class&#x3D;&quot;containes-form_fecha&quot;&gt;
+          &lt;p-calendar [showButtonBar]&#x3D;&quot;true&quot; dateFormat&#x3D;&quot;dd-mm-yy&quot;  formControlName&#x3D;&quot;fechaFinal&quot; placeholder&#x3D;&quot;Filtra por fecha de final&quot; [minDate]&#x3D;&quot;form.controls[&#x27;fechaInicio&#x27;].value&quot; &gt;&lt;/p-calendar&gt;
+          &lt;i class&#x3D;&quot;fa-regular fa-calendar idle&quot; *ngIf&#x3D;&quot;form.controls[&#x27;fechaFinal&#x27;].value &#x3D;&#x3D; &#x27;&#x27; || form.controls[&#x27;fechaFinal&#x27;].value &#x3D;&#x3D; null&quot;&gt;&lt;/i&gt;
+          &lt;i class&#x3D;&quot;fa-regular fa-calendar idle&quot; style&#x3D;&quot;color: #0AC917;&quot; *ngIf&#x3D;&quot;form.controls[&#x27;fechaFinal&#x27;].value !&#x3D; &#x27;&#x27; &amp;&amp; form.controls[&#x27;fechaFinal&#x27;].value !&#x3D; null&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- &lt;div class&#x3D;&quot;input-container&quot;&gt;
+        &lt;label&gt;TURNO&lt;/label&gt;
+        &lt;p-dropdown placeholder&#x3D;&quot;TODOS&quot; formControlName&#x3D;&quot;turno&quot; [options]&#x3D;&quot;turno&quot; optionLabel&#x3D;&quot;turno&quot;
+          optionValue&#x3D;&quot;id&quot; &gt;&lt;/p-dropdown&gt;
+      &lt;/div&gt; --&gt;
+      &lt;div class&#x3D;&quot;input-container&quot;&gt;
+        &lt;label&gt;PERSONAL&lt;/label&gt;
+        &lt;div class&#x3D;&quot;containes-form_input_icon&quot;&gt;
+          &lt;p-dropdown placeholder&#x3D;&quot;TODAS&quot; formControlName&#x3D;&quot;personal&quot; [options]&#x3D;&quot;empleados&quot;  [filter]&#x3D;&quot;true&quot; filterBy&#x3D;&quot;nombre&quot; optionLabel&#x3D;&quot;nombre&quot; [showClear]&#x3D;&quot;true&quot;&gt;&lt;/p-dropdown&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-user&quot; *ngIf&#x3D;&quot;form.controls[&#x27;personal&#x27;].value &#x3D;&#x3D; &#x27;&#x27; || form.controls[&#x27;personal&#x27;].value &#x3D;&#x3D; null&quot;&gt;&lt;/i&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-user&quot; style&#x3D;&quot;color: #0AC917;&quot; *ngIf&#x3D;&quot;form.controls[&#x27;personal&#x27;].value !&#x3D; &#x27;&#x27; &amp;&amp; form.controls[&#x27;personal&#x27;].value !&#x3D; null&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;input-container&quot;&gt;
+        &lt;label&gt;HABITACIÓN&lt;/label&gt;
+        &lt;div class&#x3D;&quot;containes-form_input_icon&quot;&gt;
+          &lt;p-dropdown placeholder&#x3D;&quot;TODAS&quot; [options]&#x3D;&quot;tipos_habitaciones&quot; optionLabel&#x3D;&quot;nombre&quot; formControlName&#x3D;&quot;habitacion&quot; [showClear]&#x3D;&quot;true&quot;&gt;&lt;/p-dropdown&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-hotel&quot; *ngIf&#x3D;&quot;form.controls[&#x27;habitacion&#x27;].value &#x3D;&#x3D; &#x27;&#x27; || form.controls[&#x27;habitacion&#x27;].value &#x3D;&#x3D; null&quot;&gt;&lt;/i&gt;
+          &lt;i class&#x3D;&quot;fa-solid fa-hotel&quot; style&#x3D;&quot;color: #0AC917;&quot; *ngIf&#x3D;&quot;form.controls[&#x27;habitacion&#x27;].value !&#x3D; &#x27;&#x27; &amp;&amp; form.controls[&#x27;habitacion&#x27;].value !&#x3D; null&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;containe-table&quot;&gt;
+      &lt;p-table [paginator]&#x3D;&quot;true&quot; [rows]&#x3D;&quot;10&quot; [showCurrentPageReport]&#x3D;&quot;true&quot; [value]&#x3D;&quot;limpieza&quot;
+      styleClass&#x3D;&quot;p-datatable-sm&quot; [scrollable]&#x3D;&quot;true&quot; scrollHeight&#x3D;&quot;400px&quot; selectionMode&#x3D;&quot;single&quot;
+      [(selection)]&#x3D;&quot;selectLimpieza&quot; dataKey&#x3D;&quot;habitacion&quot; currentPageReportTemplate&#x3D;&quot;Mostrando {first} de {last} para {totalRecords} datos&quot; &gt;
+        &lt;ng-template pTemplate&#x3D;&quot;header&quot;&gt;
+            &lt;tr&gt;
+                &lt;th pSortableColumn&#x3D;&quot;habitacion&quot;&gt;Habitación &lt;p-sortIcon field&#x3D;&quot;habitacion&quot;&gt;&lt;/p-sortIcon&gt;&lt;/th&gt;
+                &lt;th pSortableColumn&#x3D;&quot;recamerera&quot;&gt;Recamarera(s) &lt;p-sortIcon field&#x3D;&quot;recamerera&quot;&gt;&lt;/p-sortIcon&gt;&lt;/th&gt;
+                &lt;th pSortableColumn&#x3D;&quot;supervisor&quot;&gt;Supervisor &lt;p-sortIcon field&#x3D;&quot;supervisor&quot;&gt;&lt;/p-sortIcon&gt;&lt;/th&gt;
+                &lt;th pSortableColumn&#x3D;&quot;estado&quot;&gt;Estado &lt;p-sortIcon field&#x3D;&quot;estado&quot;&gt;&lt;/p-sortIcon&gt;&lt;/th&gt;
+                &lt;th pSortableColumn&#x3D;&quot;tipo&quot;&gt;Tipo &lt;p-sortIcon field&#x3D;&quot;tipo&quot;&gt;&lt;/p-sortIcon&gt;&lt;/th&gt;
+                &lt;th pSortableColumn&#x3D;&quot;inicioLimpieza&quot;&gt;Inicio de limpieza &lt;p-sortIcon field&#x3D;&quot;inicioLimpieza&quot;&gt;&lt;/p-sortIcon&gt;&lt;/th&gt;
+                &lt;th pSortableColumn&#x3D;&quot;finLimpieza&quot;&gt;Fin de limpieza &lt;p-sortIcon field&#x3D;&quot;finLimpieza&quot;&gt;&lt;/p-sortIcon&gt;&lt;/th&gt;
+                &lt;th pSortableColumn&#x3D;&quot;inicioSupervicion&quot;&gt;Inicio de supervisión &lt;p-sortIcon field&#x3D;&quot;inicioSupervicion&quot;&gt;&lt;/p-sortIcon&gt;&lt;/th&gt;
+                &lt;th pSortableColumn&#x3D;&quot;finSupervicion&quot;&gt;Fin de supervisón &lt;p-sortIcon field&#x3D;&quot;finSupervicion&quot;&gt;&lt;/p-sortIcon&gt;&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/ng-template&gt;
+        &lt;ng-template pTemplate&#x3D;&quot;body&quot; let-info let-rowIndex&#x3D;&quot;rowIndex&quot;&gt;
+            &lt;tr [pSelectableRow]&#x3D;&quot;info&quot;&gt;
+                &lt;td&gt;&lt;b&gt;{{info.habitacion}}&lt;/b&gt;&lt;/td&gt;
+                &lt;td&gt;{{info.recamerera}}&lt;/td&gt;
+                &lt;td&gt;{{info.supervisor}}&lt;/td&gt;
+                &lt;td&gt;{{info.estado}}&lt;/td&gt;
+                &lt;td&gt;{{info.tipo}}&lt;/td&gt;
+                &lt;td&gt;{{info.inicioLimpieza | date: &#x27;dd/MM/yyyy, h:mm a&#x27;}}&lt;/td&gt;
+                &lt;td&gt;{{info.finLimpieza | date: &#x27;dd/MM/yyyy, h:mm a&#x27;}}&lt;/td&gt;
+                &lt;td&gt;{{info.inicioSupervicion | date: &#x27;dd/MM/yyyy, h:mm a&#x27;}}&lt;/td&gt;
+                &lt;td&gt;{{info.finSupervicion | date: &#x27;dd/MM/yyyy, h:mm a&#x27;}}&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/ng-template&gt;
+        &lt;ng-template pTemplate&#x3D;&quot;emptymessage&quot;&gt;
+          &lt;tr&gt;
+              &lt;td colspan&#x3D;&quot;10&quot; style&#x3D;&quot;height: 30vh;&quot;&gt;No se encontraron datos.&lt;/td&gt;
+          &lt;/tr&gt;
+      &lt;/ng-template&gt;
+    &lt;/p-table&gt;
+
+    &lt;/div&gt;
+  &lt;/form&gt;
+  &lt;ng-template pTemplate&#x3D;&quot;footer&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-footer-content&quot;&gt;
+      &lt;button class&#x3D;&quot;button-modal button-descartar&quot; [routerLink]&#x3D;&quot;&#x27;/hotel&#x27;&quot;&gt;
+        &lt;div class&#x3D;&quot;icon&quot;&gt;
+            &lt;i class&#x3D;&quot;fa-solid fa-x&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text&quot;&gt;Cancelar&lt;/div&gt;
+    &lt;/button&gt;
+    &lt;button  class&#x3D;&quot;button-modal button-print&quot; [disabled]&#x3D;&quot;selectLimpieza &#x3D;&#x3D; null&quot; &gt;
+      &lt;div class&#x3D;&quot;icon&quot;&gt;
+        &lt;i class&#x3D;&quot;fa-solid fa-print&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;text&quot;&gt;Generar Reporte&lt;/div&gt;
+    &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/ng-template&gt;
+&lt;/p-dialog&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./limpieza.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;/src/library.scss&#x27;;
+
+.container-filters {
+  display      : flex;
+  box-shadow   : $shadow-modal-tittle;
+  margin       : 15px 0;
+  padding      : 10px 1px;
+  border-radius: $border-radius-tittle;
+
+  &amp; .input-container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : stretch;
+    flex-wrap     : nowrap;
+    width         : 100%;
+    padding       : 0 39px;
+
+    &amp; .containes-form_fecha {
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+
+      &amp; i {
+        border-bottom : 1px solid black;
+        padding-bottom: 4px;
+      }
+    }
+
+    &amp; label {
+      text-align: center;
+    }
+
+    p-calendar {
+      text-align: center;
+    }
+  }
+}
+
+
+
+td {
+  text-align: center !important;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog header="LIMPIEZA DE HABITACIONES" [(visible)]="display" [closable]="false"  [modal]="true" [draggable]="false"  [showHeader]="true">  <form [formGroup]="form" class="conteiner-components">    <div class="container-filters">      <div class="input-container">        <label>FECHA INICIO</label>        <div class="containes-form_fecha">          <p-calendar [showButtonBar]="true" dateFormat="dd-mm-yy" formControlName="fechaInicio"  placeholder="Filtra por fecha de inicio"  [maxDate]="form.controls[\'fechaFinal\'].value" ></p-calendar>          <i class="fa-regular fa-calendar idle" *ngIf="form.controls[\'fechaInicio\'].value == \'\' || form.controls[\'fechaInicio\'].value == null"></i>          <i class="fa-regular fa-calendar idle" style="color: #0AC917;" *ngIf="form.controls[\'fechaInicio\'].value != \'\' && form.controls[\'fechaInicio\'].value != null"></i>        </div>      </div>      <div class="input-container">        <label>FECHA FINAL</label>        <div class="containes-form_fecha">          <p-calendar [showButtonBar]="true" dateFormat="dd-mm-yy"  formControlName="fechaFinal" placeholder="Filtra por fecha de final" [minDate]="form.controls[\'fechaInicio\'].value" ></p-calendar>          <i class="fa-regular fa-calendar idle" *ngIf="form.controls[\'fechaFinal\'].value == \'\' || form.controls[\'fechaFinal\'].value == null"></i>          <i class="fa-regular fa-calendar idle" style="color: #0AC917;" *ngIf="form.controls[\'fechaFinal\'].value != \'\' && form.controls[\'fechaFinal\'].value != null"></i>        </div>      </div>      <!-- <div class="input-container">        <label>TURNO</label>        <p-dropdown placeholder="TODOS" formControlName="turno" [options]="turno" optionLabel="turno"          optionValue="id" ></p-dropdown>      </div> -->      <div class="input-container">        <label>PERSONAL</label>        <div class="containes-form_input_icon">          <p-dropdown placeholder="TODAS" formControlName="personal" [options]="empleados"  [filter]="true" filterBy="nombre" optionLabel="nombre" [showClear]="true"></p-dropdown>          <i class="fa-solid fa-user" *ngIf="form.controls[\'personal\'].value == \'\' || form.controls[\'personal\'].value == null"></i>          <i class="fa-solid fa-user" style="color: #0AC917;" *ngIf="form.controls[\'personal\'].value != \'\' && form.controls[\'personal\'].value != null"></i>        </div>      </div>      <div class="input-container">        <label>HABITACIÓN</label>        <div class="containes-form_input_icon">          <p-dropdown placeholder="TODAS" [options]="tipos_habitaciones" optionLabel="nombre" formControlName="habitacion" [showClear]="true"></p-dropdown>          <i class="fa-solid fa-hotel" *ngIf="form.controls[\'habitacion\'].value == \'\' || form.controls[\'habitacion\'].value == null"></i>          <i class="fa-solid fa-hotel" style="color: #0AC917;" *ngIf="form.controls[\'habitacion\'].value != \'\' && form.controls[\'habitacion\'].value != null"></i>        </div>      </div>    </div>    <div class="containe-table">      <p-table [paginator]="true" [rows]="10" [showCurrentPageReport]="true" [value]="limpieza"      styleClass="p-datatable-sm" [scrollable]="true" scrollHeight="400px" selectionMode="single"      [(selection)]="selectLimpieza" dataKey="habitacion" currentPageReportTemplate="Mostrando {first} de {last} para {totalRecords} datos" >        <ng-template pTemplate="header">            <tr>                <th pSortableColumn="habitacion">Habitación <p-sortIcon field="habitacion"></p-sortIcon></th>                <th pSortableColumn="recamerera">Recamarera(s) <p-sortIcon field="recamerera"></p-sortIcon></th>                <th pSortableColumn="supervisor">Supervisor <p-sortIcon field="supervisor"></p-sortIcon></th>                <th pSortableColumn="estado">Estado <p-sortIcon field="estado"></p-sortIcon></th>                <th pSortableColumn="tipo">Tipo <p-sortIcon field="tipo"></p-sortIcon></th>                <th pSortableColumn="inicioLimpieza">Inicio de limpieza <p-sortIcon field="inicioLimpieza"></p-sortIcon></th>                <th pSortableColumn="finLimpieza">Fin de limpieza <p-sortIcon field="finLimpieza"></p-sortIcon></th>                <th pSortableColumn="inicioSupervicion">Inicio de supervisión <p-sortIcon field="inicioSupervicion"></p-sortIcon></th>                <th pSortableColumn="finSupervicion">Fin de supervisón <p-sortIcon field="finSupervicion"></p-sortIcon></th>            </tr>        </ng-template>        <ng-template pTemplate="body" let-info let-rowIndex="rowIndex">            <tr [pSelectableRow]="info">                <td><b>{{info.habitacion}}</b></td>                <td>{{info.recamerera}}</td>                <td>{{info.supervisor}}</td>                <td>{{info.estado}}</td>                <td>{{info.tipo}}</td>                <td>{{info.inicioLimpieza | date: \'dd/MM/yyyy, h:mm a\'}}</td>                <td>{{info.finLimpieza | date: \'dd/MM/yyyy, h:mm a\'}}</td>                <td>{{info.inicioSupervicion | date: \'dd/MM/yyyy, h:mm a\'}}</td>                <td>{{info.finSupervicion | date: \'dd/MM/yyyy, h:mm a\'}}</td>            </tr>        </ng-template>        <ng-template pTemplate="emptymessage">          <tr>              <td colspan="10" style="height: 30vh;">No se encontraron datos.</td>          </tr>      </ng-template>    </p-table>    </div>  </form>  <ng-template pTemplate="footer">    <div class="modal-footer-content">      <button class="button-modal button-descartar" [routerLink]="\'/hotel\'">        <div class="icon">            <i class="fa-solid fa-x"></i>        </div>        <div class="text">Cancelar</div>    </button>    <button  class="button-modal button-print" [disabled]="selectLimpieza == null" >      <div class="icon">        <i class="fa-solid fa-print"></i>      </div>      <div class="text">Generar Reporte</div>    </button>    </div></ng-template></p-dialog></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'LimpiezaComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LimpiezaComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

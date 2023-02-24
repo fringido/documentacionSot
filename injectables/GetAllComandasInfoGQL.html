@@ -1,0 +1,3005 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Inyectables</li>
+  <li >GetAllComandasInfoGQL</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/graphQL/serviciosGraph.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier"></span>
+                                <a href="#document" >document</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(apollo: Apollo.Apollo)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="2515" class="link-to-prism">src/app/core/graphQL/serviciosGraph.ts:2515</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>apollo</td>
+                                                  
+                                                        <td>
+                                                                    <code>Apollo.Apollo</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+            <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="document"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                        <span ><b>document</b></span>
+                        <a href="#document"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>GetAllComandasInfoDocument</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="2515" class="link-to-prism">src/app/core/graphQL/serviciosGraph.ts:2515</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { gql } from &#x27;apollo-angular&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import * as Apollo from &#x27;apollo-angular&#x27;;
+export type Maybe&lt;T&gt; &#x3D; T | null;
+export type InputMaybe&lt;T&gt; &#x3D; Maybe&lt;T&gt;;
+export type Exact&lt;T extends { [key: string]: unknown }&gt; &#x3D; { [K in keyof T]: T[K] };
+export type MakeOptional&lt;T, K extends keyof T&gt; &#x3D; Omit&lt;T, K&gt; &amp; { [SubKey in K]?: Maybe&lt;T[SubKey]&gt; };
+export type MakeMaybe&lt;T, K extends keyof T&gt; &#x3D; Omit&lt;T, K&gt; &amp; { [SubKey in K]: Maybe&lt;T[SubKey]&gt; };
+/** All built-in and custom scalars, mapped to their actual values */
+export type Scalars &#x3D; {
+  ID: string;
+  String: string;
+  Boolean: boolean;
+  Int: number;
+  Float: number;
+  /** Date custom scalar type */
+  Date: any;
+};
+
+/** Objecto que contiene los comapos que representan a la entidad Acceso */
+export type Acceso &#x3D; {
+  __typename?: &#x27;Acceso&#x27;;
+  /** UUID de la entidad Acceso */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Acceso */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+export type Alimento &#x3D; {
+  __typename?: &#x27;Alimento&#x27;;
+  activo: Scalars[&#x27;Boolean&#x27;];
+  descripcion?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** UUID de la entidad Alimento */
+  id: Scalars[&#x27;ID&#x27;];
+  nombre: Scalars[&#x27;String&#x27;];
+  precio: Scalars[&#x27;Float&#x27;];
+};
+
+export type AlimentoComanda &#x3D; {
+  __typename?: &#x27;AlimentoComanda&#x27;;
+  /** Informacion del Alimento a la cual pertenece la entidad AlimentoComanda */
+  alimento: Alimento;
+  cantidad: Scalars[&#x27;Int&#x27;];
+  /** Informacion de la Comanda a la cual pertenece la entidad AlimentoComanda */
+  comanda: Comanda;
+  comentario?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  cortesia: Scalars[&#x27;Boolean&#x27;];
+  /** Fecha-hora en la que se termino la preparación de la entidad AlimentoEntidad */
+  fechaPorEntregar?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+};
+
+export type AlimentoElementInput &#x3D; {
+  alimentoId: Scalars[&#x27;ID&#x27;];
+  cantidad: Scalars[&#x27;Int&#x27;];
+  comentario?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  cortesia: Scalars[&#x27;Boolean&#x27;];
+};
+
+export type AlimentosComandaResponse &#x3D; {
+  __typename?: &#x27;AlimentosComandaResponse&#x27;;
+  /** Informacion del Alimento a la cual pertenece la entidad AlimentoComanda */
+  alimento: Alimento;
+  cantidad: Scalars[&#x27;Int&#x27;];
+  comentario?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  cortesia: Scalars[&#x27;Boolean&#x27;];
+  /** Fecha-hora en la que se termino la preparación de la entidad AlimentoEntidad */
+  fechaPorEntregar?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+};
+
+export type Almacen &#x3D; {
+  __typename?: &#x27;Almacen&#x27;;
+  articulosAlmacen: Array&lt;ArticulosAlmacenResponse&gt;;
+  /** UUID de la entidad Almacen */
+  id: Scalars[&#x27;ID&#x27;];
+  menu: MenusRoomService;
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+export enum AreasPuesto {
+  AlimentosBebidas &#x3D; &#x27;Alimentos_Bebidas&#x27;,
+  AmaDeLlaves &#x3D; &#x27;Ama_de_llaves&#x27;,
+  Compras &#x3D; &#x27;Compras&#x27;,
+  Gerencia &#x3D; &#x27;Gerencia&#x27;,
+  Mantenimiento &#x3D; &#x27;Mantenimiento&#x27;,
+  Rrhh &#x3D; &#x27;RRHH&#x27;,
+  RecepcionVendedores &#x3D; &#x27;Recepcion_Vendedores&#x27;
+}
+
+export type ArticuloAlmacen &#x3D; {
+  __typename?: &#x27;ArticuloAlmacen&#x27;;
+  /** Informacion del Articulo Rs a la cual pertenece la entidad Articulo-Almacen */
+  almacen: Almacen;
+  /** Informacion del Articulo Rs a la cual pertenece la entidad Articulo-Almacen */
+  articuloRs: ArticuloRs;
+  /** Cantidad del Articulo en el Alamcen de la entidad ArticuloAlmacen */
+  stock: Scalars[&#x27;Float&#x27;];
+};
+
+export type ArticuloComanda &#x3D; {
+  __typename?: &#x27;ArticuloComanda&#x27;;
+  /** Informacion de la Almacen a la cual pertenece la entidad ArticuloRsComanda */
+  almacen: Almacen;
+  /** Informacion de la ArticuloRs a la cual pertenece la entidad ArticuloRsComanda */
+  articuloRs: ArticuloRs;
+  cantidad: Scalars[&#x27;Int&#x27;];
+  /** Informacion de la Comanda a la cual pertenece la entidad ArticuloRsComanda */
+  comanda: Comanda;
+  comentario?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  cortesia: Scalars[&#x27;Boolean&#x27;];
+};
+
+export type ArticuloElementInput &#x3D; {
+  almacenId: Scalars[&#x27;ID&#x27;];
+  articuloId: Scalars[&#x27;ID&#x27;];
+  cantidad: Scalars[&#x27;Float&#x27;];
+  comentario?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  cortesia: Scalars[&#x27;Boolean&#x27;];
+};
+
+export type ArticuloRs &#x3D; {
+  __typename?: &#x27;ArticuloRs&#x27;;
+  /** Campo que nos indica si la entidad Articulo Rs se encuentra activa */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** UUID de la entidad Articulo Rs */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Articulo Rs */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Precio de la entidad Articulo Rs */
+  precio: Scalars[&#x27;Float&#x27;];
+  /** Informacion de la SubCategoria Articulo Rs a la pertenece la entidad Articulo Rs */
+  subCategoriaArticuloRs: SubCategoriaArticuloRs;
+  /** Informacion de la Unidad Medida a la que pertenece la entidad Articulo Rs */
+  unidadMedida: UnidadMedida;
+};
+
+export type ArticulosAlmacenResponse &#x3D; {
+  __typename?: &#x27;ArticulosAlmacenResponse&#x27;;
+  articuloRs: ArticuloRs;
+  stock: Scalars[&#x27;Float&#x27;];
+};
+
+export type ArticulosComandaResponse &#x3D; {
+  __typename?: &#x27;ArticulosComandaResponse&#x27;;
+  /** Informacion de la Almacen a la cual pertenece la entidad ArticuloRsComanda */
+  almacen: Almacen;
+  /** Informacion de la ArticuloRs a la cual pertenece la entidad ArticuloRsComanda */
+  articuloRs: ArticuloRs;
+  cantidad: Scalars[&#x27;Int&#x27;];
+  comentario?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  cortesia: Scalars[&#x27;Boolean&#x27;];
+};
+
+export type BebidasElementInput &#x3D; {
+  articulos: Array&lt;ArticuloElementInput&gt;;
+  tragos: Array&lt;TragoElementInput&gt;;
+};
+
+/** Objeto que contiene los campos que representan a la entidad Categoria Articulo Rs */
+export type CategoriaArticuloRs &#x3D; {
+  __typename?: &#x27;CategoriaArticuloRs&#x27;;
+  /** Campo que nos indica si la entidad Categoria Articulo Rs se encuentra activa */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** UUID de la entidad Categoria Articulo Rs */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Categoria Articulo Rs */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+export type Comanda &#x3D; {
+  __typename?: &#x27;Comanda&#x27;;
+  alimentosComanda: Array&lt;AlimentosComandaResponse&gt;;
+  articulosComanda: Array&lt;ArticulosComandaResponse&gt;;
+  /** Fecha-hora en la que se cancelo la entidad Comanda */
+  fechaCancelacion?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Fecha-hora en la que se entrego la entidad Comanda */
+  fechaEntrega?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Fecha-hora en la que se pago la entidad Comanda */
+  fechaPago?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Fecha-hora en la que se solicito la entidad Comanda */
+  fechaSolicitud: Scalars[&#x27;Date&#x27;];
+  /** UUID de la entidad Comanda */
+  id: Scalars[&#x27;ID&#x27;];
+  motivoCancelacion?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Informacion de la Renta a la cual pertenece la entidad Comanda */
+  renta: Renta;
+  tragosComanda: Array&lt;TragosComandaResponse&gt;;
+};
+
+export type CreateAlimentoInput &#x3D; {
+  descripcion?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  nombre: Scalars[&#x27;String&#x27;];
+  precio: Scalars[&#x27;Float&#x27;];
+};
+
+export type CreateAlmacenInput &#x3D; {
+  menu: MenusRoomService;
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+/** Objeto que contiene los campos necesarios para crear una entidad Articulo Rs */
+export type CreateArticuloRsInput &#x3D; {
+  /** Nombre de la entidad Articulo Rs */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Precio de la entidad Articulo Rs */
+  precio: Scalars[&#x27;Float&#x27;];
+  /** UUID de la SubCategoria Articulo Rs a la pertenece la entidad Articulo Rs */
+  subCategoriaArticuloRsId: Scalars[&#x27;String&#x27;];
+  /** UUID de la Unidad Medida al que pertenece la entidad Articulo Rs */
+  unidadMedidaId: Scalars[&#x27;String&#x27;];
+};
+
+/** Objeto que contiene todos los campos necesarios para crear una entidad Categoria Articulo Rs */
+export type CreateCategoriaArticuloRsInput &#x3D; {
+  /** Nombre de la entidad Categoria Articulo Rs */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+export type CreateComandaInput &#x3D; {
+  alimentos: Array&lt;AlimentoElementInput&gt;;
+  bebidas: BebidasElementInput;
+  otros: Array&lt;ArticuloElementInput&gt;;
+  rentaId: Scalars[&#x27;ID&#x27;];
+  sexSpa: Array&lt;ArticuloElementInput&gt;;
+};
+
+/** Objeto que contiene los campos necesarios para crear una entidad Direccion Proveedor */
+export type CreateDireccionProveedorInput &#x3D; {
+  /** Nombre de la calle de la entidad Direccion Proveedor */
+  calle: Scalars[&#x27;String&#x27;];
+  /** Nombre de la ciudad de la entidad Direccion Proveedor */
+  ciudad: Scalars[&#x27;String&#x27;];
+  /** Nombre de la colonia de la entidad Direccion Proveedor */
+  colonia: Scalars[&#x27;String&#x27;];
+  /** Codigo postal de la entidad Direccion Proveedor */
+  cp: Scalars[&#x27;String&#x27;];
+  /** Nombre del estado de la entidad Direccion Proveedor */
+  estado: Scalars[&#x27;String&#x27;];
+  /** Numero exterior de la entidad Direccion Proveedor */
+  numeroExterior: Scalars[&#x27;Int&#x27;];
+  /** Numero interior de la entidad Direccion Proveedor */
+  numeroInterior?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+};
+
+export type CreateEmpleadoInput &#x3D; {
+  /** Apellido Materno de la entidad Empleado */
+  apellidoMaterno: Scalars[&#x27;String&#x27;];
+  /** Apellido Paterno de la entidad Empleado */
+  apellidoPaterno: Scalars[&#x27;String&#x27;];
+  /** Fecha en al que se registro la entidad Empleado */
+  fechaIngreso: Scalars[&#x27;Date&#x27;];
+  /** Nombre de la entidad Empleado */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** UUID del Puesto al que pertenece la entidad Empleado */
+  puestoId: Scalars[&#x27;String&#x27;];
+  /** Telefono de la entidad Empleado */
+  telefono: Scalars[&#x27;String&#x27;];
+};
+
+export type CreateExtraInput &#x3D; {
+  horas: Scalars[&#x27;Int&#x27;];
+  hospedajes: Scalars[&#x27;Int&#x27;];
+  personas: Scalars[&#x27;Int&#x27;];
+  rentaId: Scalars[&#x27;ID&#x27;];
+};
+
+/** Campos necesarios para crear una nueva entidad Habitacion en la base de datos */
+export type CreateHabitacionInput &#x3D; {
+  /** Numero de la habitacion */
+  numeroHabitacion: Scalars[&#x27;Int&#x27;];
+  /** Piso en el que se encuentra la habitacion */
+  piso: Scalars[&#x27;Int&#x27;];
+  /** Id del Tipo de Habitacion a la que pertenece la habitacion */
+  tipoHabitacionId: Scalars[&#x27;ID&#x27;];
+};
+
+export type CreateOrdenCompraInput &#x3D; {
+  /** UUID del Almacen al cual pertenece la entidad Orden Compra */
+  almacenId: Scalars[&#x27;ID&#x27;];
+  /** UUID del Articulo Rs al cual pertenece la entidad Orden Compra */
+  articuloRsId: Scalars[&#x27;ID&#x27;];
+  /** Cantidad de la entidad Orden Compra */
+  cantidad: Scalars[&#x27;Float&#x27;];
+  /** Costo de la entidad Orden Compra */
+  costo: Scalars[&#x27;Float&#x27;];
+  /** UUID del Proveedor al cual pertenece la entidad Orden Compra */
+  proveedorId: Scalars[&#x27;ID&#x27;];
+};
+
+/** Objeto que contiene todos los campos necesarios para crear una entidad Proveedor */
+export type CreateProveedorInput &#x3D; {
+  /** Apellido materno del contacto de la entidad Proveedor */
+  apellidoMContacto: Scalars[&#x27;String&#x27;];
+  /** Apellido paterno del contacto de la entidad Proveedor */
+  apellidoPContacto: Scalars[&#x27;String&#x27;];
+  /** Numero de dias que se tiene para pagar la deuda antes de empezar a generar intereces de la entidad Proveedor */
+  diasCredito: Scalars[&#x27;Int&#x27;];
+  /** Objeto que contiene los campos necesarios para crear una entidad DireccionProveedor */
+  direccionProveedor: CreateDireccionProveedorInput;
+  /** Email de la entidad Proveedor */
+  email: Scalars[&#x27;String&#x27;];
+  /** Nombre comercial de la entidad Proveedor */
+  nombreComercial: Scalars[&#x27;String&#x27;];
+  /** Nombre(s) del contacto de la entidad Proveedor */
+  nombreContacto: Scalars[&#x27;String&#x27;];
+  /** Nombre con el cual esta legalmente registrada la entidad Proveedor */
+  razonSocial: Scalars[&#x27;String&#x27;];
+  /** RFC de la entidad Proveedor */
+  rfc: Scalars[&#x27;String&#x27;];
+  /** Numero telefonico de la entidad Proveedor */
+  telefono: Scalars[&#x27;String&#x27;];
+};
+
+export type CreatePuestoInput &#x3D; {
+  /** Nombre de la entidad Puesto */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** UUID del Rol al que pertenece la entidad Puesto */
+  rolId: Scalars[&#x27;String&#x27;];
+};
+
+/** Objeto que contiene los campos requeridos para crear una entidad Renta */
+export type CreateRentaInput &#x3D; {
+  /** UUID de la Habitacion a la cual pertenece la entidad Renta */
+  habitacionId: Scalars[&#x27;String&#x27;];
+  /** Numero de horas extra solicitadas */
+  horasExtra: Scalars[&#x27;Int&#x27;];
+  /** Numero de hospedajes extra solicitados */
+  hospedajesExtra: Scalars[&#x27;Int&#x27;];
+  /** ??? */
+  numeroServicio: Scalars[&#x27;String&#x27;];
+  /** Numero de personas extra solicitadas */
+  personasExtra: Scalars[&#x27;Int&#x27;];
+  /** UUID de la Tarifa a la cual pertenece la entidad Renta */
+  tarifaId: Scalars[&#x27;String&#x27;];
+};
+
+export type CreateRolInput &#x3D; {
+  /** Area de la entidad Puesto */
+  area: AreasPuesto;
+  /** Nombre de la entidad Rol */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+/** Objeto que contiene los campos necesarios para crear una entidad SubCategoria Articulo Rs */
+export type CreateSubcategoriaArticuloRsInput &#x3D; {
+  categoriaArticuloRsId: Scalars[&#x27;ID&#x27;];
+  editable: Scalars[&#x27;Boolean&#x27;];
+  /** Nombre de la entidad SubCategoria Articulo Rs */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+/** Objecto que contiene los campo necesarios para crear una entidad Tarifa */
+export type CreateTarifaInput &#x3D; {
+  /** Costo de la renta de la habitacion */
+  costoHabitacion: Scalars[&#x27;Int&#x27;];
+  /** Costo de una hora extra */
+  costoHoraExtra: Scalars[&#x27;Int&#x27;];
+  /** Costo de un hospedaje extra */
+  costoHospedajeExtra: Scalars[&#x27;Int&#x27;];
+  /** Costo de una persona extra */
+  costoPersonaExtra: Scalars[&#x27;Int&#x27;];
+  /** Indica si la tarifa aplica en los dias domingo */
+  domingo: Scalars[&#x27;Boolean&#x27;];
+  /** Numero de horas que dura la renta de una habitacion de la entidad Tarifa */
+  duracion: Scalars[&#x27;Int&#x27;];
+  /** Fecha en la que termine la aplicacion de la Tarifa */
+  fechaFinal: Scalars[&#x27;Date&#x27;];
+  /** Fecha a partir de la cual se empieza a aplicar la Tarifa */
+  fechaInicio: Scalars[&#x27;Date&#x27;];
+  /** Hora en la que finaliza la aplicacion de la Tarifa. Formato HH:mm */
+  horaFinal: Scalars[&#x27;String&#x27;];
+  /** Hora a partir de la cual empieza a aplicar la entidad Tarifa. Formato HH:mm:ss */
+  horaInicio: Scalars[&#x27;String&#x27;];
+  /** Numero maximo de horas extra que se pueden solicitar */
+  horasExtraMax: Scalars[&#x27;Int&#x27;];
+  /** Numero maximo de hospedajes extra que se pueden solicitar */
+  hospedajesExtraMax: Scalars[&#x27;Int&#x27;];
+  /** Indica si la tarifa aplica en los dias jueves */
+  jueves: Scalars[&#x27;Boolean&#x27;];
+  /** Indica si la tarifa aplica en los dias lunes */
+  lunes: Scalars[&#x27;Boolean&#x27;];
+  /** Indica si la tarifa aplica en los dias martes */
+  martes: Scalars[&#x27;Boolean&#x27;];
+  /** Indica si la tarifa aplica en los dias miercoles */
+  miercoles: Scalars[&#x27;Boolean&#x27;];
+  /** Nombre de la entidad Tarifa */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Numero maximo de personas extra que se pueden solicitar */
+  personasExtraMax: Scalars[&#x27;Int&#x27;];
+  /** Indica si la tarifa aplica en los dias sabado */
+  sabado: Scalars[&#x27;Boolean&#x27;];
+  /** UUID del Tipo de Habitacion a la cual pertenece la entidad Tarifa */
+  tipoHabitacionId: Scalars[&#x27;ID&#x27;];
+  /** Indica si la tarifa aplica en los dias viernes */
+  viernes: Scalars[&#x27;Boolean&#x27;];
+};
+
+/** Objeto que contiene los campos necesarios para crear una entidad Tipo Habitacion */
+export type CreateTipoHabitacionInput &#x3D; {
+  /** Clave que representa a la entidad Tipo Habitacion */
+  clave: Scalars[&#x27;String&#x27;];
+  /** Descripcion de la entidad Tipo Habitacion */
+  descripcion: Scalars[&#x27;String&#x27;];
+  /** Numero maximo de reservaciones que se le pueden asignar a la habitacion */
+  maximoReservaciones: Scalars[&#x27;Int&#x27;];
+  /** Promedio de minutos que una habitacion tarda en relizar el proceso de entrada */
+  minutosEntrada: Scalars[&#x27;Int&#x27;];
+  /** Promedio de minutos que una habitacion tarda en realizar el proceso de Limpieza estando medio sucia */
+  minutosMediaSucia: Scalars[&#x27;Int&#x27;];
+  /** Promedio de minutos que una habitacion tarda en realizar el proceso de Limpieza estando sucia */
+  minutosSucia: Scalars[&#x27;Int&#x27;];
+  /** Nombre de la entidad Tipo Habitacion */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+export type CreateTragoInput &#x3D; {
+  descripcion?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  nombre: Scalars[&#x27;String&#x27;];
+  precio: Scalars[&#x27;Float&#x27;];
+};
+
+export type CreateUnidadMedidaInput &#x3D; {
+  /** Unidad de la entidad Unidad Medida */
+  unidad: Scalars[&#x27;String&#x27;];
+};
+
+/** Objeto que contiene los campos que representan a la entidad Direccion Proveedor */
+export type DireccionProveedor &#x3D; {
+  __typename?: &#x27;DireccionProveedor&#x27;;
+  /** Campo que nos indica si la entidad Direccion Proveedor se encuentra activa */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** Nombre de la calle de la entidad Direccion Proveedor */
+  calle: Scalars[&#x27;String&#x27;];
+  /** Nombre de la ciudad de la entidad Direccion Proveedor */
+  ciudad: Scalars[&#x27;String&#x27;];
+  /** Nombre de la colonia de la entidad Direccion Proveedor */
+  colonia: Scalars[&#x27;String&#x27;];
+  /** Codigo postal de la entidad Direccion Proveedor */
+  cp: Scalars[&#x27;String&#x27;];
+  /** Nombre del estado de la entidad Direccion Proveedor */
+  estado: Scalars[&#x27;String&#x27;];
+  /** UUID de la entidad Direccion Proveedor */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Numero exterior de la entidad Direccion Proveedor */
+  numeroExterior: Scalars[&#x27;Int&#x27;];
+  /** Numero interior de la entidad Direccion Proveedor */
+  numeroInterior?: Maybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+};
+
+export type Empleado &#x3D; {
+  __typename?: &#x27;Empleado&#x27;;
+  /** Indica si al entidad Empleado esta activa */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** Apellido Materno de la entidad Empleado */
+  apellidoMaterno: Scalars[&#x27;String&#x27;];
+  /** Apellido Paterno de la entidad Empleado */
+  apellidoPaterno: Scalars[&#x27;String&#x27;];
+  /** Indica si al entidad Empleado esta disponible en el turno actual */
+  enTurno: Scalars[&#x27;Boolean&#x27;];
+  /** Telefono de la entidad Empleado */
+  fechaIngreso: Scalars[&#x27;Date&#x27;];
+  /** Indica si al entidad Empleado esta habilitada */
+  habilitado: Scalars[&#x27;Boolean&#x27;];
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Empleado */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Informacion del Puesto al que pertenece la entidad Empleado */
+  puesto: Puesto;
+  /** Telefono de la entidad Empleado */
+  telefono: Scalars[&#x27;String&#x27;];
+};
+
+export type Extra &#x3D; {
+  __typename?: &#x27;Extra&#x27;;
+  fechaCancelacion?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  fechaPago?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  fechaSolicitud: Scalars[&#x27;Date&#x27;];
+  horas: Scalars[&#x27;Int&#x27;];
+  hospedajes: Scalars[&#x27;Int&#x27;];
+  /** UUID de la entidad Extra */
+  id: Scalars[&#x27;ID&#x27;];
+  motivoCancelacion?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  personas: Scalars[&#x27;Int&#x27;];
+  /** Informacion de la Renta a la cual pertenece la entidad Extra */
+  renta: Renta;
+};
+
+/** Objecto que contiene los campos que representan a la entidad Habitacion */
+export type Habitacion &#x3D; {
+  __typename?: &#x27;Habitacion&#x27;;
+  /** Indica si la entidad Habitacion esta activa, es decir, si ya ha sido marcada como eliminada */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  estado: ValidEstadosHabitaciones;
+  /** UUID de la entidad Habitacion */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Numero de la entidad Habitacion */
+  numeroHabitacion: Scalars[&#x27;Int&#x27;];
+  /** Piso en la cual se encuentra la entidad Habitacion */
+  piso: Scalars[&#x27;Int&#x27;];
+  rentas: Array&lt;Renta&gt;;
+  /** Informacion del Tipo de Habitacion a la cual pertenece la entidad Habitacion */
+  tipoHabitacion: TipoHabitacion;
+  /** Informacion del Usuario que se encuentra actualmente revisando la entidad Habitacion, este campo puede ser nulo */
+  usuarioRevision?: Maybe&lt;Usuario&gt;;
+};
+
+
+/** Objecto que contiene los campos que representan a la entidad Habitacion */
+export type HabitacionRentasArgs &#x3D; {
+  concluida?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+};
+
+export enum MenusRoomService {
+  Otros &#x3D; &#x27;Otros&#x27;,
+  SexSpa &#x3D; &#x27;SexSpa&#x27;,
+  Bebidas &#x3D; &#x27;bebidas&#x27;
+}
+
+export type Mutation &#x3D; {
+  __typename?: &#x27;Mutation&#x27;;
+  actualizar_alimento: Scalars[&#x27;String&#x27;];
+  actualizar_almacen: Almacen;
+  actualizar_articulo_rs: Scalars[&#x27;String&#x27;];
+  actualizar_categoria_articulo_rs: Scalars[&#x27;String&#x27;];
+  actualizar_comanda: Scalars[&#x27;String&#x27;];
+  actualizar_direccion_proveedor: Scalars[&#x27;String&#x27;];
+  /** Actualiza la informacion de la entidad Habitacion indicada */
+  actualizar_habitacion: Scalars[&#x27;String&#x27;];
+  actualizar_orden_compra: Scalars[&#x27;String&#x27;];
+  actualizar_proveedor: Scalars[&#x27;String&#x27;];
+  actualizar_subCategoriaArticuloRs: Scalars[&#x27;String&#x27;];
+  /** Mutacion que actualiza la entidad Tarifa con los parametros proporcionados */
+  actualizar_tarifa: Tarifa;
+  /** Mutacion que actualiza la entidad TipoHabitacion con los parametros proporcionados */
+  actualizar_tipo_habitacion: Scalars[&#x27;String&#x27;];
+  actualizar_trago: Scalars[&#x27;String&#x27;];
+  actualizar_unidad_medida: UnidadMedida;
+  almacenar_orden_compra: Scalars[&#x27;String&#x27;];
+  /** Cambia el estado de la entidad Habitacion indicada */
+  cambiar_estado: Scalars[&#x27;String&#x27;];
+  cancelar_comanda: Scalars[&#x27;String&#x27;];
+  cancelar_extra: Scalars[&#x27;String&#x27;];
+  cancelar_orden_compra: Scalars[&#x27;String&#x27;];
+  crear_alimento: Scalars[&#x27;String&#x27;];
+  crear_articulo_rs: Scalars[&#x27;String&#x27;];
+  crear_categoria_articulo_rs: Scalars[&#x27;String&#x27;];
+  crear_comanda: Scalars[&#x27;String&#x27;];
+  crear_direccion_proveedor: Scalars[&#x27;String&#x27;];
+  crear_empleado: Scalars[&#x27;String&#x27;];
+  crear_extra: Scalars[&#x27;String&#x27;];
+  /** Crea una nueva entidad Habitacion en la base de datos */
+  crear_habitacion: Scalars[&#x27;String&#x27;];
+  crear_orden_compra: Scalars[&#x27;String&#x27;];
+  crear_proveedor: Scalars[&#x27;String&#x27;];
+  crear_puesto: Scalars[&#x27;String&#x27;];
+  /** Mutacion que crea una entidad Renta con los parametros ingresados */
+  crear_renta: Scalars[&#x27;String&#x27;];
+  crear_rol: Scalars[&#x27;String&#x27;];
+  crear_subCategoriaArticulosRs: Scalars[&#x27;String&#x27;];
+  /** Mutacion que crea una entidad Tarifa con los parametros proporcionados */
+  crear_tarifa: Scalars[&#x27;String&#x27;];
+  /** Mutacion que crea una entidad TipoHabitacion con los parametros proporcionados */
+  crear_tipo_habitacion: Scalars[&#x27;String&#x27;];
+  crear_trago: Scalars[&#x27;String&#x27;];
+  crear_unidad_medida: Scalars[&#x27;String&#x27;];
+  creear_almacen: Scalars[&#x27;String&#x27;];
+  desactivar_alamacen: Scalars[&#x27;String&#x27;];
+  devolver_orden_compra: Scalars[&#x27;String&#x27;];
+  eliminar_alimento: Scalars[&#x27;String&#x27;];
+  eliminar_articulo_rs: Scalars[&#x27;String&#x27;];
+  eliminar_categoria_articulo_rs: Scalars[&#x27;String&#x27;];
+  eliminar_direccion_proveedor: Scalars[&#x27;String&#x27;];
+  /** Mutacion que desactiva la entidad Habitacion */
+  eliminar_habitacion: Scalars[&#x27;String&#x27;];
+  eliminar_proveedor: Scalars[&#x27;String&#x27;];
+  eliminar_subCategoriaArticuloRs: Scalars[&#x27;String&#x27;];
+  /** Mutacion que desactiva la entidad Tarifa */
+  eliminar_tarifa: Tarifa;
+  /** Mutacion que desactiva la entidad TipoHabitacion */
+  eliminar_tipo_habitacion: Scalars[&#x27;String&#x27;];
+  eliminar_trago: Scalars[&#x27;String&#x27;];
+  eliminar_unidad_medida: Scalars[&#x27;String&#x27;];
+  entregar_comanda: Scalars[&#x27;String&#x27;];
+  entregar_orden_compra: Scalars[&#x27;String&#x27;];
+  liberar_barra: Scalars[&#x27;String&#x27;];
+  liberar_cocina: Scalars[&#x27;String&#x27;];
+  liberar_habitacion: Scalars[&#x27;String&#x27;];
+  pagar_comanda: Scalars[&#x27;String&#x27;];
+  pagar_extra: Scalars[&#x27;String&#x27;];
+  pagar_orden_compra: Scalars[&#x27;String&#x27;];
+  removeEmpleado: Empleado;
+  removePuesto: Puesto;
+  /** Actualiza la informacion del campo usuarioRevision de la entidad Habitacion */
+  revisar_habitacion: Scalars[&#x27;String&#x27;];
+  updateEmpleado: Empleado;
+  updatePuesto: Puesto;
+};
+
+
+export type MutationActualizar_AlimentoArgs &#x3D; {
+  updateAlimentoInput: UpdateAlimentoInput;
+};
+
+
+export type MutationActualizar_AlmacenArgs &#x3D; {
+  updateAlmacenInput: UpdateAlmacenInput;
+};
+
+
+export type MutationActualizar_Articulo_RsArgs &#x3D; {
+  updateArticuloRsInput: UpdateArticuloRsInput;
+};
+
+
+export type MutationActualizar_Categoria_Articulo_RsArgs &#x3D; {
+  updateCategoriaArticuloRsInput: UpdateCategoriaArticuloRsInput;
+};
+
+
+export type MutationActualizar_ComandaArgs &#x3D; {
+  updateComandaInput: UpdateComandaInput;
+};
+
+
+export type MutationActualizar_Direccion_ProveedorArgs &#x3D; {
+  updateDireccionProveedorInput: UpdateDireccionProveedorInput;
+};
+
+
+export type MutationActualizar_HabitacionArgs &#x3D; {
+  updateHabitacioneInput: UpdateHabitacionInput;
+};
+
+
+export type MutationActualizar_Orden_CompraArgs &#x3D; {
+  updateOrdenCompraInput: UpdateOrdenCompraInput;
+};
+
+
+export type MutationActualizar_ProveedorArgs &#x3D; {
+  updateProveedorInput: UpdateProveedorInput;
+};
+
+
+export type MutationActualizar_SubCategoriaArticuloRsArgs &#x3D; {
+  updateSubcategoriaArticuloRsInput: UpdateSubcategoriaArticuloRsInput;
+};
+
+
+export type MutationActualizar_TarifaArgs &#x3D; {
+  updateTarifaInput: UpdateTarifaInput;
+};
+
+
+export type MutationActualizar_Tipo_HabitacionArgs &#x3D; {
+  actualizar_tipo_habitacion: UpdateTipoHabitacionInput;
+};
+
+
+export type MutationActualizar_TragoArgs &#x3D; {
+  updateTragoInput: UpdateTragoInput;
+};
+
+
+export type MutationActualizar_Unidad_MedidaArgs &#x3D; {
+  updateUnidadMedidaInput: UpdateUnidadMedidaInput;
+};
+
+
+export type MutationAlmacenar_Orden_CompraArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationCambiar_EstadoArgs &#x3D; {
+  estado: ValidEstadosHabitaciones;
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationCancelar_ComandaArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+  motivo: Scalars[&#x27;String&#x27;];
+};
+
+
+export type MutationCancelar_ExtraArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+  motivo: Scalars[&#x27;String&#x27;];
+};
+
+
+export type MutationCancelar_Orden_CompraArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+  motivo: Scalars[&#x27;String&#x27;];
+};
+
+
+export type MutationCrear_AlimentoArgs &#x3D; {
+  createAlimentoInput: CreateAlimentoInput;
+};
+
+
+export type MutationCrear_Articulo_RsArgs &#x3D; {
+  createArticuloRsInput: CreateArticuloRsInput;
+};
+
+
+export type MutationCrear_Categoria_Articulo_RsArgs &#x3D; {
+  createCategoriaArticuloRsInput: CreateCategoriaArticuloRsInput;
+};
+
+
+export type MutationCrear_ComandaArgs &#x3D; {
+  createComandaInput: CreateComandaInput;
+};
+
+
+export type MutationCrear_Direccion_ProveedorArgs &#x3D; {
+  createDireccionProveedorInput: CreateDireccionProveedorInput;
+};
+
+
+export type MutationCrear_EmpleadoArgs &#x3D; {
+  createEmpleadoInput: CreateEmpleadoInput;
+};
+
+
+export type MutationCrear_ExtraArgs &#x3D; {
+  createExtraInput: CreateExtraInput;
+};
+
+
+export type MutationCrear_HabitacionArgs &#x3D; {
+  createHabitacionInput: CreateHabitacionInput;
+};
+
+
+export type MutationCrear_Orden_CompraArgs &#x3D; {
+  createOrdenCompraInput: CreateOrdenCompraInput;
+};
+
+
+export type MutationCrear_ProveedorArgs &#x3D; {
+  createProveedorInput: CreateProveedorInput;
+};
+
+
+export type MutationCrear_PuestoArgs &#x3D; {
+  createPuestoInput: CreatePuestoInput;
+};
+
+
+export type MutationCrear_RentaArgs &#x3D; {
+  createRentaInput: CreateRentaInput;
+};
+
+
+export type MutationCrear_RolArgs &#x3D; {
+  createRolInput: CreateRolInput;
+};
+
+
+export type MutationCrear_SubCategoriaArticulosRsArgs &#x3D; {
+  createSubcategoriaArticuloRsInput: CreateSubcategoriaArticuloRsInput;
+};
+
+
+export type MutationCrear_TarifaArgs &#x3D; {
+  createTarifaInput: CreateTarifaInput;
+};
+
+
+export type MutationCrear_Tipo_HabitacionArgs &#x3D; {
+  createTiposHabitacioneInput: CreateTipoHabitacionInput;
+};
+
+
+export type MutationCrear_TragoArgs &#x3D; {
+  createTragoInput: CreateTragoInput;
+};
+
+
+export type MutationCrear_Unidad_MedidaArgs &#x3D; {
+  createUnidadMedidaInput: CreateUnidadMedidaInput;
+};
+
+
+export type MutationCreear_AlmacenArgs &#x3D; {
+  createAlmacenInput: CreateAlmacenInput;
+};
+
+
+export type MutationDesactivar_AlamacenArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationDevolver_Orden_CompraArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+  motivo: Scalars[&#x27;String&#x27;];
+};
+
+
+export type MutationEliminar_AlimentoArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEliminar_Articulo_RsArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEliminar_Categoria_Articulo_RsArgs &#x3D; {
+  id: Scalars[&#x27;String&#x27;];
+};
+
+
+export type MutationEliminar_Direccion_ProveedorArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEliminar_HabitacionArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEliminar_ProveedorArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEliminar_SubCategoriaArticuloRsArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEliminar_TarifaArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEliminar_Tipo_HabitacionArgs &#x3D; {
+  id: Scalars[&#x27;String&#x27;];
+};
+
+
+export type MutationEliminar_TragoArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEliminar_Unidad_MedidaArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEntregar_ComandaArgs &#x3D; {
+  comandaId: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationEntregar_Orden_CompraArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationLiberar_BarraArgs &#x3D; {
+  comandaId: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationLiberar_CocinaArgs &#x3D; {
+  comandaId: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationLiberar_HabitacionArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationPagar_ComandaArgs &#x3D; {
+  comandaId: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationPagar_ExtraArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationPagar_Orden_CompraArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+  noReferencia: Scalars[&#x27;String&#x27;];
+};
+
+
+export type MutationRemoveEmpleadoArgs &#x3D; {
+  id: Scalars[&#x27;Int&#x27;];
+};
+
+
+export type MutationRemovePuestoArgs &#x3D; {
+  id: Scalars[&#x27;Int&#x27;];
+};
+
+
+export type MutationRevisar_HabitacionArgs &#x3D; {
+  enRevision: Scalars[&#x27;Boolean&#x27;];
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type MutationUpdateEmpleadoArgs &#x3D; {
+  updateEmpleadoInput: UpdateEmpleadoInput;
+};
+
+
+export type MutationUpdatePuestoArgs &#x3D; {
+  updatePuestoInput: UpdatePuestoInput;
+};
+
+/** Objeto que contiene los campos que representan a la entidad Orden Compra */
+export type OrdenCompra &#x3D; {
+  __typename?: &#x27;OrdenCompra&#x27;;
+  /** Informacion del Almacen al cual pertenece la entidad Orden Compra */
+  almacen: Almacen;
+  /** Informacion del Articulo a la cual pertenece la entidad Orden Compra */
+  articuloRs: ArticuloRs;
+  /** Cantidad de la entidad Orden Compra */
+  cantidad: Scalars[&#x27;Float&#x27;];
+  /** Costo de la entidad Orden Compra */
+  costo: Scalars[&#x27;Float&#x27;];
+  /** Fecha-hora en la que se almaceno la entidad Orde Compra */
+  fechaAlmacenada?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Fecha-hora en la que se cancelo la entidad Orden Compra */
+  fechaCancelada?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Fecha-hora en la que se devolvio la entidad Orden Compra */
+  fechaDevuelta: Scalars[&#x27;Date&#x27;];
+  /** Fecha-hora en la que se registro la entrega de la entidad Orden Compra */
+  fechaEntrega?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Fecha-hora maxima que se tiene para pagar la entidad Orden Compra para no generar intereses */
+  fechaMaxPago: Scalars[&#x27;Date&#x27;];
+  /** Fecha-hora en la que se registro el pago de la entidad Orden Compra */
+  fechaPago?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Fecha-hora en la que se solicito la entidad Orden Compra */
+  fechaSolicitud: Scalars[&#x27;Date&#x27;];
+  /** UUID de la entidad Orden Compra */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Descripcion del motivo por el cual la entidad Orden Compra ha sido cancelada */
+  motivoCancelada?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Descripcion del motivo por el cual la entidad Orden Compra ha sido devuelta */
+  motivoDevuelta?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Numero de referencia del pago que se hizo de la entidad Orden Compra */
+  noReferencia?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Informacion del Proveedor a la cual pertenece la entidad Orden Compra */
+  proveedor: Proveedor;
+};
+
+/** Objecto que contiene los campos que representan a la entidad Permiso */
+export type Permiso &#x3D; {
+  __typename?: &#x27;Permiso&#x27;;
+  /** Informacion del Acceso al cual pertenece la entidad Permiso */
+  acceso: Acceso;
+  /** UUID de la entidad Permiso */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Permiso */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Informacion del Rol al cual pertenece la entidad Permiso */
+  rol: Rol;
+  /** Campo que indica el valor de al entidad Permiso, es decir, si el usuario al cual pertenece tiene dicho permiso o no */
+  valor: Scalars[&#x27;Boolean&#x27;];
+};
+
+/** Objeto que contiene los campos que representan a la entidad PermisosUsuarioResponse */
+export type PermisoUsuarioResponse &#x3D; {
+  __typename?: &#x27;PermisoUsuarioResponse&#x27;;
+  /** Nombre del Acceso al cual pertenece la entidad PermisoUsuarioResponse */
+  acceso: Scalars[&#x27;String&#x27;];
+  /** UUID de la entidad PermisoUsuarioResponse */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre del Menu al cual pertenece la entidad PermisoUsuarioResponse */
+  menu: Scalars[&#x27;String&#x27;];
+  /** Nombre de la entidad PermisoUsuarioResponse */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Indica si el usuario tiene permiso o no de acceder a la caracteristica que representa el permiso */
+  valor: Scalars[&#x27;Boolean&#x27;];
+};
+
+/** Objeto que contiene los campos que representan a una entidad Proveedor */
+export type Proveedor &#x3D; {
+  __typename?: &#x27;Proveedor&#x27;;
+  /** Indica si la entidad Proveedor esta activa, es decir, si ya se registro su eliminacion */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** Apellido materno del contacto de la entidad Proveedor */
+  apellidoMContacto: Scalars[&#x27;String&#x27;];
+  /** Apellido paterno del contacto de la entidad Proveedor */
+  apellidoPContacto: Scalars[&#x27;String&#x27;];
+  /** Numero de dias que se tiene para pagar la deuda antes de empezar a generar intereces de la entidad Proveedor */
+  diasCredito: Scalars[&#x27;Int&#x27;];
+  /** Informacion de la Direccion Proveedor que pertenece a la entidad Proveedor */
+  direccionProveedor: DireccionProveedor;
+  /** Email de la entidad Proveedor */
+  email: Scalars[&#x27;String&#x27;];
+  /** UUID de la entidad Proveedor */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre comercial de la entidad Proveedor */
+  nombreComercial: Scalars[&#x27;String&#x27;];
+  /** Nombre(s) del contacto de la entidad Proveedor */
+  nombreContacto: Scalars[&#x27;String&#x27;];
+  /** Nombre con el cual esta legalmente registrada la entidad Proveedor */
+  razonSocial: Scalars[&#x27;String&#x27;];
+  /** RFC de la entidad Proveedor */
+  rfc: Scalars[&#x27;String&#x27;];
+  /** Numero telefonico de la entidad Proveedor */
+  telefono: Scalars[&#x27;String&#x27;];
+};
+
+export type Puesto &#x3D; {
+  __typename?: &#x27;Puesto&#x27;;
+  /** Indica si al entidad Puesto esta activa */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Puesto */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Informacion del Rol al que pertenece la entidad Puesto */
+  rol: Rol;
+};
+
+export type Query &#x3D; {
+  __typename?: &#x27;Query&#x27;;
+  alimento: Alimento;
+  alimentos: Array&lt;Alimento&gt;;
+  alimentosComanda: AlimentoComanda;
+  alimentosComandas: Array&lt;AlimentoComanda&gt;;
+  almacen: Almacen;
+  almacenes: Array&lt;Almacen&gt;;
+  articuloRs: ArticuloRs;
+  articulosAlmacenes: Array&lt;ArticuloAlmacen&gt;;
+  articulosComanda: ArticuloComanda;
+  articulosComandas: Array&lt;ArticuloComanda&gt;;
+  articulosRs: Array&lt;ArticuloRs&gt;;
+  categoriaArticuloRs: CategoriaArticuloRs;
+  categoriasArticulosRs: Array&lt;CategoriaArticuloRs&gt;;
+  comanda: Comanda;
+  comandas: Array&lt;Comanda&gt;;
+  direccionProveedor: DireccionProveedor;
+  direccionesProveedores: Array&lt;DireccionProveedor&gt;;
+  empleado: Empleado;
+  empleados: Array&lt;Empleado&gt;;
+  extras: Array&lt;Extra&gt;;
+  /** Consulta la información de la entidad Habitacion que coincida con los argumentos de busqueda */
+  habitacion: Habitacion;
+  /** Consulta la informacion de todas la entidades de Habitacion que coincidan con los argumentos de busqueda */
+  habitaciones: Array&lt;Habitacion&gt;;
+  ordenCompra: OrdenCompra;
+  ordenesCompras: Array&lt;OrdenCompra&gt;;
+  /** Query que obtiene una entidad Permiso que cumpla con los argumentos solicitados */
+  permiso: Permiso;
+  /** Query que obtiene una lista de entidades Permiso que cumplan con los argumentos de busqueda */
+  permisos: Array&lt;Permiso&gt;;
+  proveedor: Proveedor;
+  proveedores: Array&lt;Proveedor&gt;;
+  puesto: Puesto;
+  puestos: Array&lt;Puesto&gt;;
+  /** Query que obtiene una entidad Renta que cumpla con los argumentos de busqueda */
+  renta: Renta;
+  /** Query que obtiene una lista de entidades Renta que cumplan con los argumentos de busqueda */
+  rentas: Array&lt;Renta&gt;;
+  /** Query que obtiene una entidad Rol que cumpla con los argumentos de busqueda */
+  rol: Rol;
+  /** Query que obtiene una lista de entidades Rol que cumplan con los argumentos de busqueda */
+  roles: Array&lt;Rol&gt;;
+  subcategoriaArticuloRs: SubCategoriaArticuloRs;
+  subcategoriasArticulosRs: Array&lt;SubCategoriaArticuloRs&gt;;
+  /** Query que obtiene una entidad Tarifa que cumpla con los argumentos de busqueda */
+  tarifa: Tarifa;
+  /** Query que obtiene una lista de entidades Tarifa que cumplan con los argumentos de busqueda */
+  tarifas: Array&lt;Tarifa&gt;;
+  /** Query que obtiene una entidad TipoHabitacion que coincida con los argumentos de busqueda */
+  tipo_habitacion: TipoHabitacion;
+  /** Query que obtiene una lista de entidades TipoHabitacion que cumplan con los argumentos de busqueda */
+  tipos_habitaciones: Array&lt;TipoHabitacion&gt;;
+  trago: Trago;
+  tragos: Array&lt;Trago&gt;;
+  tragosComanda: TragoComanda;
+  tragosComandas: Array&lt;TragoComanda&gt;;
+  unidadMedida: UnidadMedida;
+  unidadesMedida: Array&lt;UnidadMedida&gt;;
+  /** Query que obtiene una entidad UsuarioResponse que cumpla con los argumentos de busqueda */
+  usuario: UsuarioResponse;
+  /** Query que obtiene una lista de entidades UsuarioResponse que cumpla con los argumentos de busqueda */
+  usuarios: Array&lt;UsuarioResponse&gt;;
+};
+
+
+export type QueryAlimentoArgs &#x3D; {
+  id_o_nombre: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryAlimentosComandaArgs &#x3D; {
+  id: Scalars[&#x27;Int&#x27;];
+};
+
+
+export type QueryAlmacenArgs &#x3D; {
+  id_or_name: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryArticuloRsArgs &#x3D; {
+  id: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryArticulosAlmacenesArgs &#x3D; {
+  almacenId?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+  articuloRsId?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+};
+
+
+export type QueryArticulosComandaArgs &#x3D; {
+  id: Scalars[&#x27;Int&#x27;];
+};
+
+
+export type QueryArticulosRsArgs &#x3D; {
+  activo?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  costo?: InputMaybe&lt;Scalars[&#x27;Float&#x27;]&gt;;
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  precio?: InputMaybe&lt;Scalars[&#x27;Float&#x27;]&gt;;
+  subCategoriaArticuloRsId?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  unidadMedidaId?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+
+export type QueryCategoriaArticuloRsArgs &#x3D; {
+  id: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryCategoriasArticulosRsArgs &#x3D; {
+  activo?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+
+export type QueryComandaArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type QueryDireccionProveedorArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type QueryDireccionesProveedoresArgs &#x3D; {
+  activo: Scalars[&#x27;Boolean&#x27;];
+  calle: Scalars[&#x27;String&#x27;];
+  ciudad: Scalars[&#x27;String&#x27;];
+  colonia: Scalars[&#x27;String&#x27;];
+  cp: Scalars[&#x27;Int&#x27;];
+  estado: Scalars[&#x27;String&#x27;];
+  numeroExterior: Scalars[&#x27;Int&#x27;];
+  numeroInterior: Scalars[&#x27;Int&#x27;];
+};
+
+
+export type QueryEmpleadoArgs &#x3D; {
+  apellidoMaterno?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  apellidoPaterno?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  enTurno?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  id?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+
+export type QueryEmpleadosArgs &#x3D; {
+  apellidoMaterno?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  apellidoPaterno?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  enTurno?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  puesto?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+
+export type QueryHabitacionArgs &#x3D; {
+  id_o_numero: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryHabitacionesArgs &#x3D; {
+  activo?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+};
+
+
+export type QueryOrdenCompraArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type QueryPermisoArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type QueryPermisosArgs &#x3D; {
+  limit?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  ofset?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+};
+
+
+export type QueryProveedorArgs &#x3D; {
+  id: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryProveedoresArgs &#x3D; {
+  activo?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  apellidoMContacto?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  apellidoPContacto?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  diasCredito?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  email?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  nombreComercial?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  nombreContacto?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  razonSocial?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  rfc?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  telefono?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+
+export type QueryPuestoArgs &#x3D; {
+  id_or_nombre: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryRentaArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type QueryRentasArgs &#x3D; {
+  finalizada?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+};
+
+
+export type QueryRolArgs &#x3D; {
+  id_o_nombre: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QuerySubcategoriaArticuloRsArgs &#x3D; {
+  activo?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  id: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QuerySubcategoriasArticulosRsArgs &#x3D; {
+  categoriaArticuloRsId?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+  editable?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+
+export type QueryTarifaArgs &#x3D; {
+  id_o_nombre: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryTarifasArgs &#x3D; {
+  activo?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+};
+
+
+export type QueryTipo_HabitacionArgs &#x3D; {
+  id_o_nombre: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryTipos_HabitacionesArgs &#x3D; {
+  activo?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+};
+
+
+export type QueryTragoArgs &#x3D; {
+  id_o_nombre: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type QueryTragosComandaArgs &#x3D; {
+  id: Scalars[&#x27;Int&#x27;];
+};
+
+
+export type QueryUnidadMedidaArgs &#x3D; {
+  id: Scalars[&#x27;String&#x27;];
+};
+
+
+export type QueryUnidadesMedidaArgs &#x3D; {
+  activo?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  unidad?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+
+export type QueryUsuarioArgs &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+};
+
+
+export type QueryUsuariosArgs &#x3D; {
+  limit?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  ofset?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+};
+
+/** Objeto que contiene los campos que representan a la entidad Renta */
+export type Renta &#x3D; {
+  __typename?: &#x27;Renta&#x27;;
+  comandas: Array&lt;Comanda&gt;;
+  extras: Array&lt;Extra&gt;;
+  /** Fecha-hora en la que finalizara la renta de la habitacion */
+  fechaFin: Scalars[&#x27;Date&#x27;];
+  /** Fecha-hora en la que inicio la renta de la habitacion */
+  fechaInicio: Scalars[&#x27;Date&#x27;];
+  /** Fecha-hora en la que se registro la entrada del cliente a la habitacion */
+  fechaRegistro: Scalars[&#x27;Date&#x27;];
+  /** Fecha-hora en la que se registro la salida del cliente de la habitacion. Puede ser nulo */
+  fechaSalida?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Informacion de la Habitacion a la cual pertenece la entidad Renta */
+  habitacion: Habitacion;
+  /** Numero de horas extra solicitadas */
+  horasExtra: Scalars[&#x27;Int&#x27;];
+  /** Numeros de hospedajes extra solicitados */
+  hospedajesExtra: Scalars[&#x27;Int&#x27;];
+  /** UUID de la entidad Renta */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Descripcion del motivo por el cual la renta se cancelo */
+  motivoCancelacion?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** No se xd */
+  numeroServicio: Scalars[&#x27;String&#x27;];
+  /** Numero de personas extra solicitadas */
+  personasExtra: Scalars[&#x27;Int&#x27;];
+  /** Informacion de la Tarifa a la cual pertenece la entidad Renta */
+  tarifa: Tarifa;
+  /** Monto total de la renta de la habitacion, esto incluye el costo de la habitacion y los diferentes extras que se hayan solicitado */
+  total: Scalars[&#x27;Int&#x27;];
+};
+
+
+/** Objeto que contiene los campos que representan a la entidad Renta */
+export type RentaComandasArgs &#x3D; {
+  concluida?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+};
+
+
+/** Objeto que contiene los campos que representan a la entidad Renta */
+export type RentaExtrasArgs &#x3D; {
+  concluida?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+};
+
+/** Objeto que contiene los campos que representan a la entidad Rol */
+export type Rol &#x3D; {
+  __typename?: &#x27;Rol&#x27;;
+  /** Area de la entidad Puesto */
+  area: AreasPuesto;
+  /** UUID de la entidad Rol */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Rol */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+/** Objeto que contiene los campos que representan a la entidad RolUsuarioResponse */
+export type RolUsuarioResponse &#x3D; {
+  __typename?: &#x27;RolUsuarioResponse&#x27;;
+  /** UUID de la entidad RolUsuarioResponse */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad RolUsuarioResponse */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Lista de permisos de la entidad RolUsuarioResponse */
+  permisos: Array&lt;PermisoUsuarioResponse&gt;;
+};
+
+export type SubCategoriaArticuloRs &#x3D; {
+  __typename?: &#x27;SubCategoriaArticuloRs&#x27;;
+  /** Campo que nos indica si la entidad Sub Categoria Articulo Rs se encuentra activa */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** Campo que nos indica si la entidad Sub Categoria Articulo Rs ha sido eliminada */
+  categoriaArticuloRs: CategoriaArticuloRs;
+  /** Campo que nos indica si la entidad Sub Categoria Articulo Rs se puede editar */
+  editable: Scalars[&#x27;Boolean&#x27;];
+  /** UUID de la entidad SubCategoria Articulos Rs */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Sub Categoria Articulo Rs */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+export type Subscription &#x3D; {
+  __typename?: &#x27;Subscription&#x27;;
+  /** Escucha los cambios que afecten a las entidades Comanda y regresa su informacion actualizada */
+  checkComandas: Array&lt;Comanda&gt;;
+  /** Escucha los cambios que afecten a las entidades Habitacion y regresa la informacion de las habitaciones actualizada */
+  checkHabitaciones: Array&lt;Habitacion&gt;;
+};
+
+/** Objecto que contiene los campos que representan a la entidad Tarifa */
+export type Tarifa &#x3D; {
+  __typename?: &#x27;Tarifa&#x27;;
+  /** Campo que inidica si la entidad Tarifa se encuentra actualmente activa, es decir, si ya se registro su eliminacion */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** Costo de la renta de la habitacion */
+  costoHabitacion: Scalars[&#x27;Int&#x27;];
+  /** Costo de una hora extra */
+  costoHoraExtra: Scalars[&#x27;Int&#x27;];
+  /** Costo de un hospedaje extra */
+  costoHospedajeExtra: Scalars[&#x27;Int&#x27;];
+  /** Costo de una persona extra */
+  costoPersonaExtra: Scalars[&#x27;Int&#x27;];
+  /** Indica si la tarifa aplica en los dias domingo */
+  domingo: Scalars[&#x27;Boolean&#x27;];
+  /** Duracion en horas de la renta de la habitacion */
+  duracion: Scalars[&#x27;Int&#x27;];
+  /** Fecha en la que termine la aplicacion de la Tarifa */
+  fechaFinal: Scalars[&#x27;Date&#x27;];
+  /** Fecha a partir de la cual se empieza a aplicar la Tarifa */
+  fechaInicio: Scalars[&#x27;Date&#x27;];
+  /** Hora en la que finaliza la aplicacion de la tarifa. Formato HH:mm:ss */
+  horaFinal: Scalars[&#x27;String&#x27;];
+  /** Hora en la que se empieza a aplicar la tarifa. Formato HH:mm:ss */
+  horaInicio: Scalars[&#x27;String&#x27;];
+  /** Numero maximo de horas extra que se pueden solicitar */
+  horasExtraMax: Scalars[&#x27;Int&#x27;];
+  /** Numero maximo de hospedajes extra que se pueden solicitar */
+  hospedajesExtraMax: Scalars[&#x27;Int&#x27;];
+  /** UUID de la entidad Tarifa */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Indica si la tarifa aplica en los dias jueves */
+  jueves: Scalars[&#x27;Boolean&#x27;];
+  /** Indica si la tarifa aplica en los dias lunes */
+  lunes: Scalars[&#x27;Boolean&#x27;];
+  /** Indica si la tarifa aplica en los dias martes */
+  martes: Scalars[&#x27;Boolean&#x27;];
+  /** Indica si la tarifa aplica en los dias miercoles */
+  miercoles: Scalars[&#x27;Boolean&#x27;];
+  /** Nombre de la entidad Tarifa */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Numero maximo de personas extra que se pueden solicitar */
+  personasExtraMax: Scalars[&#x27;Int&#x27;];
+  /** Indica si la tarifa aplica en los dias sabado */
+  sabado: Scalars[&#x27;Boolean&#x27;];
+  /** Informacion del Tipo de Habitacion a la cual pertenece la entidad Tarifa */
+  tipoHabitacion: TipoHabitacion;
+  /** Indica si la tarifa aplica en los dias viernes */
+  viernes: Scalars[&#x27;Boolean&#x27;];
+};
+
+/** Objeto que contiene los campos que representan a la entidad Tipo Habitacion */
+export type TipoHabitacion &#x3D; {
+  __typename?: &#x27;TipoHabitacion&#x27;;
+  /** Indica si la entidad Tipo Habitacion se encuentra activa, es decir, si ya se ha registrado su eliminacion */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** Clave que representa a la entidad Tipo Habitacion */
+  clave: Scalars[&#x27;String&#x27;];
+  /** Descripcion de la entidad Tipo Habitacion */
+  descripcion: Scalars[&#x27;String&#x27;];
+  /** UUID de la entidad Tipo Habitacion */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Numero maximo de reservaciones que se le pueden asignar a la habitacion */
+  maximoReservaciones: Scalars[&#x27;Int&#x27;];
+  /** Promedio de minutos que una habitacion tarda en relizar el proceso de entrada */
+  minutosEntrada: Scalars[&#x27;Int&#x27;];
+  /** Promedio de minutos que una habitacion tarda en realizar el proceso de Limpieza estando medio sucia */
+  minutosMediaSucia: Scalars[&#x27;Int&#x27;];
+  /** Promedio de minutos que una habitacion tarda en realizar el proceso de Limpieza estando sucia */
+  minutosSucia: Scalars[&#x27;Int&#x27;];
+  /** Nombre de la entidad Tipo Habitacion */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+export type Trago &#x3D; {
+  __typename?: &#x27;Trago&#x27;;
+  activo: Scalars[&#x27;Boolean&#x27;];
+  descripcion?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** UUID de la entidad Trago */
+  id: Scalars[&#x27;ID&#x27;];
+  nombre: Scalars[&#x27;String&#x27;];
+  precio: Scalars[&#x27;Float&#x27;];
+};
+
+export type TragoComanda &#x3D; {
+  __typename?: &#x27;TragoComanda&#x27;;
+  cantidad: Scalars[&#x27;Int&#x27;];
+  /** Informacion de la Comanda a la cual pertenece la entidad TragoComanda */
+  comanda: Comanda;
+  comentario?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  cortesia: Scalars[&#x27;Boolean&#x27;];
+  /** Fecha-hora en la que se termino la preparación de la entidad TragoComanda */
+  fechaPorEntregar?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Informacion del Trago a la cual pertenece la entidad TragoComanda */
+  trago: Trago;
+};
+
+export type TragoElementInput &#x3D; {
+  cantidad: Scalars[&#x27;Int&#x27;];
+  comentario?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  cortesia: Scalars[&#x27;Boolean&#x27;];
+  tragoId: Scalars[&#x27;ID&#x27;];
+};
+
+export type TragosComandaResponse &#x3D; {
+  __typename?: &#x27;TragosComandaResponse&#x27;;
+  cantidad: Scalars[&#x27;Int&#x27;];
+  comentario?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  cortesia: Scalars[&#x27;Boolean&#x27;];
+  /** Fecha-hora en la que se termino la preparación de la entidad TragoComanda */
+  fechaPorEntregar?: Maybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Informacion del Trago a la cual pertenece la entidad TragoComanda */
+  trago: Trago;
+};
+
+/** Objeto que contiene los campos que representan a la entidad Unidad Medida */
+export type UnidadMedida &#x3D; {
+  __typename?: &#x27;UnidadMedida&#x27;;
+  /** Campo que nos indica si la entidad Unidad Medida se encuentra activa */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** UUID de la entidad Unidad Medida */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Unidad de la entidad Unidad Medida */
+  unidad: Scalars[&#x27;String&#x27;];
+};
+
+export type UpdateAlimentoInput &#x3D; {
+  descripcion?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  id: Scalars[&#x27;ID&#x27;];
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  precio?: InputMaybe&lt;Scalars[&#x27;Float&#x27;]&gt;;
+};
+
+export type UpdateAlmacenInput &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+  menu?: InputMaybe&lt;MenusRoomService&gt;;
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+export type UpdateArticuloRsInput &#x3D; {
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Articulo Rs */
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Precio de la entidad Articulo Rs */
+  precio?: InputMaybe&lt;Scalars[&#x27;Float&#x27;]&gt;;
+  /** UUID de la SubCategoria Articulo Rs a la pertenece la entidad Articulo Rs */
+  subCategoriaArticuloRsId?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** UUID de la Unidad Medida al que pertenece la entidad Articulo Rs */
+  unidadMedidaId?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+export type UpdateCategoriaArticuloRsInput &#x3D; {
+  /** UUID de la entidad Categoria Articulo Rs */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Categoria Articulo Rs */
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+export type UpdateComandaInput &#x3D; {
+  alimentos: Array&lt;AlimentoElementInput&gt;;
+  bebidas: BebidasElementInput;
+  id: Scalars[&#x27;String&#x27;];
+  otros: Array&lt;ArticuloElementInput&gt;;
+  sexSpa: Array&lt;ArticuloElementInput&gt;;
+};
+
+/** Objeto que contiene todos los campos que se pueden editar directamente de la entidad Direccion Proveedor */
+export type UpdateDireccionProveedorInput &#x3D; {
+  /** Nombre de la calle de la entidad Direccion Proveedor */
+  calle?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Nombre de la ciudad de la entidad Direccion Proveedor */
+  ciudad?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Nombre de la colonia de la entidad Direccion Proveedor */
+  colonia?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Codigo postal de la entidad Direccion Proveedor */
+  cp?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Nombre del estado de la entidad Direccion Proveedor */
+  estado?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** UUID de la entidad Direccion Proveedor */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Numero exterior de la entidad Direccion Proveedor */
+  numeroExterior?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Numero interior de la entidad Direccion Proveedor */
+  numeroInterior?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+};
+
+export type UpdateEmpleadoInput &#x3D; {
+  /** Apellido Materno de la entidad Empleado */
+  apellidoMaterno?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Apellido Paterno de la entidad Empleado */
+  apellidoPaterno?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Fecha en al que se registro la entidad Empleado */
+  fechaIngreso?: InputMaybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  id: Scalars[&#x27;Int&#x27;];
+  /** Nombre de la entidad Empleado */
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** UUID del Puesto al que pertenece la entidad Empleado */
+  puestoId?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Telefono de la entidad Empleado */
+  telefono?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+/** Campos que pueden ser directamente modificados de la entidad Habitacion */
+export type UpdateHabitacionInput &#x3D; {
+  /** UUID de la entidad Habitacion */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Numero de la habitacion */
+  numeroHabitacion?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Piso en el que se encuentra la habitacion */
+  piso?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Id del Tipo de Habitacion a la que pertenece la habitacion */
+  tipoHabitacionId?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+};
+
+/** Objeto que contiene todos los campos que se pueden editar directamente de la entidad Orden Compra */
+export type UpdateOrdenCompraInput &#x3D; {
+  /** UUID del Almacen al cual pertenece la entidad Orden Compra */
+  almacenId?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+  /** UUID del Articulo Rs al cual pertenece la entidad Orden Compra */
+  articuloRsId?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+  /** Cantidad de la entidad Orden Compra */
+  cantidad?: InputMaybe&lt;Scalars[&#x27;Float&#x27;]&gt;;
+  /** Costo de la entidad Orden Compra */
+  costo?: InputMaybe&lt;Scalars[&#x27;Float&#x27;]&gt;;
+  /** UUID de la entidad Orden Compra */
+  id: Scalars[&#x27;ID&#x27;];
+  /** UUID del Proveedor al cual pertenece la entidad Orden Compra */
+  proveedorId?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+};
+
+export type UpdateProveedorInput &#x3D; {
+  /** Apellido materno del contacto de la entidad Proveedor */
+  apellidoMContacto?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Apellido paterno del contacto de la entidad Proveedor */
+  apellidoPContacto?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Numero de dias que se tiene para pagar la deuda antes de empezar a generar intereces de la entidad Proveedor */
+  diasCredito?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Objeto que contiene los campos necesarios para crear una entidad DireccionProveedor */
+  direccionProveedor?: InputMaybe&lt;CreateDireccionProveedorInput&gt;;
+  /** Email de la entidad Proveedor */
+  email?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre comercial de la entidad Proveedor */
+  nombreComercial?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Nombre(s) del contacto de la entidad Proveedor */
+  nombreContacto?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Nombre con el cual esta legalmente registrada la entidad Proveedor */
+  razonSocial?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** RFC de la entidad Proveedor */
+  rfc?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Numero telefonico de la entidad Proveedor */
+  telefono?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+export type UpdatePuestoInput &#x3D; {
+  id: Scalars[&#x27;Int&#x27;];
+  /** Nombre de la entidad Puesto */
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** UUID del Rol al que pertenece la entidad Puesto */
+  rolId?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+export type UpdateSubcategoriaArticuloRsInput &#x3D; {
+  categoriaArticuloRsId?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+  editable?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad SubCategoria Articulo Rs */
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+/** Objecto que contiene todos los campos que se pueden editar directamente de la entidad Tarifa */
+export type UpdateTarifaInput &#x3D; {
+  /** Costo de la renta de la habitacion */
+  costoHabitacion?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Costo de una hora extra */
+  costoHoraExtra?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Costo de un hospedaje extra */
+  costoHospedajeExtra?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Costo de una persona extra */
+  costoPersonaExtra?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Indica si la tarifa aplica en los dias domingo */
+  domingo?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  /** Numero de horas que dura la renta de una habitacion de la entidad Tarifa */
+  duracion?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Fecha en la que termine la aplicacion de la Tarifa */
+  fechaFinal?: InputMaybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Fecha a partir de la cual se empieza a aplicar la Tarifa */
+  fechaInicio?: InputMaybe&lt;Scalars[&#x27;Date&#x27;]&gt;;
+  /** Hora en la que finaliza la aplicacion de la Tarifa. Formato HH:mm */
+  horaFinal?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Hora a partir de la cual empieza a aplicar la entidad Tarifa. Formato HH:mm:ss */
+  horaInicio?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Numero maximo de horas extra que se pueden solicitar */
+  horasExtraMax?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Numero maximo de hospedajes extra que se pueden solicitar */
+  hospedajesExtraMax?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** UUID de la entidad Tarifa */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Indica si la tarifa aplica en los dias jueves */
+  jueves?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  /** Indica si la tarifa aplica en los dias lunes */
+  lunes?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  /** Indica si la tarifa aplica en los dias martes */
+  martes?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  /** Indica si la tarifa aplica en los dias miercoles */
+  miercoles?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  /** Nombre de la entidad Tarifa */
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Numero maximo de personas extra que se pueden solicitar */
+  personasExtraMax?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Indica si la tarifa aplica en los dias sabado */
+  sabado?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  /** UUID del Tipo de Habitacion a la cual pertenece la entidad Tarifa */
+  tipoHabitacionId?: InputMaybe&lt;Scalars[&#x27;ID&#x27;]&gt;;
+  /** Indica si la tarifa aplica en los dias viernes */
+  viernes?: InputMaybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+};
+
+/** Objecto que contiene todos los campos que se pueden editar directamente de la entidad Tipo Habitacion */
+export type UpdateTipoHabitacionInput &#x3D; {
+  /** Clave que representa a la entidad Tipo Habitacion */
+  clave?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** Descripcion de la entidad Tipo Habitacion */
+  descripcion?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  /** UUID de la entidad Tipo Habitacion */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Numero maximo de reservaciones que se le pueden asignar a la habitacion */
+  maximoReservaciones?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Promedio de minutos que una habitacion tarda en relizar el proceso de entrada */
+  minutosEntrada?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Promedio de minutos que una habitacion tarda en realizar el proceso de Limpieza estando medio sucia */
+  minutosMediaSucia?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Promedio de minutos que una habitacion tarda en realizar el proceso de Limpieza estando sucia */
+  minutosSucia?: InputMaybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  /** Nombre de la entidad Tipo Habitacion */
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+export type UpdateTragoInput &#x3D; {
+  descripcion?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  id: Scalars[&#x27;ID&#x27;];
+  nombre?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  precio?: InputMaybe&lt;Scalars[&#x27;Float&#x27;]&gt;;
+};
+
+export type UpdateUnidadMedidaInput &#x3D; {
+  /** UUID de la entidad Unidad Medida */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Unidad de la entidad Unidad Medida */
+  unidad?: InputMaybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+};
+
+/** Objeto que contiene los campos que representan a la entidad Usuario */
+export type Usuario &#x3D; {
+  __typename?: &#x27;Usuario&#x27;;
+  /** Indica si la entidad Usuario se encuentra activa, es decir, si ya se a registrado su eliminacion */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** Informacion del Empleado al que pertenece la entidad Usuario */
+  empleado: Empleado;
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad Usuario */
+  nombre: Scalars[&#x27;String&#x27;];
+};
+
+/** Objecto que contiene los campos que representan a la entidad UsuarioResponse */
+export type UsuarioResponse &#x3D; {
+  __typename?: &#x27;UsuarioResponse&#x27;;
+  /** Indica si la entidad UsuarioResponse se encuentra activa, es decir, si ya se a registrado su eliminacion */
+  activo: Scalars[&#x27;Boolean&#x27;];
+  /** UUID de la entidad UsuarioResponse */
+  id: Scalars[&#x27;ID&#x27;];
+  /** Nombre de la entidad UsuarioResponse */
+  nombre: Scalars[&#x27;String&#x27;];
+  /** Informacion del RolUsuarioResponse al cual pertenece la entidad UsuarioResponse */
+  rol: RolUsuarioResponse;
+};
+
+export enum ValidEstadosHabitaciones {
+  Bloqueada &#x3D; &#x27;Bloqueada&#x27;,
+  ConDetalles &#x3D; &#x27;Con_Detalles&#x27;,
+  EnCreacion &#x3D; &#x27;En_Creacion&#x27;,
+  Libre &#x3D; &#x27;Libre&#x27;,
+  Limpieza &#x3D; &#x27;Limpieza&#x27;,
+  Mantenimiento &#x3D; &#x27;Mantenimiento&#x27;,
+  MediaSucia &#x3D; &#x27;Media_Sucia&#x27;,
+  Ocupada &#x3D; &#x27;Ocupada&#x27;,
+  PendienteCobro &#x3D; &#x27;Pendiente_Cobro&#x27;,
+  Preparada &#x3D; &#x27;Preparada&#x27;,
+  PreparadaReservada &#x3D; &#x27;Preparada_Reservada&#x27;,
+  Reservada &#x3D; &#x27;Reservada&#x27;,
+  RoomService &#x3D; &#x27;Room_Service&#x27;,
+  RoomServicePorPagar &#x3D; &#x27;Room_Service_Por_Pagar&#x27;,
+  Sucia &#x3D; &#x27;Sucia&#x27;,
+  Supervision &#x3D; &#x27;Supervision&#x27;,
+  SupervisionMantenimiento &#x3D; &#x27;Supervision_Mantenimiento&#x27;
+}
+
+export type CambiarEstadoMutationVariables &#x3D; Exact&lt;{
+  id: Scalars[&#x27;ID&#x27;];
+  estado: ValidEstadosHabitaciones;
+}&gt;;
+
+
+export type CambiarEstadoMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, cambiar_estado: string };
+
+export type CrearRentaMutationVariables &#x3D; Exact&lt;{
+  renta: CreateRentaInput;
+}&gt;;
+
+
+export type CrearRentaMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, crear_renta: string };
+
+export type CrearExtrasMutationVariables &#x3D; Exact&lt;{
+  extra: CreateExtraInput;
+}&gt;;
+
+
+export type CrearExtrasMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, crear_extra: string };
+
+export type SalidaHabitacionMutationVariables &#x3D; Exact&lt;{
+  id: Scalars[&#x27;ID&#x27;];
+}&gt;;
+
+
+export type SalidaHabitacionMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, liberar_habitacion: string };
+
+export type PagarExtraMutationVariables &#x3D; Exact&lt;{
+  id: Scalars[&#x27;ID&#x27;];
+}&gt;;
+
+
+export type PagarExtraMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, pagar_extra: string };
+
+export type EntregarComandaMutationVariables &#x3D; Exact&lt;{
+  id: Scalars[&#x27;ID&#x27;];
+}&gt;;
+
+
+export type EntregarComandaMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, entregar_comanda: string };
+
+export type PagarComandaMutationVariables &#x3D; Exact&lt;{
+  id: Scalars[&#x27;ID&#x27;];
+}&gt;;
+
+
+export type PagarComandaMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, pagar_comanda: string };
+
+export type LiberarBarrraMutationVariables &#x3D; Exact&lt;{
+  id: Scalars[&#x27;ID&#x27;];
+}&gt;;
+
+
+export type LiberarBarrraMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, liberar_barra: string };
+
+export type LiberarCocinaMutationVariables &#x3D; Exact&lt;{
+  id: Scalars[&#x27;ID&#x27;];
+}&gt;;
+
+
+export type LiberarCocinaMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, liberar_cocina: string };
+
+export type CancelarComandaMutationVariables &#x3D; Exact&lt;{
+  id: Scalars[&#x27;ID&#x27;];
+  motivo: Scalars[&#x27;String&#x27;];
+}&gt;;
+
+
+export type CancelarComandaMutation &#x3D; { __typename?: &#x27;Mutation&#x27;, cancelar_comanda: string };
+
+export type GetAllRoomsQueryVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type GetAllRoomsQuery &#x3D; { __typename?: &#x27;Query&#x27;, habitaciones: Array&lt;{ __typename?: &#x27;Habitacion&#x27;, id: string, numeroHabitacion: number, estado: ValidEstadosHabitaciones, tipoHabitacion: { __typename?: &#x27;TipoHabitacion&#x27;, nombre: string }, rentas: Array&lt;{ __typename?: &#x27;Renta&#x27;, id: string, fechaRegistro: any, fechaSalida?: any | null, fechaInicio: any, fechaFin: any, horasExtra: number, hospedajesExtra: number, personasExtra: number, extras: Array&lt;{ __typename?: &#x27;Extra&#x27;, fechaPago?: any | null, id: string }&gt;, tarifa: { __typename?: &#x27;Tarifa&#x27;, nombre: string, costoHabitacion: number, horasExtraMax: number, hospedajesExtraMax: number, personasExtraMax: number, costoPersonaExtra: number, costoHospedajeExtra: number, costoHoraExtra: number } }&gt; }&gt; };
+
+export type HabitacionQueryVariables &#x3D; Exact&lt;{
+  num: Scalars[&#x27;String&#x27;];
+}&gt;;
+
+
+export type HabitacionQuery &#x3D; { __typename?: &#x27;Query&#x27;, habitacion: { __typename?: &#x27;Habitacion&#x27;, id: string, numeroHabitacion: number, estado: ValidEstadosHabitaciones, tipoHabitacion: { __typename?: &#x27;TipoHabitacion&#x27;, id: string, nombre: string } } };
+
+export type HabitacionDetalladaQueryVariables &#x3D; Exact&lt;{
+  num: Scalars[&#x27;String&#x27;];
+}&gt;;
+
+
+export type HabitacionDetalladaQuery &#x3D; { __typename?: &#x27;Query&#x27;, habitacion: { __typename?: &#x27;Habitacion&#x27;, numeroHabitacion: number, estado: ValidEstadosHabitaciones, tipoHabitacion: { __typename?: &#x27;TipoHabitacion&#x27;, nombre: string }, rentas: Array&lt;{ __typename?: &#x27;Renta&#x27;, id: string, fechaRegistro: any, fechaSalida?: any | null, fechaInicio: any, fechaFin: any, horasExtra: number, hospedajesExtra: number, personasExtra: number, extras: Array&lt;{ __typename?: &#x27;Extra&#x27;, fechaPago?: any | null, id: string }&gt;, tarifa: { __typename?: &#x27;Tarifa&#x27;, nombre: string, costoHabitacion: number, horasExtraMax: number, hospedajesExtraMax: number, personasExtraMax: number, costoPersonaExtra: number, costoHospedajeExtra: number, costoHoraExtra: number } }&gt; } };
+
+export type GetHabitacionIdQueryVariables &#x3D; Exact&lt;{
+  num: Scalars[&#x27;String&#x27;];
+}&gt;;
+
+
+export type GetHabitacionIdQuery &#x3D; { __typename?: &#x27;Query&#x27;, habitacion: { __typename?: &#x27;Habitacion&#x27;, id: string } };
+
+export type TarifasQueryVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type TarifasQuery &#x3D; { __typename?: &#x27;Query&#x27;, tarifas: Array&lt;{ __typename?: &#x27;Tarifa&#x27;, nombre: string, id: string, costoHabitacion: number, costoHoraExtra: number, costoHospedajeExtra: number, costoPersonaExtra: number, horasExtraMax: number, hospedajesExtraMax: number, personasExtraMax: number, tipoHabitacion: { __typename?: &#x27;TipoHabitacion&#x27;, nombre: string } }&gt; };
+
+export type RentaQueryVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type RentaQuery &#x3D; { __typename?: &#x27;Query&#x27;, rentas: Array&lt;{ __typename?: &#x27;Renta&#x27;, id: string, horasExtra: number, hospedajesExtra: number, personasExtra: number, habitacion: { __typename?: &#x27;Habitacion&#x27;, numeroHabitacion: number, tipoHabitacion: { __typename?: &#x27;TipoHabitacion&#x27;, nombre: string } }, tarifa: { __typename?: &#x27;Tarifa&#x27;, nombre: string, horasExtraMax: number, hospedajesExtraMax: number, personasExtraMax: number, costoPersonaExtra: number, costoHospedajeExtra: number, costoHoraExtra: number } }&gt; };
+
+export type TiposHabitacionsesQueryVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type TiposHabitacionsesQuery &#x3D; { __typename?: &#x27;Query&#x27;, tipos_habitaciones: Array&lt;{ __typename?: &#x27;TipoHabitacion&#x27;, nombre: string }&gt; };
+
+export type GetExtrasQueryVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type GetExtrasQuery &#x3D; { __typename?: &#x27;Query&#x27;, extras: Array&lt;{ __typename?: &#x27;Extra&#x27;, id: string, horas: number, hospedajes: number, personas: number, renta: { __typename?: &#x27;Renta&#x27;, id: string, habitacion: { __typename?: &#x27;Habitacion&#x27;, numeroHabitacion: number } } }&gt; };
+
+export type GetComandasBarYCocinaQueryVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type GetComandasBarYCocinaQuery &#x3D; { __typename?: &#x27;Query&#x27;, comandas: Array&lt;{ __typename?: &#x27;Comanda&#x27;, id: string, fechaSolicitud: any, fechaCancelacion?: any | null, fechaEntrega?: any | null, fechaPago?: any | null, renta: { __typename?: &#x27;Renta&#x27;, habitacion: { __typename?: &#x27;Habitacion&#x27;, numeroHabitacion: number } }, articulosComanda: Array&lt;{ __typename?: &#x27;ArticulosComandaResponse&#x27;, cantidad: number, cortesia: boolean, almacen: { __typename?: &#x27;Almacen&#x27;, menu: MenusRoomService }, articuloRs: { __typename?: &#x27;ArticuloRs&#x27;, nombre: string, precio: number } }&gt;, alimentosComanda: Array&lt;{ __typename?: &#x27;AlimentosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, alimento: { __typename?: &#x27;Alimento&#x27;, nombre: string, precio: number } }&gt;, tragosComanda: Array&lt;{ __typename?: &#x27;TragosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, trago: { __typename?: &#x27;Trago&#x27;, nombre: string, precio: number } }&gt; }&gt; };
+
+export type GetArticulosTodoComandaQueryVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type GetArticulosTodoComandaQuery &#x3D; { __typename?: &#x27;Query&#x27;, alimentos: Array&lt;{ __typename?: &#x27;Alimento&#x27;, id: string, nombre: string, precio: number }&gt;, tragos: Array&lt;{ __typename?: &#x27;Trago&#x27;, id: string, nombre: string, precio: number }&gt;, almacenes: Array&lt;{ __typename?: &#x27;Almacen&#x27;, id: string, menu: MenusRoomService, articulosAlmacen: Array&lt;{ __typename?: &#x27;ArticulosAlmacenResponse&#x27;, articuloRs: { __typename?: &#x27;ArticuloRs&#x27;, nombre: string, id: string, precio: number } }&gt; }&gt; };
+
+export type GetAllComandasInfoQueryVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type GetAllComandasInfoQuery &#x3D; { __typename?: &#x27;Query&#x27;, comandas: Array&lt;{ __typename?: &#x27;Comanda&#x27;, id: string, fechaSolicitud: any, fechaCancelacion?: any | null, fechaEntrega?: any | null, fechaPago?: any | null, renta: { __typename?: &#x27;Renta&#x27;, habitacion: { __typename?: &#x27;Habitacion&#x27;, numeroHabitacion: number } }, articulosComanda: Array&lt;{ __typename?: &#x27;ArticulosComandaResponse&#x27;, cantidad: number, cortesia: boolean, almacen: { __typename?: &#x27;Almacen&#x27;, menu: MenusRoomService }, articuloRs: { __typename?: &#x27;ArticuloRs&#x27;, nombre: string, precio: number } }&gt;, alimentosComanda: Array&lt;{ __typename?: &#x27;AlimentosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, alimento: { __typename?: &#x27;Alimento&#x27;, nombre: string, precio: number } }&gt;, tragosComanda: Array&lt;{ __typename?: &#x27;TragosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, trago: { __typename?: &#x27;Trago&#x27;, nombre: string, precio: number } }&gt; }&gt; };
+
+export type SubscriptionHabitacionesSubscriptionVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type SubscriptionHabitacionesSubscription &#x3D; { __typename?: &#x27;Subscription&#x27;, checkHabitaciones: Array&lt;{ __typename?: &#x27;Habitacion&#x27;, id: string, numeroHabitacion: number, estado: ValidEstadosHabitaciones, tipoHabitacion: { __typename?: &#x27;TipoHabitacion&#x27;, nombre: string }, rentas: Array&lt;{ __typename?: &#x27;Renta&#x27;, id: string, fechaRegistro: any, fechaSalida?: any | null, fechaInicio: any, fechaFin: any, horasExtra: number, hospedajesExtra: number, personasExtra: number, extras: Array&lt;{ __typename?: &#x27;Extra&#x27;, fechaPago?: any | null, id: string }&gt;, tarifa: { __typename?: &#x27;Tarifa&#x27;, nombre: string, costoHabitacion: number, horasExtraMax: number, hospedajesExtraMax: number, personasExtraMax: number, costoPersonaExtra: number, costoHospedajeExtra: number, costoHoraExtra: number } }&gt; }&gt; };
+
+export type SubscriptionComandasSubscriptionVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type SubscriptionComandasSubscription &#x3D; { __typename?: &#x27;Subscription&#x27;, checkComandas: Array&lt;{ __typename?: &#x27;Comanda&#x27;, id: string, fechaSolicitud: any, fechaCancelacion?: any | null, fechaEntrega?: any | null, fechaPago?: any | null, renta: { __typename?: &#x27;Renta&#x27;, habitacion: { __typename?: &#x27;Habitacion&#x27;, numeroHabitacion: number } }, articulosComanda: Array&lt;{ __typename?: &#x27;ArticulosComandaResponse&#x27;, cantidad: number, cortesia: boolean, almacen: { __typename?: &#x27;Almacen&#x27;, menu: MenusRoomService }, articuloRs: { __typename?: &#x27;ArticuloRs&#x27;, nombre: string, precio: number } }&gt;, alimentosComanda: Array&lt;{ __typename?: &#x27;AlimentosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, alimento: { __typename?: &#x27;Alimento&#x27;, nombre: string, precio: number } }&gt;, tragosComanda: Array&lt;{ __typename?: &#x27;TragosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, trago: { __typename?: &#x27;Trago&#x27;, nombre: string, precio: number } }&gt; }&gt; };
+
+export type GetAllInfoComandasSuscripcionSubscriptionVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type GetAllInfoComandasSuscripcionSubscription &#x3D; { __typename?: &#x27;Subscription&#x27;, checkComandas: Array&lt;{ __typename?: &#x27;Comanda&#x27;, id: string, fechaSolicitud: any, fechaCancelacion?: any | null, fechaEntrega?: any | null, fechaPago?: any | null, renta: { __typename?: &#x27;Renta&#x27;, habitacion: { __typename?: &#x27;Habitacion&#x27;, numeroHabitacion: number } }, alimentosComanda: Array&lt;{ __typename?: &#x27;AlimentosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, alimento: { __typename?: &#x27;Alimento&#x27;, nombre: string, precio: number } }&gt;, tragosComanda: Array&lt;{ __typename?: &#x27;TragosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, trago: { __typename?: &#x27;Trago&#x27;, nombre: string, precio: number } }&gt; }&gt; };
+
+export type SubscriptionCocinaComandasSubscriptionVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type SubscriptionCocinaComandasSubscription &#x3D; { __typename?: &#x27;Subscription&#x27;, checkComandas: Array&lt;{ __typename?: &#x27;Comanda&#x27;, id: string, fechaSolicitud: any, fechaCancelacion?: any | null, fechaEntrega?: any | null, fechaPago?: any | null, renta: { __typename?: &#x27;Renta&#x27;, habitacion: { __typename?: &#x27;Habitacion&#x27;, numeroHabitacion: number } }, alimentosComanda: Array&lt;{ __typename?: &#x27;AlimentosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, alimento: { __typename?: &#x27;Alimento&#x27;, nombre: string, precio: number } }&gt; }&gt; };
+
+export type SubscriptionBarComandasSubscriptionVariables &#x3D; Exact&lt;{ [key: string]: never; }&gt;;
+
+
+export type SubscriptionBarComandasSubscription &#x3D; { __typename?: &#x27;Subscription&#x27;, checkComandas: Array&lt;{ __typename?: &#x27;Comanda&#x27;, id: string, fechaSolicitud: any, fechaCancelacion?: any | null, fechaEntrega?: any | null, fechaPago?: any | null, renta: { __typename?: &#x27;Renta&#x27;, habitacion: { __typename?: &#x27;Habitacion&#x27;, numeroHabitacion: number } }, tragosComanda: Array&lt;{ __typename?: &#x27;TragosComandaResponse&#x27;, cantidad: number, comentario?: string | null, fechaPorEntregar?: any | null, cortesia: boolean, trago: { __typename?: &#x27;Trago&#x27;, nombre: string, precio: number } }&gt; }&gt; };
+
+export const CambiarEstadoDocument &#x3D; gql&#x60;
+    mutation CambiarEstado($id: ID!, $estado: ValidEstadosHabitaciones!) {
+  cambiar_estado(id: $id, estado: $estado)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class CambiarEstadoGQL extends Apollo.Mutation&lt;CambiarEstadoMutation, CambiarEstadoMutationVariables&gt; {
+    override document &#x3D; CambiarEstadoDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const CrearRentaDocument &#x3D; gql&#x60;
+    mutation CrearRenta($renta: CreateRentaInput!) {
+  crear_renta(createRentaInput: $renta)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class CrearRentaGQL extends Apollo.Mutation&lt;CrearRentaMutation, CrearRentaMutationVariables&gt; {
+    override document &#x3D; CrearRentaDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const CrearExtrasDocument &#x3D; gql&#x60;
+    mutation CrearExtras($extra: CreateExtraInput!) {
+  crear_extra(createExtraInput: $extra)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class CrearExtrasGQL extends Apollo.Mutation&lt;CrearExtrasMutation, CrearExtrasMutationVariables&gt; {
+    override document &#x3D; CrearExtrasDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const SalidaHabitacionDocument &#x3D; gql&#x60;
+    mutation SalidaHabitacion($id: ID!) {
+  liberar_habitacion(id: $id)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class SalidaHabitacionGQL extends Apollo.Mutation&lt;SalidaHabitacionMutation, SalidaHabitacionMutationVariables&gt; {
+    override document &#x3D; SalidaHabitacionDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const PagarExtraDocument &#x3D; gql&#x60;
+    mutation PagarExtra($id: ID!) {
+  pagar_extra(id: $id)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class PagarExtraGQL extends Apollo.Mutation&lt;PagarExtraMutation, PagarExtraMutationVariables&gt; {
+    override document &#x3D; PagarExtraDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const EntregarComandaDocument &#x3D; gql&#x60;
+    mutation EntregarComanda($id: ID!) {
+  entregar_comanda(comandaId: $id)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class EntregarComandaGQL extends Apollo.Mutation&lt;EntregarComandaMutation, EntregarComandaMutationVariables&gt; {
+    override document &#x3D; EntregarComandaDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const PagarComandaDocument &#x3D; gql&#x60;
+    mutation PagarComanda($id: ID!) {
+  pagar_comanda(comandaId: $id)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class PagarComandaGQL extends Apollo.Mutation&lt;PagarComandaMutation, PagarComandaMutationVariables&gt; {
+    override document &#x3D; PagarComandaDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const LiberarBarrraDocument &#x3D; gql&#x60;
+    mutation LiberarBarrra($id: ID!) {
+  liberar_barra(comandaId: $id)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class LiberarBarrraGQL extends Apollo.Mutation&lt;LiberarBarrraMutation, LiberarBarrraMutationVariables&gt; {
+    override document &#x3D; LiberarBarrraDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const LiberarCocinaDocument &#x3D; gql&#x60;
+    mutation LiberarCocina($id: ID!) {
+  liberar_cocina(comandaId: $id)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class LiberarCocinaGQL extends Apollo.Mutation&lt;LiberarCocinaMutation, LiberarCocinaMutationVariables&gt; {
+    override document &#x3D; LiberarCocinaDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const CancelarComandaDocument &#x3D; gql&#x60;
+    mutation CancelarComanda($id: ID!, $motivo: String!) {
+  cancelar_comanda(id: $id, motivo: $motivo)
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class CancelarComandaGQL extends Apollo.Mutation&lt;CancelarComandaMutation, CancelarComandaMutationVariables&gt; {
+    override document &#x3D; CancelarComandaDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const GetAllRoomsDocument &#x3D; gql&#x60;
+    query getAllRooms {
+  habitaciones {
+    id
+    numeroHabitacion
+    tipoHabitacion {
+      nombre
+    }
+    estado
+    rentas(concluida: false) {
+      id
+      fechaRegistro
+      fechaSalida
+      fechaInicio
+      fechaFin
+      horasExtra
+      hospedajesExtra
+      personasExtra
+      extras {
+        fechaPago
+        id
+      }
+      tarifa {
+        nombre
+        costoHabitacion
+        horasExtraMax
+        hospedajesExtraMax
+        personasExtraMax
+        costoPersonaExtra
+        costoHospedajeExtra
+        costoHoraExtra
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class GetAllRoomsGQL extends Apollo.Query&lt;GetAllRoomsQuery, GetAllRoomsQueryVariables&gt; {
+    override document &#x3D; GetAllRoomsDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const HabitacionDocument &#x3D; gql&#x60;
+    query Habitacion($num: String!) {
+  habitacion(id_o_numero: $num) {
+    id
+    numeroHabitacion
+    tipoHabitacion {
+      id
+      nombre
+    }
+    estado
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class HabitacionGQL extends Apollo.Query&lt;HabitacionQuery, HabitacionQueryVariables&gt; {
+    override document &#x3D; HabitacionDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const HabitacionDetalladaDocument &#x3D; gql&#x60;
+    query HabitacionDetallada($num: String!) {
+  habitacion(id_o_numero: $num) {
+    numeroHabitacion
+    tipoHabitacion {
+      nombre
+    }
+    estado
+    rentas {
+      id
+      fechaRegistro
+      fechaSalida
+      fechaInicio
+      fechaFin
+      horasExtra
+      hospedajesExtra
+      personasExtra
+      extras {
+        fechaPago
+        id
+      }
+      tarifa {
+        nombre
+        costoHabitacion
+        horasExtraMax
+        hospedajesExtraMax
+        personasExtraMax
+        costoPersonaExtra
+        costoHospedajeExtra
+        costoHoraExtra
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class HabitacionDetalladaGQL extends Apollo.Query&lt;HabitacionDetalladaQuery, HabitacionDetalladaQueryVariables&gt; {
+    override document &#x3D; HabitacionDetalladaDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const GetHabitacionIdDocument &#x3D; gql&#x60;
+    query GetHabitacionId($num: String!) {
+  habitacion(id_o_numero: $num) {
+    id
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class GetHabitacionIdGQL extends Apollo.Query&lt;GetHabitacionIdQuery, GetHabitacionIdQueryVariables&gt; {
+    override document &#x3D; GetHabitacionIdDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const TarifasDocument &#x3D; gql&#x60;
+    query Tarifas {
+  tarifas {
+    nombre
+    id
+    costoHabitacion
+    costoHoraExtra
+    costoHospedajeExtra
+    costoPersonaExtra
+    horasExtraMax
+    hospedajesExtraMax
+    personasExtraMax
+    tipoHabitacion {
+      nombre
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class TarifasGQL extends Apollo.Query&lt;TarifasQuery, TarifasQueryVariables&gt; {
+    override document &#x3D; TarifasDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const RentaDocument &#x3D; gql&#x60;
+    query Renta {
+  rentas {
+    habitacion {
+      numeroHabitacion
+      tipoHabitacion {
+        nombre
+      }
+    }
+    tarifa {
+      nombre
+      horasExtraMax
+      hospedajesExtraMax
+      personasExtraMax
+      costoPersonaExtra
+      costoHospedajeExtra
+      costoHoraExtra
+    }
+    id
+    horasExtra
+    hospedajesExtra
+    personasExtra
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class RentaGQL extends Apollo.Query&lt;RentaQuery, RentaQueryVariables&gt; {
+    override document &#x3D; RentaDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const TiposHabitacionsesDocument &#x3D; gql&#x60;
+    query TiposHabitacionses {
+  tipos_habitaciones {
+    nombre
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class TiposHabitacionsesGQL extends Apollo.Query&lt;TiposHabitacionsesQuery, TiposHabitacionsesQueryVariables&gt; {
+    override document &#x3D; TiposHabitacionsesDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const GetExtrasDocument &#x3D; gql&#x60;
+    query GetExtras {
+  extras {
+    id
+    renta {
+      id
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    horas
+    hospedajes
+    personas
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class GetExtrasGQL extends Apollo.Query&lt;GetExtrasQuery, GetExtrasQueryVariables&gt; {
+    override document &#x3D; GetExtrasDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const GetComandasBarYCocinaDocument &#x3D; gql&#x60;
+    query GetComandasBarYCocina {
+  comandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    articulosComanda {
+      cantidad
+      cortesia
+      almacen {
+        menu
+      }
+      articuloRs {
+        nombre
+        precio
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class GetComandasBarYCocinaGQL extends Apollo.Query&lt;GetComandasBarYCocinaQuery, GetComandasBarYCocinaQueryVariables&gt; {
+    override document &#x3D; GetComandasBarYCocinaDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const GetArticulosTodoComandaDocument &#x3D; gql&#x60;
+    query GetArticulosTodoComanda {
+  alimentos {
+    id
+    nombre
+    precio
+  }
+  tragos {
+    id
+    nombre
+    precio
+  }
+  almacenes {
+    id
+    menu
+    articulosAlmacen {
+      articuloRs {
+        nombre
+        id
+        precio
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class GetArticulosTodoComandaGQL extends Apollo.Query&lt;GetArticulosTodoComandaQuery, GetArticulosTodoComandaQueryVariables&gt; {
+    override document &#x3D; GetArticulosTodoComandaDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const GetAllComandasInfoDocument &#x3D; gql&#x60;
+    query GetAllComandasInfo {
+  comandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    articulosComanda {
+      cantidad
+      cortesia
+      almacen {
+        menu
+      }
+      articuloRs {
+        nombre
+        precio
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class GetAllComandasInfoGQL extends Apollo.Query&lt;GetAllComandasInfoQuery, GetAllComandasInfoQueryVariables&gt; {
+    override document &#x3D; GetAllComandasInfoDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const SubscriptionHabitacionesDocument &#x3D; gql&#x60;
+    subscription SubscriptionHabitaciones {
+  checkHabitaciones {
+    id
+    numeroHabitacion
+    tipoHabitacion {
+      nombre
+    }
+    estado
+    rentas {
+      id
+      fechaRegistro
+      fechaSalida
+      fechaInicio
+      fechaFin
+      horasExtra
+      hospedajesExtra
+      personasExtra
+      extras {
+        fechaPago
+        id
+      }
+      tarifa {
+        nombre
+        costoHabitacion
+        horasExtraMax
+        hospedajesExtraMax
+        personasExtraMax
+        costoPersonaExtra
+        costoHospedajeExtra
+        costoHoraExtra
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class SubscriptionHabitacionesGQL extends Apollo.Subscription&lt;SubscriptionHabitacionesSubscription, SubscriptionHabitacionesSubscriptionVariables&gt; {
+    override document &#x3D; SubscriptionHabitacionesDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const SubscriptionComandasDocument &#x3D; gql&#x60;
+    subscription SubscriptionComandas {
+  checkComandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    articulosComanda {
+      cantidad
+      cortesia
+      almacen {
+        menu
+      }
+      articuloRs {
+        nombre
+        precio
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class SubscriptionComandasGQL extends Apollo.Subscription&lt;SubscriptionComandasSubscription, SubscriptionComandasSubscriptionVariables&gt; {
+    override document &#x3D; SubscriptionComandasDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const GetAllInfoComandasSuscripcionDocument &#x3D; gql&#x60;
+    subscription GetAllInfoComandasSuscripcion {
+  checkComandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class GetAllInfoComandasSuscripcionGQL extends Apollo.Subscription&lt;GetAllInfoComandasSuscripcionSubscription, GetAllInfoComandasSuscripcionSubscriptionVariables&gt; {
+    override document &#x3D; GetAllInfoComandasSuscripcionDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const SubscriptionCocinaComandasDocument &#x3D; gql&#x60;
+    subscription SubscriptionCocinaComandas {
+  checkComandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    alimentosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      alimento {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class SubscriptionCocinaComandasGQL extends Apollo.Subscription&lt;SubscriptionCocinaComandasSubscription, SubscriptionCocinaComandasSubscriptionVariables&gt; {
+    override document &#x3D; SubscriptionCocinaComandasDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const SubscriptionBarComandasDocument &#x3D; gql&#x60;
+    subscription SubscriptionBarComandas {
+  checkComandas {
+    id
+    fechaSolicitud
+    fechaCancelacion
+    fechaEntrega
+    fechaPago
+    renta {
+      habitacion {
+        numeroHabitacion
+      }
+    }
+    tragosComanda {
+      cantidad
+      comentario
+      fechaPorEntregar
+      cortesia
+      trago {
+        nombre
+        precio
+      }
+    }
+  }
+}
+    &#x60;;
+
+  @Injectable({
+    providedIn: &#x27;root&#x27;
+  })
+  export class SubscriptionBarComandasGQL extends Apollo.Subscription&lt;SubscriptionBarComandasSubscription, SubscriptionBarComandasSubscriptionVariables&gt; {
+    override document &#x3D; SubscriptionBarComandasDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'GetAllComandasInfoGQL.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1440 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  EditarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/tarifas/pages/editar/editar.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-editar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./editar.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./editar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#authMode" >authMode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#diasOptions" >diasOptions</a>
+                            </li>
+                            <li>
+                                <a href="#diasRef" >diasRef</a>
+                            </li>
+                            <li>
+                                <a href="#extrasOptions" >extrasOptions</a>
+                            </li>
+                            <li>
+                                <a href="#extrasOptionsToShow" >extrasOptionsToShow</a>
+                            </li>
+                            <li>
+                                <a href="#page" >page</a>
+                            </li>
+                            <li>
+                                <a href="#tarifaForm" >tarifaForm</a>
+                            </li>
+                            <li>
+                                <a href="#validaciones" >validaciones</a>
+                            </li>
+                            <li>
+                                <a href="#visible" >visible</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#actualizar" >actualizar</a>
+                            </li>
+                            <li>
+                                <a href="#actualizarAutenticado" >actualizarAutenticado</a>
+                            </li>
+                            <li>
+                                <a href="#changePage" >changePage</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onExtraChange" >onExtraChange</a>
+                            </li>
+                            <li>
+                                <a href="#salir" >salir</a>
+                            </li>
+                            <li>
+                                <a href="#selectDia" >selectDia</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(location: <a href="https://angular.io/api/common/Location" target="_blank">Location</a>, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, dialogService: DialogService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="54" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/Location" target="_blank" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="actualizar"></a>
+                    <span class="name">
+                        <span ><b>actualizar</b></span>
+                        <a href="#actualizar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>actualizar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="91"
+                            class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="actualizarAutenticado"></a>
+                    <span class="name">
+                        <span ><b>actualizarAutenticado</b></span>
+                        <a href="#actualizarAutenticado"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>actualizarAutenticado(confirmed: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="106"
+                            class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>confirmed</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changePage"></a>
+                    <span class="name">
+                        <span ><b>changePage</b></span>
+                        <a href="#changePage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changePage(undefined: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="71"
+                            class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="63"
+                            class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onExtraChange"></a>
+                    <span class="name">
+                        <span ><b>onExtraChange</b></span>
+                        <a href="#onExtraChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onExtraChange(extra: literal type, event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="75"
+                            class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>extra</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="salir"></a>
+                    <span class="name">
+                        <span ><b>salir</b></span>
+                        <a href="#salir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>salir()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="67"
+                            class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectDia"></a>
+                    <span class="name">
+                        <span ><b>selectDia</b></span>
+                        <a href="#selectDia"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectDia(dia: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="80"
+                            class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dia</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="authMode"></a>
+                    <span class="name">
+                        <span ><b>authMode</b></span>
+                        <a href="#authMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="diasOptions"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>diasOptions</b></span>
+                        <a href="#diasOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    &#x27;Lunes&#x27;,
+    &#x27;Martes&#x27;,
+    &#x27;Miércoles&#x27;,
+    &#x27;Jueves&#x27;,
+    &#x27;Viernes&#x27;,
+    &#x27;Sábado&#x27;,
+    &#x27;Domingo&#x27;,
+    &#x27;Todos&#x27;,
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="32" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="diasRef"></a>
+                    <span class="name">
+                        <span ><b>diasRef</b></span>
+                        <a href="#diasRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryList&lt;ElementRef&lt;HTMLSpanElement&gt;&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(&#x27;diasRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extrasOptions"></a>
+                    <span class="name">
+                        <span ><b>extrasOptions</b></span>
+                        <a href="#extrasOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[
+    {title: &#x27;Habitación&#x27;, isCurrency: true, value: 0},
+    {title: &#x27;Horas Extra&#x27;, isCurrency: true, value: 0},
+    {title: &#x27;Persona Extra&#x27;, isCurrency: true, value: 0},
+    {title: &#x27;Hospedaje Extra&#x27;, isCurrency: true, value: 0},
+    {title: &#x27;Lím. Persona Extra&#x27;, isCurrency: false, value: 0},
+    {title: &#x27;Lím. Horas Extra&#x27;, isCurrency: false, value: 0},
+    {title: &#x27;Lím. Hospedaje Extra&#x27;, isCurrency: false, value: 0},
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extrasOptionsToShow"></a>
+                    <span class="name">
+                        <span ><b>extrasOptionsToShow</b></span>
+                        <a href="#extrasOptionsToShow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="54" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="page"></a>
+                    <span class="name">
+                        <span ><b>page</b></span>
+                        <a href="#page"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tarifaForm"></a>
+                    <span class="name">
+                        <span ><b>tarifaForm</b></span>
+                        <a href="#tarifaForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>this.fb.group({
+    name: [&#x27;&#x27;, Validators.required],
+    duracion: [&#x27;&#x27;, Validators.required],
+    horario_inicio: [&#x27;&#x27;, Validators.required],
+    horario_fin: [&#x27;&#x27;, Validators.required],
+    fecha_inicio: [&#x27;&#x27;, Validators.required],
+    fecha_fin: [&#x27;&#x27;, Validators.required],
+    tipo_hab: [0, Validators.required],
+  })</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="43" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validaciones"></a>
+                    <span class="name">
+                        <span ><b>validaciones</b></span>
+                        <a href="#validaciones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new validaciones()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="visible"></a>
+                    <span class="name">
+                        <span ><b>visible</b></span>
+                        <a href="#visible"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/tarifas/pages/editar/editar.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Location } from &#x27;@angular/common&#x27;;
+import { Component, ElementRef, OnInit, QueryList, Renderer2, ViewChildren } from &#x27;@angular/core&#x27;;
+import { FormBuilder, Validators } from &#x27;@angular/forms&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { ConfimModalMessageComponent } from &#x27;src/app/core/components/confim-modal-message/confim-modal-message.component&#x27;;
+import { MessageModalAutoclosableComponent } from &#x27;src/app/core/components/message-modal-autoclosable/message-modal-autoclosable.component&#x27;;
+import { validaciones } from &#x27;src/app/core/formsControl/validaciones&#x27;;
+
+@Component({
+  selector: &#x27;app-editar&#x27;,
+  templateUrl: &#x27;./editar.component.html&#x27;,
+  styleUrls: [&#x27;./editar.component.scss&#x27;]
+})
+export class EditarComponent implements OnInit {
+  visible &#x3D; true;
+  authMode &#x3D; false;
+
+  validaciones &#x3D; new validaciones();
+  @ViewChildren(&#x27;diasRef&#x27;) diasRef!: QueryList&lt;ElementRef&lt;HTMLSpanElement&gt;&gt;;
+  page &#x3D; 0;
+
+  extrasOptions &#x3D; [
+    {title: &#x27;Habitación&#x27;, isCurrency: true, value: 0},
+    {title: &#x27;Horas Extra&#x27;, isCurrency: true, value: 0},
+    {title: &#x27;Persona Extra&#x27;, isCurrency: true, value: 0},
+    {title: &#x27;Hospedaje Extra&#x27;, isCurrency: true, value: 0},
+    {title: &#x27;Lím. Persona Extra&#x27;, isCurrency: false, value: 0},
+    {title: &#x27;Lím. Horas Extra&#x27;, isCurrency: false, value: 0},
+    {title: &#x27;Lím. Hospedaje Extra&#x27;, isCurrency: false, value: 0},
+  ]
+
+  readonly diasOptions &#x3D; [
+    &#x27;Lunes&#x27;,
+    &#x27;Martes&#x27;,
+    &#x27;Miércoles&#x27;,
+    &#x27;Jueves&#x27;,
+    &#x27;Viernes&#x27;,
+    &#x27;Sábado&#x27;,
+    &#x27;Domingo&#x27;,
+    &#x27;Todos&#x27;,
+  ]
+
+  tarifaForm &#x3D; this.fb.group({
+    name: [&#x27;&#x27;, Validators.required],
+    duracion: [&#x27;&#x27;, Validators.required],
+    horario_inicio: [&#x27;&#x27;, Validators.required],
+    horario_fin: [&#x27;&#x27;, Validators.required],
+    fecha_inicio: [&#x27;&#x27;, Validators.required],
+    fecha_fin: [&#x27;&#x27;, Validators.required],
+    tipo_hab: [0, Validators.required],
+  })
+
+
+  extrasOptionsToShow: typeof this.extrasOptions &#x3D; []
+
+  constructor(
+    private readonly location: Location,
+    private readonly renderer: Renderer2,
+    private readonly fb: FormBuilder,
+    private readonly dialogService: DialogService
+  ) { }
+
+  ngOnInit(): void {
+    this.extrasOptionsToShow &#x3D; this.extrasOptions.slice(0, 4);
+  }
+
+  salir() {
+    this.location.back();
+  }
+
+  changePage({page}: {page: number}) {
+    this.extrasOptionsToShow &#x3D; this.extrasOptions.slice((page * 4), (page  * 4) + 4);
+  }
+
+  onExtraChange(extra: {title: string, isCurrency: boolean, value: number}, event: number) {
+    const extraToChangeIndex &#x3D; this.extrasOptions.findIndex((opt) &#x3D;&gt; opt.title &#x3D;&#x3D;&#x3D; extra.title);
+    this.extrasOptions[extraToChangeIndex].value &#x3D; event;
+  }
+
+  selectDia(dia: string) {
+    if(dia &#x3D;&#x3D;&#x3D; &#x27;Todos&#x27;) {
+      return this.diasRef.toArray().forEach((el) &#x3D;&gt; {
+        this.renderer.addClass(el.nativeElement, &#x27;boxBadgeSelected&#x27;);
+      })
+    }
+
+    const diaSelected &#x3D; this.diasRef.toArray().find((el) &#x3D;&gt; el.nativeElement.id &#x3D;&#x3D;&#x3D; &#x27;dia_&#x27; + dia);
+    diaSelected?.nativeElement.classList.toggle(&#x27;boxBadgeSelected&#x27;);
+  }
+
+  actualizar() {
+    const ref &#x3D; this.dialogService.open(ConfimModalMessageComponent, {
+      data: {
+        message: &#x60;SE MODIFICARÁ LA TARIFA CON EL NOMBRE ${this.tarifaForm.get(&#x27;name&#x27;)?.value}&#x60;
+      }
+    });
+
+    ref.onClose.subscribe(({confirmed}) &#x3D;&gt; {
+      if(!confirmed) {
+        return;
+      }
+      this.authMode &#x3D; true;
+    })
+  }
+
+  actualizarAutenticado(confirmed: boolean) {
+    this.authMode &#x3D; false;
+    if(!confirmed) {
+      return;
+    }
+    const ref &#x3D; this.dialogService.open(MessageModalAutoclosableComponent, {
+      data: {
+        message: &#x60;TARIFA CREADA CON ÉXITO&#x60;
+      }
+    })
+    ref.onClose.subscribe(() &#x3D;&gt; {
+      this.salir();
+    })
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog
+    header&#x3D;&quot;NUEVA TARIFA&quot;
+    [(visible)]&#x3D;&quot;visible&quot;
+    [closable]&#x3D;&quot;false&quot;
+    [modal]&#x3D;&quot;true&quot;
+    [draggable]&#x3D;&quot;false&quot;
+    [showHeader]&#x3D;&quot;true&quot;
+    *ngIf&#x3D;&quot;!authMode&quot;
+    appModalWidth
+    [ipadMiniWidth]&#x3D;&quot;&#x27;90vw&#x27;&quot;
+    [normalWidth]&#x3D;&quot;&#x27;60vw&#x27;&quot;
+&gt;
+    &lt;form class&#x3D;&quot;d-flex box-modal py-3&quot; [formGroup]&#x3D;&quot;tarifaForm&quot;&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-column w-50 mb-3&quot;&gt;
+            &lt;div class&#x3D;&quot;my-2&quot;&gt;
+                &lt;label class&#x3D;&quot;text-center w-100 labelTitle&quot;&gt;NOMBRE&lt;/label&gt;
+                &lt;div class&#x3D;&quot;mx-4&quot;&gt;
+                    &lt;span class&#x3D;&quot;p-input-icon-right w-100&quot;&gt;
+                        &lt;i class&#x3D;&quot;fas fa-clipboard-list idle&quot;&gt;&lt;/i&gt;
+                        &lt;input type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Escribe un nombre&quot; class&#x3D;&quot;input-txt&quot; formControlName&#x3D;&quot;name&quot;&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;my-2&quot;&gt;
+                &lt;label class&#x3D;&quot;text-center w-100 labelTitle&quot;&gt;DURACIÓN (HRS.)&lt;/label&gt;
+                &lt;div class&#x3D;&quot;mx-4&quot;&gt;
+                    &lt;span class&#x3D;&quot;p-input-icon-right w-100&quot;&gt;
+                        &lt;i class&#x3D;&quot;fas fa-history idle align-bottom&quot;&gt;&lt;/i&gt;
+                        &lt;input type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Duración de la habitación&quot; class&#x3D;&quot;input-txt&quot; formControlName&#x3D;&quot;duracion&quot; (keypress)&#x3D;&quot;validaciones.esNumericoMayorIgualCero($event)&quot;&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;my-2&quot;&gt;
+                &lt;label class&#x3D;&quot;text-center w-100 labelTitle&quot;&gt;HORARIO INICIO&lt;/label&gt;
+                &lt;div class&#x3D;&quot;mx-4&quot;&gt;
+                    &lt;span class&#x3D;&quot;p-input-icon-right w-100&quot;&gt;
+                        &lt;input type&#x3D;&quot;time&quot; formControlName&#x3D;&quot;horario_inicio&quot; class&#x3D;&quot;input-txt&quot;&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;my-2&quot;&gt;
+                &lt;label class&#x3D;&quot;text-center w-100 labelTitle&quot;&gt;HORARIO FINAL&lt;/label&gt;
+                &lt;div class&#x3D;&quot;mx-4&quot;&gt;
+                    &lt;span class&#x3D;&quot;p-input-icon-right w-100&quot;&gt;
+                        &lt;input type&#x3D;&quot;time&quot; formControlName&#x3D;&quot;horario_fin&quot; class&#x3D;&quot;input-txt&quot;&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row w-100&quot;&gt;
+                &lt;label class&#x3D;&quot;text-center w-100 labelTitle&quot;&gt;DÍAS APLICABLES&lt;/label&gt;
+                &lt;div class&#x3D;&quot;mt-1 box-dias w-100 justify-content-center d-flex flex-wrap&quot;&gt;
+                    &lt;span type&#x3D;&quot;button&quot; *ngFor&#x3D;&quot;let dia of diasOptions&quot; (click)&#x3D;&quot;selectDia(dia)&quot;class&#x3D;&quot;badge boxBadge&quot; #diasRef [id]&#x3D;&quot;&#x27;dia_&#x27; + dia&quot;&gt;{{dia}}&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-column w-50&quot;&gt;
+            &lt;div class&#x3D;&quot;my-2&quot;&gt;
+                &lt;label class&#x3D;&quot;text-center w-100 labelTitle&quot;&gt;FECHA INICIO&lt;/label&gt;
+                &lt;div class&#x3D;&quot;mx-4&quot;&gt;
+                    &lt;span class&#x3D;&quot;p-input-icon-right w-100&quot;&gt;
+                        &lt;input type&#x3D;&quot;date&quot; formControlName&#x3D;&quot;fecha_inicio&quot; class&#x3D;&quot;input-txt&quot;&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;my-2&quot;&gt;
+                &lt;label class&#x3D;&quot;text-center w-100 labelTitle&quot;&gt;FECHA FINAL&lt;/label&gt;
+                &lt;div class&#x3D;&quot;mx-4&quot;&gt;
+                    &lt;span class&#x3D;&quot;p-input-icon-right w-100&quot;&gt;
+                      &lt;input type&#x3D;&quot;date&quot; formControlName&#x3D;&quot;fecha_fin&quot; class&#x3D;&quot;input-txt&quot;&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;my-2&quot;&gt;
+                &lt;label class&#x3D;&quot;text-center w-100 labelTitle&quot;&gt;HABITACIÓN&lt;/label&gt;
+                &lt;div class&#x3D;&quot;mx-4&quot;&gt;
+                    &lt;span class&#x3D;&quot;p-input-icon-right border-bottom__calendar w-100&quot;&gt;
+                        &lt;div class&#x3D;&quot;d-flex align-items-center w-100 mr-2&quot;&gt;
+                            &lt;select class&#x3D;&quot;text-center labelInput w-80 input-txt&quot; (keypress)&#x3D;&quot;validaciones.esBlanco($event)&quot; formControlName&#x3D;&quot;tipo_hab&quot;
+                            style&#x3D;&quot;margin-right: 1vw; flex: auto;&quot;&gt;
+                              &lt;option value&#x3D;0&gt;Selecciona la Habitación&lt;/option&gt;
+                              &lt;option [value]&#x3D;&quot;categoria.nombre&quot; *ngFor&#x3D;&quot;let categoria of [{nombre: &#x27;villa&#x27;},{nombre: &#x27;villa2&#x27;}]; let i &#x3D; index&quot;&gt;{{categoria.nombre}}&lt;/option&gt;
+                          &lt;/select&gt;
+                          &lt;i class&#x3D;&quot;fas fa-hotel idle verticalAlign&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;w-100 d-flex flex-wrap justify-content-center&quot;&gt;
+                &lt;app-card-extra
+                    *ngFor&#x3D;&quot;let extra of extrasOptionsToShow&quot;
+                    [isCurrency]&#x3D;&quot;extra.isCurrency&quot;
+                    [title]&#x3D;&quot;extra.title&quot;
+                    [value]&#x3D;&quot;extra.value&quot;
+                    (valueChange)&#x3D;&quot;onExtraChange(extra, $event)&quot;
+                &gt;&lt;/app-card-extra&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;w-100 d-flex justify-content-center my-3&quot;&gt;
+                &lt;p-radioButton #page1 (ngModelChange)&#x3D;&quot;changePage({page: 0})&quot; [value]&#x3D;&quot;0&quot; [(ngModel)]&#x3D;&quot;page&quot;  [ngModelOptions]&#x3D;&quot;{standalone: true}&quot; class&#x3D;&quot;mx-1&quot;&gt;&lt;/p-radioButton&gt;
+                &lt;p-radioButton #page2 (ngModelChange)&#x3D;&quot;changePage({page: 1})&quot; [value]&#x3D;&quot;1&quot; [(ngModel)]&#x3D;&quot;page&quot;  [ngModelOptions]&#x3D;&quot;{standalone: true}&quot; class&#x3D;&quot;mx-1&quot;&gt;&lt;/p-radioButton&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+    &lt;div class&#x3D;&quot;modal-footer-content&quot;&gt;
+        &lt;div class&#x3D;&quot;col s12 m12 l12 text-center&quot;&gt;
+            &lt;button class&#x3D;&quot;button-modal button-descartar&quot; (click)&#x3D;&quot;salir()&quot;&gt;
+                &lt;div class&#x3D;&quot;icon&quot;&gt;
+                &lt;i class&#x3D;&quot;fa-solid fa-x&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;text&quot;&gt;Cancelar&lt;/div&gt;
+            &lt;/button&gt;
+            &lt;button (click)&#x3D;&quot;actualizar()&quot; class&#x3D;&quot;button-modal button-aceptar&quot; [disabled]&#x3D;&quot;tarifaForm.invalid&quot;&gt;
+                &lt;div class&#x3D;&quot;icon&quot;&gt;
+                &lt;i class&#x3D;&quot;fa-solid fa-check&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;text&quot;&gt;Aceptar&lt;/div&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+&lt;/p-dialog&gt;
+
+&lt;app-auth *ngIf&#x3D;&quot;authMode&quot; (confirmed)&#x3D;&quot;actualizarAutenticado($event)&quot;&gt;&lt;/app-auth&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./editar.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../library.scss&#x27;;
+
+.box-modal {
+    box-shadow: 0 0 9px #09000365;
+    border-radius: 10px;
+    margin: 3vh;
+    margin-left: 5vh!important;
+    margin-right: 5vh!important;
+}
+
+.input-txt {
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+.input-calendar {
+    width: 17vw;
+    outline: unset;
+}
+
+.border-bottom__calendar {
+    border-bottom: solid 1px;
+}
+
+.box-dias {
+  margin-left: 8px;
+}
+
+.boxBadge {
+    font-family: &#x27;Rubik&#x27;, sans-serif;
+    font-size: 11pt;
+    font-weight: lighter;
+    width: 87px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-top: 6px;
+    color: #707070;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px #B4B4B4;
+}
+
+.boxBadgeSelected {
+    box-shadow: 0pt 0pt 6pt #00000026;
+    background-color: #7E1637;
+    color: #ffffff;
+  }
+
+:host ::ng-deep .p-radiobutton .p-radiobutton-box.p-highlight {
+  border-color: $green-item;
+  background  : $green-item;
+
+  &amp;::hover {
+    border-color: $green-money;
+    background  : $green-money;
+  }
+  &amp;:focus-visible {
+    outline: $green-money 1px;
+  }
+}
+
+:host ::ng-deep .p-radiobutton:not(.p-radiobutton-disabled) .p-radiobutton-box:hover {
+  border-color: $green-money;
+}
+
+:host ::ng-deep .p-radiobutton:not(.p-radiobutton-disabled) .p-radiobutton-box.p-focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem $green-money;
+  border-color: $green-item;
+}
+
+:host ::ng-deep .p-radiobutton:not(.p-radiobutton-disabled) .p-radiobutton-box.p-highlight:hover {
+  border-color: $green-item;
+  background: $green-money;
+  color: #ffffff;
+}
+
+input {
+  color: $grey-item;
+}
+
+select {
+  color: $grey-item;
+  border: none;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog    header="NUEVA TARIFA"    [(visible)]="visible"    [closable]="false"    [modal]="true"    [draggable]="false"    [showHeader]="true"    *ngIf="!authMode"    appModalWidth    [ipadMiniWidth]="\'90vw\'"    [normalWidth]="\'60vw\'">    <form class="d-flex box-modal py-3" [formGroup]="tarifaForm">        <div class="d-flex flex-column w-50 mb-3">            <div class="my-2">                <label class="text-center w-100 labelTitle">NOMBRE</label>                <div class="mx-4">                    <span class="p-input-icon-right w-100">                        <i class="fas fa-clipboard-list idle"></i>                        <input type="text" pInputText placeholder="Escribe un nombre" class="input-txt" formControlName="name">                    </span>                </div>            </div>            <div class="my-2">                <label class="text-center w-100 labelTitle">DURACIÓN (HRS.)</label>                <div class="mx-4">                    <span class="p-input-icon-right w-100">                        <i class="fas fa-history idle align-bottom"></i>                        <input type="text" pInputText placeholder="Duración de la habitación" class="input-txt" formControlName="duracion" (keypress)="validaciones.esNumericoMayorIgualCero($event)">                    </span>                </div>            </div>            <div class="my-2">                <label class="text-center w-100 labelTitle">HORARIO INICIO</label>                <div class="mx-4">                    <span class="p-input-icon-right w-100">                        <input type="time" formControlName="horario_inicio" class="input-txt">                    </span>                </div>            </div>            <div class="my-2">                <label class="text-center w-100 labelTitle">HORARIO FINAL</label>                <div class="mx-4">                    <span class="p-input-icon-right w-100">                        <input type="time" formControlName="horario_fin" class="input-txt">                    </span>                </div>            </div>            <div class="row w-100">                <label class="text-center w-100 labelTitle">DÍAS APLICABLES</label>                <div class="mt-1 box-dias w-100 justify-content-center d-flex flex-wrap">                    <span type="button" *ngFor="let dia of diasOptions" (click)="selectDia(dia)"class="badge boxBadge" #diasRef [id]="\'dia_\' + dia">{{dia}}</span>                </div>            </div>        </div>        <div class="d-flex flex-column w-50">            <div class="my-2">                <label class="text-center w-100 labelTitle">FECHA INICIO</label>                <div class="mx-4">                    <span class="p-input-icon-right w-100">                        <input type="date" formControlName="fecha_inicio" class="input-txt">                    </span>                </div>            </div>            <div class="my-2">                <label class="text-center w-100 labelTitle">FECHA FINAL</label>                <div class="mx-4">                    <span class="p-input-icon-right w-100">                      <input type="date" formControlName="fecha_fin" class="input-txt">                    </span>                </div>            </div>            <div class="my-2">                <label class="text-center w-100 labelTitle">HABITACIÓN</label>                <div class="mx-4">                    <span class="p-input-icon-right border-bottom__calendar w-100">                        <div class="d-flex align-items-center w-100 mr-2">                            <select class="text-center labelInput w-80 input-txt" (keypress)="validaciones.esBlanco($event)" formControlName="tipo_hab"                            style="margin-right: 1vw; flex: auto;">                              <option value=0>Selecciona la Habitación</option>                              <option [value]="categoria.nombre" *ngFor="let categoria of [{nombre: \'villa\'},{nombre: \'villa2\'}]; let i = index">{{categoria.nombre}}</option>                          </select>                          <i class="fas fa-hotel idle verticalAlign"></i>                        </div>                    </span>                </div>            </div>            <div class="w-100 d-flex flex-wrap justify-content-center">                <app-card-extra                    *ngFor="let extra of extrasOptionsToShow"                    [isCurrency]="extra.isCurrency"                    [title]="extra.title"                    [value]="extra.value"                    (valueChange)="onExtraChange(extra, $event)"                ></app-card-extra>            </div>            <div class="w-100 d-flex justify-content-center my-3">                <p-radioButton #page1 (ngModelChange)="changePage({page: 0})" [value]="0" [(ngModel)]="page"  [ngModelOptions]="{standalone: true}" class="mx-1"></p-radioButton>                <p-radioButton #page2 (ngModelChange)="changePage({page: 1})" [value]="1" [(ngModel)]="page"  [ngModelOptions]="{standalone: true}" class="mx-1"></p-radioButton>            </div>        </div>    </form>    <div class="modal-footer-content">        <div class="col s12 m12 l12 text-center">            <button class="button-modal button-descartar" (click)="salir()">                <div class="icon">                <i class="fa-solid fa-x"></i>                </div>                <div class="text">Cancelar</div>            </button>            <button (click)="actualizar()" class="button-modal button-aceptar" [disabled]="tarifaForm.invalid">                <div class="icon">                <i class="fa-solid fa-check"></i>                </div>                <div class="text">Aceptar</div>            </button>        </div>      </div></p-dialog><app-auth *ngIf="authMode" (confirmed)="actualizarAutenticado($event)"></app-auth></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'EditarComponent-1'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EditarComponent-1.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

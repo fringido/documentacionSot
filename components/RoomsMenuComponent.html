@@ -1,0 +1,2287 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  RoomsMenuComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-rooms-menu</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./rooms-menu.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./rooms-menu.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#countRoomState" >countRoomState</a>
+                            </li>
+                            <li>
+                                <a href="#filterText" >filterText</a>
+                            </li>
+                            <li>
+                                <a href="#isIpadMini" >isIpadMini</a>
+                            </li>
+                            <li>
+                                <a href="#isModalOpen" >isModalOpen</a>
+                            </li>
+                            <li>
+                                <a href="#isModalOpenSubs" >isModalOpenSubs</a>
+                            </li>
+                            <li>
+                                <a href="#roomTypesRef" >roomTypesRef</a>
+                            </li>
+                            <li>
+                                <a href="#statusRooms" >statusRooms</a>
+                            </li>
+                            <li>
+                                <a href="#statusRoomsAll" >statusRoomsAll</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#activarBoton" >activarBoton</a>
+                            </li>
+                            <li>
+                                <a href="#addAnimation" >addAnimation</a>
+                            </li>
+                            <li>
+                                <a href="#desactivarBoton" >desactivarBoton</a>
+                            </li>
+                            <li>
+                                <a href="#desactivarBotones" >desactivarBotones</a>
+                            </li>
+                            <li>
+                                <a href="#filtrarHabitaciones" >filtrarHabitaciones</a>
+                            </li>
+                            <li>
+                                <a href="#isAnimated" >isAnimated</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onEscapeHandler" >onEscapeHandler</a>
+                            </li>
+                            <li>
+                                <a href="#onResize" >onResize</a>
+                            </li>
+                            <li>
+                                <a href="#removeAnimation" >removeAnimation</a>
+                            </li>
+                            <li>
+                                <a href="#search" >search</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#statusCountOptions" >statusCountOptions</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Escuchadores de Host</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#document:keydown" >document:keydown</a>
+                            </li>
+                            <li>
+                                <a href="#window:resize" >window:resize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, roomService: <a href="../injectables/RoomService.html" target="_self">RoomService</a>, modalService: <a href="../injectables/ModalService.html" target="_self">ModalService</a>, roomTypesService: <a href="../injectables/RoomTypesService.html" target="_self">RoomTypesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="149" class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:149</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>roomService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RoomService.html" target="_self" >RoomService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ModalService.html" target="_self" >ModalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>roomTypesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RoomTypesService.html" target="_self" >RoomTypesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="document:keydown"></a>
+                    <span class="name">
+                        <span ><b>document:keydown</b></span>
+                        <a href="#document:keydown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Argumentos : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>document:keydown(event: KeyboardEvent)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="224"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:224</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:resize"></a>
+                    <span class="name">
+                        <span ><b>window:resize</b></span>
+                        <a href="#window:resize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Argumentos : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:resize(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="239"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:239</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activarBoton"></a>
+                    <span class="name">
+                        <span ><b>activarBoton</b></span>
+                        <a href="#activarBoton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>activarBoton(color: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="284"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:284</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>color</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addAnimation"></a>
+                    <span class="name">
+                        <span ><b>addAnimation</b></span>
+                        <a href="#addAnimation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addAnimation(text: HTMLSpanElement, isTextScrollable: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="247"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:247</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>text</td>
+                                    <td>
+                                            <code>HTMLSpanElement</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isTextScrollable</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="desactivarBoton"></a>
+                    <span class="name">
+                        <span ><b>desactivarBoton</b></span>
+                        <a href="#desactivarBoton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>desactivarBoton(element: HTMLButtonElement)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="299"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:299</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>element</td>
+                                    <td>
+                                            <code>HTMLButtonElement</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="desactivarBotones"></a>
+                    <span class="name">
+                        <span ><b>desactivarBotones</b></span>
+                        <a href="#desactivarBotones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>desactivarBotones()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="293"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:293</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filtrarHabitaciones"></a>
+                    <span class="name">
+                        <span ><b>filtrarHabitaciones</b></span>
+                        <a href="#filtrarHabitaciones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filtrarHabitaciones(statusRoom: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="277"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:277</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>statusRoom</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAnimated"></a>
+                    <span class="name">
+                        <span ><b>isAnimated</b></span>
+                        <a href="#isAnimated"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isAnimated(el: HTMLSpanElement)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="243"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:243</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>el</td>
+                                    <td>
+                                            <code>HTMLSpanElement</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="218"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:218</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="203"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onEscapeHandler"></a>
+                    <span class="name">
+                        <span ><b>onEscapeHandler</b></span>
+                        <a href="#onEscapeHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onEscapeHandler(event: KeyboardEvent)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decoradores : </b>
+                    <br />
+                    <code>@HostListener(&#x27;document:keydown&#x27;, [&#x27;$event&#x27;])<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="224"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:224</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>KeyboardEvent</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onResize"></a>
+                    <span class="name">
+                        <span ><b>onResize</b></span>
+                        <a href="#onResize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onResize(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decoradores : </b>
+                    <br />
+                    <code>@HostListener(&#x27;window:resize&#x27;, [&#x27;$event&#x27;])<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="239"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:239</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeAnimation"></a>
+                    <span class="name">
+                        <span ><b>removeAnimation</b></span>
+                        <a href="#removeAnimation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeAnimation(text: HTMLSpanElement, isTextScrollable: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="252"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:252</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>text</td>
+                                    <td>
+                                            <code>HTMLSpanElement</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isTextScrollable</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="search"></a>
+                    <span class="name">
+                        <span ><b>search</b></span>
+                        <a href="#search"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>search()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="257"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:257</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="statusCountOptions"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>statusCountOptions</b></span>
+                        <a href="#statusCountOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>statusCountOptions(key: <a href="../classes/Room.html" target="_self">RoomStateCountKeys</a>, value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="158"
+                            class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+                                    <td>
+                                                <code><a href="../classes/Room.html" target="_self" >RoomStateCountKeys</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countRoomState"></a>
+                    <span class="name">
+                        <span ><b>countRoomState</b></span>
+                        <a href="#countRoomState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{...RoomStateCountInitialState}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterText"></a>
+                    <span class="name">
+                        <span ><b>filterText</b></span>
+                        <a href="#filterText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isIpadMini"></a>
+                    <span class="name">
+                        <span ><b>isIpadMini</b></span>
+                        <a href="#isIpadMini"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isModalOpen"></a>
+                    <span class="name">
+                        <span ><b>isModalOpen</b></span>
+                        <a href="#isModalOpen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isModalOpenSubs"></a>
+                    <span class="name">
+                        <span ><b>isModalOpenSubs</b></span>
+                        <a href="#isModalOpenSubs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Subscription" target="_self" >Subscription</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="26" class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="roomTypesRef"></a>
+                    <span class="name">
+                        <span ><b>roomTypesRef</b></span>
+                        <a href="#roomTypesRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryList&lt;ElementRef&lt;HTMLButtonElement&gt;&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(&#x27;roomTypesRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="statusRooms"></a>
+                    <span class="name">
+                        <span ><b>statusRooms</b></span>
+                        <a href="#statusRooms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[{
+    name: &#x27;Libre&#x27;,
+    status: RoomStatusEnum.LIBRE,
+    count: 0,
+    color: &#x27;#0AC917&#x27;,
+    colorClass: &#x27;txt-success&#x27;,
+    icon: &#x27;far fa-check-circle&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-5px&#x27;
+  }, {
+    name: &#x27;Por cobrar&#x27;,
+    status: RoomStatusEnum.POR_COBRAR,
+    count: 0,
+    color: &#x27;#0AC917&#x27;,
+    colorClass: &#x27;txt-success&#x27;,
+    icon: &#x27;far fa-check-circle icon-cobrar&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-8px&#x27;
+  }, {
+    name: &#x27;Preparada&#x27;,
+    status: RoomStatusEnum.PREPARADA,
+    count: 0,
+    color: &#x27;#0AC917&#x27;,
+    colorClass: &#x27;txt-success&#x27;,
+    icon: &#x27;far fa-check-circle icon-car fa-sm&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-6px&#x27;,
+    class: &#x27;reduce&#x27;
+  }, {
+    name: &#x27;Ocupada&#x27;,
+    status: RoomStatusEnum.OCUPADA,
+    count: 0,
+    color: &#x27;#fd0022&#x27;,
+    colorClass: &#x27;txt-danger&#x27;,
+    icon: &#x27;far fa-check-circle icon-pareja-ocupada&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-10px&#x27;
+  }, {
+    name: &#x27;Room service&#x27;,
+    status: RoomStatusEnum.ROOM_SERVICE,
+    count: 0,
+    color: &#x27;#fd0022&#x27;,
+    colorClass: &#x27;txt-danger&#x27;,
+    icon: &#x27;far fa-check-circle icon-roomservice fa-2xs&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-3px&#x27;
+  }, {
+    name: &#x27;Sucia&#x27;,
+    status: RoomStatusEnum.SUCIA,
+    count: 0,
+    color: &#x27;#FFD500&#x27;,
+    colorClass: &#x27;txt-warn&#x27;,
+    icon: &#x27;far fa-check-circle fa-sm icon-sucia&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-8px&#x27;
+  }, {
+    name: &#x27;Limpieza&#x27;,
+    status: RoomStatusEnum.EN_LIMPIEZA,
+    count: 0,
+    color: &#x27;#008deb&#x27;,
+    colorClass: &#x27;txt-blue&#x27;,
+    icon: &#x27;far fa-check-circle icon-limpieza&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-10px&#x27;
+  }, {
+    name: &#x27;Supervisión&#x27;,
+    status: RoomStatusEnum.EN_SUPERVISION,
+    count: 0,
+    color: &#x27;#008deb&#x27;,
+    colorClass: &#x27;txt-blue&#x27;,
+    icon: &#x27;far fa-check-circle icon-search&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-10px&#x27;
+  }, {
+    name: &#x27;Reservar&#x27;,
+    status: RoomStatusEnum.RESERVADA,
+    count: 0,
+    color: &#x27;#a703fb&#x27;,
+    colorClass: &#x27;txt-purple&#x27;,
+    icon: &#x27;icon-calendar&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-7px&#x27;
+  }, {
+    name: &#x27;Preparada y Reservada&#x27;,
+    status: RoomStatusEnum.RESERVADA_PREPARADA,
+    count: 0,
+    color: &#x27;#a703fb&#x27;,
+    colorClass: &#x27;txt-purple&#x27;,
+    icon: &#x27;icon-calendar&#x27;,
+    isTextScrollable: true,
+    iconExtraMargin: &#x27;-7px&#x27;
+  }, {
+    name: &#x27;Bloqueada&#x27;,
+    status: RoomStatusEnum.BLOQUEADA,
+    count: 0,
+    color: &#x27;#a703fb&#x27;,
+    colorClass: &#x27;txt-purple&#x27;,
+    icon: &#x27;far fa-check-circle icon-candado&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-10px&#x27;
+  }, {
+    name: &#x27;Mantenimiento&#x27;,
+    status: RoomStatusEnum.MANTENIMIENTO,
+    count: 0,
+    color: &#x27;#707070&#x27;,
+    colorClass: &#x27;txt-grey-item&#x27;,
+    icon: &#x27;far fa-check-circle icon-mantenimiento fa-sm&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-8px&#x27;
+  }, {
+    name: &#x27;Alertas&#x27;,
+    status: RoomStatusEnum.LIBRE,
+    count: 0,
+    color: &#x27;#707070&#x27;,
+    colorClass: &#x27;txt-grey-item&#x27;,
+    icon: &#x27;fas fa-clock&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-8px&#x27;
+  }]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="31" class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="statusRoomsAll"></a>
+                    <span class="name">
+                        <span ><b>statusRoomsAll</b></span>
+                        <a href="#statusRoomsAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/sidebar/pages/rooms-menu/rooms-menu.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, HostListener, OnInit, QueryList, Renderer2, ViewChildren, OnDestroy } from &#x27;@angular/core&#x27;;
+import { FormControl } from &#x27;@angular/forms&#x27;;
+import { debounceTime, distinctUntilChanged, Subscription } from &#x27;rxjs&#x27;;
+import { take } from &#x27;rxjs/operators&#x27;;
+import { ModalService } from &#x27;src/app/core/services/modal.service&#x27;;
+import { RoomStatusEnum } from &#x27;src/app/room-types/enums/room-status.enum&#x27;;
+import { RoomTypesService } from &#x27;src/app/room-types/services/room-types/room-types.service&#x27;;
+import { RoomService } from &#x27;src/app/room-types/services/room/room.service&#x27;;
+import { RoomStateCountInitialState, RoomStateCountKeys } from &#x27;src/app/room-types/state/room-types-count-state&#x27;;
+
+@Component({
+  selector: &#x27;app-rooms-menu&#x27;,
+  templateUrl: &#x27;./rooms-menu.component.html&#x27;,
+  styleUrls: [&#x27;./rooms-menu.component.scss&#x27;]
+})
+export class RoomsMenuComponent implements OnInit, OnDestroy {
+
+  isIpadMini!: boolean;
+
+  statusRoomsAll: any;
+
+  filterText!: FormControl
+  @ViewChildren(&#x27;roomTypesRef&#x27;) roomTypesRef!: QueryList&lt;ElementRef&lt;HTMLButtonElement&gt;&gt;;
+
+  isModalOpen!: boolean;
+  isModalOpenSubs!: Subscription;
+
+  countRoomState &#x3D; {...RoomStateCountInitialState};
+
+
+  statusRooms &#x3D; [{
+    name: &#x27;Libre&#x27;,
+    status: RoomStatusEnum.LIBRE,
+    count: 0,
+    color: &#x27;#0AC917&#x27;,
+    colorClass: &#x27;txt-success&#x27;,
+    icon: &#x27;far fa-check-circle&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-5px&#x27;
+  }, {
+    name: &#x27;Por cobrar&#x27;,
+    status: RoomStatusEnum.POR_COBRAR,
+    count: 0,
+    color: &#x27;#0AC917&#x27;,
+    colorClass: &#x27;txt-success&#x27;,
+    icon: &#x27;far fa-check-circle icon-cobrar&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-8px&#x27;
+  }, {
+    name: &#x27;Preparada&#x27;,
+    status: RoomStatusEnum.PREPARADA,
+    count: 0,
+    color: &#x27;#0AC917&#x27;,
+    colorClass: &#x27;txt-success&#x27;,
+    icon: &#x27;far fa-check-circle icon-car fa-sm&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-6px&#x27;,
+    class: &#x27;reduce&#x27;
+  }, {
+    name: &#x27;Ocupada&#x27;,
+    status: RoomStatusEnum.OCUPADA,
+    count: 0,
+    color: &#x27;#fd0022&#x27;,
+    colorClass: &#x27;txt-danger&#x27;,
+    icon: &#x27;far fa-check-circle icon-pareja-ocupada&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-10px&#x27;
+  }, {
+    name: &#x27;Room service&#x27;,
+    status: RoomStatusEnum.ROOM_SERVICE,
+    count: 0,
+    color: &#x27;#fd0022&#x27;,
+    colorClass: &#x27;txt-danger&#x27;,
+    icon: &#x27;far fa-check-circle icon-roomservice fa-2xs&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-3px&#x27;
+  }, {
+    name: &#x27;Sucia&#x27;,
+    status: RoomStatusEnum.SUCIA,
+    count: 0,
+    color: &#x27;#FFD500&#x27;,
+    colorClass: &#x27;txt-warn&#x27;,
+    icon: &#x27;far fa-check-circle fa-sm icon-sucia&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-8px&#x27;
+  }, {
+    name: &#x27;Limpieza&#x27;,
+    status: RoomStatusEnum.EN_LIMPIEZA,
+    count: 0,
+    color: &#x27;#008deb&#x27;,
+    colorClass: &#x27;txt-blue&#x27;,
+    icon: &#x27;far fa-check-circle icon-limpieza&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-10px&#x27;
+  }, {
+    name: &#x27;Supervisión&#x27;,
+    status: RoomStatusEnum.EN_SUPERVISION,
+    count: 0,
+    color: &#x27;#008deb&#x27;,
+    colorClass: &#x27;txt-blue&#x27;,
+    icon: &#x27;far fa-check-circle icon-search&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-10px&#x27;
+  }, {
+    name: &#x27;Reservar&#x27;,
+    status: RoomStatusEnum.RESERVADA,
+    count: 0,
+    color: &#x27;#a703fb&#x27;,
+    colorClass: &#x27;txt-purple&#x27;,
+    icon: &#x27;icon-calendar&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-7px&#x27;
+  }, {
+    name: &#x27;Preparada y Reservada&#x27;,
+    status: RoomStatusEnum.RESERVADA_PREPARADA,
+    count: 0,
+    color: &#x27;#a703fb&#x27;,
+    colorClass: &#x27;txt-purple&#x27;,
+    icon: &#x27;icon-calendar&#x27;,
+    isTextScrollable: true,
+    iconExtraMargin: &#x27;-7px&#x27;
+  }, {
+    name: &#x27;Bloqueada&#x27;,
+    status: RoomStatusEnum.BLOQUEADA,
+    count: 0,
+    color: &#x27;#a703fb&#x27;,
+    colorClass: &#x27;txt-purple&#x27;,
+    icon: &#x27;far fa-check-circle icon-candado&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-10px&#x27;
+  }, {
+    name: &#x27;Mantenimiento&#x27;,
+    status: RoomStatusEnum.MANTENIMIENTO,
+    count: 0,
+    color: &#x27;#707070&#x27;,
+    colorClass: &#x27;txt-grey-item&#x27;,
+    icon: &#x27;far fa-check-circle icon-mantenimiento fa-sm&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-8px&#x27;
+  }, {
+    name: &#x27;Alertas&#x27;,
+    status: RoomStatusEnum.LIBRE,
+    count: 0,
+    color: &#x27;#707070&#x27;,
+    colorClass: &#x27;txt-grey-item&#x27;,
+    icon: &#x27;fas fa-clock&#x27;,
+    isTextScrollable: false,
+    iconExtraMargin: &#x27;-8px&#x27;
+  }]
+
+  constructor(
+    private readonly renderer: Renderer2,
+    private readonly roomService: RoomService,
+    private readonly modalService: ModalService,
+    private readonly roomTypesService: RoomTypesService
+  ) { }
+
+  private statusCountOptions(key: RoomStateCountKeys, value: number) {
+    const options &#x3D; {
+      [RoomStateCountKeys.libre]: () &#x3D;&gt; {
+        this.statusRooms[0].count &#x3D; value
+      },
+      [RoomStateCountKeys.porCobrar]: () &#x3D;&gt; {
+        this.statusRooms[1].count &#x3D; value
+      },
+      [RoomStateCountKeys.preparada]: () &#x3D;&gt; {
+        this.statusRooms[2].count &#x3D; value
+      },
+      [RoomStateCountKeys.ocupada]: () &#x3D;&gt; {
+        this.statusRooms[3].count &#x3D; value
+      },
+      [RoomStateCountKeys.roomService]: () &#x3D;&gt; {
+        this.statusRooms[4].count &#x3D; value
+      },
+      [RoomStateCountKeys.sucia]: () &#x3D;&gt; {
+        this.statusRooms[5].count &#x3D; value
+      },
+      [RoomStateCountKeys.enLimpieza]: () &#x3D;&gt; {
+        this.statusRooms[6].count &#x3D; value
+      },
+      [RoomStateCountKeys.enSupervision]: () &#x3D;&gt; {
+        this.statusRooms[7].count &#x3D; value
+      },
+      [RoomStateCountKeys.reservada]: () &#x3D;&gt; {
+        this.statusRooms[8].count &#x3D; value
+      },
+      [RoomStateCountKeys.reservadaPreparada]: () &#x3D;&gt; {
+        this.statusRooms[9].count &#x3D; value
+      },
+      [RoomStateCountKeys.bloqueada]: () &#x3D;&gt; {
+        this.statusRooms[10].count &#x3D; value
+      },
+      [RoomStateCountKeys.mantenimiento]: () &#x3D;&gt; {
+        this.statusRooms[11].count &#x3D; value
+      },
+      [RoomStateCountKeys.alertas]: () &#x3D;&gt; {
+        this.statusRooms[12].count &#x3D; value
+      },
+    }
+    options[key] ? options[key]() : null;
+  }
+
+  ngOnInit(): void {
+    this.isIpadMini &#x3D; window.innerWidth &lt;&#x3D; 1025;
+    this.statusRoomsAll &#x3D; this.statusRooms;
+    this.search()
+    this.isModalOpenSubs &#x3D; this.modalService.isModalOpen$.subscribe((isOpen) &#x3D;&gt; this.isModalOpen &#x3D; isOpen)
+    this.roomTypesService.roomStateCount$.subscribe((newCountState) &#x3D;&gt; {
+      this.countRoomState &#x3D; {...newCountState}
+      for(let [key, value] of Object.entries(newCountState)) {
+        this.statusCountOptions(key as RoomStateCountKeys, value)
+      }
+      this.statusRooms &#x3D; [...this.statusRooms]
+    });
+
+  }
+
+  ngOnDestroy(): void {
+    this.isModalOpenSubs.unsubscribe();
+  }
+
+
+  @HostListener(&#x27;document:keydown&#x27;, [&#x27;$event&#x27;])
+  onEscapeHandler(event: KeyboardEvent) {
+    if(event.key !&#x3D;&#x3D; &#x27;Escape&#x27; || this.isModalOpen) {
+      return;
+    }
+    // Al presionar Esc borrar el filtrado de habitaciones por status
+    this.roomService.filtradoHabitacion$.pipe(take(1)).subscribe((status) &#x3D;&gt; {
+      if(status) {
+        this.roomService.updateFiltradoHabitacion(null);
+        this.desactivarBotones();
+      }
+    });
+
+  }
+
+  @HostListener(&#x27;window:resize&#x27;, [&#x27;$event&#x27;])
+  onResize(event: any) {
+    this.isIpadMini &#x3D; window.innerWidth &lt;&#x3D; 1025;
+  }
+
+  isAnimated(el: HTMLSpanElement): boolean {
+    return el.classList.contains(&#x27;scroll-text&#x27;);
+  }
+
+  addAnimation(text: HTMLSpanElement, isTextScrollable: boolean) {
+    if(isTextScrollable) {
+      this.renderer.addClass(text, &#x27;scroll-text&#x27;)
+    }
+  }
+  removeAnimation(text: HTMLSpanElement, isTextScrollable: boolean) {
+    this.renderer.removeClass(text, &#x27;scroll-text&#x27;)
+  }
+
+  //busca los roles
+  search() {
+
+    this.filterText &#x3D; new FormControl(&quot;&quot;);
+    this.filterText.valueChanges
+      .pipe(debounceTime(400), distinctUntilChanged())
+      .subscribe((v) &#x3D;&gt; {
+
+        if (v) {
+          const filter &#x3D; new RegExp(v, &quot;i&quot;);
+          const filterFields &#x3D; [&quot;name&quot;];
+          this.statusRooms &#x3D; this.statusRoomsAll.filter((role:any) &#x3D;&gt;
+            filterFields.some((field) &#x3D;&gt; filter.test(role[field]))
+          );
+
+        } else {
+          this.statusRooms &#x3D; this.statusRoomsAll;
+        }
+      });
+  }
+
+  filtrarHabitaciones(statusRoom: any) {
+    if(statusRoom.name &#x3D;&#x3D;&#x3D; &#x27;Alertas&#x27;) {
+      return this.roomService.updateFiltradoHabitacion(&#x27;expirada&#x27;);
+    }
+    this.roomService.updateFiltradoHabitacion((statusRoom.status as RoomStatusEnum));
+  }
+
+  activarBoton(color: string, index: number) {
+    this.desactivarBotones();
+    const buttonToActive &#x3D; this.roomTypesRef.toArray().find((roomTypeEl) &#x3D;&gt; {
+      return roomTypeEl.nativeElement.id &#x3D;&#x3D;&#x3D; &#x27;roomType_&#x27; + index;
+    })?.nativeElement
+    this.renderer.setStyle(buttonToActive, &#x27;color&#x27;, &#x27;white&#x27;);
+    this.renderer.setStyle(buttonToActive, &#x27;background-color&#x27;, color);
+  }
+
+  desactivarBotones() {
+    this.roomTypesRef.toArray().forEach((roomTypeEl, index) &#x3D;&gt; {
+      this.desactivarBoton(roomTypeEl.nativeElement);
+    });
+  }
+
+  desactivarBoton(element: HTMLButtonElement) {
+    this.renderer.removeStyle(element, &#x27;color&#x27;);
+    this.renderer.removeStyle(element, &#x27;background-color&#x27;);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;content-nav_buttons&quot;&gt;
+  &lt;div class&#x3D;&quot;list-group list-group-flush mx-2&quot;&gt;
+      &lt;div class&#x3D;&quot;my-2 mx-2&quot;&gt;
+          &lt;span class&#x3D;&quot;p-input-icon-right&quot;&gt;
+              &lt;i class&#x3D;&quot;fa-solid fa-magnifying-glass&quot;&gt;&lt;/i&gt;
+              &lt;input [formControl]&#x3D;&quot;filterText&quot; type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Buscar tipo de habitación&quot;&gt;
+          &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div
+          *ngFor&#x3D;&quot;let statusRoom of statusRooms let i &#x3D; index&quot;
+          [ngClass]&#x3D;&quot;statusRoom.colorClass&quot;
+          class&#x3D;&quot;d-flex list-group-item py-2 my-1 room-type__item nav-item align-items-center &quot;
+          (touchend)&#x3D;&quot;addAnimation(textElement, statusRoom.isTextScrollable)&quot;
+          (mouseover)&#x3D;&quot;addAnimation(textElement, statusRoom.isTextScrollable)&quot;
+          (mouseout)&#x3D;&quot;removeAnimation(textElement, statusRoom.isTextScrollable)&quot;
+          (click)&#x3D;&quot;filtrarHabitaciones(statusRoom); activarBoton(statusRoom.color ,i)&quot;
+          #roomTypesRef
+          [id]&#x3D;&quot;&#x27;roomType_&#x27; + i&quot;
+      &gt;
+          &lt;span class&#x3D;&quot;me-3 room-type__count&quot;&gt;{{statusRoom.count}}&lt;/span&gt;
+          &lt;div class&#x3D;&quot;w-100 room-type__item&quot;&gt;
+              &lt;span
+                  class&#x3D;&quot;me-3&quot;
+                  #textElement
+              &gt;
+                  &lt;span *ngIf&#x3D;&quot;isAnimated(textElement) else notAnimated;&quot;&gt;
+                      {{statusRoom.name}}
+                  &lt;/span&gt;
+                  &lt;ng-template #notAnimated&gt;
+                      &lt;span class&#x3D;&quot;text-nowrap&quot;&gt;
+                          {{isIpadMini ? (statusRoom.name|cutString:10) : statusRoom.name}}
+                      &lt;/span&gt;
+                  &lt;/ng-template&gt;
+              &lt;/span&gt;
+          &lt;/div&gt;
+          &lt;span class&#x3D;&quot;spacer&quot;&gt;&lt;/span&gt;
+          &lt;i
+              [ngClass]&#x3D;&quot;statusRoom.icon&quot;
+              [ngStyle]&#x3D;&quot;{&#x27;margin-right&#x27;: statusRoom.iconExtraMargin}&quot;&gt;
+          &lt;/i&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;list-group d-flex align-items-center list-group-flush m-2 p-1 others-menu&quot;&gt;
+      &lt;div class&#x3D;&quot;d-flex list-group-item py-2 my-1 others-menu_button align-items-center shadow-sm active&quot;&gt;
+          &lt;span class&#x3D;&quot;me-3 others-menu_text&quot;&gt;Vincular video&lt;/span&gt;
+          &lt;span class&#x3D;&quot;spacer&quot;&gt;&lt;/span&gt;
+          &lt;i class&#x3D;&quot;fas fa-video&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;d-flex list-group-item py-2 my-1 others-menu_button align-items-center shadow-sm item-disabled&quot;&gt;
+          &lt;span class&#x3D;&quot;me-3 others-menu_text&quot;&gt;Taxi&lt;/span&gt;
+          &lt;span class&#x3D;&quot;spacer&quot;&gt;&lt;/span&gt;
+          &lt;i class&#x3D;&quot;demo-icon icon-car&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;d-flex list-group-item py-2 my-1 others-menu_button align-items-center shadow-sm item-disabled&quot;&gt;
+          &lt;span class&#x3D;&quot;me-3 room-type__count&quot;&gt;2&lt;/span&gt;
+          &lt;span class&#x3D;&quot;me-3 others-menu_text&quot;&gt;Mesas&lt;/span&gt;
+          &lt;span class&#x3D;&quot;spacer&quot;&gt;&lt;/span&gt;
+          &lt;i class&#x3D;&quot;demo-icon icon-menu&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;span class&#x3D;&quot;spacer&quot;&gt;&lt;/span&gt;
+      &lt;div class&#x3D;&quot;text-center mb-2&quot;&gt;
+          &lt;img src&#x3D;&quot;./assets/img/logo_GlobalMaster.png&quot; alt&#x3D;&quot;GM LOGO&quot; width&#x3D;&quot;80&quot;&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./rooms-menu.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../library.scss&#x27;;
+
+.p-inputtext {
+    font-size: 13pt;
+}
+
+.nav-item {
+    height: 4vh;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 20%);
+}
+
+.others-menu {
+    height: 26vh;
+    margin: 0 auto;
+    box-shadow: 0px 0px 9px rgb(0 0 0 / 45%);
+    border-radius: 10px;
+}
+
+.others-menu_button {
+    color: #fff;
+    border-radius: 5px !important;
+    height: 30px;
+    font-size: 10pt;
+    cursor: pointer;
+    width: 11vw;
+}
+
+.others-menu_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.menu-box {
+    width: 55px;
+    height: 55px;
+    border-bottom-style: solid 1px $wine;
+    transition: all 1s;
+
+}
+
+.content-nav_buttons {
+    margin-top: 3px;
+    overflow-x: auto;
+    height: 88%;
+}
+
+.shadowed {
+    box-shadow: 0px 0px 9px #00000073;
+    transition: all 1s;
+}
+
+.type-text__wrapper {
+    position: relative;
+}
+
+.scroll-text {
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    top: 0.6vh;
+    /* animation properties */
+    -moz-animation: my-animation 5s linear infinite;
+    -webkit-animation: my-animation 5s linear infinite;
+    animation: my-animation 5s linear infinite;
+}
+
+.containers-nav_bar{
+    overflow: auto;
+
+    &amp;.container-all_estatus_buttons{
+
+    }
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    0% {
+        -moz-transform: translateX(0%);
+    }
+
+    50% {
+        -moz-transform: translateX(-50%);
+    }
+
+    100% {
+        -moz-transform: translateX(0%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    50% {
+        -webkit-transform: translateX(-50%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes my-animation {
+    0% {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    50% {
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    100% {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+.search-text {
+    font-weight: 100;
+}
+
+.room-type__count {
+    font-weight: 800;
+}
+
+.room-type__item {
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.room-type__item:hover {
+    color: white;
+}
+
+.txt-success:hover {
+    @include bg-success;
+}
+
+.txt-danger:hover {
+    @include bg-danger;
+}
+
+.txt-warn:hover {
+    @include bg-warn;
+}
+
+.txt-orange:hover {
+    @include bg-orange;
+}
+
+.txt-blue:hover {
+    @include bg-blue;
+}
+
+.txt-purple:hover {
+    @include bg-purple;
+}
+
+.txt-grey-item:hover {
+    @include bg-grey-item;
+}
+
+.item-disabled {
+    background-color: $grey-item;
+    color: white;
+}
+
+// Ipad mini
+@media (max-width: 1025px) and (orientation: landscape) {
+    input {
+        font-size: small;
+    }
+    // .others-menu {
+    //     height: 22vh;
+    // }
+    .others-menu_button {
+        font-size: 8pt;
+        width: 17vw;
+    }
+}
+
+// Pantalla normal
+@media (min-width: 1026px) and (orientation: landscape) {
+    .type-text__wrapper {
+        margin-top: 5px;
+    }
+}
+
+// Pantalla
+@media (max-width: 1700px) and (orientation: landscape) {
+    input::placeholder {
+        font-size: 10pt;
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="content-nav_buttons">  <div class="list-group list-group-flush mx-2">      <div class="my-2 mx-2">          <span class="p-input-icon-right">              <i class="fa-solid fa-magnifying-glass"></i>              <input [formControl]="filterText" type="text" pInputText placeholder="Buscar tipo de habitación">          </span>      </div>      <div          *ngFor="let statusRoom of statusRooms let i = index"          [ngClass]="statusRoom.colorClass"          class="d-flex list-group-item py-2 my-1 room-type__item nav-item align-items-center "          (touchend)="addAnimation(textElement, statusRoom.isTextScrollable)"          (mouseover)="addAnimation(textElement, statusRoom.isTextScrollable)"          (mouseout)="removeAnimation(textElement, statusRoom.isTextScrollable)"          (click)="filtrarHabitaciones(statusRoom); activarBoton(statusRoom.color ,i)"          #roomTypesRef          [id]="\'roomType_\' + i"      >          <span class="me-3 room-type__count">{{statusRoom.count}}</span>          <div class="w-100 room-type__item">              <span                  class="me-3"                  #textElement              >                  <span *ngIf="isAnimated(textElement) else notAnimated;">                      {{statusRoom.name}}                  </span>                  <ng-template #notAnimated>                      <span class="text-nowrap">                          {{isIpadMini ? (statusRoom.name|cutString:10) : statusRoom.name}}                      </span>                  </ng-template>              </span>          </div>          <span class="spacer"></span>          <i              [ngClass]="statusRoom.icon"              [ngStyle]="{\'margin-right\': statusRoom.iconExtraMargin}">          </i>      </div>  </div>  <div class="list-group d-flex align-items-center list-group-flush m-2 p-1 others-menu">      <div class="d-flex list-group-item py-2 my-1 others-menu_button align-items-center shadow-sm active">          <span class="me-3 others-menu_text">Vincular video</span>          <span class="spacer"></span>          <i class="fas fa-video"></i>      </div>      <div class="d-flex list-group-item py-2 my-1 others-menu_button align-items-center shadow-sm item-disabled">          <span class="me-3 others-menu_text">Taxi</span>          <span class="spacer"></span>          <i class="demo-icon icon-car"></i>      </div>      <div class="d-flex list-group-item py-2 my-1 others-menu_button align-items-center shadow-sm item-disabled">          <span class="me-3 room-type__count">2</span>          <span class="me-3 others-menu_text">Mesas</span>          <span class="spacer"></span>          <i class="demo-icon icon-menu"></i>      </div>      <span class="spacer"></span>      <div class="text-center mb-2">          <img src="./assets/img/logo_GlobalMaster.png" alt="GM LOGO" width="80">      </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'RoomsMenuComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RoomsMenuComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1167 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SOT (FrontEnd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SOT (FrontEnd)</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  LiberarPagarRoomServiceComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-liberar-pagar-room-service</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./liberar-pagar-room-service.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./liberar-pagar-room-service.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#authMode" >authMode</a>
+                            </li>
+                            <li>
+                                <a href="#comandas" >comandas</a>
+                            </li>
+                            <li>
+                                <a href="#comandas$" >comandas$</a>
+                            </li>
+                            <li>
+                                <a href="#comandasData" >comandasData</a>
+                            </li>
+                            <li>
+                                <a href="#destroy$" >destroy$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialogService" >dialogService</a>
+                            </li>
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#idComandaSelect" >idComandaSelect</a>
+                            </li>
+                            <li>
+                                <a href="#numHabitacion" >numHabitacion</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#formatoComanda" >formatoComanda</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#salir" >salir</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, dialogService: DialogService, getComandaService: <a href="../injectables/GetComandaService.html" target="_self">GetComandaService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>getComandaService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GetComandaService.html" target="_self" >GetComandaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formatoComanda"></a>
+                    <span class="name">
+                        <span ><b>formatoComanda</b></span>
+                        <a href="#formatoComanda"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>formatoComanda()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="58"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="216"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:216</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="48"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="salir"></a>
+                    <span class="name">
+                        <span ><b>salir</b></span>
+                        <a href="#salir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>salir()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="211"
+                            class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:211</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="authMode"></a>
+                    <span class="name">
+                        <span ><b>authMode</b></span>
+                        <a href="#authMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="comandas"></a>
+                    <span class="name">
+                        <span ><b>comandas</b></span>
+                        <a href="#comandas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>literal type[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="comandas$"></a>
+                    <span class="name">
+                        <span ><b>comandas$</b></span>
+                        <a href="#comandas$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>this.getComandaService.comandas$</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="33" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="comandasData"></a>
+                    <span class="name">
+                        <span ><b>comandasData</b></span>
+                        <a href="#comandasData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="31" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="destroy$"></a>
+                    <span class="name">
+                        <span ><b>destroy$</b></span>
+                        <a href="#destroy$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Subject&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new Subject&lt;boolean&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialogService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialogService</b></span>
+                        <a href="#dialogService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>DialogService</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="39" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idComandaSelect"></a>
+                    <span class="name">
+                        <span ><b>idComandaSelect</b></span>
+                        <a href="#idComandaSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numHabitacion"></a>
+                    <span class="name">
+                        <span ><b>numHabitacion</b></span>
+                        <a href="#numHabitacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/home/inicio-habitaciones/room-service/vistas/liberar-pagar-room-service/liberar-pagar-room-service.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { Subject, Subscription, takeUntil } from &#x27;rxjs&#x27;;
+
+import { GetComandaService } from &#x27;src/app/cocinabar/services/comanda/getComanda.service&#x27;;
+import { MessageModalAutoclosableComponent } from &#x27;src/app/core/components/message-modal-autoclosable/message-modal-autoclosable.component&#x27;;
+import { GetAllComandasInfoQuery } from &#x27;src/app/core/graphQL/serviciosGraph&#x27;;
+
+
+
+@Component({
+  selector: &#x27;app-liberar-pagar-room-service&#x27;,
+  templateUrl: &#x27;./liberar-pagar-room-service.component.html&#x27;,
+  styleUrls: [&#x27;./liberar-pagar-room-service.component.scss&#x27;]
+})
+export class LiberarPagarRoomServiceComponent implements OnInit {
+  //* VARIABLES
+  display &#x3D; true
+  //* ---------------
+  comandas: { id: string; tipo: string; numeroOrden: number; fechaSolicitud: any; estadoPedido: string; articulos: { cantidad: number; nombre: string; costo: number; esCortesia: boolean; }[]; subtotal: number; descuemto: number; cortesia: number; total: number; }[] &#x3D; []
+
+  destroy$: Subject&lt;boolean&gt; &#x3D; new Subject&lt;boolean&gt;();
+
+  // Variables provisionales la habitacion seleccionada se va a obtener por medio de los params en la ruta
+
+  authMode &#x3D; false
+  idComandaSelect: any;
+
+  comandasData: GetAllComandasInfoQuery[&quot;comandas&quot;] &#x3D; []
+
+  comandas$ &#x3D; this.getComandaService.comandas$
+
+  numHabitacion: string
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    public dialogService: DialogService,
+    private getComandaService: GetComandaService,
+
+  ) {
+    this.numHabitacion &#x3D; String(this.route.snapshot.paramMap.get(&quot;roomNumber&quot;));
+    this.getComandaService.getComandas()
+    this.getComandaService.getComandasSuscri();
+  }
+
+  ngOnInit(): void {
+    this.comandas$.pipe(takeUntil(this.destroy$)).subscribe(data &#x3D;&gt; {
+      this.comandasData &#x3D; data.filter(data &#x3D;&gt; data.renta.habitacion.numeroHabitacion &#x3D;&#x3D; Number(this.numHabitacion))
+      this.formatoComanda();
+    })
+
+
+  }
+
+
+  formatoComanda() {
+    this.comandas &#x3D; []
+
+    this.comandasData.forEach((data, i) &#x3D;&gt; {
+
+      const comanda: { cantidad: number; nombre: string; costo: number; esCortesia: boolean; }[] &#x3D; []
+      let subtotal: number &#x3D; 0
+      let cortesia: number &#x3D; 0
+      let estado &#x3D; &#x27;Preparación&#x27;
+      let tipo &#x3D; &#x27;&#x27;
+
+      if (data.fechaPago &#x3D;&#x3D; null) {
+        console.log(data,&#x27;comandas&#x27;)
+        if (data.alimentosComanda.length &gt; 0 &amp;&amp; data.tragosComanda.length &gt; 0) {
+          tipo &#x3D; &#x27;AB&#x27;
+          data.alimentosComanda.forEach(alimento &#x3D;&gt; {
+            subtotal &#x3D; subtotal + alimento.alimento.precio
+            comanda.push({
+              cantidad: alimento.cantidad,
+              nombre: alimento.alimento.nombre,
+              costo: alimento.alimento.precio,
+              esCortesia: alimento.cortesia,
+            })
+            if (alimento.cortesia) {
+              cortesia &#x3D; cortesia + alimento.alimento.precio
+            }
+          })
+          data.tragosComanda.forEach(trago &#x3D;&gt; {
+            subtotal &#x3D; subtotal + trago.trago.precio
+            comanda.push({
+              cantidad: trago.cantidad,
+              nombre: trago.trago.nombre,
+              costo: trago.trago.precio,
+              esCortesia: trago.cortesia
+            })
+            if (trago.cortesia) {
+              cortesia &#x3D; cortesia + trago.trago.precio
+            }
+          })
+          console.log(data.alimentosComanda[0].fechaPorEntregar !&#x3D; null &amp;&amp; data.tragosComanda[0].fechaPorEntregar !&#x3D; null, &#x27;valor&#x27;)
+          if (data.alimentosComanda[0].fechaPorEntregar !&#x3D; null &amp;&amp; data.tragosComanda[0].fechaPorEntregar !&#x3D; null) {
+            estado &#x3D; &#x27;Por cobrar&#x27;
+          }
+
+        }
+
+        if (data.alimentosComanda.length &gt; 0 &amp;&amp; data.tragosComanda.length &#x3D;&#x3D; 0) {
+          tipo &#x3D; &#x27;A&#x27;
+          data.alimentosComanda.forEach(alimento &#x3D;&gt; {
+            subtotal &#x3D; subtotal + alimento.alimento.precio
+            comanda.push({
+              cantidad: alimento.cantidad,
+              nombre: alimento.alimento.nombre,
+              costo: alimento.alimento.precio,
+              esCortesia: alimento.cortesia
+            })
+            if (alimento.cortesia) {
+              cortesia &#x3D; cortesia + alimento.alimento.precio
+            }
+          })
+          if (data.alimentosComanda[0].fechaPorEntregar !&#x3D; null) {
+            estado &#x3D; &#x27;Por cobrar&#x27;
+          }
+        }
+
+        if (data.tragosComanda.length &gt; 0 &amp;&amp; data.alimentosComanda.length &#x3D;&#x3D; 0) {
+          tipo &#x3D; &#x27;B&#x27;
+          data.tragosComanda.forEach(trago &#x3D;&gt; {
+            subtotal &#x3D; subtotal + trago.trago.precio
+            comanda.push({
+              cantidad: trago.cantidad,
+              nombre: trago.trago.nombre,
+              costo: trago.trago.precio,
+              esCortesia: trago.cortesia
+            })
+            if (trago.cortesia) {
+              cortesia &#x3D; cortesia + trago.trago.precio
+            }
+          })
+          if (data.tragosComanda[0].fechaPorEntregar !&#x3D; null) {
+            estado &#x3D; &#x27;Por cobrar&#x27;
+          }
+        }
+
+        if(data.articulosComanda.length &gt; 0) {
+          console.log(data,&#x27;filtro&#x27;)
+          let otros &#x3D; false
+          let sexYSpa &#x3D; false
+          data.articulosComanda.forEach(articulo &#x3D;&gt; {
+            if(articulo.almacen.menu &#x3D;&#x3D; &#x27;Otros&#x27;){
+              otros &#x3D; true
+            }
+            if(articulo.almacen.menu &#x3D;&#x3D; &#x27;SexSpa&#x27;){
+              sexYSpa &#x3D; true
+            }
+            subtotal &#x3D; subtotal + articulo.articuloRs.precio
+            comanda.push({
+              cantidad: articulo.cantidad,
+              nombre: articulo.articuloRs.nombre,
+              costo: articulo.articuloRs.precio,
+              esCortesia: articulo.cortesia
+            })
+            if (articulo.cortesia) {
+              cortesia &#x3D; cortesia + articulo.articuloRs.precio
+            }
+          })
+          if(otros){
+            tipo &#x3D; &#x60;${tipo}O&#x60;
+          }
+          if(sexYSpa){
+            tipo &#x3D; &#x60;${tipo}S&#x60;
+          }
+          if (data.tragosComanda.length &#x3D;&#x3D; 0 &amp;&amp; data.alimentosComanda.length &#x3D;&#x3D; 0){
+            estado &#x3D; &#x27;Por cobrar&#x27;
+          }
+        }
+
+        if (data.fechaEntrega) {
+          estado &#x3D; &#x27;Por pagar&#x27;
+          this.comandas.push({
+            id: data.id,
+            tipo: tipo,
+            numeroOrden: i,
+            fechaSolicitud: data.fechaEntrega,
+            estadoPedido: estado,
+            articulos: comanda,
+            subtotal: subtotal,
+            descuemto: 0,
+            cortesia: cortesia,
+            total: subtotal - cortesia
+          })
+        } else {
+          this.comandas.push({
+            id: data.id,
+            tipo: tipo,
+            numeroOrden: i,
+            fechaSolicitud: data.fechaSolicitud,
+            estadoPedido: estado,
+            articulos: comanda,
+            subtotal: subtotal,
+            descuemto: 0,
+            cortesia: cortesia,
+            total: subtotal - cortesia
+          })
+        }
+      }
+    })
+    this.comandas.sort((a, b) &#x3D;&gt; Number(b.numeroOrden) -  Number(a.numeroOrden));
+  }
+
+
+
+  //* BOTONES MODAL
+  salir() {
+    this.router.navigate([&#x60;/hotel&#x60;]);
+  }
+
+
+  ngOnDestroy() {
+    this.comandas$.pipe(takeUntil(this.destroy$)).subscribe().unsubscribe()
+  }
+  //* ------------------------------------------
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog [(visible)]&#x3D;&quot;display&quot; [modal]&#x3D;&quot;true&quot; [closable]&#x3D;&quot;false&quot; [draggable]&#x3D;&quot;false&quot; [showHeader]&#x3D;&quot;false&quot;&gt;
+  &lt;div class&#x3D;&quot;container-roomservice_modal&quot;&gt;
+    &lt;div class&#x3D;&quot;titulo-rooms_servece&quot;&gt;
+      HABITACIÓN &lt;b&gt;{{numHabitacion}}&lt;/b&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;container-cards_comanda&quot; &gt;
+      &lt;!--? INICIO DE LAS TARJETAS --&gt;
+      &lt;app-tarjetas-comanda class&#x3D;&quot;card-room_service&quot; *ngFor&#x3D;&quot;let comanda of comandas&quot; [numHabitacion]&#x3D;&quot;numHabitacion&quot; [comanda]&#x3D;&quot;comanda&quot;  &gt;&lt;/app-tarjetas-comanda&gt;
+      &lt;!--? ------------------------------- --&gt;
+      &lt;button class&#x3D;&quot;button-add_comanda&quot; [routerLink]&#x3D;&quot;&#x27;/hotel/roomService/&#x27;+ numHabitacion&quot;&gt;&lt;i class&#x3D;&quot;fa-sharp fa-solid fa-plus&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;modal-footer-content footer&quot;&gt;
+      &lt;div class&#x3D;&quot;footer-botton&quot;&gt;
+        &lt;button class&#x3D;&quot;button-modal button-salir&quot; (click)&#x3D;&quot;salir()&quot;&gt;
+          &lt;div class&#x3D;&quot;icon&quot;&gt;
+            &lt;i class&#x3D;&quot;fas icon-icon-metro-exit&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;text&quot;&gt;Salir&lt;/div&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/p-dialog&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./liberar-pagar-room-service.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../../../library.scss&#x27;;
+
+.container-roomservice_modal {
+  display        : flex;
+  width          : 88vw;
+  height         : 90vh;
+  font-family    : $font-secundaria;
+  flex-direction : column;
+  flex-wrap      : nowrap;
+  justify-content: space-between;
+
+  &amp; .titulo-rooms_servece {
+    text-align   : end;
+    font-weight  : 700;
+    font-size    : 15pt;
+    color        : $wine;
+    margin-bottom: 5px;
+  }
+
+  &amp; .modal-footer-content.comanda {
+    text-align: center;
+    margin    : 5px 0px;
+    width     : 100%;
+  }
+
+  &amp; .modal-footer-content.footer {
+    justify-content: end;
+    margin-top     : 0px;
+    width          : 100%;
+  }
+}
+
+.container-list_products {
+  font-family     : $font-secundaria;
+  overflow: auto;
+  padding : 0 5px;
+  height: 100%;
+}
+
+.container-cards_comanda {
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : nowrap;
+  justify-content: flex-start;
+  height         : 100%;
+  align-items    : center;
+  overflow-x     : scroll;
+  overflow-y     : clip;
+  padding        : 3px 0;
+
+  &amp; .card-room_service {
+    height         : 100%;
+    box-shadow     : $shadow-modal-tittle;
+    border-radius  : $border-radius-tittle;
+    width          : 41vh;
+    margin         : 10px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+  }
+}
+
+.button-add_comanda {
+  background-color: $wine;
+  border-radius   : $border-button;
+  border          : none;
+  color           : #fff;
+  font-size       : 20pt;
+  box-shadow      : 0px 0px 8px 0px rgba(128,19,54,0.81);
+  margin-right: 6px;
+  &amp; i {
+    padding: 5px;
+  }
+
+  &amp;:hover {
+    background-color: $wine-hover;
+  }
+}
+
+.footer-card {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-evenly;
+  margin-top: 5px;
+
+
+  &amp; .button-card {
+    width        : 9vh;
+    height       : 9vh;
+    border-radius: 10px;
+    opacity      : 1;
+    color        : #fff;
+    border       : 1px solid transparent;
+    margin       : 3px;
+
+    &amp; .icon {
+      font-size: 3vh;
+    }
+
+    &amp; .text-card {
+      font-size: 1.8vh;
+    }
+  }
+
+  &amp; .text-card {
+    font-size: 8pt;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog [(visible)]="display" [modal]="true" [closable]="false" [draggable]="false" [showHeader]="false">  <div class="container-roomservice_modal">    <div class="titulo-rooms_servece">      HABITACIÓN <b>{{numHabitacion}}</b>    </div>    <div class="container-cards_comanda" >      <!--? INICIO DE LAS TARJETAS -->      <app-tarjetas-comanda class="card-room_service" *ngFor="let comanda of comandas" [numHabitacion]="numHabitacion" [comanda]="comanda"  ></app-tarjetas-comanda>      <!--? ------------------------------- -->      <button class="button-add_comanda" [routerLink]="\'/hotel/roomService/\'+ numHabitacion"><i class="fa-sharp fa-solid fa-plus"></i></button>    </div>    <div class="modal-footer-content footer">      <div class="footer-botton">        <button class="button-modal button-salir" (click)="salir()">          <div class="icon">            <i class="fas icon-icon-metro-exit"></i>          </div>          <div class="text">Salir</div>        </button>      </div>    </div>  </div></p-dialog></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+    var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
+    var ACTUAL_COMPONENT = {'name': 'LiberarPagarRoomServiceComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LiberarPagarRoomServiceComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
