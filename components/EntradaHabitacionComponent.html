@@ -58,6 +58,9 @@
         <li >
             <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
         </li>
+        <li >
+            <a href="#example" role="tab" id="example-tab" data-toggle="tab" data-link="example">Examples</a>
+        </li>
 </ul>
 
 <div class="tab-content">
@@ -73,8 +76,8 @@
         <h3>Descripción</h3>
     </p>
     <p class="comment">
-        <p>Aqui Se encuentran todos los componentes que van junto a la entrada de habitacion</p>
-<p><readme-url>assetsDocumentacion/Diagramas/diagram-renta-habitacion.svg</readme-url></p>
+        <p>Aqui Se encuentran todos los componentes que se asocian a la entrada de habitacion</p>
+<p><example-url>/assetsDocumentacion/Diagramas/diagram-renta-habitacion.svg</example-url></p>
 
     </p>
 
@@ -277,9 +280,9 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
 /**
-  * Aqui Se encuentran todos los componentes que van junto a la entrada de habitacion
+  * Aqui Se encuentran todos los componentes que se asocian a la entrada de habitacion
   *
-  * &lt;readme-url&gt;assetsDocumentacion/Diagramas/diagram-renta-habitacion.svg&lt;/readme-url&gt;
+  * &lt;example-url&gt;/assetsDocumentacion/Diagramas/diagram-renta-habitacion.svg&lt;/example-url&gt;
 */
 
 @Component({
@@ -335,6 +338,11 @@ export class EntradaHabitacionComponent implements OnInit {
         </div>
     </div>
 
+    <div class="tab-pane fade " id="c-example">
+            <iframe class="exampleContainer" src="/assetsDocumentacion/Diagramas/diagram-renta-habitacion.svg">
+                <p>no-iframes</p>
+            </iframe>
+    </div>
     
 </div>
 
