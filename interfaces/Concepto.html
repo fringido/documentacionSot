@@ -70,6 +70,13 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Descripción</h3>
+            </p>
+            <p class="comment">
+                <p>Description placeholder</p>
+
+            </p>
 
 
         <section>
@@ -185,19 +192,36 @@ import { debounceTime, distinctUntilChanged } from &#x27;rxjs&#x27;;
 import { MessageModalAutoclosableComponent } from &#x27;src/app/core/components/message-modal-autoclosable/message-modal-autoclosable.component&#x27;;
 import { ConfimModalMessageComponent } from &#x27;../../../core/components/confim-modal-message/confim-modal-message.component&#x27;;
 
+/**
+ * Description placeholder
+ *
+ * @interface Concepto
+ * @typedef {Concepto}
+ */
 interface Concepto {
   nombre: string;
   id: number;
 }
+
+/**
+ * Description placeholder
+ *
+ * @interface Conceptos
+ * @typedef {Conceptos}
+ */
 interface Conceptos {
   concepto: [Concepto];
 }
+
 
 @Component({
   selector: &#x27;app-conceptos&#x27;,
   templateUrl: &#x27;./conceptos.component.html&#x27;,
   styleUrls: [&#x27;./conceptos.component.scss&#x27;],
 })
+
+
+
 export class ConceptosComponent implements OnInit {
   display &#x3D; true;
   authMode &#x3D; false;
@@ -228,7 +252,11 @@ export class ConceptosComponent implements OnInit {
     this.search();
     this.conceptosAll &#x3D; this.conceptos;
   }
-
+/**
+ * Al dar click en un concepto se guarda, si el se da click y el concepto ya esta seleccionado el valor de concepto se vacía
+ * @param concepto concepto donde se dio click
+ * @returns finaliza la función
+ */
   selectConcepto(concepto: Concepto): void {
     if (this.conceptoSelect &#x3D;&#x3D; concepto) {
       this.conceptoSelect &#x3D; { nombre: &#x27;&#x27;, id: 0 };
@@ -238,6 +266,9 @@ export class ConceptosComponent implements OnInit {
     return;
   }
 
+  /**
+   * Crea el filtro
+   */
   search() {
     this.filterText &#x3D; new FormControl(&#x27;&#x27;);
     this.filterText.valueChanges
@@ -255,6 +286,7 @@ export class ConceptosComponent implements OnInit {
       });
   }
 
+
   mensaje(mensaje: string) {
     return this.dialogService.open(MessageModalAutoclosableComponent, {
       data: {
@@ -263,6 +295,14 @@ export class ConceptosComponent implements OnInit {
     });
   }
 
+
+  /**
+   * Muestra un mensaje
+   *
+   *
+   * @param {string} mensaje recibe texto para mostrar un mensaje
+   * @returns {*}
+   */
   mensajeConfirmacion(mensaje: string) {
     return this.dialogService.open(ConfimModalMessageComponent, {
       data: {
@@ -271,6 +311,12 @@ export class ConceptosComponent implements OnInit {
     });
   }
 
+
+  /**
+   * Envía mensaje en caso de querer descarar un concepto
+   *
+   * @param {Concepto} concepto Recibe el objeto de el concepto seleccionado
+   */
   descartar(concepto: Concepto) {
     const ref &#x3D; this.mensajeConfirmacion(
       &#x60;ESTAS POR DESCARTAR EL CONCEPTO &quot;${concepto.nombre}&quot;&#x60;

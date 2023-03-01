@@ -228,7 +228,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
@@ -258,8 +258,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="41"
-                            class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:41</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="40"
+                            class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:40</a></div>
                 </td>
             </tr>
 
@@ -400,8 +400,7 @@ export class ComandaPagoEnvioService {
   ) { }
 
 entregarComanda(id:string){
-  let mensaje: string &#x3D; &#x27;&#x27;
-    this.apollo
+    return this.apollo
       .mutate({
         mutation: ENTREGAR_COMANDA,
         variables: {
@@ -423,9 +422,10 @@ entregarComanda(id:string){
         ({ data }:any):any &#x3D;&gt; {
           mensaje &#x3D; &#x27;COMANDA PAGADA&#x27;
           this.mensajeSubjex.next(mensaje)
+          console.log(&#x27;COMANDA PAGADA&#x27;, data)
         },
         (error: any) &#x3D;&gt; {
-          this.mensajeSubjex.next(error.message)
+          console.log(&#x27;there was an error sending the query&#x27;, error)
         }
       )
   }
