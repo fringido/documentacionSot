@@ -126,7 +126,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:24</a></div>
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:25</a></div>
                             </td>
                         </tr>
 
@@ -189,8 +189,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="30"
-                            class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:30</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="31"
+                            class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:31</a></div>
                 </td>
             </tr>
 
@@ -258,8 +258,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="40"
-                            class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:40</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="41"
+                            class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:41</a></div>
                 </td>
             </tr>
 
@@ -331,7 +331,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:24</a></div>
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:25</a></div>
                         </td>
                     </tr>
 
@@ -357,7 +357,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:23</a></div>
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/cocinabar/services/comanda/comandaPagoEnvio.service.ts:24</a></div>
                         </td>
                     </tr>
 
@@ -373,6 +373,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import { gql, Apollo } from &#x27;apollo-angular&#x27;;
 import { BehaviorSubject } from &#x27;rxjs&#x27;;
+import { EntregarComandaGQL } from &#x27;src/app/core/graphQL/serviciosGraph&#x27;;
 
 
 
@@ -401,7 +402,7 @@ export class ComandaPagoEnvioService {
 
 entregarComanda(id:string){
     return this.apollo
-      .mutate({
+      .mutate&lt;EntregarComandaGQL&gt;({
         mutation: ENTREGAR_COMANDA,
         variables: {
           id: id,

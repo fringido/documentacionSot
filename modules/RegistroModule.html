@@ -191,13 +191,14 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
-import { CommonModule, CurrencyPipe } from &#x27;@angular/common&#x27;;
+import { CommonModule } from &#x27;@angular/common&#x27;;
 
 import { RegistroRoutingModule } from &#x27;./registro-routing.module&#x27;;
 import { RegistroComponent } from &#x27;./registro.component&#x27;;
 import { PrimengModule } from &#x27;src/app/core/modules/primeng/primeng.module&#x27;;
 import { ReactiveFormsModule } from &#x27;@angular/forms&#x27;;
 import { CoreModule } from &#x27;src/app/core/core.module&#x27;;
+import { CurrencyMaskModule } from &#x27;ng2-currency-mask&#x27;;
 
 
 @NgModule({
@@ -209,9 +210,9 @@ import { CoreModule } from &#x27;src/app/core/core.module&#x27;;
     RegistroRoutingModule,
     PrimengModule,
     ReactiveFormsModule,
-    CoreModule
+    CoreModule,
+    CurrencyMaskModule
   ],
-  providers: [CurrencyPipe]
 })
 export class RegistroModule { }
 </code></pre>

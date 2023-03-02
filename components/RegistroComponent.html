@@ -76,6 +76,7 @@
     </p>
     <p class="comment">
                     <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
     </p>
 
 
@@ -138,13 +139,22 @@
                                 <a href="#authMode" >authMode</a>
                             </li>
                             <li>
+                                <a href="#destroy$" >destroy$</a>
+                            </li>
+                            <li>
                                 <a href="#paqueteForm" >paqueteForm</a>
                             </li>
                             <li>
-                                <a href="#tiposHabitacion$" >tiposHabitacion$</a>
+                                <a href="#tiposHabitacion" >tiposHabitacion</a>
+                            </li>
+                            <li>
+                                <a href="#tiposHabRef" >tiposHabRef</a>
                             </li>
                             <li>
                                 <a href="#validaciones" >validaciones</a>
+                            </li>
+                            <li>
+                                <a href="#validacionesReactive" >validacionesReactive</a>
                             </li>
                             <li>
                                 <a href="#visible" >visible</a>
@@ -168,10 +178,10 @@
                                 <a href="#crearPaqueteAutenticado" >crearPaqueteAutenticado</a>
                             </li>
                             <li>
-                                <a href="#currencyInputChanged" >currencyInputChanged</a>
+                                <a href="#iniciarVariables" >iniciarVariables</a>
                             </li>
                             <li>
-                                <a href="#iniciarVariables" >iniciarVariables</a>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
@@ -180,7 +190,7 @@
                                 <a href="#salir" >salir</a>
                             </li>
                             <li>
-                                <a href="#setInputFormat" >setInputFormat</a>
+                                <a href="#selectTipoHabitacion" >selectTipoHabitacion</a>
                             </li>
                         </ul>
                     </td>
@@ -226,12 +236,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(location: <a href="https://angular.io/api/common/Location" target="_blank">Location</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, estadoHabitacionService: <a href="../injectables/SuscripcionEstadoHabitacionService.html" target="_self">SuscripcionEstadoHabitacionService</a>, currencyPipe: <a href="https://angular.io/api/common/CurrencyPipe" target="_blank">CurrencyPipe</a>, dialogService: DialogService)</code>
+<code>constructor(location: <a href="https://angular.io/api/common/Location" target="_blank">Location</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, estadoHabitacionService: <a href="../injectables/SuscripcionEstadoHabitacionService.html" target="_self">SuscripcionEstadoHabitacionService</a>, dialogService: DialogService)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:25</a></div>
+                                <div class="io-line">Definido en <a href="" data-line="30" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:30</a></div>
                             </td>
                         </tr>
 
@@ -273,10 +283,10 @@
                                                     
                                                 </tr>
                                                 <tr>
-                                                        <td>estadoHabitacionService</td>
+                                                        <td>renderer</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/SuscripcionEstadoHabitacionService.html" target="_self" >SuscripcionEstadoHabitacionService</a></code>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -285,10 +295,10 @@
                                                     
                                                 </tr>
                                                 <tr>
-                                                        <td>currencyPipe</td>
+                                                        <td>estadoHabitacionService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="https://angular.io/api/common/CurrencyPipe" target="_blank" >CurrencyPipe</a></code>
+                                                                        <code><a href="../injectables/SuscripcionEstadoHabitacionService.html" target="_self" >SuscripcionEstadoHabitacionService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -346,8 +356,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="89"
-                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:89</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="116"
+                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:116</a></div>
                 </td>
             </tr>
 
@@ -383,8 +393,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="94"
-                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:94</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="121"
+                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:121</a></div>
                 </td>
             </tr>
 
@@ -436,75 +446,6 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="currencyInputChanged"></a>
-                    <span class="name">
-                        <span ><b>currencyInputChanged</b></span>
-                        <a href="#currencyInputChanged"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>currencyInputChanged(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="65"
-                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:65</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Parámetros :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Nombre</td>
-                                    <td>Tipo</td>
-                                    <td>Opcional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>value</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
                     <a name="iniciarVariables"></a>
                     <span class="name">
                         <span ><b>iniciarVariables</b></span>
@@ -521,8 +462,45 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="40"
-                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:40</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="50"
+                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="46"
+                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:46</a></div>
                 </td>
             </tr>
 
@@ -558,8 +536,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="35"
-                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:35</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="41"
+                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:41</a></div>
                 </td>
             </tr>
 
@@ -595,8 +573,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="109"
-                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:109</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="136"
+                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:136</a></div>
                 </td>
             </tr>
 
@@ -616,24 +594,24 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="setInputFormat"></a>
+                    <a name="selectTipoHabitacion"></a>
                     <span class="name">
-                        <span ><b>setInputFormat</b></span>
-                        <a href="#setInputFormat"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>selectTipoHabitacion</b></span>
+                        <a href="#selectTipoHabitacion"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>setInputFormat(formControl: AbstractControl<any>, v: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>selectTipoHabitacion(tipoHabitacion: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="61"
-                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:61</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="101"
+                            class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:101</a></div>
                 </td>
             </tr>
 
@@ -654,19 +632,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>formControl</td>
-                                    <td>
-                                            <code>AbstractControl&lt;any&gt;</code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>v</td>
+                                    <td>tipoHabitacion</td>
                                     <td>
                                                 <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                     </td>
@@ -683,7 +649,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
@@ -717,6 +683,31 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="destroy$"></a>
+                    <span class="name">
+                        <span ><b>destroy$</b></span>
+                        <a href="#destroy$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new Subject()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
                                 <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:20</a></div>
                         </td>
                     </tr>
@@ -743,7 +734,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:22</a></div>
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:25</a></div>
                         </td>
                     </tr>
 
@@ -754,22 +745,57 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="tiposHabitacion$"></a>
+                    <a name="tiposHabitacion"></a>
                     <span class="name">
-                        <span ><b>tiposHabitacion$</b></span>
-                        <a href="#tiposHabitacion$"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>tiposHabitacion</b></span>
+                        <a href="#tiposHabitacion"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Tipo : </i>    <code>Observable&lt;&gt;</code>
+                        <i>Tipo : </i>    <code>string[]</code>
 
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:25</a></div>
+                                <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tiposHabRef"></a>
+                    <span class="name">
+                        <span ><b>tiposHabRef</b></span>
+                        <a href="#tiposHabRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../miscellaneous/typealiases.html#Query" target="_self" >QueryList&lt;ElementRef&lt;HTMLSpanElement&gt;&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(&#x27;tiposHabRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="30" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:30</a></div>
                         </td>
                     </tr>
 
@@ -794,7 +820,32 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:23</a></div>
+                                <div class="io-line">Definido en <a href="" data-line="26" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validacionesReactive"></a>
+                    <span class="name">
+                        <span ><b>validacionesReactive</b></span>
+                        <a href="#validacionesReactive"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new ValidacionesReactive()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:27</a></div>
                         </td>
                     </tr>
 
@@ -819,7 +870,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:19</a></div>
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:22</a></div>
                         </td>
                     </tr>
 
@@ -848,7 +899,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Definido en <a href="" data-line="73" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:73</a></div>
+                                    <div class="io-line">Definido en <a href="" data-line="85" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:85</a></div>
                                 </td>
                             </tr>
 
@@ -870,7 +921,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Definido en <a href="" data-line="76" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:76</a></div>
+                                    <div class="io-line">Definido en <a href="" data-line="88" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:88</a></div>
                                 </td>
                             </tr>
 
@@ -892,7 +943,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Definido en <a href="" data-line="79" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:79</a></div>
+                                    <div class="io-line">Definido en <a href="" data-line="91" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:91</a></div>
                                 </td>
                             </tr>
 
@@ -914,7 +965,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Definido en <a href="" data-line="82" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:82</a></div>
+                                    <div class="io-line">Definido en <a href="" data-line="94" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:94</a></div>
                                 </td>
                             </tr>
 
@@ -936,7 +987,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Definido en <a href="" data-line="85" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:85</a></div>
+                                    <div class="io-line">Definido en <a href="" data-line="97" class="link-to-prism">src/app/paquetes/pages/registro/registro.component.ts:97</a></div>
                                 </td>
                             </tr>
 
@@ -947,37 +998,43 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { CurrencyPipe, Location } from &#x27;@angular/common&#x27;;
-import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { AbstractControl, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Location } from &#x27;@angular/common&#x27;;
+import { Component, ElementRef, OnDestroy, OnInit, QueryList, Renderer2, ViewChildren } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
 import { TiposHabitacionsesQuery } from &#x27;src/app/core/graphQL/serviciosGraph&#x27;;
 import { SuscripcionEstadoHabitacionService } from &#x27;src/app/core/services/habitaciones/suscripcion-estado-habitacion.service&#x27;;
-import { Observable } from &#x27;rxjs&#x27;;
-import { debounceTime } from &#x27;rxjs/operators&#x27;;
+import { Observable, Subject, takeUntil } from &#x27;rxjs&#x27;;
 import { validaciones } from &#x27;src/app/core/formsControl/validaciones&#x27;;
 import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
 import { MessageModalAutoclosableComponent } from &#x27;src/app/core/components/message-modal-autoclosable/message-modal-autoclosable.component&#x27;;
+import { ValidacionesReactive } from &#x27;src/app/core/formsControl/validaciones-reactive&#x27;;
+import { PaquetesList } from &#x27;../../constants/paquetes-list&#x27;;
 
 @Component({
   selector: &#x27;app-registro&#x27;,
   templateUrl: &#x27;./registro.component.html&#x27;,
   styleUrls: [&#x27;./registro.component.scss&#x27;]
 })
-export class RegistroComponent implements OnInit {
+export class RegistroComponent implements OnInit, OnDestroy {
+
+  destroy$ &#x3D; new Subject();
 
   visible &#x3D; true;
   authMode &#x3D; false;
 
   paqueteForm!: FormGroup;
   validaciones &#x3D; new validaciones();
+  validacionesReactive &#x3D; new ValidacionesReactive();
 
-  tiposHabitacion$!: Observable&lt;TiposHabitacionsesQuery[&#x27;tipos_habitaciones&#x27;]&gt;
+  tiposHabitacion!: string[];
+  @ViewChildren(&#x27;tiposHabRef&#x27;) tiposHabRef!: QueryList&lt;ElementRef&lt;HTMLSpanElement&gt;&gt;;
+
 
   constructor(
     private readonly location: Location,
     private readonly fb: FormBuilder,
+    private readonly renderer: Renderer2,
     private readonly estadoHabitacionService: SuscripcionEstadoHabitacionService,
-    private readonly currencyPipe: CurrencyPipe,
     private readonly dialogService: DialogService
   ) { }
 
@@ -986,37 +1043,43 @@ export class RegistroComponent implements OnInit {
     this.estadoHabitacionService.getTipos();
   }
 
+  ngOnDestroy(): void {
+    this.destroy$.next(true);
+  }
+
   iniciarVariables() {
-    this.tiposHabitacion$ &#x3D; this.estadoHabitacionService.tipos$;
+    this.estadoHabitacionService.tipos$.pipe(takeUntil(this.destroy$)).subscribe(types &#x3D;&gt; {
+      if(!types) {
+        return;
+      }
+      this.tiposHabitacion &#x3D; types.map(type &#x3D;&gt; type.nombre);
+      this.tiposHabitacion[this.tiposHabitacion.length] &#x3D; &#x27;Todos&#x27;
+    });
     this.paqueteForm &#x3D; this.fb.group({
-      name: [&#x27;&#x27;, Validators.required],
+      name: [&#x27;&#x27;, [
+        Validators.required,
+        this.validacionesReactive.noExiste(PaquetesList.map(i &#x3D;&gt; i.name))
+      ]],
       habitacion: [&#x27;&#x27;, Validators.required],
       price: [&#x27;&#x27;, Validators.required],
       discount: [&#x27;&#x27;, Validators.required],
       cobroUnico: [false, Validators.required]
     });
-    this.price?.valueChanges.pipe(
-      debounceTime(1000)
-    ).subscribe(v &#x3D;&gt; {
-      this.setInputFormat(this.price!, v);
-    });
-    this.discount?.valueChanges.pipe(
-      debounceTime(1000)
-    ).subscribe(v &#x3D;&gt; {
-      this.setInputFormat(this.discount!, v);
-    });
-  }
 
-  setInputFormat(formControl: AbstractControl&lt;any&gt;, v: string) {
-    formControl.setValue(this.currencyPipe.transform(this.currencyInputChanged(v)), {emitEvent: false})
-  }
-
-  currencyInputChanged(value: string) {
-    const num &#x3D; Number(value.replace(/[$,]/g, &quot;&quot;));
-    if(num &lt; 1) {
-      return num * 1000
-    }
-    return num
+    this.price?.valueChanges.subscribe(() &#x3D;&gt; {
+      this.discount?.disable({emitEvent: false});
+      if(this.price?.value &#x3D;&#x3D;&#x3D; 0 || this.price?.value &#x3D;&#x3D;&#x3D; null) {
+        this.price?.setValue(0, {emitEvent: false})
+        this.discount?.enable({emitEvent: false});
+      }
+    });
+    this.discount?.valueChanges.subscribe(() &#x3D;&gt; {
+      this.price?.disable({emitEvent: false});
+      if(this.discount?.value &#x3D;&#x3D;&#x3D; 0 || this.discount?.value &#x3D;&#x3D;&#x3D; null) {
+        this.discount?.setValue(0, {emitEvent: false})
+        this.price?.enable({emitEvent: false});
+      }
+    });
   }
 
   get name() {
@@ -1035,8 +1098,23 @@ export class RegistroComponent implements OnInit {
     return this.paqueteForm.get(&#x27;cobroUnico&#x27;)
   }
 
+  selectTipoHabitacion(tipoHabitacion: string) {
+    this.habitacion?.setValue(tipoHabitacion);
+
+    if(tipoHabitacion &#x3D;&#x3D;&#x3D; &#x27;Todos&#x27;) {
+      return this.tiposHabRef.toArray().forEach((el) &#x3D;&gt; {
+        this.renderer.addClass(el.nativeElement, &#x27;boxBadgeSelected&#x27;);
+      })
+    }
+
+    const tipoHabSelected &#x3D; this.tiposHabRef.toArray().find((el) &#x3D;&gt; el.nativeElement.id &#x3D;&#x3D;&#x3D; &#x27;tipo_&#x27; + tipoHabitacion);
+    const todosOption &#x3D; this.tiposHabRef.toArray().find((el) &#x3D;&gt; el.nativeElement.id &#x3D;&#x3D;&#x3D; &#x27;tipo_Todos&#x27;);
+    tipoHabSelected?.nativeElement.classList.toggle(&#x27;boxBadgeSelected&#x27;);
+    todosOption?.nativeElement.classList.remove(&#x27;boxBadgeSelected&#x27;);
+  }
+
   crearPaquete() {
-    console.log({...this.paqueteForm.value, name: this.name?.value?.toUpperCase(), price: this.currencyInputChanged(this.price?.value), discount: this.currencyInputChanged(this.discount?.value)});
+    console.log({...this.paqueteForm.value, name: this.name?.value?.toUpperCase()});
     this.authMode &#x3D; true;
   }
 
@@ -1067,56 +1145,69 @@ export class RegistroComponent implements OnInit {
         <pre class="line-numbers"><code class="language-html">&lt;p-dialog header&#x3D;&quot;PAQUETES&quot; [(visible)]&#x3D;&quot;visible&quot; [closable]&#x3D;&quot;false&quot; [modal]&#x3D;&quot;true&quot; [draggable]&#x3D;&quot;false&quot; [style]&#x3D;&quot;{&#x27;width&#x27;:&#x27;860px&#x27;}&quot;
     [showHeader]&#x3D;&quot;true&quot; *ngIf&#x3D;&quot;!authMode&quot;&gt;
     &lt;form class&#x3D;&quot;paquetes-form&quot; [formGroup]&#x3D;&quot;paqueteForm&quot;&gt;
-        &lt;div class&#x3D;&quot;my-2&quot;&gt;
-            &lt;label class&#x3D;&quot;text-center w-100&quot;&gt;NOMBRE&lt;/label&gt;
-            &lt;div class&#x3D;&quot;my-2 mx-2&quot;&gt;
-                &lt;span class&#x3D;&quot;p-input-icon-right w-100&quot;&gt;
-                    &lt;i *ngIf&#x3D;&quot;!name?.valid&quot; class&#x3D;&quot;fas fa-clipboard-list txt-grey-item&quot;&gt;&lt;/i&gt;
-                    &lt;i *ngIf&#x3D;&quot;name?.valid&quot; class&#x3D;&quot;fas fa-clipboard-list&quot; [style]&#x3D;&quot;&#x27;color: #0AC917&#x27;&quot;&gt;&lt;/i&gt;
-                    &lt;input type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;Escribe un nombre&quot; class&#x3D;&quot;input-txt&quot; formControlName&#x3D;&quot;name&quot;&gt;
-                &lt;/span&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-column align-items-center columnaInputs&quot;&gt;
+            &lt;div class&#x3D;&quot;w-100&quot;&gt;
+                &lt;div class&#x3D;&quot;my-2 input-container&quot;&gt;
+                    &lt;app-input-text
+                      formControlName&#x3D;&quot;name&quot;
+                      [control]&#x3D;&quot;name&quot;
+                      label&#x3D;&quot;NOMBRE&quot;
+                      iconClass&#x3D;&quot;fas fa-clipboard-list&quot;
+                      placeholder&#x3D;&quot;Escribe un nombre&quot;
+                      (keypress)&#x3D;&quot;validaciones.esAlfanumerico($event)&quot;
+                      (paste)&#x3D;&quot;validaciones.esAlfanumerico($event)&quot;
+                    &gt;&lt;/app-input-text&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;my-2&quot;&gt;
-            &lt;label class&#x3D;&quot;text-center w-100&quot;&gt;HABITACIÓN&lt;/label&gt;
-            &lt;div class&#x3D;&quot;my-2 mx-2&quot;&gt;
-                &lt;span class&#x3D;&quot;p-input-icon-right border-bottom__calendar&quot;&gt;
-                    &lt;i *ngIf&#x3D;&quot;habitacion?.invalid&quot; class&#x3D;&quot;fas fa-hotel txt-grey-item&quot;&gt;&lt;/i&gt;
-                    &lt;i *ngIf&#x3D;&quot;!habitacion?.invalid&quot; class&#x3D;&quot;fas fa-hotel txt-success&quot;&gt;&lt;/i&gt;
-                    &lt;div class&#x3D;&quot;d-flex align-items-center w-100&quot;&gt;
-                        &lt;p-dropdown 
-                            scrollHeight&#x3D;&quot;160px&quot; 
-                            [showClear]&#x3D;&quot;true&quot;
-                            placeholder&#x3D;&quot;Selecciona la habitación&quot;
-                            [options]&#x3D;&quot;(tiposHabitacion$ | async)!&quot;
-                            optionLabel&#x3D;&quot;nombre&quot;
-                            formControlName&#x3D;&quot;habitacion&quot;
-                            optionValue&#x3D;&quot;nombre&quot;
-                            styleClass&#x3D;&quot;inputNotText-17&quot;
+            &lt;div class&#x3D;&quot;w-100&quot;&gt;
+                &lt;div class&#x3D;&quot;my-2 input-container&quot;&gt;
+                    &lt;app-input-custom-text
+                        label&#x3D;&quot;PRECIO DEL PAQUETE&quot;
+                    &gt;
+                    &lt;input
+                        type&#x3D;&quot;text&quot;
+                        pInputText
+                        [options]&#x3D;&quot;{ prefix: &#x27;$&#x27;, thousands: &#x27;,&#x27;, decimal: &#x27;.&#x27; }&quot;
+                        placeholder&#x3D;&quot;$0.00&quot;
+                        class&#x3D;&quot;input-currency text-center w-100 p-0&quot;
+                        formControlName&#x3D;&quot;price&quot;
+                        (keypress)&#x3D;&quot;validaciones.esNumericoMayorIgualCero($event)&quot;
+                        [ngStyle]&#x3D;&quot;{&#x27;color&#x27;: price?.enabled ? &#x27;#0AC917&#x27; : &#x27;&#x27;}&quot;
+                        currencyMask
+                    &gt;
+                    &lt;/app-input-custom-text&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;w-100&quot;&gt;
+                &lt;div class&#x3D;&quot;my-2 input-container&quot;&gt;
+                    &lt;app-input-custom-text
+                        label&#x3D;&quot;DESCUENTO DEL PAQUETE&quot;
+                    &gt;
+                        &lt;input
+                            type&#x3D;&quot;text&quot;
+                            pInputText
+                            [options]&#x3D;&quot;{ prefix: &#x27;$&#x27;, thousands: &#x27;,&#x27;, decimal: &#x27;.&#x27; }&quot;
+                            placeholder&#x3D;&quot;$0.00&quot;
+                            class&#x3D;&quot;input-currency text-center p-0 w-100 p-0&quot;
+                            formControlName&#x3D;&quot;discount&quot;
+                            (keypress)&#x3D;&quot;validaciones.esNumericoMayorIgualCero($event)&quot;
+                            [ngStyle]&#x3D;&quot;{&#x27;color&#x27;: discount?.enabled ? &#x27;#0AC917&#x27; : &#x27;&#x27;}&quot;
+                            currencyMask
                         &gt;
-                        &lt;/p-dropdown&gt;
-                    &lt;/div&gt;
-                &lt;/span&gt;
+                    &lt;/app-input-custom-text&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;w-100&quot;&gt;
+                &lt;div class&#x3D;&quot;my-3 text-center&quot;&gt;
+                    &lt;p-checkbox name&#x3D;&quot;groupname&quot; [binary]&#x3D;&quot;true&quot; label&#x3D;&quot;Cobro único&quot; formControlName&#x3D;&quot;cobroUnico&quot; labelStyleClass&#x3D;&quot;labelCheckbox&quot;&gt;&lt;/p-checkbox&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class&#x3D;&quot;my-2&quot;&gt;
-            &lt;label class&#x3D;&quot;text-center w-100&quot;&gt;PRECIO DEL PAQUETE&lt;/label&gt;
-            &lt;div class&#x3D;&quot;my-2 mx-2&quot;&gt;
-                &lt;span class&#x3D;&quot;p-input-icon-right w-100&quot;&gt;
-                    &lt;input type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;$0.00&quot; class&#x3D;&quot;input-txt input-currency&quot; formControlName&#x3D;&quot;price&quot; (keypress)&#x3D;&quot;validaciones.esNumericoMayorIgualCero($event)&quot; [ngStyle]&#x3D;&quot;{&#x27;color&#x27;: price?.valid ? &#x27;#0AC917&#x27; : &#x27;&#x27;}&quot;&gt;
-                &lt;/span&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-column habitaciones-container&quot;&gt;
+            &lt;label class&#x3D;&quot;text-center w-100 labelTitle&quot;&gt;HABITACIONES&lt;/label&gt;
+                &lt;div class&#x3D;&quot;mt-1 box-dias w-100 justify-content-center d-flex flex-wrap&quot;&gt;
+                    &lt;span type&#x3D;&quot;button&quot; *ngFor&#x3D;&quot;let tipo of tiposHabitacion&quot; (click)&#x3D;&quot;selectTipoHabitacion(tipo)&quot;class&#x3D;&quot;badge boxBadge&quot; #tiposHabRef [id]&#x3D;&quot;&#x27;tipo_&#x27; + tipo&quot;&gt;{{tipo}}&lt;/span&gt;
             &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;my-2&quot;&gt;
-            &lt;label class&#x3D;&quot;text-center w-100&quot;&gt;DESCUENTO DEL PAQUETE&lt;/label&gt;
-            &lt;div class&#x3D;&quot;my-2 mx-2&quot;&gt;
-                &lt;span class&#x3D;&quot;p-input-icon-right w-100&quot;&gt;
-                    &lt;input type&#x3D;&quot;text&quot; pInputText placeholder&#x3D;&quot;$0.00&quot; class&#x3D;&quot;input-txt input-currency&quot; formControlName&#x3D;&quot;discount&quot; (keypress)&#x3D;&quot;validaciones.esNumericoMayorIgualCero($event)&quot; [ngStyle]&#x3D;&quot;{&#x27;color&#x27;: discount?.valid ? &#x27;#0AC917&#x27; : &#x27;&#x27;}&quot;&gt;
-                &lt;/span&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;my-3 w-100 text-center&quot;&gt;
-            &lt;p-checkbox name&#x3D;&quot;groupname&quot; [binary]&#x3D;&quot;true&quot; label&#x3D;&quot;Cobro único&quot; formControlName&#x3D;&quot;cobroUnico&quot;&gt;&lt;/p-checkbox&gt;
         &lt;/div&gt;
     &lt;/form&gt;
 &lt;div class&#x3D;&quot;modal-footer-content&quot;&gt;
@@ -1135,7 +1226,8 @@ export class RegistroComponent implements OnInit {
     &lt;/div&gt;
 &lt;/p-dialog&gt;
 
-&lt;app-auth *ngIf&#x3D;&quot;authMode&quot; (confirmed)&#x3D;&quot;crearPaqueteAutenticado($event)&quot;&gt;&lt;/app-auth&gt;</code></pre>
+&lt;app-auth *ngIf&#x3D;&quot;authMode&quot; (confirmed)&#x3D;&quot;crearPaqueteAutenticado($event)&quot;&gt;&lt;/app-auth&gt;
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -1148,41 +1240,85 @@ export class RegistroComponent implements OnInit {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
     align-items   : center;
     border-radius : $border-radius-tittle;
     box-shadow    : $shadow-boton;
-    margin        : 1rem 0;
+    margin-top    : 2rem;
+    margin-bottom : 1rem;
+    padding       : 1.5rem 0;
     height        : auto;
     width         : 100%;
 }
 
-input::placeholder {
-    font-size: 13pt;
+.columnaInputs {
+  width: 42%;
+}
+
+.boxBadge {
+  font-family: &#x27;Rubik&#x27;, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  width: 100px;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 10px;
+  padding-top: 6px;
+  color: #707070;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 6px #B4B4B4;
+}
+
+.boxBadgeSelected {
+  box-shadow: 0pt 0pt 6pt #00000026;
+  background-color: #7E1637;
+  color: #ffffff;
+}
+
+.input-container {
+  width: 100%;
 }
 
 .input-currency {
     font-weight: 600;
 }
 
-.input-txt {
-    width: 17vw;
+.habitaciones-container {
+  width: 40%;
 }
 
-.border-bottom__calendar {
-    border-bottom: solid 1px;
-    width: 17vw;
-}
-
-@media (max-width: 1025px) and (orientation: landscape) {
-    .input-txt {
-        width: 32vw;
-    }   
-    .border-bottom__calendar {
-        width: 32vw;
+// CHECKBOX
+:host ::ng-deep .p-checkbox .p-checkbox-box.p-highlight {
+    border-color: $green-item;
+    background  : $green-item;
+  
+    &amp;::hover {
+      border-color: $green-money;
+      background  : $green-money;
     }
-}</code></pre>
+    &amp;:focus-visible {
+      outline: $green-money 1px;
+    }
+  }
+  
+  :host ::ng-deep .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
+    border-color: $green-money;
+  }
+  
+  :host ::ng-deep .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem $green-money;
+    border-color: $green-item;
+  }
+  
+  :host ::ng-deep .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+    border-color: $green-item;
+    background: $green-money;
+    color: #ffffff;
+  }
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -1210,8 +1346,8 @@ input::placeholder {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p-dialog header="PAQUETES" [(visible)]="visible" [closable]="false" [modal]="true" [draggable]="false" [style]="{\'width\':\'860px\'}"    [showHeader]="true" *ngIf="!authMode">    <form class="paquetes-form" [formGroup]="paqueteForm">        <div class="my-2">            <label class="text-center w-100">NOMBRE</label>            <div class="my-2 mx-2">                <span class="p-input-icon-right w-100">                    <i *ngIf="!name?.valid" class="fas fa-clipboard-list txt-grey-item"></i>                    <i *ngIf="name?.valid" class="fas fa-clipboard-list" [style]="\'color: #0AC917\'"></i>                    <input type="text" pInputText placeholder="Escribe un nombre" class="input-txt" formControlName="name">                </span>            </div>        </div>        <div class="my-2">            <label class="text-center w-100">HABITACIÓN</label>            <div class="my-2 mx-2">                <span class="p-input-icon-right border-bottom__calendar">                    <i *ngIf="habitacion?.invalid" class="fas fa-hotel txt-grey-item"></i>                    <i *ngIf="!habitacion?.invalid" class="fas fa-hotel txt-success"></i>                    <div class="d-flex align-items-center w-100">                        <p-dropdown                             scrollHeight="160px"                             [showClear]="true"                            placeholder="Selecciona la habitación"                            [options]="(tiposHabitacion$ | async)!"                            optionLabel="nombre"                            formControlName="habitacion"                            optionValue="nombre"                            styleClass="inputNotText-17"                        >                        </p-dropdown>                    </div>                </span>            </div>        </div>        <div class="my-2">            <label class="text-center w-100">PRECIO DEL PAQUETE</label>            <div class="my-2 mx-2">                <span class="p-input-icon-right w-100">                    <input type="text" pInputText placeholder="$0.00" class="input-txt input-currency" formControlName="price" (keypress)="validaciones.esNumericoMayorIgualCero($event)" [ngStyle]="{\'color\': price?.valid ? \'#0AC917\' : \'\'}">                </span>            </div>        </div>        <div class="my-2">            <label class="text-center w-100">DESCUENTO DEL PAQUETE</label>            <div class="my-2 mx-2">                <span class="p-input-icon-right w-100">                    <input type="text" pInputText placeholder="$0.00" class="input-txt input-currency" formControlName="discount" (keypress)="validaciones.esNumericoMayorIgualCero($event)" [ngStyle]="{\'color\': discount?.valid ? \'#0AC917\' : \'\'}">                </span>            </div>        </div>        <div class="my-3 w-100 text-center">            <p-checkbox name="groupname" [binary]="true" label="Cobro único" formControlName="cobroUnico"></p-checkbox>        </div>    </form><div class="modal-footer-content">        <button (click)="salir()" class="button-modal button-descartar">            <div class="icon">                <i class="fa-solid fa-x"></i>            </div>            <div class="text">Cancelar</div>        </button>        <button  (click)="crearPaquete()" class="button-modal button-aceptar" [disabled]="paqueteForm.invalid">            <div class="icon">            <i class="fa-solid fa-check"></i>            </div>            <div class="text">Aceptar</div>        </button>    </div></p-dialog><app-auth *ngIf="authMode" (confirmed)="crearPaqueteAutenticado($event)"></app-auth></div>'
-    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosComponent', 'selector': 'app-conceptos'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearComponent', 'selector': 'app-crear'},{'name': 'CrearConceptoMantenimientoComponent', 'selector': ''},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarComponent', 'selector': 'app-modificar'},{'name': 'ModificarConceptosMantenimientoComponent', 'selector': ''},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
+        var COMPONENT_TEMPLATE = '<div><p-dialog header="PAQUETES" [(visible)]="visible" [closable]="false" [modal]="true" [draggable]="false" [style]="{\'width\':\'860px\'}"    [showHeader]="true" *ngIf="!authMode">    <form class="paquetes-form" [formGroup]="paqueteForm">        <div class="d-flex flex-column align-items-center columnaInputs">            <div class="w-100">                <div class="my-2 input-container">                    <app-input-text                      formControlName="name"                      [control]="name"                      label="NOMBRE"                      iconClass="fas fa-clipboard-list"                      placeholder="Escribe un nombre"                      (keypress)="validaciones.esAlfanumerico($event)"                      (paste)="validaciones.esAlfanumerico($event)"                    ></app-input-text>                </div>            </div>            <div class="w-100">                <div class="my-2 input-container">                    <app-input-custom-text                        label="PRECIO DEL PAQUETE"                    >                    <input                        type="text"                        pInputText                        [options]="{ prefix: \'$\', thousands: \',\', decimal: \'.\' }"                        placeholder="$0.00"                        class="input-currency text-center w-100 p-0"                        formControlName="price"                        (keypress)="validaciones.esNumericoMayorIgualCero($event)"                        [ngStyle]="{\'color\': price?.enabled ? \'#0AC917\' : \'\'}"                        currencyMask                    >                    </app-input-custom-text>                </div>            </div>            <div class="w-100">                <div class="my-2 input-container">                    <app-input-custom-text                        label="DESCUENTO DEL PAQUETE"                    >                        <input                            type="text"                            pInputText                            [options]="{ prefix: \'$\', thousands: \',\', decimal: \'.\' }"                            placeholder="$0.00"                            class="input-currency text-center p-0 w-100 p-0"                            formControlName="discount"                            (keypress)="validaciones.esNumericoMayorIgualCero($event)"                            [ngStyle]="{\'color\': discount?.enabled ? \'#0AC917\' : \'\'}"                            currencyMask                        >                    </app-input-custom-text>                </div>            </div>            <div class="w-100">                <div class="my-3 text-center">                    <p-checkbox name="groupname" [binary]="true" label="Cobro único" formControlName="cobroUnico" labelStyleClass="labelCheckbox"></p-checkbox>                </div>            </div>        </div>        <div class="d-flex flex-column habitaciones-container">            <label class="text-center w-100 labelTitle">HABITACIONES</label>                <div class="mt-1 box-dias w-100 justify-content-center d-flex flex-wrap">                    <span type="button" *ngFor="let tipo of tiposHabitacion" (click)="selectTipoHabitacion(tipo)"class="badge boxBadge" #tiposHabRef [id]="\'tipo_\' + tipo">{{tipo}}</span>            </div>        </div>    </form><div class="modal-footer-content">        <button (click)="salir()" class="button-modal button-descartar">            <div class="icon">                <i class="fa-solid fa-x"></i>            </div>            <div class="text">Cancelar</div>        </button>        <button  (click)="crearPaquete()" class="button-modal button-aceptar" [disabled]="paqueteForm.invalid">            <div class="icon">            <i class="fa-solid fa-check"></i>            </div>            <div class="text">Aceptar</div>        </button>    </div></p-dialog><app-auth *ngIf="authMode" (confirmed)="crearPaqueteAutenticado($event)"></app-auth></div>'
+    var COMPONENTS = [{'name': 'AceptarSalidaComponent', 'selector': 'app-aceptar-salida'},{'name': 'AdminMenuComponent', 'selector': 'app-admin-menu'},{'name': 'AgregarEditarRolComponent', 'selector': 'app-agregar-editar-rol'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarReservacionComponent', 'selector': ''},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'AutorizacionComponent', 'selector': 'app-autorizacion'},{'name': 'CamaristasEnTurnoComponent', 'selector': 'app-camaristas-en-turno'},{'name': 'CambioHabitacionComponent', 'selector': 'app-cambio-habitacion'},{'name': 'CancelarEntradaComponent', 'selector': 'app-cancelar-entrada'},{'name': 'CancelarHabitacionComponent', 'selector': 'app-cancelar-habitacion'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardExtraComponent', 'selector': 'app-card-extra'},{'name': 'CobrarPendienteHabitacionComponent', 'selector': 'app-cobrar-pendiente-habitacion'},{'name': 'CocinabarComponent', 'selector': 'app-cocinabar'},{'name': 'CommandComponent', 'selector': 'app-command'},{'name': 'ComponentReservacionComponent', 'selector': 'app-component-reservacion'},{'name': 'ConceptosMantenimientoComponent', 'selector': 'app-conceptos-mantenimiento'},{'name': 'ConfiguracionesComponent', 'selector': 'app-configuraciones'},{'name': 'ConfiguracionPropinasComponent', 'selector': 'app-configuracion-propinas'},{'name': 'ConfigurarComponent', 'selector': 'app-configurar'},{'name': 'ConfigurarTicketComponent', 'selector': 'app-configurar-ticket'},{'name': 'ConfimModalMessageComponent', 'selector': 'app-confim-modal-message'},{'name': 'CrearComandaRoomserviceComponent', 'selector': 'app-crear-comanda-roomservice'},{'name': 'CrearConceptoMantenimientoComponent', 'selector': ''},{'name': 'CrearGastoGeneralComponent', 'selector': 'app-crear-gasto-general'},{'name': 'DarEntradaHabitacionComponent', 'selector': 'app-dar-entrada-habitacion'},{'name': 'DeshabilitarHabitacionComponent', 'selector': 'app-deshabilitar-habitacion'},{'name': 'DetalleComponent', 'selector': 'app-detalle'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EditarComponent', 'selector': 'app-editar'},{'name': 'EntradaHabitacionComponent', 'selector': 'app-entrada-habitacion'},{'name': 'GastosComponent', 'selector': 'app-gastos'},{'name': 'GastosGeneralesComponent', 'selector': 'app-gastos-generales'},{'name': 'HamburguesaMenuComponent', 'selector': 'app-hamburguesa-menu'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InputCustomTextComponent', 'selector': 'app-input-custom-text'},{'name': 'InputDropdownComponent', 'selector': 'app-input-dropdown'},{'name': 'InputTextComponent', 'selector': 'app-input-text'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LiberarHabitacionComponent', 'selector': 'app-liberar-habitacion'},{'name': 'LiberarPagarRoomServiceComponent', 'selector': 'app-liberar-pagar-room-service'},{'name': 'LimpiezaComponent', 'selector': 'app-limpieza'},{'name': 'LimpiezaHabitacionComponent', 'selector': 'app-limpieza-habitacion'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaComponent', 'selector': 'app-lista'},{'name': 'ListaDeRolesComponent', 'selector': 'app-lista-de-roles'},{'name': 'LoaderBigComponentComponent', 'selector': 'app-loader-big-component'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MandarLimpiezaHabitacionComponent', 'selector': 'app-mandar-limpieza-habitacion'},{'name': 'MandarSupervisarHabitacionComponent', 'selector': 'app-mandar-supervisar-habitacion'},{'name': 'MantenimientoComponent', 'selector': 'app-mantenimiento'},{'name': 'MatriculaComponent', 'selector': 'app-matricula'},{'name': 'MessageModalAutoclosableComponent', 'selector': 'app-message-modal-autoclosable'},{'name': 'ModificarConceptosMantenimientoComponent', 'selector': ''},{'name': 'ModificarGastosGeneralesComponent', 'selector': 'app-modificar-gastos-generales'},{'name': 'MovimientosComponent', 'selector': 'app-movimientos'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'NuevoComponent', 'selector': 'app-nuevo'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PagoComandasComponent', 'selector': 'app-pago-comandas'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoMixtoComponent', 'selector': 'app-pago-mixto'},{'name': 'PagoRentaHabitacionComponent', 'selector': 'app-pago-renta-habitacion'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PagoTarjetaComponent', 'selector': 'app-pago-tarjeta'},{'name': 'PaquetesComponent', 'selector': 'app-paquetes'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'RentaExtraHabitacionComponent', 'selector': 'app-renta-extra-habitacion'},{'name': 'RentaHabitacionComponent', 'selector': 'app-renta-habitacion'},{'name': 'ReservacionComponent', 'selector': 'app-reservacion'},{'name': 'RolesYPermisosComponent', 'selector': 'app-roles-y-permisos'},{'name': 'RoomComponent', 'selector': 'app-room'},{'name': 'RoomDetailsComponent', 'selector': 'app-room-details'},{'name': 'RoomServiceComponent', 'selector': 'app-room-service'},{'name': 'RoomsMenuComponent', 'selector': 'app-rooms-menu'},{'name': 'RoomTypesComponent', 'selector': 'app-room-types'},{'name': 'SelectImpresoraComponent', 'selector': 'app-select-impresora'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHiddenComponent', 'selector': 'app-sidebar-hidden'},{'name': 'TarifasComponent', 'selector': 'app-tarifas'},{'name': 'TarjetasComandaComponent', 'selector': 'app-tarjetas-comanda'},{'name': 'TicketComponent', 'selector': 'app-ticket'},{'name': 'TicketRentaComponent', 'selector': 'app-ticket-renta'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerComponent', 'selector': 'app-ver'},{'name': 'VerGastosGeneralesComponent', 'selector': 'app-ver-gastos-generales'}];
     var DIRECTIVES = [{'name': 'CommandColorDirective', 'selector': '[appCommandColor]'},{'name': 'LogoutDirective', 'selector': '[appLogout]'},{'name': 'MenuButtonDirective', 'selector': '[appMenuButton]'},{'name': 'ModalWidthDirective', 'selector': '[appModalWidth]'},{'name': 'NgmodalDirective', 'selector': '[appNgmodal]'},{'name': 'SidenavDirective', 'selector': '[appSidenav]'}];
     var ACTUAL_COMPONENT = {'name': 'RegistroComponent'};
 </script>

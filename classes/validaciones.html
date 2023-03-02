@@ -170,7 +170,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>esAlfanumerico(event: KeyboardEvent)</code>
+<code>esAlfanumerico(event: KeyboardEvent | ClipboardEvent)</code>
                 </td>
             </tr>
 
@@ -201,7 +201,7 @@
                                 <tr>
                                     <td>event</td>
                                     <td>
-                                            <code>KeyboardEvent</code>
+                                            <code>KeyboardEvent | ClipboardEvent</code>
                                     </td>
 
                                     <td>
@@ -465,8 +465,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="131"
-                            class="link-to-prism">src/app/core/formsControl/validaciones.ts:131</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="137"
+                            class="link-to-prism">src/app/core/formsControl/validaciones.ts:137</a></div>
                 </td>
             </tr>
 
@@ -558,8 +558,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="138"
-                            class="link-to-prism">src/app/core/formsControl/validaciones.ts:138</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="144"
+                            class="link-to-prism">src/app/core/formsControl/validaciones.ts:144</a></div>
                 </td>
             </tr>
 
@@ -939,8 +939,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="121"
-                            class="link-to-prism">src/app/core/formsControl/validaciones.ts:121</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="127"
+                            class="link-to-prism">src/app/core/formsControl/validaciones.ts:127</a></div>
                 </td>
             </tr>
 
@@ -1008,8 +1008,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Definido en <a href="" data-line="111"
-                            class="link-to-prism">src/app/core/formsControl/validaciones.ts:111</a></div>
+                    <div class="io-line">Definido en <a href="" data-line="117"
+                            class="link-to-prism">src/app/core/formsControl/validaciones.ts:117</a></div>
                 </td>
             </tr>
 
@@ -1167,10 +1167,16 @@ export class validaciones {
         return undefined;
     }
 
-    esAlfanumerico(event: KeyboardEvent) {
+    esAlfanumerico(event: KeyboardEvent | ClipboardEvent) {
+        
         var regex &#x3D; new RegExp(&quot;^[0-9a-zA-Z áéíóúÁÉÍÓÚüÜñÑ]+$&quot;);
-        var key &#x3D; String.fromCharCode(!event.charCode ? event.which : event.charCode);
-        if (!regex.test(key)) {
+        let key : any;
+        if(event instanceof KeyboardEvent) {
+            key &#x3D; String.fromCharCode(!event.charCode ? event.which : event.charCode);
+        }else {
+            key &#x3D; event.clipboardData?.getData(&#x27;Text&#x27;);
+        }
+        if (!regex.test(key || &#x27;&#x27;)) {
             event.preventDefault();
             return false;
         }
@@ -1210,7 +1216,6 @@ export class validaciones {
         }
         return value &lt;&#x3D; limit
     }
-
 }</code></pre>
     </div>
 </div>

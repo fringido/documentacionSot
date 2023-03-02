@@ -198,6 +198,7 @@ import { EditarComponent } from &#x27;./editar.component&#x27;;
 import { PrimengModule } from &#x27;src/app/core/modules/primeng/primeng.module&#x27;;
 import { CoreModule } from &#x27;src/app/core/core.module&#x27;;
 import { ReactiveFormsModule } from &#x27;@angular/forms&#x27;;
+import { CurrencyMaskModule } from &#x27;ng2-currency-mask&#x27;;
 
 
 @NgModule({
@@ -208,8 +209,9 @@ import { ReactiveFormsModule } from &#x27;@angular/forms&#x27;;
     CommonModule,
     EditarRoutingModule,
     PrimengModule,
+    ReactiveFormsModule,
     CoreModule,
-    ReactiveFormsModule
+    CurrencyMaskModule
   ],
   providers: [CurrencyPipe]
 })

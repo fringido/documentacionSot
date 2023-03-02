@@ -14,115 +14,115 @@
 <title>cluster_RoomServiceModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-32.8 8,-157.8 1530,-157.8 1530,-32.8 8,-32.8"/>
 </g>
-<g id="clust8" class="cluster">
-<title>cluster_RoomServiceModule_imports</title>
-<polygon fill="none" stroke="black" points="1089,-40.8 1089,-92.8 1522,-92.8 1522,-40.8 1089,-40.8"/>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_RoomServiceModule_declarations</title>
-<polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 1081,-92.8 1081,-40.8 16,-40.8"/>
+<polygon fill="none" stroke="black" points="457,-40.8 457,-92.8 1522,-92.8 1522,-40.8 457,-40.8"/>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_RoomServiceModule_imports</title>
+<polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 449,-92.8 449,-40.8 16,-40.8"/>
 </g>
 <!-- CrearComandaRoomserviceComponent -->
 <g id="node1" class="node">
 <title>CrearComandaRoomserviceComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1072.95,-84.8 833.05,-84.8 833.05,-48.8 1072.95,-48.8 1072.95,-84.8"/>
-<text text-anchor="middle" x="953" y="-62.6" font-family="Times,serif" font-size="14.00">CrearComandaRoomserviceComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1513.95,-84.8 1274.05,-84.8 1274.05,-48.8 1513.95,-48.8 1513.95,-84.8"/>
+<text text-anchor="middle" x="1394" y="-62.6" font-family="Times,serif" font-size="14.00">CrearComandaRoomserviceComponent</text>
 </g>
 <!-- RoomServiceModule -->
 <g id="node6" class="node">
 <title>RoomServiceModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="893.76,-149.8 890.76,-153.8 869.76,-153.8 866.76,-149.8 758.24,-149.8 758.24,-113.8 893.76,-113.8 893.76,-149.8"/>
-<text text-anchor="middle" x="826" y="-127.6" font-family="Times,serif" font-size="14.00">RoomServiceModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="715.76,-149.8 712.76,-153.8 691.76,-153.8 688.76,-149.8 580.24,-149.8 580.24,-113.8 715.76,-113.8 715.76,-149.8"/>
+<text text-anchor="middle" x="648" y="-127.6" font-family="Times,serif" font-size="14.00">RoomServiceModule</text>
 </g>
 <!-- CrearComandaRoomserviceComponent&#45;&gt;RoomServiceModule -->
 <g id="edge1" class="edge">
 <title>CrearComandaRoomserviceComponent&#45;&gt;RoomServiceModule</title>
-<path fill="none" stroke="black" d="M863.45,-84.91C863.45,-84.91 863.45,-103.79 863.45,-103.79"/>
-<polygon fill="black" stroke="black" points="859.95,-103.79 863.45,-113.79 866.95,-103.79 859.95,-103.79"/>
+<path fill="none" stroke="black" d="M1394,-85.09C1394,-107.01 1394,-140.8 1394,-140.8 1394,-140.8 725.85,-140.8 725.85,-140.8"/>
+<polygon fill="black" stroke="black" points="725.85,-137.3 715.85,-140.8 725.85,-144.3 725.85,-137.3"/>
 </g>
 <!-- LiberarPagarRoomServiceComponent -->
 <g id="node2" class="node">
 <title>LiberarPagarRoomServiceComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="815.11,-84.8 584.89,-84.8 584.89,-48.8 815.11,-48.8 815.11,-84.8"/>
-<text text-anchor="middle" x="700" y="-62.6" font-family="Times,serif" font-size="14.00">LiberarPagarRoomServiceComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1256.11,-84.8 1025.89,-84.8 1025.89,-48.8 1256.11,-48.8 1256.11,-84.8"/>
+<text text-anchor="middle" x="1141" y="-62.6" font-family="Times,serif" font-size="14.00">LiberarPagarRoomServiceComponent</text>
 </g>
 <!-- LiberarPagarRoomServiceComponent&#45;&gt;RoomServiceModule -->
 <g id="edge2" class="edge">
 <title>LiberarPagarRoomServiceComponent&#45;&gt;RoomServiceModule</title>
-<path fill="none" stroke="black" d="M786.71,-84.91C786.71,-84.91 786.71,-103.79 786.71,-103.79"/>
-<polygon fill="black" stroke="black" points="783.21,-103.79 786.71,-113.79 790.21,-103.79 783.21,-103.79"/>
+<path fill="none" stroke="black" d="M1141,-84.91C1141,-104.14 1141,-131.8 1141,-131.8 1141,-131.8 725.77,-131.8 725.77,-131.8"/>
+<polygon fill="black" stroke="black" points="725.77,-128.3 715.77,-131.8 725.77,-135.3 725.77,-128.3"/>
 </g>
 <!-- PagoComandasComponent -->
 <g id="node3" class="node">
 <title>PagoComandasComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="566.44,-84.8 397.56,-84.8 397.56,-48.8 566.44,-48.8 566.44,-84.8"/>
-<text text-anchor="middle" x="482" y="-62.6" font-family="Times,serif" font-size="14.00">PagoComandasComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1007.44,-84.8 838.56,-84.8 838.56,-48.8 1007.44,-48.8 1007.44,-84.8"/>
+<text text-anchor="middle" x="923" y="-62.6" font-family="Times,serif" font-size="14.00">PagoComandasComponent</text>
 </g>
 <!-- PagoComandasComponent&#45;&gt;RoomServiceModule -->
 <g id="edge3" class="edge">
 <title>PagoComandasComponent&#45;&gt;RoomServiceModule</title>
-<path fill="none" stroke="black" d="M482,-84.83C482,-101.2 482,-122.8 482,-122.8 482,-122.8 748.04,-122.8 748.04,-122.8"/>
-<polygon fill="black" stroke="black" points="748.04,-126.3 758.04,-122.8 748.04,-119.3 748.04,-126.3"/>
+<path fill="none" stroke="black" d="M923,-84.83C923,-101.2 923,-122.8 923,-122.8 923,-122.8 725.98,-122.8 725.98,-122.8"/>
+<polygon fill="black" stroke="black" points="725.98,-119.3 715.98,-122.8 725.98,-126.3 725.98,-119.3"/>
 </g>
 <!-- RoomServiceComponent -->
 <g id="node4" class="node">
 <title>RoomServiceComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="379.54,-84.8 222.46,-84.8 222.46,-48.8 379.54,-48.8 379.54,-84.8"/>
-<text text-anchor="middle" x="301" y="-62.6" font-family="Times,serif" font-size="14.00">RoomServiceComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="820.54,-84.8 663.46,-84.8 663.46,-48.8 820.54,-48.8 820.54,-84.8"/>
+<text text-anchor="middle" x="742" y="-62.6" font-family="Times,serif" font-size="14.00">RoomServiceComponent</text>
 </g>
 <!-- RoomServiceComponent&#45;&gt;RoomServiceModule -->
 <g id="edge4" class="edge">
 <title>RoomServiceComponent&#45;&gt;RoomServiceModule</title>
-<path fill="none" stroke="black" d="M301,-84.91C301,-104.14 301,-131.8 301,-131.8 301,-131.8 748.17,-131.8 748.17,-131.8"/>
-<polygon fill="black" stroke="black" points="748.17,-135.3 758.17,-131.8 748.17,-128.3 748.17,-135.3"/>
+<path fill="none" stroke="black" d="M689.56,-84.91C689.56,-84.91 689.56,-103.79 689.56,-103.79"/>
+<polygon fill="black" stroke="black" points="686.06,-103.79 689.56,-113.79 693.06,-103.79 686.06,-103.79"/>
 </g>
 <!-- TarjetasComandaComponent -->
 <g id="node5" class="node">
 <title>TarjetasComandaComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="204.07,-84.8 23.93,-84.8 23.93,-48.8 204.07,-48.8 204.07,-84.8"/>
-<text text-anchor="middle" x="114" y="-62.6" font-family="Times,serif" font-size="14.00">TarjetasComandaComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="645.07,-84.8 464.93,-84.8 464.93,-48.8 645.07,-48.8 645.07,-84.8"/>
+<text text-anchor="middle" x="555" y="-62.6" font-family="Times,serif" font-size="14.00">TarjetasComandaComponent</text>
 </g>
 <!-- TarjetasComandaComponent&#45;&gt;RoomServiceModule -->
 <g id="edge5" class="edge">
 <title>TarjetasComandaComponent&#45;&gt;RoomServiceModule</title>
-<path fill="none" stroke="black" d="M114,-85.09C114,-107.01 114,-140.8 114,-140.8 114,-140.8 748.05,-140.8 748.05,-140.8"/>
-<polygon fill="black" stroke="black" points="748.05,-144.3 758.05,-140.8 748.05,-137.3 748.05,-144.3"/>
+<path fill="none" stroke="black" d="M612.58,-84.91C612.58,-84.91 612.58,-103.79 612.58,-103.79"/>
+<polygon fill="black" stroke="black" points="609.08,-103.79 612.58,-113.79 616.08,-103.79 609.08,-103.79"/>
 </g>
 <!-- BootstrapModule -->
 <g id="node7" class="node">
 <title>BootstrapModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="1513.99,-84.8 1510.99,-88.8 1489.99,-88.8 1486.99,-84.8 1400.01,-84.8 1400.01,-48.8 1513.99,-48.8 1513.99,-84.8"/>
-<text text-anchor="middle" x="1457" y="-62.6" font-family="Times,serif" font-size="14.00">BootstrapModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="440.99,-84.8 437.99,-88.8 416.99,-88.8 413.99,-84.8 327.01,-84.8 327.01,-48.8 440.99,-48.8 440.99,-84.8"/>
+<text text-anchor="middle" x="384" y="-62.6" font-family="Times,serif" font-size="14.00">BootstrapModule</text>
 </g>
 <!-- BootstrapModule&#45;&gt;RoomServiceModule -->
 <g id="edge6" class="edge">
 <title>BootstrapModule&#45;&gt;RoomServiceModule</title>
-<path fill="none" stroke="black" d="M1457,-85.09C1457,-107.01 1457,-140.8 1457,-140.8 1457,-140.8 903.83,-140.8 903.83,-140.8"/>
-<polygon fill="black" stroke="black" points="903.83,-137.3 893.83,-140.8 903.83,-144.3 903.83,-137.3"/>
+<path fill="none" stroke="black" d="M384,-84.83C384,-101.2 384,-122.8 384,-122.8 384,-122.8 570.01,-122.8 570.01,-122.8"/>
+<polygon fill="black" stroke="black" points="570.01,-126.3 580.01,-122.8 570.01,-119.3 570.01,-126.3"/>
 </g>
 <!-- CoreModule -->
 <g id="node8" class="node">
 <title>CoreModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="1382.27,-84.8 1379.27,-88.8 1358.27,-88.8 1355.27,-84.8 1295.73,-84.8 1295.73,-48.8 1382.27,-48.8 1382.27,-84.8"/>
-<text text-anchor="middle" x="1339" y="-62.6" font-family="Times,serif" font-size="14.00">CoreModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="309.27,-84.8 306.27,-88.8 285.27,-88.8 282.27,-84.8 222.73,-84.8 222.73,-48.8 309.27,-48.8 309.27,-84.8"/>
+<text text-anchor="middle" x="266" y="-62.6" font-family="Times,serif" font-size="14.00">CoreModule</text>
 </g>
 <!-- CoreModule&#45;&gt;RoomServiceModule -->
 <g id="edge7" class="edge">
 <title>CoreModule&#45;&gt;RoomServiceModule</title>
-<path fill="none" stroke="black" d="M1339,-84.91C1339,-104.14 1339,-131.8 1339,-131.8 1339,-131.8 903.86,-131.8 903.86,-131.8"/>
-<polygon fill="black" stroke="black" points="903.86,-128.3 893.86,-131.8 903.86,-135.3 903.86,-128.3"/>
+<path fill="none" stroke="black" d="M266,-84.91C266,-104.14 266,-131.8 266,-131.8 266,-131.8 570.15,-131.8 570.15,-131.8"/>
+<polygon fill="black" stroke="black" points="570.15,-135.3 580.15,-131.8 570.15,-128.3 570.15,-135.3"/>
 </g>
 <!-- RoomServiceRoutingModule -->
 <g id="node9" class="node">
 <title>RoomServiceRoutingModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="1277.38,-84.8 1274.38,-88.8 1253.38,-88.8 1250.38,-84.8 1096.62,-84.8 1096.62,-48.8 1277.38,-48.8 1277.38,-84.8"/>
-<text text-anchor="middle" x="1187" y="-62.6" font-family="Times,serif" font-size="14.00">RoomServiceRoutingModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="204.38,-84.8 201.38,-88.8 180.38,-88.8 177.38,-84.8 23.62,-84.8 23.62,-48.8 204.38,-48.8 204.38,-84.8"/>
+<text text-anchor="middle" x="114" y="-62.6" font-family="Times,serif" font-size="14.00">RoomServiceRoutingModule</text>
 </g>
 <!-- RoomServiceRoutingModule&#45;&gt;RoomServiceModule -->
 <g id="edge8" class="edge">
 <title>RoomServiceRoutingModule&#45;&gt;RoomServiceModule</title>
-<path fill="none" stroke="black" d="M1187,-84.83C1187,-101.2 1187,-122.8 1187,-122.8 1187,-122.8 903.9,-122.8 903.9,-122.8"/>
-<polygon fill="black" stroke="black" points="903.9,-119.3 893.9,-122.8 903.9,-126.3 903.9,-119.3"/>
+<path fill="none" stroke="black" d="M114,-85.09C114,-107.01 114,-140.8 114,-140.8 114,-140.8 570.1,-140.8 570.1,-140.8"/>
+<polygon fill="black" stroke="black" points="570.1,-144.3 580.1,-140.8 570.1,-137.3 570.1,-144.3"/>
 </g>
 </g>
 </svg>
